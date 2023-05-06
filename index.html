@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta name="viewport" content="with=device-width, initial-scale=1.0">
-    <title>Marase Supply Web Design</title>
+    <title>Marase Supply Web</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -10,10 +10,12 @@
     <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
 </head>
 <body>
+<!-------Header PAGE------->
 <section class="header">
     <nav>
         <a href="index.html"><img src = "image/logo.png"></a>
         <div class = "nav-links" id="navLinks">
+            <!--menu class image-->>
             <i class="fa fa-times" onclick="hideMenu()"></i>
             <ul>
                 <li><a href="">INICIO</a></li>
@@ -23,14 +25,81 @@
                 <li><a href="">CONTACTO</a></li>
             </ul>
         </div>
+        <!--menu class image-->>
         <i class="fa fa-bars" onclick="showMenu()"></i>
     </nav>
     <div class="text-box">
-        <h1>Suministros Industriales</h1>
-        <p>Suministros para el sector electrico Alta tension y Servicios de control</p>
-        <a href="" class="hero-btn">Contactanos para conocer mas</a>
+        <h1>MARASE SUPPLY</h1>
+        <p>Suministrando calidad en el sector industrial y de la salud.</p>
+        <a href="" class="hero-btn">Contactanos para conocer más</a>
     </div>
 </section>
+
+<!-------mision------->
+<section class="mision">
+    <h1>Misión</h1>
+    <p>Nuestra misión es proporcionar soluciones de alta calidad y seguridad en suministros industriales y de salud, 
+        satisfaciendo las necesidades específicas de cada cliente. Nos esforzamos por ser líderes en el mercado y superar las expectativas de nuestros clientes 
+        a través de la excelencia en el servicio y la atención al cliente. .</p>
+        <div class="row">
+            <div class="page-col">
+                <h3>Industrial</h3>
+                <p>Nos especializamos en el suministro de materiales y equipos de alta calidad para proyectos industriales eléctricos y petroquímicos. 
+                    Ofrecemos una amplia gama de productos, desde cables eléctricos y transformadores hasta válvulas y tuberías, todo cumpliendo 
+                    con los más altos estándares de calidad y seguridad.
+                </p>
+            </div>
+            <div class="page-col">
+                <h3>Salud</h3>
+                <p>En nuestra empresa, también ofrecemos una amplia gama de insumos médicos y de salud, 
+                    desde equipos de diagnóstico hasta suministros de primeros auxilios. 
+                    Trabajamos con los principales fabricantes del mercado y nos aseguramos de que nuestros productos 
+                    cumplan con altos estándares de calidad y seguridad.  
+                </p>
+            </div>
+            <div class="page-col">
+                <h3>Otros Servicios</h3>
+                <p>Nuestro equipo de expertos altamente capacitados cuenta con amplia experiencia en el ámbito contable, fiscal y laboral, 
+                    y se asegura de mantenerse actualizado sobre las leyes y regulaciones aplicables en cada área. 
+                    Ofrecemos una amplia gama de servicios contactanos para mas información.
+                </p>
+            </div>
+        </div>
+</section>
+<!-------Clientes------->
+<section class="Clientes">
+    <h1>Nuestros Clientes</h1>
+    <p>En nuestra empresa, nuestros clientes son nuestra prioridad y nos esforzamos por ofrecerles un servicio excepcional en cada etapa del proceso
+    </p>
+        <div class="row">
+            <div class="client-col">
+                <img src="image/industrial.jpg">
+                <div class="layer">
+                    <h3>INDUSTRIAL</h3>
+                </div>
+            </div>
+            <div class="client-col">
+                <img src="image/salud.jpg">
+                <div class="layer">
+                    <h3>SALUD</h3>
+                </div>
+            </div>
+            <div class="client-col">
+                <img src="image/servicios.png">
+                <div class="layer">
+                    <h3>SERVICIOS</h3>
+                </div>
+            </div>
+        </div>
+</section>
+
+<!-------Proveedores------->
+<section class="Proveedores">
+    <h1>Nuestros Proveedores</h1>
+    <p>Relaciones de confianza con nuestros proveedores</p>
+</section>
+
+<!-------JavaScript secction------->
 <!-------------JavaScript for Toggle Menu---------------->
 <script>
     var navLinks = document.getElementById("navLinks");
