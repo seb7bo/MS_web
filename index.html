@@ -1,127 +1,244 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta name="viewport" content="with=device-width, initial-scale=1.0">
-    <title>Marase Supply Web</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Background with Menu</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Orbitron&display=swap">
+<style>
+  /* General Styles */
+  body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Hide overflow to prevent scrolling */
+    font-family: 'Orbitron', sans-serif; /* Use Orbitron font */
+  }
+
+  /* Contact Information */
+  .contact-info {
+    position: fixed;
+    top: 450px; /* Adjust the top position */
+    left: 100px; /* Adjust the left position as needed */
+    font-size: 18px; /* Set the font size */
+    color: #086fff; /* Same color as navigation */
+    font-family: 'Orbitron', sans-serif; /* Use Orbitron font */
+    z-index: 9999; /* Ensure contact info is above other elements */
+  }
+
+  /* Animation Container */
+  .animation-container {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 30px); /* Adjust this to match your desired height */
+    background-image: url('image/Dubal.gif'); /* Background image URL */
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    z-index: 1; /* Ensure the animation is behind the message */
+  }
+
+  /* Menu Button */
+  .menu-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 9999; /* Ensure the menu button is above other elements */
+    font-size: 16px; /* Set the font size */
+    font-family: 'Orbitron', sans-serif; /* Use Orbitron font */
+  }
+
+  /* Menu Button Description */
+  .menu-button-description {
+    display: none; /* Initially hidden */
+    position: fixed;
+    top: 10px; /* Adjust the top position */
+    right: 20px;
+    color: #005cdd; /* Blue gray color */
+    font-size: 18px;
+    font-family: 'Orbitron', sans-serif; /* Use Orbitron font */
+    z-index: 9999; /* Ensure the menu button description is above other elements */
+  }
+
+  /* Menu */
+  .menu {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 200px; /* Adjust the width as needed */
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+    color: #fff;
+    padding: 20px;
+    box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.5);
+    display: none; /* Initially hidden */
+    z-index: 9998; /* Ensure the menu is above other elements except the menu button */
+    font-family: 'Orbitron', sans-serif; /* Use Orbitron font */
+  }
+
+  /* Menu List */
+  .menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 70px 0 0; /* Add margin to the top */
+  }
+
+  /* Menu List Item */
+  .menu ul li {
+    margin-bottom: 20px; /* Increase the margin to move the options down */
+    font-size: 16px; /* Set the font size */
+  }
+
+  /* Menu List Item Link */
+  .menu ul li a {
+    color: #ffffff; /* Change color to white */
+    text-decoration: none; /* Remove underline */
+  }
+
+  /* Menu List Item Link Hover */
+  .menu ul li a:hover {
+    color: #65758b; /* Change color to blue gray on hover */
+  }
+
+  /* Mission Statement */
+  .mission-statement {
+    margin-top: 300px; /* Adjust the top margin as needed */
+    font-size: 14px; /* Set the font size */
+    color: #666; /* Light gray color */
+  }
+
+  /* Welcome Message */
+  .welcome-message {
+    position: fixed;
+    top: 200px; /* Adjust the top position */
+    left: 100px; /* Adjust the left position as needed */
+    transform: translateY(-50%);
+    font-size: 22px; /* Decrease the font size */
+    color: #666; /* Gray color */
+    text-transform: uppercase; /* Convert text to uppercase */
+    z-index: 999; /* Ensure the message is behind the animation */
+    font-family: 'Orbitron', sans-serif; /* Use Orbitron font */
+  }
+
+  /* Company Name */
+  .company-name {
+    position: fixed;
+    top: 160px; /* Adjust the top position */
+    left: 100px; /* Adjust the left position as needed */
+    font-size: 60px; /* Set the font size */
+    color: #fff; /* White color */
+    z-index: 999; /* Ensure the company name is above the animation */
+    font-family: 'Orbitron', sans-serif; /* Use Orbitron font */
+  }
+
+  /* Motto */
+  .motto {
+    position: fixed;
+    top: 280px; /* Adjust the top position */
+    left: 100px; /* Adjust the left position as needed */
+    font-size: 25px; /* Set the font size */
+    color: #fff; /* White color */
+    z-index: 999; /* Ensure the motto is above the animation */
+    font-family: 'Orbitron', sans-serif; /* Use Orbitron font */
+  }
+
+  /* Address */
+  .address {
+    position: fixed;
+    top: 370px; /* Adjust the top position */
+    left: 100px; /* Adjust the left position as needed */
+    font-size: 18px; /* Set the font size */
+    color: #666; /* Gray color */
+    z-index: 999; /* Ensure the address is above the animation */
+    font-family: 'Orbitron', sans-serif; /* Use Orbitron font */
+  }
+
+  /* Footer */
+  .footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #65758b; /* Blue gray color */
+    color: #fff; /* White color */
+    text-align: center;
+    padding: 10px 0;
+    font-size: 16px;
+    font-family: 'Orbitron', sans-serif; /* Use Orbitron font */
+    z-index: 999; /* Ensure the footer is above the animation */
+  }
+</style>
 </head>
 <body>
-<!-------Header PAGE------->
-<section class="header">
-    <nav>
-        <a href="index.html"><img src = "image/logo.png"></a>
-        <div class = "nav-links" id="navLinks">
-            <!--menu class image-->>
-            <i class="fa fa-times" onclick="hideMenu()"></i>
-            <ul>
-                <li><a href="index.html">INICIO</a></li>
-                <li><a href="aviso.html">AVISO</a></li>
-            </ul>
-        </div>
-        <!--menu class image-->>
-        <i class="fa fa-bars" onclick="showMenu()"></i>
-    </nav>
-    <div class="text-box">
-        <h1>MARASE SUPPLY</h1>
-        <p>Suministrando calidad en el sector industrial y de la salud.</p>
-        <a href="" class="hero-btn">Contactanos para conocer más</a>
-    </div>
-</section>
 
-<!-------mision------->
-<section class="mision">
-    <h1>Misión</h1>
-    <p>Nuestra misión es proporcionar soluciones de alta calidad y seguridad en suministros industriales y de salud, 
-        satisfaciendo las necesidades específicas de cada cliente. Nos esforzamos por ser líderes en el mercado y superar las expectativas de nuestros clientes 
-        a través de la excelencia en el servicio y la atención al cliente. .</p>
-        <div class="row">
-            <div class="page-col">
-                <h3>Industrial</h3>
-                <p>Nos especializamos en el suministro de materiales y equipos de alta calidad para proyectos industriales eléctricos y petroquímicos. 
-                    Ofrecemos una amplia gama de productos, desde cables eléctricos y transformadores hasta válvulas y tuberías, todo cumpliendo 
-                    con los más altos estándares de calidad y seguridad.
-                </p>
-            </div>
-            <div class="page-col">
-                <h3>Salud</h3>
-                <p>En nuestra empresa, también ofrecemos una amplia gama de insumos médicos y de salud, 
-                    desde equipos de diagnóstico hasta suministros de primeros auxilios. 
-                    Trabajamos con los principales fabricantes del mercado y nos aseguramos de que nuestros productos 
-                    cumplan con altos estándares de calidad y seguridad.  
-                </p>
-            </div>
-            <div class="page-col">
-                <h3>Otros Servicios</h3>
-                <p>Nuestro equipo de expertos altamente capacitados cuenta con amplia experiencia en el ámbito contable, fiscal y laboral, 
-                    y se asegura de mantenerse actualizado sobre las leyes y regulaciones aplicables en cada área. 
-                    Ofrecemos una amplia gama de servicios contactanos para mas información.
-                </p>
-            </div>
-        </div>
-</section>
-<!-------Clientes------->
-<section class="Clientes">
-    <h1>Nuestros Clientes</h1>
-    <p>En nuestra empresa, nuestros clientes son nuestra prioridad y nos esforzamos por ofrecerles un servicio excepcional en cada etapa del proceso
-    </p>
-        <div class="row">
-            <div class="client-col">
-                <img src="image/industrial.jpg">
-                <div class="layer">
-                    <h3>INDUSTRIAL</h3>
-                </div>
-            </div>
-            <div class="client-col">
-                <img src="image/salud.jpg">
-                <div class="layer">
-                    <h3>SALUD</h3>
-                </div>
-            </div>
-            <div class="client-col">
-                <img src="image/servicios.png">
-                <div class="layer">
-                    <h3>SERVICIOS</h3>
-                </div>
-            </div>
-        </div>
-</section>
+<!-- Contact Information -->
+<div class="contact-info">
+  <p>E : contacto@marasesupply.com</p>
+  <p>Tel. +52 (55) 44 42 67 58</p>
+</div>
 
-<!-------Proveedores------->
-<section class="Proveedores">
-    <h1>Nuestros Proveedores</h1>
-    <p>Relaciones de confianza con nuestros proveedores</p>
-            <img src="image/provedores.png">
-            <h3>Provedores de clase mundial</h3>
-            <p>Productos de alta calidad</p>
-   
-</section>
+<div class="animation-container"></div>
 
-<!------- Footer ------->
-<section class="footer">
-    <h3> Acerca de nosotros</h3>
-    <p> Suministrando calidad en el sector industrial y de la salud.<br>
-        Direccion : Oceano Mz 77 Lt 2 Col Del Mar CP 13270 Tlahuac,CDMX.<br> 
-        Contacto: www.marasesupply.com 
-    </p>
-    <div class= "icons">
-        <i class="fa fa-facebook"></i>
-        <i class="fa fa-linkedin"></i>
-    </div>
-    </section>
-<!-------JavaScript secction------->
-<!-------------JavaScript for Toggle Menu---------------->
+<!-- Welcome Message -->
+<div class="welcome-message">
+  <p>Welcome - Bienvenido</p>
+</div>
+
+<!-- Company Name -->
+<div class="company-name">
+  <p>MARASE SUPPLY</p>
+</div>
+
+<!-- Motto -->
+<div class="motto">
+  <p>Suministrando calidad en el sector industrial y de la salud.</p>
+</div>
+
+<!-- Address -->
+<div class="address">
+  <p>Dir. Oceano Mz 77 Lt 2 Col Del Mar</p>
+  <p>CP 13270 Tlahuac,CDMX.</p>
+</div>
+
+<!-- Menu Button -->
+<button class="menu-button" onclick="toggleMenu()">Menu</button>
+<!-- Menu Button Description -->
+<p class="menu-button-description" id="menu-description">Navigation</p>
+<!-- Menu -->
+<div class="menu" id="menu">
+  <ul>
+    <li><a href="aboutus.html">Acerca de nosotros</a></li>
+    <li><a href="industrialproducts.html">Productos Industrial</a></li>
+    <li><a href="healthcareproducts.html">Productos Salud</a></li>
+    <li><a href="privacy.html">Aviso de Privacidad</a></li>
+  </ul>
+  <!-- Mission Statement -->
+  <div class="mission-statement">
+    <p>Nuestra misión es proporcionar soluciones de alta calidad y seguridad en suministros industriales y de salud, satisfaciendo las necesidades específicas de cada cliente. Nos esforzamos por ser líderes en el mercado y superar las expectativas de nuestros clientes a través de la excelencia en el servicio y la atención al cliente.</p>
+  </div>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+  <p>© Copyright MARASE SUPPLY 2024</p>
+</div>
+
 <script>
-    var navLinks = document.getElementById("navLinks");
-    function showMenu(){
-        navLinks.style.right = "0";
+  // JavaScript function to toggle the menu visibility
+  function toggleMenu() {
+    var menu = document.getElementById("menu");
+    var menuDescription = document.getElementById("menu-description");
+    if (menu.style.display === "block") {
+      menu.style.display = "none";
+      menuDescription.style.display = "none"; // Hide the description when menu is closed
+    } else {
+      menu.style.display = "block";
+      menuDescription.style.display = "block"; // Show the description when menu is opened
     }
-    function hideMenu(){
-        avLinks.style.right = "-200px";
-    }
+  }
 </script>
-</body>
-</html>
+
