@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>MARASE Supply</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Orbitron&display=swap">
 <style>
@@ -171,6 +171,113 @@
     font-family: 'Orbitron', sans-serif; /* Use Orbitron font */
     z-index: 999; /* Ensure the footer is above the animation */
   }
+   /* Ensure proper viewport behavior */
+   meta[name="viewport"] {
+    width: device-width;
+    initial-scale: 1.0;
+    maximum-scale: 1.0;
+    user-scalable: no;
+  }
+
+  .menu {
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(100%);
+  }
+
+  .menu.active {
+    transform: translateX(0);
+  }
+
+  /* Mobile Optimization */
+  @media screen and (max-width: 768px) {
+    /* General content scaling */
+    .company-name {
+      top: 70px;
+      left: 20px;
+      font-size: 2rem; /* Using relative units */
+      line-height: 1.2;
+    }
+
+    .motto {
+      top: 160px;
+      left: 20px;
+      font-size: 1rem;
+      max-width: 90%;
+    }
+
+    .welcome-message {
+      top: 60px;
+      left: 20px;
+      font-size: 0.9rem;
+    }
+
+    .address {
+      top: 240px;
+      left: 20px;
+      font-size: 0.8rem;
+    }
+
+    .contact-info {
+      top: 320px;
+      left: 20px;
+      font-size: 0.7rem;
+    }
+
+    .menu {
+      width: 85%; /* Adjust width to leave some space on right */
+      right: 0;
+      left: auto; /* Ensure right alignment */
+      padding: 15px;
+      transform: none; /* Remove any existing transforms */
+    }
+
+    .menu ul {
+      margin: 40px 0 0;
+      padding-left: 15px; /* Add left padding for content */
+    }
+
+    .menu ul li a {
+      white-space: normal;
+      word-break: break-word;
+    }
+
+    .menu-button {
+      font-size: 0.9rem;
+      padding: 8px 15px;
+      bottom: 15px;
+      right: 15px;
+    }
+
+    .menu-button-description {
+      font-size: 0.8rem;
+      right: 15px;
+    }
+
+    .mission-statement {
+      margin-top: 120px;
+      font-size: 0.6rem;
+      line-height: 1.5;
+    }
+
+    /* Footer adjustments */
+    .footer {
+      font-size: 0.7rem;
+      padding: 8px 0;
+    }
+
+    /* Animation container */
+    .animation-container {
+      height: 100vh;
+      background-position: center;
+    }
+  }
+
+  /* Optional: Add these for better text rendering on mobile */
+  body {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+  }
 </style>
 </head>
 <body>
@@ -195,7 +302,7 @@
 
 <!-- Motto -->
 <div class="motto">
-  <p>Suministrando calidad en el sector industrial y de la salud.</p>
+  <p>Suministrando calidad en el sector industrial.</p>
 </div>
 
 <!-- Address -->
@@ -225,7 +332,7 @@
 
 <!-- Footer -->
 <div class="footer">
-  <p>© Copyright MARASE SUPPLY 2024</p>
+  <p>© Copyright MARASE SUPPLY 2025</p>
 </div>
 
 <script>
@@ -233,6 +340,7 @@
   function toggleMenu() {
     var menu = document.getElementById("menu");
     var menuDescription = document.getElementById("menu-description");
+    menu.classList.toggle("active");
     if (menu.style.display === "block") {
       menu.style.display = "none";
       menuDescription.style.display = "none"; // Hide the description when menu is closed
@@ -241,5 +349,6 @@
       menuDescription.style.display = "block"; // Show the description when menu is opened
     }
   }
+
 </script>
 
