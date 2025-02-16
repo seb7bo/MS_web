@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Orbitron&display=swap">
 <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<body class="index-body">
 
 <!-- Contact Information -->
 <div class="contact-info">
@@ -15,7 +15,7 @@
   <p>Tel. +52 (55) 80 35 21 25</p>
 </div>
 
-<div class="animation-container"></div>
+<div class="animation-container index-animation"></div>
 
 <!-- Welcome Message -->
 <div class="welcome-message">
@@ -62,22 +62,7 @@
   <p>© Copyright MARASE SUPPLY 2025</p>
 </div>
 
-<script>
-  // JavaScript function to toggle the menu visibility
-  function toggleMenu() {
-    var menu = document.getElementById("menu");
-    var menuDescription = document.getElementById("menu-description");
-    menu.classList.toggle("active");
-    if (menu.style.display === "block") {
-      menu.style.display = "none";
-      menuDescription.style.display = "none"; // Hide the description when menu is closed
-    } else {
-      menu.style.display = "block";
-      menuDescription.style.display = "block"; // Show the description when menu is opened
-    }
-  }
-
-</script>
+<script src="js/scripts.js"></script>
 </body>
 </html>
 

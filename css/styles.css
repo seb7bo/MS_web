@@ -2,8 +2,53 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: 'Orbitron', sans-serif;
+}
+
+/* Styles specific to index.html */
+.index-body {
   overflow: hidden; /* Hide overflow to prevent scrolling */
-  font-family: 'Orbitron', sans-serif; /* Use Orbitron font */
+  /* Add other styles specific to index.html */
+}
+
+/* Styles specific to aboutus.html */
+.aboutus-body {
+  overflow: hidden; /* Hide overflow to prevent scrolling */
+  display: flex;
+  justify-content: space-between;
+  /* Add other styles specific to aboutus.html */
+}
+
+/* Title Styling */
+.big-blue-text {
+  font-size: 36px; /* Adjust the font size */
+  color: #005cdd; /* Blue color */
+  margin-bottom: 20px; /* Adjust margin as needed */
+  align-self: flex-start; /* Align to the start of the container (left) */
+}
+
+/* Typewriter Text Styling */
+.typewriter-text {
+  font-size: 18px; /* Adjust the font size */
+  color: #666; /* Gray color */
+  margin-top: 20px; /* Adjust the top margin */
+  overflow: hidden; /* Hide any overflow */
+  max-width: 90%; /* Limit width to 90% of the container */
+  text-align: center; /* Center text horizontally */
+}
+
+/* Image Container */
+.image-container {
+  width: 50%;
+  height: 100vh;
+  position: relative;
+}
+
+/* Image Styling */
+.about-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* Contact Information */
@@ -17,16 +62,28 @@ body {
   z-index: 9999; /* Ensure contact info is above other elements */
 }
 
-/* Animation Container */
-.animation-container {
+/* Animation Container specific to index.html */
+.index-animation {
   position: relative;
   width: 100%;
   height: calc(100vh - 30px); /* Adjust this to match your desired height */
-  background-image: url('image/Dubal.gif'); /* Background image URL */
+  background-image: url('../image/Dubal.gif'); /* Background image URL */
   background-size: cover;
   background-repeat: no-repeat;
   overflow: hidden;
   z-index: 1; /* Ensure the animation is behind the message */
+}
+
+/* Animation Container specific to aboutus.html */
+.aboutus-animation {
+  width: 50%;
+  height: 100vh; /* Set height to full viewport height */
+  background-color: #f0f0f0; /* Light gray background */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px; /* Adjust padding as needed */
 }
 
 /* Menu Button */
@@ -164,22 +221,6 @@ body {
   z-index: 999; /* Ensure the footer is above the animation */
 }
 
-/* Ensure proper viewport behavior */
-meta[name="viewport"] {
-  width: device-width;
-  initial-scale: 1.0;
-  maximum-scale: 1.0;
-  user-scalable: no;
-}
-
-.menu {
-  transition: transform 0.3s ease-in-out;
-  transform: translateX(100%);
-}
-
-.menu.active {
-  transform: translateX(0);
-}
 
 /* Mobile Optimization */
 @media screen and (max-width: 768px) {
