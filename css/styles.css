@@ -1,0 +1,273 @@
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Hide overflow to prevent scrolling */
+  font-family: 'Orbitron', sans-serif; /* Use Orbitron font */
+}
+
+/* Contact Information */
+.contact-info {
+  position: fixed;
+  top: 450px; /* Adjust the top position */
+  left: 100px; /* Adjust the left position as needed */
+  font-size: 18px; /* Set the font size */
+  color: #086fff; /* Same color as navigation */
+  font-family: 'Orbitron', sans-serif; /* Use Orbitron font */
+  z-index: 9999; /* Ensure contact info is above other elements */
+}
+
+/* Animation Container */
+.animation-container {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 30px); /* Adjust this to match your desired height */
+  background-image: url('image/Dubal.gif'); /* Background image URL */
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  z-index: 1; /* Ensure the animation is behind the message */
+}
+
+/* Menu Button */
+.menu-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 9999; /* Ensure the menu button is above other elements */
+  font-size: 16px; /* Set the font size */
+  font-family: 'Orbitron', sans-serif; /* Use Orbitron font */
+}
+
+/* Menu Button Description */
+.menu-button-description {
+  display: none; /* Initially hidden */
+  position: fixed;
+  top: 10px; /* Adjust the top position */
+  right: 20px;
+  color: #005cdd; /* Blue gray color */
+  font-size: 18px;
+  font-family: 'Orbitron', sans-serif; /* Use Orbitron font */
+  z-index: 9999; /* Ensure the menu button description is above other elements */
+}
+
+/* Menu */
+.menu {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 200px; /* Adjust the width as needed */
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+  color: #fff;
+  padding: 20px;
+  box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.5);
+  display: none; /* Initially hidden */
+  z-index: 9998; /* Ensure the menu is above other elements except the menu button */
+  font-family: 'Orbitron', sans-serif; /* Use Orbitron font */
+}
+
+/* Menu List */
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 70px 0 0; /* Add margin to the top */
+}
+
+/* Menu List Item */
+.menu ul li {
+  margin-bottom: 20px; /* Increase the margin to move the options down */
+  font-size: 16px; /* Set the font size */
+}
+
+/* Menu List Item Link */
+.menu ul li a {
+  color: #ffffff; /* Change color to white */
+  text-decoration: none; /* Remove underline */
+}
+
+/* Menu List Item Link Hover */
+.menu ul li a:hover {
+  color: #65758b; /* Change color to blue gray on hover */
+}
+
+/* Mission Statement */
+.mission-statement {
+  margin-top: 280px; /* Adjust the top margin as needed */
+  font-size: 14px; /* Set the font size */
+  color: #666; /* Light gray color */
+}
+
+/* Welcome Message */
+.welcome-message {
+  position: fixed;
+  top: 200px; /* Adjust the top position */
+  left: 100px; /* Adjust the left position as needed */
+  transform: translateY(-50%);
+  font-size: 22px; /* Decrease the font size */
+  color: #666; /* Gray color */
+  text-transform: uppercase; /* Convert text to uppercase */
+  z-index: 999; /* Ensure the message is behind the animation */
+  font-family: 'Orbitron', sans-serif; /* Use Orbitron font */
+}
+
+/* Company Name */
+.company-name {
+  position: fixed;
+  top: 160px; /* Adjust the top position */
+  left: 100px; /* Adjust the left position as needed */
+  font-size: 60px; /* Set the font size */
+  color: #fff; /* White color */
+  z-index: 999; /* Ensure the company name is above the animation */
+  font-family: 'Orbitron', sans-serif; /* Use Orbitron font */
+}
+
+/* Motto */
+.motto {
+  position: fixed;
+  top: 280px; /* Adjust the top position */
+  left: 100px; /* Adjust the left position as needed */
+  font-size: 25px; /* Set the font size */
+  color: #fff; /* White color */
+  z-index: 999; /* Ensure the motto is above the animation */
+  font-family: 'Orbitron', sans-serif; /* Use Orbitron font */
+}
+
+/* Address */
+.address {
+  position: fixed;
+  top: 370px; /* Adjust the top position */
+  left: 100px; /* Adjust the left position as needed */
+  font-size: 18px; /* Set the font size */
+  color: #666; /* Gray color */
+  z-index: 999; /* Ensure the address is above the animation */
+  font-family: 'Orbitron', sans-serif; /* Use Orbitron font */
+}
+
+/* Footer */
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #65758b; /* Blue gray color */
+  color: #fff; /* White color */
+  text-align: center;
+  padding: 10px 0;
+  font-size: 16px;
+  font-family: 'Orbitron', sans-serif; /* Use Orbitron font */
+  z-index: 999; /* Ensure the footer is above the animation */
+}
+
+/* Ensure proper viewport behavior */
+meta[name="viewport"] {
+  width: device-width;
+  initial-scale: 1.0;
+  maximum-scale: 1.0;
+  user-scalable: no;
+}
+
+.menu {
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(100%);
+}
+
+.menu.active {
+  transform: translateX(0);
+}
+
+/* Mobile Optimization */
+@media screen and (max-width: 768px) {
+  /* General content scaling */
+  .company-name {
+    top: 70px;
+    left: 20px;
+    font-size: 2rem; /* Using relative units */
+    line-height: 1.2;
+  }
+
+  .motto {
+    top: 160px;
+    left: 20px;
+    font-size: 1rem;
+    max-width: 90%;
+  }
+
+  .welcome-message {
+    top: 60px;
+    left: 20px;
+    font-size: 0.9rem;
+  }
+
+  .address {
+    top: 240px;
+    left: 20px;
+    font-size: 0.8rem;
+  }
+
+  .contact-info {
+    top: 305px;
+    left: 20px;
+    font-size: 0.7rem;
+  }
+
+  .menu {
+    width: 85%; /* Adjust width to leave some space on right */
+    right: 0;
+    left: auto; /* Ensure right alignment */
+    padding: 15px;
+    transform: none; /* Remove any existing transforms */
+  }
+
+  .menu ul {
+    margin: 40px 0 0;
+    padding-left: 15px; /* Add left padding for content */
+  }
+
+  .menu ul li a {
+    white-space: normal;
+    word-break: break-word;
+  }
+
+  .menu-button {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+    bottom: 15px;
+    right: 15px;
+  }
+
+  .menu-button-description {
+    font-size: 0.8rem;
+    right: 15px;
+  }
+
+  .mission-statement {
+    margin-top: 120px;
+    font-size: 0.6rem;
+    line-height: 1.5;
+  }
+
+  /* Footer adjustments */
+  .footer {
+    font-size: 0.7rem;
+    padding: 8px 0;
+  }
+
+  /* Animation container */
+  .animation-container {
+    height: 100vh;
+    background-position: center;
+  }
+}
+
+/* Optional: Add these for better text rendering on mobile */
+body {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+}
