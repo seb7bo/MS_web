@@ -19,6 +19,15 @@ body {
   /* Add other styles specific to aboutus.html */
 }
 
+/* Styles specific to privacy.html */
+.privacy-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
 /* Title Styling */
 .big-blue-text {
   font-size: 36px; /* Adjust the font size */
@@ -72,6 +81,11 @@ body {
   background-repeat: no-repeat;
   overflow: hidden;
   z-index: 1; /* Ensure the animation is behind the message */
+}
+
+.big-text-container {
+  width: 80%;
+  text-align: center;
 }
 
 /* Animation Container specific to aboutus.html */
@@ -128,6 +142,12 @@ body {
   display: none; /* Initially hidden */
   z-index: 9998; /* Ensure the menu is above other elements except the menu button */
   font-family: 'Orbitron', sans-serif; /* Use Orbitron font */
+}
+
+.big-text {
+  font-size: 10px;
+  color: #005cdd;
+  white-space: pre-line; /* Preserve whitespace and line breaks */
 }
 
 /* Menu List */
