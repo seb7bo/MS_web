@@ -19,10 +19,9 @@ window.onload = function() {
 };
 
 // JavaScript function for the typewriter animation
-const text1 = "Nos especializamos en el suministro de materiales y equipos de alta calidad para proyectos industriales eléctricos y petroquímicos. Ofrecemos una amplia gama de productos, desde cables eléctricos y transformadores hasta válvulas y tuberías, todo cumpliendo con los más altos estándares de calidad y seguridad.";
-const text2 = "En nuestra empresa, también ofrecemos una amplia gama de insumos médicos y de salud, desde equipos de diagnóstico hasta suministros de primeros auxilios. Trabajamos con los principales fabricantes del mercado y nos aseguramos de que nuestros productos cumplan con altos estándares de calidad y seguridad.";
-const text3 = "Nuestro equipo de expertos altamente capacitados cuenta con amplia experiencia en el ámbito contable, fiscal y laboral, y se asegura de mantenerse actualizado sobre las leyes y regulaciones aplicables en cada área. Ofrecemos una amplia gama de servicios contactanos para mas información.";
-
+const text1 = "Somos proveedores líderes en equipamiento industrial de alto rendimiento para los sectores eléctrico y petroquímico. Nuestra especialización abarca el diseño, suministro e implementación de motores eléctricos asincrónicos y sincrónicos, disponibles en tensiones media y baja, adaptados a las exigencias técnicas de proyectos complejos.";
+const text2 = "Cada producto y solución que ofrecemos cumple rigurosamente con los más altos estándares internacionales de calidad, eficiencia energética y seguridad industrial, garantizando durabilidad y óptimo funcionamiento en entornos críticos. ";
+const text3 = "Trabajamos con un enfoque integral, respaldado por certificaciones globales y un equipo técnico especializado, para brindar soporte desde la fase de planificación hasta la puesta en marcha. Confíe en nosotros para impulsar sus proyectos con tecnología confiable, innovación estratégica y compromiso con la excelencia.";
 let index1 = 0;
 let index2 = 0;
 let index3 = 0;
