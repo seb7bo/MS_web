@@ -83,6 +83,18 @@ body {
   z-index: 1; /* Ensure the animation is behind the message */
 }
 
+/* Default motors-animation styles */
+.motors-animation {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 30px); /* Default height */
+  background-image: url('../image/motors.png'); /* Default background image */
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  z-index: 1; /* Ensure the animation is behind other elements */
+}
+
 .big-text-container {
   width: 80%;
   text-align: center;
@@ -241,7 +253,6 @@ body {
   z-index: 999; /* Ensure the footer is above the animation */
 }
 
-
 /* Mobile Optimization */
 @media screen and (max-width: 768px) {
   /* General content scaling */
@@ -323,6 +334,12 @@ body {
   .animation-container {
     height: 100vh;
     background-position: center;
+  }
+
+  /* Motors-animation for small devices */
+  .motors-animation {
+    background-image: url('../image/motors_small.png'); /* Smaller image for small devices */
+
   }
 }
 
