@@ -253,6 +253,26 @@ body {
   z-index: 999; /* Ensure the footer is above the animation */
 }
 
+/* Centered Link Styling */
+.centered-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh; /* Center vertically within half the viewport height */
+  text-align: center;
+}
+
+.centered-link a {
+  font-size: 24px; /* Adjust font size */
+  color: #005cdd; /* Blue color */
+  text-decoration: none; /* Remove underline */
+  font-family: 'Orbitron', sans-serif; /* Use Orbitron font */
+}
+
+.centered-link a:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+
 /* Mobile Optimization */
 @media screen and (max-width: 768px) {
   /* General content scaling */
