@@ -359,7 +359,21 @@ body {
   /* Motors-animation for small devices */
   .motors-animation {
     background-image: url('../image/motors_small.png'); /* Smaller image for small devices */
+  }
 
+  /* Centered Link Styling for small devices */
+  .centered-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh; /* Adjust height for smaller screens */
+    text-align: center;
+  }
+
+  .centered-link a {
+    font-size: 20px; /* Slightly smaller font size for mobile */
+    color: #005cdd; /* Keep the blue color */
+    text-decoration: none; /* Remove underline */
   }
 }
 
