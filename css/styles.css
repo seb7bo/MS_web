@@ -273,6 +273,19 @@ body {
   text-decoration: underline; /* Add underline on hover */
 }
 
+/* Logo Container - position above welcome-message */
+.logo-container {
+  position: fixed;
+  top: 60px;   /* Adjust as needed */
+  left: 100px;  /* Align with welcome-message */
+  z-index: 1000; /* Above other elements */
+}
+
+.logo-marase {
+  width: 120px;   /* Adjust size as needed */
+  height: auto;
+}
+
 /* Mobile Optimization */
 @media screen and (max-width: 768px) {
   /* General content scaling */
@@ -374,6 +387,16 @@ body {
     font-size: 20px; /* Slightly smaller font size for mobile */
     color: #005cdd; /* Keep the blue color */
     text-decoration: none; /* Remove underline */
+  }
+
+  .logo-container {
+    top: 10px;
+    left: 20px;
+  }
+
+  .logo-marase {
+    width: 40px; /* Smaller logo for mobile */
+    height: auto;
   }
 }
 
