@@ -19,6 +19,15 @@ body {
   /* Add other styles specific to aboutus.html */
 }
 
+/* Styles specific to industrialproducts.html */
+.industrialproducts-body{
+  overflow: auto; /* Hide overflow to prevent scrolling */
+  display: flex;
+  justify-content: space-between;
+  /* Add other styles specific to aboutus.html */
+}
+
+
 /* Styles specific to privacy.html */
 .privacy-body {
   display: flex;
@@ -284,6 +293,41 @@ body {
 .logo-marase {
   width: 120px;   /* Adjust size as needed */
   height: auto;
+}
+
+/* Product Cards Layout */
+.products-section {
+  padding: 40px 20px 100px 20px;
+}
+
+.category-title {
+  margin-top: 40px;
+  color: #005cdd;
+  font-size: 28px;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.product-cards {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.product-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  padding: 20px;
+  width: 220px;
+  text-align: center;
+}
+
+.product-image {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 12px;
 }
 
 /* Mobile Optimization */
