@@ -14,19 +14,20 @@
   <div class="big-text" id="big-text"></div>
 </div>
 
-<button class="menu-button" onclick="toggleMenu()">Menu</button>
-<p class="menu-button-description" id="menu-description">Navigation</p>
+<button class="menu-button" onclick="toggleMenu()" data-en="Menu">Menu</button>
+<p class="menu-button-description" id="menu-description" data-en="Navigation">Navigation</p>
 <div class="menu" id="menu">
   <ul>
-    <li><a href="index.html">Inicio</a></li>
-    <li><a href="aboutus.html">Acerca de nosotros</a></li>
-    <li><a href="industrialproducts.html">Productos Industrial</a></li>
-    <li><a href="services.html">Servicios</a></li>
-    <li><a href="contacto.html">Contacto</a></li>
-    <li><a href="privacy.html">Aviso de Privacidad</a></li>
+    <li><a href="index.html" data-en="Home">Inicio</a></li>
+    <li><a href="aboutus.html" data-en="About Us">Acerca de nosotros</a></li>
+    <li><a href="industrialproducts.html" data-en="Industrial Products">Productos Industrial</a></li>
+    <li><a href="services.html" data-en="Services">Servicios</a></li>
+    <li><a href="contacto.html" data-en="Contact">Contacto</a></li>
+    <li><a href="privacy.html" data-en="Privacy Policy">Aviso de Privacidad</a></li>
   </ul>
+  <button id="lang-toggle" class="menu-lang-button" onclick="toggleLanguage()">EN</button>
   <div class="mission-statement">
-    <p>Nuestra misión es proporcionar soluciones de alta calidad y seguridad en suministros eléctricos , satisfaciendo las necesidades específicas de cada cliente. Nos esforzamos por ser líderes en el mercado y superar las expectativas de nuestros clientes a través de la excelencia en el servicio y la atención al cliente.</p>
+    <p data-en="Our mission is to provide high-quality and safe solutions in electrical supplies, meeting each customer's specific needs. We strive to be market leaders and exceed expectations through excellence in service and customer care.">Nuestra misión es proporcionar soluciones de alta calidad y seguridad en suministros eléctricos , satisfaciendo las necesidades específicas de cada cliente. Nos esforzamos por ser líderes en el mercado y superar las expectativas de nuestros clientes a través de la excelencia en el servicio y la atención al cliente.</p>
   </div>
 </div>
 
@@ -34,6 +35,7 @@
   <p>© Copyright MARASE SUPPLY 2024</p>
 </div>
 
+<script src="js/scripts.js"></script>
 <script>
   function toggleMenu() {
     var menu = document.getElementById("menu");
@@ -99,9 +101,13 @@ Si tiene alguna pregunta, duda o comentario respecto al presente Aviso de Privac
     type();
   }
 
-  window.onload = function() {
+  document.addEventListener('DOMContentLoaded', function() {
     typeWriter();
-  };
+    var saved = localStorage.getItem('site-lang') || 'es';
+    if (typeof applyLanguage === 'function') applyLanguage(saved);
+    var langToggle = document.getElementById('lang-toggle');
+    if (langToggle) langToggle.innerText = (saved === 'en') ? 'ES' : 'EN';
+  });
 </script>
 
 </body>

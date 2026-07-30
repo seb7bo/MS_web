@@ -268,6 +268,22 @@ body {
   font-family: 'Orbitron', sans-serif; /* Use Orbitron font */
 }
 
+/* Language toggle inside menu */
+.menu-lang-button {
+  display: inline-block;
+  margin-top: 12px;
+  background: #ffffff22;
+  color: #fff;
+  border: 1px solid #ffffff33;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.menu-lang-button:hover {
+  background: #ffffff33;
+}
+
 .big-text {
   font-size: 10px;
   color: #005cdd;

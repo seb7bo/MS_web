@@ -13,6 +13,12 @@ function toggleMenu() {
 
 // Start the typewriter animations when the page loads
 window.onload = function() {
+  // Initialize language from localStorage (default 'es')
+  var savedLang = localStorage.getItem('site-lang') || 'es';
+  applyLanguage(savedLang);
+  var langToggle = document.getElementById('lang-toggle');
+  if (langToggle) langToggle.innerText = (savedLang === 'en') ? 'ES' : 'EN';
+
   typeWriter();
   setTimeout(typeWriter2, 700); // Start the second typewriter animation sooner
   setTimeout(typeWriter3, 1400); // Start the third typewriter animation sooner
@@ -48,4 +54,24 @@ function typeWriter3() {
     index3++;
     setTimeout(typeWriter3, 12); // Faster typing speed (milliseconds)
   }
+}
+
+// Language toggle utilities
+function applyLanguage(lang) {
+  document.querySelectorAll('[data-en]').forEach(function(el) {
+    if (!el.getAttribute('data-es')) {
+      el.setAttribute('data-es', el.innerText);
+    }
+    el.innerText = (lang === 'en') ? el.getAttribute('data-en') : el.getAttribute('data-es');
+  });
+  document.documentElement.setAttribute('lang', lang);
+  localStorage.setItem('site-lang', lang);
+}
+
+function toggleLanguage() {
+  var current = document.documentElement.getAttribute('lang') || 'es';
+  var next = (current === 'es') ? 'en' : 'es';
+  applyLanguage(next);
+  var langToggle = document.getElementById('lang-toggle');
+  if (langToggle) langToggle.innerText = (next === 'en') ? 'ES' : 'EN';
 }
