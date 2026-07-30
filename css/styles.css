@@ -390,7 +390,7 @@ body {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  z-index: 9999; /* Ensure the menu button is above other elements */
+  z-index: 10000; /* Keep behind the menu bar when menu is open */
   font-size: 16px; /* Set the font size */
   font-family: 'Orbitron', sans-serif; /* Use Orbitron font */
 }
@@ -404,7 +404,7 @@ body {
   color: #005cdd; /* Blue gray color */
   font-size: 18px;
   font-family: 'Orbitron', sans-serif; /* Use Orbitron font */
-  z-index: 9999; /* Ensure the menu button description is above other elements */
+  z-index: 10000; /* Keep description under the menu bar */
 }
 
 /* Menu */
@@ -419,7 +419,7 @@ body {
   padding: 20px;
   box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.5);
   display: none; /* Initially hidden */
-  z-index: 9998; /* Ensure the menu is above other elements except the menu button */
+  z-index: 10001; /* Ensure the menu is above the menu button */
   font-family: 'Orbitron', sans-serif; /* Use Orbitron font */
 }
 
