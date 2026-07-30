@@ -62,7 +62,11 @@ function applyLanguage(lang) {
     if (!el.getAttribute('data-es')) {
       el.setAttribute('data-es', el.innerText);
     }
-    el.innerText = (lang === 'en') ? el.getAttribute('data-en') : el.getAttribute('data-es');
+    var text = (lang === 'en') ? el.getAttribute('data-en') : el.getAttribute('data-es');
+    el.innerText = text;
+    if (el.hasAttribute('data-text')) {
+      el.setAttribute('data-text', text);
+    }
   });
   document.documentElement.setAttribute('lang', lang);
   localStorage.setItem('site-lang', lang);
