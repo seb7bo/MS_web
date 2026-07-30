@@ -243,10 +243,16 @@ body {
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  display: inline-block; /* ensure width/height apply */
+  display: inline-flex; /* ensure width/height apply */
+  align-items: center;
+  justify-content: center;
   text-align: center;
   vertical-align: middle;
   overflow: hidden;
+}
+
+.button-49 {
+  z-index: 10000;
 }
 
 .button-49:after {
@@ -268,6 +274,7 @@ body {
   background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #FF013C 5%);
   text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
   clip-path: var(--slice-0);
+  pointer-events: none;
 }
 
 .button-49:hover:after {
