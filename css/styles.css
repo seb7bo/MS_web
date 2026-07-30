@@ -30,11 +30,17 @@ body {
 
 /* Styles specific to privacy.html */
 .privacy-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  display: block;
+  min-height: 100vh;
+  padding: 24px 16px 40px;
   background-color: #f0f0f0;
+  box-sizing: border-box;
+}
+
+.big-text-container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
 }
 
 /* Title Styling */
@@ -440,9 +446,17 @@ body {
 }
 
 .big-text {
-  font-size: 10px;
+  font-size: 0.95rem;
   color: #005cdd;
   white-space: pre-line; /* Preserve whitespace and line breaks */
+  line-height: 1.6;
+  letter-spacing: 0.01em;
+  max-width: 100%;
+  word-break: break-word;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
 }
 
 /* Menu List */
@@ -625,6 +639,11 @@ body {
     left: 20px;
     font-size: 2rem; /* Using relative units */
     line-height: 1.2;
+  }
+
+  .big-text {
+    font-size: 0.9rem;
+    padding: 16px;
   }
 
   .motto {
