@@ -14,8 +14,8 @@ function toggleMenu() {
 // Start the typewriter animations when the page loads
 window.onload = function() {
   typeWriter();
-  setTimeout(typeWriter2, 2000); // Start the second typewriter animation after 2 seconds
-  setTimeout(typeWriter3, 4000); // Start the third typewriter animation after 4 seconds
+  setTimeout(typeWriter2, 700); // Start the second typewriter animation sooner
+  setTimeout(typeWriter3, 1400); // Start the third typewriter animation sooner
 };
 
 // JavaScript function for the typewriter animation
@@ -30,7 +30,7 @@ function typeWriter() {
   if (index1 < text1.length) {
     document.getElementById("typewriter-text").innerHTML += text1.charAt(index1);
     index1++;
-    setTimeout(typeWriter, 50); // Adjust typing speed (milliseconds)
+    setTimeout(typeWriter, 12); // Faster typing speed (milliseconds)
   }
 }
 
@@ -38,7 +38,7 @@ function typeWriter2() {
   if (index2 < text2.length) {
     document.getElementById("typewriter-text2").innerHTML += text2.charAt(index2);
     index2++;
-    setTimeout(typeWriter2, 50); // Adjust typing speed (milliseconds)
+    setTimeout(typeWriter2, 12); // Faster typing speed (milliseconds)
   }
 }
 
@@ -46,6 +46,6 @@ function typeWriter3() {
   if (index3 < text3.length) {
     document.getElementById("typewriter-text3").innerHTML += text3.charAt(index3);
     index3++;
-    setTimeout(typeWriter3, 50); // Adjust typing speed (milliseconds)
+    setTimeout(typeWriter3, 12); // Faster typing speed (milliseconds)
   }
 }
