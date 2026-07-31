@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>MARASE Supply</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Orbitron&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swa">
 <link rel="stylesheet" href="css/styles.css">
 <link rel="icon" type="image/svg+xml" href="image/logogold.svg">
 </head>
@@ -38,21 +38,21 @@
   <p data-en="Industrial supplies">Suministros Industriales</p>
 </div>
 
-<!-- Menu Button -->
-<button class="menu-button" onclick="toggleMenu()" data-en="Menu">Menu</button>
-<!-- Menu Button Description -->
-<p class="menu-button-description" id="menu-description" data-en="Navigation">Navigation</p>
 <!-- Menu -->
 <div class="menu" id="menu">
-  <ul>
+  <button class="menu-toggle" onclick="toggleMobileMenu()" aria-expanded="false" aria-controls="menu-links">☰ Menu</button>
+  <ul id="menu-links">
+    <li class="menu-logo-item"><a href="index.html"><img src="image/logogold.svg" alt="MARASE Supply Logo" class="menu-logo"></a></li>
     <li><a href="index.html" data-en="Home">Inicio</a></li>
     <li><a href="aboutus.html" data-en="About Us">Acerca de nosotros</a></li>
     <li><a href="industrialproducts.html" data-en="Industrial Products">Productos Industrial</a></li>
     <li><a href="services.html" data-en="Services">Servicios</a></li>
     <li><a href="contacto.html" data-en="Contact">Contacto</a></li>
-    <li><a href="privacy.html" data-en="Privacy Policy">Aviso de Privacidad</a></li>
+    <li>
+      <a href="privacy.html" data-en="Privacy Policy">Aviso de Privacidad</a>
+      <button id="lang-toggle" class="menu-lang-button" onclick="toggleLanguage()">EN</button>
+    </li>
   </ul>
-  <button id="lang-toggle" class="menu-lang-button" onclick="toggleLanguage()">EN</button>
   <!-- Mission Statement -->
   <div class="mission-statement">
     <p data-en="Our mission is to provide high-quality and safe solutions in electrical supplies, meeting each customer's specific needs. We strive to be market leaders and exceed expectations through excellence in service and customer care.">Nuestra misión es proporcionar soluciones de alta calidad y seguridad en suministros eléctricos , satisfaciendo las necesidades específicas de cada cliente. Nos esforzamos por ser líderes en el mercado y superar las expectativas de nuestros clientes a través de la excelencia en el servicio y la atención al cliente.</p>

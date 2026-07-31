@@ -1,13 +1,20 @@
-// JavaScript function to toggle the menu visibility
+// JavaScript function to keep the menu visible
 function toggleMenu() {
   var menu = document.getElementById("menu");
-  var menuDescription = document.getElementById("menu-description");
-  if (menu.style.display === "block") {
-    menu.style.display = "none";
-    menuDescription.style.display = "none"; // Hide the description when menu is closed
-  } else {
+  if (menu) {
     menu.style.display = "block";
-    menuDescription.style.display = "block"; // Show the description when menu is opened
+  }
+}
+
+function toggleMobileMenu() {
+  var menu = document.getElementById("menu");
+  if (menu) {
+    menu.classList.toggle("open");
+    var toggle = menu.querySelector('.menu-toggle');
+    if (toggle) {
+      var isOpen = menu.classList.contains("open");
+      toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    }
   }
 }
 

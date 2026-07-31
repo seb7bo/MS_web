@@ -387,59 +387,46 @@ body {
 
 /* Menu Button */
 .menu-button {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #000;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  z-index: 10002; /* Keep the button above the menu so it is always available */
-  font-size: 16px; /* Set the font size */
-  font-family: 'Orbitron', sans-serif; /* Use Orbitron font */
+  display: none;
 }
 
 /* Menu Button Description */
 .menu-button-description {
-  display: none; /* Initially hidden */
-  position: fixed;
-  top: 10px; /* Adjust the top position */
-  right: 20px;
-  color: #005cdd; /* Blue gray color */
-  font-size: 18px;
-  font-family: 'Orbitron', sans-serif; /* Use Orbitron font */
-  z-index: 10002; /* Keep description above the menu too */
+  display: none;
 }
 
 /* Menu */
 .menu {
   position: fixed;
   top: 0;
-  bottom: 0;
+  left: 0;
   right: 0;
-  width: 200px; /* Adjust the width as needed */
-  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
   color: #fff;
-  padding: 20px;
-  box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.5);
-  display: none; /* Initially hidden */
-  z-index: 10001; /* Ensure the menu is below the button */
-  font-family: 'Orbitron', sans-serif; /* Use Orbitron font */
+  padding: 12px 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+  display: block;
+  z-index: 10001;
+  font-family: 'Orbitron', sans-serif;
+  box-sizing: border-box;
 }
 
-/* Language toggle inside menu */
-.menu-lang-button {
-  display: inline-block;
-  margin-top: 12px;
+.menu-toggle {
+  display: none;
   background: #ffffff22;
-  color: #fff;
   border: 1px solid #ffffff33;
-  padding: 6px 10px;
+  color: #fff;
+  padding: 8px 12px;
   border-radius: 6px;
   cursor: pointer;
   font-size: 14px;
+  line-height: 1.2;
+  position: relative;
+  z-index: 10002;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.04em;
 }
 .menu-lang-button:hover {
   background: #ffffff33;
@@ -463,19 +450,31 @@ body {
 .menu ul {
   list-style: none;
   padding: 0;
-  margin: 70px 0 0; /* Add margin to the top */
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px 24px;
 }
 
 /* Menu List Item */
 .menu ul li {
-  margin-bottom: 20px; /* Increase the margin to move the options down */
-  font-size: 16px; /* Set the font size */
+  margin: 0;
+  font-size: 16px;
 }
 
 /* Menu List Item Link */
 .menu ul li a {
-  color: #ffffff; /* Change color to white */
-  text-decoration: none; /* Remove underline */
+  color: #ffffff;
+  text-decoration: none;
+  display: inline-block;
+  padding: 4px 0;
+}
+
+.menu ul li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 /* Menu List Item Link Hover */
@@ -483,11 +482,19 @@ body {
   color: #65758b; /* Change color to blue gray on hover */
 }
 
+.menu-logo-item {
+  padding: 0;
+}
+
+.menu-logo {
+  width: 36px;
+  height: auto;
+  display: block;
+}
+
 /* Mission Statement */
 .mission-statement {
-  margin-top: 280px; /* Adjust the top margin as needed */
-  font-size: 14px; /* Set the font size */
-  color: #666; /* Light gray color */
+  display: none;
 }
 
 /* Welcome Message */
@@ -586,7 +593,7 @@ body {
 /* Logo Container - position above welcome-message */
 .logo-container {
   position: fixed;
-  top: 60px;   /* Adjust as needed */
+  top: 65px;   /* Adjust as needed */
   left: 100px;  /* Align with welcome-message */
   z-index: 1000; /* Above other elements */
 }
@@ -633,9 +640,46 @@ body {
 
 /* Mobile Optimization */
 @media screen and (max-width: 768px) {
+  .menu-toggle {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    min-width: 110px;
+  }
+
+  .menu {
+    padding: 12px 15px;
+  }
+
+  .menu ul {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    margin-top: 12px;
+    padding-left: 4px;
+  }
+
+  .menu.open ul {
+    display: flex;
+  }
+
+  .menu ul li {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu-lang-button {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 4px;
+  }
+
   /* General content scaling */
   .company-name {
-    top: 70px;
+    top: 188px;
     left: 20px;
     font-size: 2rem; /* Using relative units */
     line-height: 1.2;
@@ -647,41 +691,40 @@ body {
   }
 
   .motto {
-    top: 160px;
+    top: 245px;
     left: 20px;
     font-size: 1rem;
     max-width: 90%;
   }
 
   .welcome-message {
-    top: 60px;
+    top: 205px;
     left: 20px;
     font-size: 0.9rem;
   }
 
   .address {
-    top: 240px;
+    top: 305px;
     left: 20px;
     font-size: 0.8rem;
   }
 
   .contact-info {
-    top: 305px;
+    top: 370px;
     left: 20px;
     font-size: 0.7rem;
   }
 
   .menu {
-    width: 85%; /* Adjust width to leave some space on right */
+    width: 100%;
+    left: 0;
     right: 0;
-    left: auto; /* Ensure right alignment */
-    padding: 15px;
-    transform: none; /* Remove any existing transforms */
+    padding: 12px 15px;
   }
 
   .menu ul {
-    margin: 40px 0 0;
-    padding-left: 15px; /* Add left padding for content */
+    margin: 0;
+    padding-left: 0;
   }
 
   .menu ul li a {
@@ -699,6 +742,11 @@ body {
   .menu-button-description {
     font-size: 0.8rem;
     right: 15px;
+  }
+
+  .logo-container {
+    top: 125px;
+    left: 20px;
   }
 
   .mission-statement {
@@ -740,12 +788,12 @@ body {
   }
 
   .logo-container {
-    top: 10px;
+    top: 125px;
     left: 20px;
   }
 
   .logo-marase {
-    width: 40px; /* Smaller logo for mobile */
+    width: 60px;
     height: auto;
   }
 }
