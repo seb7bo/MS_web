@@ -1,93 +1,330 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Privacy Policy</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swa">
-<link rel="stylesheet" href="css/styles.css">
-<link rel="icon" type="image/svg+xml" href="image/logogold.svg">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aviso de privacidad | MARASE Supply</title>
+<meta name="description" content="Aviso de privacidad para clientes de MARASE Supply, S.A. de C.V., conforme a la Ley Federal de Protección de Datos Personales en Posesión de los Particulares.">
+<meta property="og:title" content="Aviso de privacidad | MARASE Supply">
+<meta property="og:type" content="website">
+<link rel="icon" href="image/logogold.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..500&family=Archivo:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#12161C;--ink-2:#1B2129;--paper:#F2F1ED;--paper-2:#E6E4DD;
+  --gold:#B8912F;--gold-lt:#D8B75C;--muted:#6C6F73;
+  --line:rgba(18,22,28,.14);--line-dk:rgba(242,241,237,.16);
+  --serif:'Fraunces',Georgia,'Times New Roman',serif;
+  --sans:'Archivo','Helvetica Neue',Arial,sans-serif;
+  --pad:clamp(20px,5vw,80px);--maxw:1320px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:110px}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.65;
+  -webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:var(--maxw);margin:0 auto;padding-left:var(--pad);padding-right:var(--pad)}
+h1,h2,h3,.serif{font-family:var(--serif);font-weight:400;letter-spacing:-.015em;line-height:1.1}
+p{max-width:64ch}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+
+/* header */
+header{position:fixed;inset:0 0 auto 0;z-index:60;transition:background .4s ease}
+header.solid{background:rgba(18,22,28,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line-dk)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:24px;height:84px;max-width:var(--maxw);margin:0 auto;padding:0 var(--pad)}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--paper)}
+.brand .logo{height:38px;width:auto;display:block}
+.brand .wordmark{display:none;align-items:baseline;gap:10px}
+.brand.nologo .wordmark{display:flex}
+.brand .m{font-family:var(--serif);font-size:26px;letter-spacing:.02em}
+.brand .s{font-size:11px;letter-spacing:.34em;color:var(--gold-lt);text-transform:uppercase}
+nav.main{display:flex;align-items:center;gap:30px}
+nav.main a{color:rgba(242,241,237,.82);text-decoration:none;font-size:14.5px;padding:6px 0;position:relative}
+nav.main a::after{content:"";position:absolute;left:0;right:100%;bottom:0;height:1px;background:var(--gold-lt);transition:right .35s ease}
+nav.main a:hover::after,nav.main a.active::after{right:0}
+nav.main a.active{color:var(--paper)}
+.lang{display:flex;align-items:center;gap:6px;font-size:12.5px;letter-spacing:.14em;color:rgba(242,241,237,.5)}
+.lang button{background:none;border:0;color:inherit;font:inherit;letter-spacing:inherit;cursor:pointer;padding:4px}
+.lang button[aria-pressed="true"]{color:var(--gold-lt)}
+.burger{display:none;background:none;border:0;cursor:pointer;width:40px;height:40px;position:relative}
+.burger i{position:absolute;left:8px;right:8px;height:1.5px;background:var(--paper);transition:.3s}
+.burger i:nth-child(1){top:15px}.burger i:nth-child(2){bottom:15px}
+.burger.open i:nth-child(1){top:19px;transform:rotate(45deg)}
+.burger.open i:nth-child(2){bottom:19px;transform:rotate(-45deg)}
+
+/* hero */
+.phero{position:relative;background:var(--ink);color:var(--paper);padding:clamp(130px,17vh,180px) 0 clamp(44px,6vw,76px);overflow:hidden}
+.phero .grid-bg{position:absolute;inset:0;opacity:.5}
+.phero .glow{position:absolute;width:90vmax;height:90vmax;right:-38vmax;top:-48vmax;border-radius:50%;
+  background:radial-gradient(circle,rgba(184,145,47,.18) 0%,rgba(184,145,47,.05) 40%,transparent 68%)}
+.phero .watermark{position:absolute;right:-4%;bottom:-40%;width:min(34vw,440px);opacity:.05;pointer-events:none}
+.phero .inner{position:relative;max-width:var(--maxw);margin:0 auto;padding:0 var(--pad)}
+.crumb{font-size:12.5px;letter-spacing:.16em;color:rgba(242,241,237,.45);margin-bottom:22px}
+.crumb a{text-decoration:none}.crumb a:hover{color:var(--gold-lt)}
+.phero h1{font-size:clamp(36px,5.6vw,72px);margin:0 0 20px;max-width:15ch;font-weight:300}
+.phero p{color:rgba(242,241,237,.72);max-width:58ch;margin:0;font-size:clamp(15.5px,1.2vw,18px)}
+
+/* aviso legal */
+.band{padding:clamp(56px,8vw,104px) 0}
+.legal{display:grid;grid-template-columns:minmax(0,280px) minmax(0,1fr);gap:clamp(28px,6vw,90px);align-items:start}
+.toc{position:sticky;top:110px}
+.toc .label{font-size:11.5px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);margin-bottom:16px}
+.toc ol{list-style:none;padding:0;margin:0;border-top:1px solid var(--line);counter-reset:t}
+.toc li{counter-increment:t;border-bottom:1px solid var(--line)}
+.toc a{display:flex;gap:12px;padding:10px 2px;font-size:13.5px;color:var(--muted);text-decoration:none;transition:color .3s,padding .3s}
+.toc a::before{content:counter(t,decimal-leading-zero);font-family:var(--serif);color:var(--gold)}
+.toc a:hover{color:var(--ink);padding-left:8px}
+.doc{max-width:74ch}
+.doc .intro{font-size:clamp(16px,1.25vw,18px);color:#3B4048;margin:0 0 12px}
+.doc .note{font-size:13.5px;color:var(--muted);margin:0 0 8px}
+.doc section{padding:clamp(28px,3.5vw,42px) 0;border-top:1px solid var(--line)}
+.doc section:first-of-type{margin-top:clamp(22px,3vw,34px)}
+.doc h2{font-size:clamp(22px,2.4vw,30px);margin:0 0 18px;font-weight:300;display:flex;gap:16px;align-items:baseline}
+.doc h2 .n{font-size:.75em;color:var(--gold)}
+.doc p,.doc li{font-size:15.5px;color:#3B4048;max-width:none}
+.doc p{margin:0 0 14px}
+.doc ol{margin:0 0 14px;padding-left:22px}
+.doc li{margin-bottom:6px}
+.doc a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--gold)}
+.doc a:hover{color:var(--gold)}
+
+/* cta + footer */
+.cta{background:var(--ink);color:var(--paper)}
+.cta .inner{max-width:var(--maxw);margin:0 auto;padding:clamp(44px,6vw,80px) var(--pad);
+  display:flex;flex-wrap:wrap;gap:26px;align-items:center;justify-content:space-between}
+.cta h2{color:var(--paper);font-size:clamp(26px,3.3vw,44px);margin:0 0 10px;font-weight:300;max-width:18ch}
+.cta p{color:rgba(242,241,237,.68);margin:0;max-width:46ch;font-size:15.5px}
+.btn{display:inline-flex;align-items:center;gap:12px;padding:15px 30px;border:1px solid var(--gold);color:var(--gold-lt);
+  text-decoration:none;font-size:14px;letter-spacing:.08em;transition:.35s}
+.btn:hover{background:var(--gold);color:var(--ink)}
+.btn.solid{background:var(--gold);color:var(--ink)}
+.btn.solid:hover{background:var(--gold-lt);border-color:var(--gold-lt)}
+footer{background:var(--ink);color:rgba(242,241,237,.66);padding:clamp(52px,7vw,84px) 0 32px;border-top:1px solid var(--line-dk)}
+.foot-grid{display:grid;grid-template-columns:minmax(0,1.4fr) repeat(2,minmax(0,1fr));gap:clamp(28px,5vw,64px)}
+footer .brand{color:var(--paper);margin-bottom:18px}
+footer .brand .logo{height:46px}
+footer p{font-size:14.5px;max-width:48ch;margin:0}
+footer h4{font-size:11.5px;letter-spacing:.26em;text-transform:uppercase;color:var(--gold);margin:0 0 16px;font-weight:500}
+footer ul{list-style:none;padding:0;margin:0}
+footer li{margin-bottom:10px}
+footer a{color:rgba(242,241,237,.66);text-decoration:none;font-size:14.5px}
+footer a:hover{color:var(--gold-lt)}
+.foot-bottom{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;margin-top:clamp(36px,5vw,60px);
+  padding-top:22px;border-top:1px solid var(--line-dk);font-size:12.5px;color:rgba(242,241,237,.42)}
+
+@media (max-width:1000px){
+  .legal{grid-template-columns:1fr}
+  .toc{position:static}
+  .foot-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:760px){
+  .burger{display:block}
+  nav.main{position:fixed;inset:84px 0 auto 0;background:rgba(18,22,28,.98);flex-direction:column;align-items:flex-start;
+    gap:0;padding:8px var(--pad) 28px;border-bottom:1px solid var(--line-dk);transform:translateY(-12px);opacity:0;
+    pointer-events:none;transition:.32s ease}
+  nav.main.open{transform:none;opacity:1;pointer-events:auto}
+  nav.main a{width:100%;padding:15px 0;border-bottom:1px solid var(--line-dk);font-size:17px}
+  .foot-grid{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+</style>
 </head>
-<body class="privacy-body">
+<body>
 
-<div class="big-text-container">
-  <div class="big-text" id="big-text">
-MARASE SUPPLY, S.A. DE C.V.
-AVISO DE PRIVACIDAD PARA CLIENTES
-En cumplimiento a lo previsto en la Ley Federal de Protección de Datos Personales en Posesión de los Particulares (en lo sucesivo la “Ley”),
-su Reglamento (en lo sucesivo el “Reglamento”) y los Lineamientos del Aviso de Privacidad publicados en el Diario Oficial de la Federación el 17 de enero de 2013 (en adelante los “Lineamientos”) nos permitimos informarle lo siguiente:
-
-1.- RESPONSABLE DE LOS DATOS PERSONALES
-MARASE SUPPLY, S.A. de C.V., (en lo sucesivo la "Sociedad"), señalando para efectos del presente Aviso de Privacidad el domicilio ubicado en Ocenao Mz77 Lt2, Colonia Del Mar, Tlahuac, C.P. 13270, Ciudad de México, México, será el responsable de los datos personales que le sean proporcionados por las personas físicas a quienes correspondan los mismos (en lo sucesivo el “Titular” o los “Titulares”).
-
-2.- DATOS PERSONALES QUE SE SOLICITAN DEL TITULAR
-Para las finalidades señaladas en el presente Aviso de Privacidad, la Sociedad recabará los siguientes datos personales del Titular: nombre, fecha de nacimiento, género, domicilio, correo electrónico, teléfono, clave de registro federal de contribuyentes y domicilio fiscal.
-Los Datos Personales de los Titulares se podrán recabar de las siguientes formas: i. cuando el Titular los proporcione personal o directamente y ii. cuando la Sociedad los obtenga de forma indirecta, por medio de fuentes de acceso público o transferencias.
-Cuando la Sociedad no haga del conocimiento de los Titulares el presente Aviso de Privacidad de manera directa o personal sino de forma indirecta, los Titulares cuentan con un plazo de 5 días hábiles, a partir de que les fue puesto a disposición el Aviso de Privacidad, para que, de ser el caso, manifiesten su oposición al tratamiento de sus Datos Personales que pretendan ser utilizados por la Sociedad para finalidades no necesarias para cumplir una relación jurídica con éste último, oposición que deberán manifestar de acuerdo a lo dispuesto en la sección 5 del presente Aviso de Privacidad, ya que, en caso de que los Titulares no manifiesten su oposición se entenderá que otorgan su consentimiento a la Sociedad.
-
-3.- FINALIDADES PARA LAS QUE SE RECABAN LOS DATOS PERSONALES
-Los Datos Personales del Titular recolectados por la Sociedad tendrán el uso que se describe a continuación: (i) identificar al Titular y sus hábitos de consumo; (ii) la venta de bienes y/o la prestación de servicios ofrecidos por la Sociedad a través de las sucursales y/o página de internet y/o “call center” de la Sociedad; (iii) entregar al Titular los bienes y/o servicios que este último adquiera y/o contrate (incluyendo entregas al domicilio); (iv) realizar la factura correspondiente a los bienes y/o servicios adquiridos por el Titular; y (v) atender oportunamente las quejas y/o sugerencias del Titular, finalidades que son necesarias para cumplir las obligaciones derivadas de la relación jurídica que tenga la Sociedad con el Titular.
-Asimismo, dentro del uso que la Sociedad dará a los Datos Personales del Titular está: (i) informar al Titular de promociones, compras con beneficios y descuentos; (ii) proporcionar al Titular publicidad respecto a los bienes y/o servicios otorgados por la Sociedad y/o por sus empresas filiales, subsidiarias, controladoras, afiliadas y/o que pertenezcan al mismo grupo de control de la Sociedad; (iii) invitar al Titular a participar en redes sociales y atender sus solicitudes a través de las mismas; (iv) inscribir al Titular en el programa de lealtad de la Sociedad y (v) realizar prospección comercial, finalidades que no necesariamente se requieren para cumplir con las obligaciones derivadas de la relación jurídica que tenga la Sociedad con el Titular, por lo que, en caso de que el Titular no esté de acuerdo en que la Sociedad utilice sus Datos Personales para dichas finalidades deberá manifestar su oposición desmarcando la casilla para unirse al Programa de Recompensas y recibir promociones al momento de crear su cuenta, o bien, de acuerdo a lo dispuesto en la sección 5 del presente Aviso de Privacidad, ya que, en caso de que el Titular no manifieste su oposición se entenderá que otorga su consentimiento a la Sociedad.
-Una vez creada su cuenta, si desea manifestar su oposición para que sus Datos Personales sean tratados conforme a las finalidades que no son necesarias, podrá hacerlo en cualquier momento a través del correo info@marasesupply.com.
-
-4.- CONSENTIMIENTO DEL TITULAR
-Para efectos de lo dispuesto en la Ley y el Reglamento, el Titular manifiesta: (i) que el presente Aviso de Privacidad le ha sido dado a conocer por la Sociedad; y (ii) haber leído, entendido y acordado los términos expuestos en este Aviso de Privacidad, por lo que otorga su consentimiento para el tratamiento de sus Datos Personales.
-El Titular podrá revocar en cualquier momento el consentimiento otorgado a la Sociedad para el tratamiento de sus Datos Personales enviando un correo electrónico a info@marasesupply.com, a través del cual se le informará el procedimiento para realizarlo. Asimismo, el Titular podrá limitar el uso y divulgación de los Datos Personales del Titular enviando un correo electrónico a info@marasesupply.com.
-
-5.- DERECHOS DE ACCESO, RECTIFICACIÓN, CANCELACIÓN Y OPOSICIÓN
-El Titular tiene derecho de acceder a sus Datos Personales que posee la Sociedad, así como a rectificarlos en caso de ser inexactos o incompletos; cancelarlos cuando considere que no se requieren para alguna de las finalidades señaladas en el presente Aviso de Privacidad, estén siendo utilizados para finalidades no consentidas o haya finalizado la relación contractual o de servicio, y oponerse al tratamiento de los mismos para fines específicos.
-El ejercicio de los derechos de acceso, rectificación, cancelación y oposición o la revocación del consentimiento deberá efectuarse a través del envío de un correo electrónico a info@marasesupply.com y contener al menos: (i) nombre y domicilio u otro medio para comunicarle la respuesta a su solicitud; (ii) los documentos que acrediten su identidad o, en su caso, la representación legal del Titular; (iii) la descripción clara y precisa de los Datos Personales respecto de los que se busca ejercer alguno de los derechos antes mencionados; (iv) cualquier otro elemento o documento que facilite la localización de los Datos Personales del Titular y (v) en caso de solicitudes de rectificación de los Datos Personales, las modificaciones a realizarse y la documentación que sustente su petición.
-En caso de solicitudes de acceso a Datos Personales, la Sociedad procederá con la entrega de los Datos Personales previa acreditación de la identidad del solicitante o representante legal, según corresponda. El procedimiento se llevará a cabo conforme a los plazos señalados en la Ley y el Reglamento.
-
-6.- TRANSFERENCIAS DE DATOS PERSONALES
-La Sociedad podrá transferir los Datos Personales del Titular a empresas filiales, subsidiarias, controladoras, afiliadas y/o que pertenezcan al mismo grupo de control que la Sociedad, así como a terceros con los que la Sociedad contrate para la realización de las finalidades señaladas en el presente Aviso de Privacidad.
-Los terceros a los que se realicen estas transferencias deberán tener, por lo menos, las mismas medidas de seguridad que la Sociedad para el manejo de los Datos Personales del Titular y estarán obligados a mantener la confidencialidad de los Datos Personales del Titular.
-El Titular podrá manifestar su oposición a la transferencia de sus Datos Personales a terceros enviando un correo electrónico a info@marasesupply.com de acuerdo a lo dispuesto en la sección 5 del presente Aviso de Privacidad, ya que, en caso de que el Titular no manifieste su oposición se entenderá que otorga su consentimiento a la Sociedad.
-
-7.- MODIFICACIONES AL AVISO DE PRIVACIDAD
-La Sociedad se reserva el derecho de efectuar en cualquier momento modificaciones o actualizaciones al presente Aviso de Privacidad, para la atención de novedades legislativas, políticas internas o nuevos requerimientos para la prestación u ofrecimiento de nuestros servicios o productos. Estas modificaciones estarán disponibles al público a través de los siguientes medios: (i) anuncios visibles en nuestras oficinas; (ii) en nuestra página de internet (sección Aviso de Privacidad); (iii) o se las haremos llegar al último correo electrónico que nos haya proporcionado.
-
-8.- POLÍTICA DE USO DE COOKIES
-Las cookies son piezas de información que un sitio web transfiere al disco duro de una computadora del Titular con el fin de almacenar ciertos registros y preferencias. Las cookies, por sí solas, no permiten identificar al Titular personalmente. Sin embargo, la mayoría de los navegadores aceptan cookies automáticamente por lo que el Titular puede configurar su navegador para que no los acepte.
-Para desactivar las cookies debe seguir las siguientes instrucciones:
-1. Selecciona el menú “Herramientas” y luego “Opciones de Internet”.
-2. Haz clic en la pestaña de “Privacidad”.
-3. Elige el nivel de privacidad que deseas.
-4. Recuerda que algunos servicios pueden no funcionar correctamente si desactivas las cookies.
-5. Para más información puedes consultar la sección de “Ayuda” del navegador.
-
-9.- MEDIDAS DE SEGURIDAD
-La Sociedad ha adoptado los niveles de seguridad de protección de Datos Personales legalmente requeridos por la Ley y el Reglamento, y ha implementado medios y medidas técnicas a su alcance para evitar la pérdida, mal uso, alteración, acceso no autorizado y robo de los Datos Personales del Titular.
-
-10.- CONTACTO
-Si tiene alguna pregunta, duda o comentario respecto al presente Aviso de Privacidad, por favor contáctenos a través del correo electrónico info@marasesupply.com.
+<header id="hdr">
+  <div class="bar">
+    <a class="brand" href="index.html" aria-label="MARASE Supply — Inicio">
+      <img class="logo" src="image/logogold.svg" alt="MARASE Supply" onerror="this.closest('.brand').classList.add('nologo');this.remove()">
+      <span class="wordmark"><span class="m">MARASE</span><span class="s">Supply</span></span>
+    </a>
+    <nav class="main" id="nav">
+      <a href="index.html" data-en="Home">Inicio</a>
+      <a href="aboutus.html" data-en="About">Nosotros</a>
+      <a href="industrialproducts.html" data-en="Catalog">Catálogo</a>
+      <a href="services.html" data-en="Services">Servicios</a>
+      <a href="contacto.html" data-en="Contact">Contacto</a>
+    </nav>
+    <div style="display:flex;align-items:center;gap:14px">
+      <div class="lang" role="group" aria-label="Idioma">
+        <button type="button" data-lang="es" aria-pressed="true">ES</button><span>/</span><button type="button" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+      <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false"><i></i><i></i></button>
+    </div>
   </div>
-</div>
+</header>
 
-<div class="menu" id="menu">
-  <button class="menu-toggle" onclick="toggleMobileMenu()" aria-expanded="false" aria-controls="menu-links">☰ Menu</button>
-  <ul id="menu-links">
-    <li class="menu-logo-item"><a href="index.html"><img src="image/logogold.svg" alt="MARASE Supply Logo" class="menu-logo"></a></li>
-    <li><a href="index.html" data-en="Home">Inicio</a></li>
-    <li><a href="aboutus.html" data-en="About Us">Acerca de nosotros</a></li>
-    <li><a href="industrialproducts.html" data-en="Industrial Products">Productos Industrial</a></li>
-    <li><a href="services.html" data-en="Services">Servicios</a></li>
-    <li><a href="contacto.html" data-en="Contact">Contacto</a></li>
-    <li>
-      <a href="privacy.html" data-en="Privacy Policy">Aviso de Privacidad</a>
-      <button id="lang-toggle" class="menu-lang-button" onclick="toggleLanguage()">EN</button>
-    </li>
-  </ul>
-  <div class="mission-statement">
-    <p data-en="Our mission is to provide high-quality and safe solutions in electrical supplies, meeting each customer's specific needs. We strive to be market leaders and exceed expectations through excellence in service and customer care.">Nuestra misión es proporcionar soluciones de alta calidad y seguridad en suministros eléctricos , satisfaciendo las necesidades específicas de cada cliente. Nos esforzamos por ser líderes en el mercado y superar las expectativas de nuestros clientes a través de la excelencia en el servicio y la atención al cliente.</p>
+<section class="phero">
+  <svg class="grid-bg" aria-hidden="true" preserveAspectRatio="none">
+    <defs><pattern id="g" width="72" height="72" patternUnits="userSpaceOnUse">
+      <path d="M72 0H0V72" fill="none" stroke="rgba(242,241,237,.055)" stroke-width="1"/></pattern></defs>
+    <rect width="100%" height="100%" fill="url(#g)"/>
+  </svg>
+  <div class="glow" aria-hidden="true"></div>
+  <img class="watermark" src="image/logogold.svg" alt="" aria-hidden="true" onerror="this.remove()">
+  <div class="inner">
+    <div class="crumb"><a href="index.html" data-en="Home">Inicio</a> <span>/</span> <span data-en="Privacy notice">Aviso de privacidad</span></div>
+    <h1 data-en="Privacy notice for clients">Aviso de privacidad para clientes</h1>
+    <p>MARASE SUPPLY, S.A. de C.V.</p>
   </div>
-</div>
+</section>
 
-<div class="footer">
-  <p>© Copyright MARASE SUPPLY 2026</p>
-</div>
+<main>
+<section class="band">
+  <div class="wrap legal">
+    <aside class="toc">
+      <div class="label" data-en="Contents">Contenido</div>
+      <ol>
+        <li><a href="#s1" data-en="Data controller">Responsable</a></li>
+        <li><a href="#s2" data-en="Personal data collected">Datos que se solicitan</a></li>
+        <li><a href="#s3" data-en="Purposes">Finalidades</a></li>
+        <li><a href="#s4" data-en="Consent">Consentimiento</a></li>
+        <li><a href="#s5" data-en="ARCO rights">Derechos ARCO</a></li>
+        <li><a href="#s6" data-en="Transfers">Transferencias</a></li>
+        <li><a href="#s7" data-en="Changes">Modificaciones</a></li>
+        <li><a href="#s8" data-en="Cookies">Cookies</a></li>
+        <li><a href="#s9" data-en="Security">Seguridad</a></li>
+        <li><a href="#s10" data-en="Contact">Contacto</a></li>
+      </ol>
+    </aside>
 
-<script src="js/scripts.js"></script>
+    <article class="doc">
+      <p class="note" data-en="This notice is published in Spanish, which is its legally binding version.">Este aviso se publica en español, su versión con validez legal.</p>
+      <p class="intro">En cumplimiento a lo previsto en la Ley Federal de Protección de Datos Personales en Posesión de los Particulares (en lo sucesivo la “Ley”), su Reglamento (en lo sucesivo el “Reglamento”) y los Lineamientos del Aviso de Privacidad publicados en el Diario Oficial de la Federación el 17 de enero de 2013 (en adelante los “Lineamientos”) nos permitimos informarle lo siguiente:</p>
+
+      <section id="s1">
+        <h2><span class="n">01</span><span>Responsable de los datos personales</span></h2>
+        <p>MARASE SUPPLY, S.A. de C.V., (en lo sucesivo la "Sociedad"), señalando para efectos del presente Aviso de Privacidad el domicilio ubicado en Océano Mz77 Lt2, Colonia Del Mar, Tláhuac, C.P. 13270, Ciudad de México, México, será el responsable de los datos personales que le sean proporcionados por las personas físicas a quienes correspondan los mismos (en lo sucesivo el “Titular” o los “Titulares”).</p>
+      </section>
+
+      <section id="s2">
+        <h2><span class="n">02</span><span>Datos personales que se solicitan del Titular</span></h2>
+        <p>Para las finalidades señaladas en el presente Aviso de Privacidad, la Sociedad recabará los siguientes datos personales del Titular: nombre, fecha de nacimiento, género, domicilio, correo electrónico, teléfono, clave de registro federal de contribuyentes y domicilio fiscal.</p>
+        <p>Los Datos Personales de los Titulares se podrán recabar de las siguientes formas: i. cuando el Titular los proporcione personal o directamente y ii. cuando la Sociedad los obtenga de forma indirecta, por medio de fuentes de acceso público o transferencias.</p>
+        <p>Cuando la Sociedad no haga del conocimiento de los Titulares el presente Aviso de Privacidad de manera directa o personal sino de forma indirecta, los Titulares cuentan con un plazo de 5 días hábiles, a partir de que les fue puesto a disposición el Aviso de Privacidad, para que, de ser el caso, manifiesten su oposición al tratamiento de sus Datos Personales que pretendan ser utilizados por la Sociedad para finalidades no necesarias para cumplir una relación jurídica con éste último, oposición que deberán manifestar de acuerdo a lo dispuesto en la sección 5 del presente Aviso de Privacidad, ya que, en caso de que los Titulares no manifiesten su oposición se entenderá que otorgan su consentimiento a la Sociedad.</p>
+      </section>
+
+      <section id="s3">
+        <h2><span class="n">03</span><span>Finalidades para las que se recaban los datos personales</span></h2>
+        <p>Los Datos Personales del Titular recolectados por la Sociedad tendrán el uso que se describe a continuación: (i) identificar al Titular y sus hábitos de consumo; (ii) la venta de bienes y/o la prestación de servicios ofrecidos por la Sociedad a través de las sucursales y/o página de internet y/o “call center” de la Sociedad; (iii) entregar al Titular los bienes y/o servicios que este último adquiera y/o contrate (incluyendo entregas al domicilio); (iv) realizar la factura correspondiente a los bienes y/o servicios adquiridos por el Titular; y (v) atender oportunamente las quejas y/o sugerencias del Titular, finalidades que son necesarias para cumplir las obligaciones derivadas de la relación jurídica que tenga la Sociedad con el Titular.</p>
+        <p>Asimismo, dentro del uso que la Sociedad dará a los Datos Personales del Titular está: (i) informar al Titular de promociones, compras con beneficios y descuentos; (ii) proporcionar al Titular publicidad respecto a los bienes y/o servicios otorgados por la Sociedad y/o por sus empresas filiales, subsidiarias, controladoras, afiliadas y/o que pertenezcan al mismo grupo de control de la Sociedad; (iii) invitar al Titular a participar en redes sociales y atender sus solicitudes a través de las mismas; (iv) inscribir al Titular en el programa de lealtad de la Sociedad y (v) realizar prospección comercial, finalidades que no necesariamente se requieren para cumplir con las obligaciones derivadas de la relación jurídica que tenga la Sociedad con el Titular, por lo que, en caso de que el Titular no esté de acuerdo en que la Sociedad utilice sus Datos Personales para dichas finalidades deberá manifestar su oposición desmarcando la casilla para unirse al Programa de Recompensas y recibir promociones al momento de crear su cuenta, o bien, de acuerdo a lo dispuesto en la sección 5 del presente Aviso de Privacidad, ya que, en caso de que el Titular no manifieste su oposición se entenderá que otorga su consentimiento a la Sociedad.</p>
+        <p>Una vez creada su cuenta, si desea manifestar su oposición para que sus Datos Personales sean tratados conforme a las finalidades que no son necesarias, podrá hacerlo en cualquier momento a través del correo <a href="mailto:info@marasesupply.com">info@marasesupply.com</a>.</p>
+      </section>
+
+      <section id="s4">
+        <h2><span class="n">04</span><span>Consentimiento del Titular</span></h2>
+        <p>Para efectos de lo dispuesto en la Ley y el Reglamento, el Titular manifiesta: (i) que el presente Aviso de Privacidad le ha sido dado a conocer por la Sociedad; y (ii) haber leído, entendido y acordado los términos expuestos en este Aviso de Privacidad, por lo que otorga su consentimiento para el tratamiento de sus Datos Personales.</p>
+        <p>El Titular podrá revocar en cualquier momento el consentimiento otorgado a la Sociedad para el tratamiento de sus Datos Personales enviando un correo electrónico a <a href="mailto:info@marasesupply.com">info@marasesupply.com</a>, a través del cual se le informará el procedimiento para realizarlo. Asimismo, el Titular podrá limitar el uso y divulgación de los Datos Personales del Titular enviando un correo electrónico a <a href="mailto:info@marasesupply.com">info@marasesupply.com</a>.</p>
+      </section>
+
+      <section id="s5">
+        <h2><span class="n">05</span><span>Derechos de acceso, rectificación, cancelación y oposición</span></h2>
+        <p>El Titular tiene derecho de acceder a sus Datos Personales que posee la Sociedad, así como a rectificarlos en caso de ser inexactos o incompletos; cancelarlos cuando considere que no se requieren para alguna de las finalidades señaladas en el presente Aviso de Privacidad, estén siendo utilizados para finalidades no consentidas o haya finalizado la relación contractual o de servicio, y oponerse al tratamiento de los mismos para fines específicos.</p>
+        <p>El ejercicio de los derechos de acceso, rectificación, cancelación y oposición o la revocación del consentimiento deberá efectuarse a través del envío de un correo electrónico a <a href="mailto:info@marasesupply.com">info@marasesupply.com</a> y contener al menos: (i) nombre y domicilio u otro medio para comunicarle la respuesta a su solicitud; (ii) los documentos que acrediten su identidad o, en su caso, la representación legal del Titular; (iii) la descripción clara y precisa de los Datos Personales respecto de los que se busca ejercer alguno de los derechos antes mencionados; (iv) cualquier otro elemento o documento que facilite la localización de los Datos Personales del Titular y (v) en caso de solicitudes de rectificación de los Datos Personales, las modificaciones a realizarse y la documentación que sustente su petición.</p>
+        <p>En caso de solicitudes de acceso a Datos Personales, la Sociedad procederá con la entrega de los Datos Personales previa acreditación de la identidad del solicitante o representante legal, según corresponda. El procedimiento se llevará a cabo conforme a los plazos señalados en la Ley y el Reglamento.</p>
+      </section>
+
+      <section id="s6">
+        <h2><span class="n">06</span><span>Transferencias de datos personales</span></h2>
+        <p>La Sociedad podrá transferir los Datos Personales del Titular a empresas filiales, subsidiarias, controladoras, afiliadas y/o que pertenezcan al mismo grupo de control que la Sociedad, así como a terceros con los que la Sociedad contrate para la realización de las finalidades señaladas en el presente Aviso de Privacidad.</p>
+        <p>Los terceros a los que se realicen estas transferencias deberán tener, por lo menos, las mismas medidas de seguridad que la Sociedad para el manejo de los Datos Personales del Titular y estarán obligados a mantener la confidencialidad de los Datos Personales del Titular.</p>
+        <p>El Titular podrá manifestar su oposición a la transferencia de sus Datos Personales a terceros enviando un correo electrónico a <a href="mailto:info@marasesupply.com">info@marasesupply.com</a> de acuerdo a lo dispuesto en la sección 5 del presente Aviso de Privacidad, ya que, en caso de que el Titular no manifieste su oposición se entenderá que otorga su consentimiento a la Sociedad.</p>
+      </section>
+
+      <section id="s7">
+        <h2><span class="n">07</span><span>Modificaciones al Aviso de Privacidad</span></h2>
+        <p>La Sociedad se reserva el derecho de efectuar en cualquier momento modificaciones o actualizaciones al presente Aviso de Privacidad, para la atención de novedades legislativas, políticas internas o nuevos requerimientos para la prestación u ofrecimiento de nuestros servicios o productos. Estas modificaciones estarán disponibles al público a través de los siguientes medios: (i) anuncios visibles en nuestras oficinas; (ii) en nuestra página de internet (sección Aviso de Privacidad); (iii) o se las haremos llegar al último correo electrónico que nos haya proporcionado.</p>
+      </section>
+
+      <section id="s8">
+        <h2><span class="n">08</span><span>Política de uso de cookies</span></h2>
+        <p>Las cookies son piezas de información que un sitio web transfiere al disco duro de una computadora del Titular con el fin de almacenar ciertos registros y preferencias. Las cookies, por sí solas, no permiten identificar al Titular personalmente. Sin embargo, la mayoría de los navegadores aceptan cookies automáticamente por lo que el Titular puede configurar su navegador para que no los acepte.</p>
+        <p>Para desactivar las cookies debe seguir las siguientes instrucciones:</p>
+        <ol>
+          <li>Selecciona el menú “Herramientas” y luego “Opciones de Internet”.</li>
+          <li>Haz clic en la pestaña de “Privacidad”.</li>
+          <li>Elige el nivel de privacidad que deseas.</li>
+          <li>Recuerda que algunos servicios pueden no funcionar correctamente si desactivas las cookies.</li>
+          <li>Para más información puedes consultar la sección de “Ayuda” del navegador.</li>
+        </ol>
+      </section>
+
+      <section id="s9">
+        <h2><span class="n">09</span><span>Medidas de seguridad</span></h2>
+        <p>La Sociedad ha adoptado los niveles de seguridad de protección de Datos Personales legalmente requeridos por la Ley y el Reglamento, y ha implementado medios y medidas técnicas a su alcance para evitar la pérdida, mal uso, alteración, acceso no autorizado y robo de los Datos Personales del Titular.</p>
+      </section>
+
+      <section id="s10">
+        <h2><span class="n">10</span><span>Contacto</span></h2>
+        <p>Si tiene alguna pregunta, duda o comentario respecto al presente Aviso de Privacidad, por favor contáctenos a través del correo electrónico <a href="mailto:info@marasesupply.com">info@marasesupply.com</a>.</p>
+      </section>
+    </article>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap foot-grid">
+    <div>
+      <a class="brand" href="index.html" aria-label="MARASE Supply — Inicio">
+        <img class="logo" src="image/logogold.svg" alt="MARASE Supply" onerror="this.closest('.brand').classList.add('nologo');this.remove()">
+        <span class="wordmark"><span class="m">MARASE</span><span class="s">Supply</span></span>
+      </a>
+      <p data-en="Materials and articles related to the electrical sector. Industrial supply, measurement instruments and technical service across Mexico.">Materiales y artículos relacionados al sector eléctrico. Suministro industrial, instrumentación de medición y servicio técnico en todo México.</p>
+    </div>
+    <div>
+      <h4 data-en="Navigation">Navegación</h4>
+      <ul>
+        <li><a href="index.html" data-en="Home">Inicio</a></li>
+        <li><a href="aboutus.html" data-en="About us">Acerca de nosotros</a></li>
+        <li><a href="industrialproducts.html" data-en="Industrial products">Productos industriales</a></li>
+        <li><a href="services.html" data-en="Services">Servicios</a></li>
+        <li><a href="contacto.html" data-en="Contact">Contacto</a></li>
+        <li><a href="privacy.html" data-en="Privacy notice">Aviso de privacidad</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 data-en="Contact">Contacto</h4>
+      <ul>
+        <li><a href="mailto:contacto@marasesupply.com">contacto@marasesupply.com</a></li>
+        <li><a href="tel:+525558405156">+52 (55) 58 40 51 56</a></li>
+        <li>Tláhuac, CDMX</li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap foot-bottom">
+    <span>© 2026 MARASE Supply</span>
+    <span data-en="Industrial supply for the electrical sector">Suministro industrial para el sector eléctrico</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var hdr=document.getElementById('hdr');
+  function onScroll(){ hdr.classList.toggle('solid', window.scrollY>40); }
+  onScroll(); window.addEventListener('scroll',onScroll,{passive:true});
+
+  var burger=document.getElementById('burger'), nav=document.getElementById('nav');
+  burger.addEventListener('click',function(){
+    var open=nav.classList.toggle('open');
+    burger.classList.toggle('open',open);
+    burger.setAttribute('aria-expanded',open);
+  });
+
+  var lang='es';
+  var btns=document.querySelectorAll('[data-lang]');
+  btns.forEach(function(b){ b.addEventListener('click',function(){
+    var next=b.dataset.lang; if(next===lang) return;
+    lang=next; document.documentElement.lang=next;
+    document.querySelectorAll('[data-en]').forEach(function(el){
+      if(!el.dataset.esCache) el.dataset.esCache=el.innerHTML;
+      el.innerHTML=(next==='en')?el.dataset.en:el.dataset.esCache;
+    });
+    btns.forEach(function(x){ x.setAttribute('aria-pressed', x.dataset.lang===next); });
+  });});
+})();
+</script>
 </body>
 </html>
-
