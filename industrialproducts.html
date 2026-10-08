@@ -1,123 +1,561 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<title>MARASE Supply</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swa">
-<link rel="stylesheet" href="css/styles.css">
-<link rel="icon" type="image/svg+xml" href="image/logogold.svg">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Catálogo industrial | MARASE Supply</title>
+<meta name="description" content="Catálogo MARASE Supply: motores de media y baja tensión, bombas industriales y para lodos, sopladores, instrumentación TTR y PQM, cables, consumibles, limpieza industrial y servicios de instalación, nube, ciberseguridad y consultoría.">
+<meta property="og:title" content="Catálogo industrial | MARASE Supply">
+<meta property="og:description" content="Equipo rotatorio, instrumentación de medición eléctrica, consumibles y servicios para el sector eléctrico.">
+<meta property="og:type" content="website">
+<link rel="icon" href="image/logogold.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..500&family=Archivo:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#12161C;--ink-2:#1B2129;--paper:#F2F1ED;--paper-2:#E6E4DD;
+  --gold:#B8912F;--gold-lt:#D8B75C;--muted:#6C6F73;
+  --line:rgba(18,22,28,.14);--line-dk:rgba(242,241,237,.16);
+  --serif:'Fraunces',Georgia,'Times New Roman',serif;
+  --sans:'Archivo','Helvetica Neue',Arial,sans-serif;
+  --pad:clamp(20px,5vw,80px);--maxw:1320px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:150px}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.65;
+  -webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:var(--maxw);margin:0 auto;padding-left:var(--pad);padding-right:var(--pad)}
+h1,h2,h3,.serif{font-family:var(--serif);font-weight:400;letter-spacing:-.015em;line-height:1.1}
+p{max-width:64ch}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+
+/* header (idéntico a la portada) */
+header{position:fixed;inset:0 0 auto 0;z-index:60;transition:background .4s ease}
+header.solid{background:rgba(18,22,28,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line-dk)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:24px;height:84px;max-width:var(--maxw);margin:0 auto;padding:0 var(--pad)}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--paper)}
+.brand .logo{height:38px;width:auto;display:block}
+.brand .wordmark{display:none;align-items:baseline;gap:10px}
+.brand.nologo .wordmark{display:flex}
+.brand .m{font-family:var(--serif);font-size:26px;letter-spacing:.02em}
+.brand .s{font-size:11px;letter-spacing:.34em;color:var(--gold-lt);text-transform:uppercase}
+nav.main{display:flex;align-items:center;gap:30px}
+nav.main a{color:rgba(242,241,237,.82);text-decoration:none;font-size:14.5px;padding:6px 0;position:relative}
+nav.main a::after{content:"";position:absolute;left:0;right:100%;bottom:0;height:1px;background:var(--gold-lt);transition:right .35s ease}
+nav.main a:hover::after,nav.main a.active::after{right:0}
+nav.main a.active{color:var(--paper)}
+.lang{display:flex;align-items:center;gap:6px;font-size:12.5px;letter-spacing:.14em;color:rgba(242,241,237,.5)}
+.lang button{background:none;border:0;color:inherit;font:inherit;letter-spacing:inherit;cursor:pointer;padding:4px}
+.lang button[aria-pressed="true"]{color:var(--gold-lt)}
+.burger{display:none;background:none;border:0;cursor:pointer;width:40px;height:40px;position:relative}
+.burger i{position:absolute;left:8px;right:8px;height:1.5px;background:var(--paper);transition:.3s}
+.burger i:nth-child(1){top:15px}.burger i:nth-child(2){bottom:15px}
+.burger.open i:nth-child(1){top:19px;transform:rotate(45deg)}
+.burger.open i:nth-child(2){bottom:19px;transform:rotate(-45deg)}
+
+/* hero compacto */
+.phero{position:relative;background:var(--ink);color:var(--paper);padding:clamp(130px,17vh,180px) 0 clamp(44px,6vw,72px);overflow:hidden}
+.phero .grid-bg{position:absolute;inset:0;opacity:.5}
+.phero .glow{position:absolute;width:90vmax;height:90vmax;right:-38vmax;top:-48vmax;border-radius:50%;
+  background:radial-gradient(circle,rgba(184,145,47,.18) 0%,rgba(184,145,47,.05) 40%,transparent 68%)}
+.phero .watermark{position:absolute;right:-4%;bottom:-40%;width:min(34vw,440px);opacity:.05;pointer-events:none}
+.phero .inner{position:relative;max-width:var(--maxw);margin:0 auto;padding:0 var(--pad)}
+.crumb{font-size:12.5px;letter-spacing:.16em;color:rgba(242,241,237,.45);margin-bottom:22px}
+.crumb a{text-decoration:none}.crumb a:hover{color:var(--gold-lt)}
+.phero h1{font-size:clamp(36px,5.6vw,72px);margin:0 0 20px;max-width:15ch;font-weight:300}
+.phero p{color:rgba(242,241,237,.72);max-width:58ch;margin:0;font-size:clamp(15.5px,1.2vw,18px)}
+
+/* filtros */
+.filters{position:sticky;top:84px;z-index:40;background:rgba(242,241,237,.93);backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line)}
+.filters .inner{max-width:var(--maxw);margin:0 auto;padding:14px var(--pad);display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.chip{border:1px solid var(--line);background:none;font:inherit;font-size:13.5px;letter-spacing:.02em;color:var(--muted);
+  padding:9px 18px;border-radius:999px;cursor:pointer;transition:.3s;white-space:nowrap}
+.chip:hover{border-color:var(--gold);color:var(--ink)}
+.chip[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--paper)}
+.count{margin-left:auto;font-size:13px;color:var(--muted);letter-spacing:.02em}
+
+/* secciones y rejilla */
+.band{padding:clamp(52px,7vw,88px) 0}
+.band.nopad{padding-top:0}
+.sechead{display:flex;align-items:baseline;gap:18px;margin-bottom:clamp(26px,3.5vw,40px);padding-bottom:16px;border-bottom:1px solid var(--line)}
+.sechead .label{font-size:11.5px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);white-space:nowrap}
+.sechead h2{font-size:clamp(24px,3.1vw,38px);margin:0;font-weight:300}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(18px,2.2vw,30px)}
+.card{background:#fff;border:1px solid var(--line);display:flex;flex-direction:column;transition:border-color .35s,transform .35s}
+.card:hover{border-color:var(--gold)}
+.card .media{position:relative;aspect-ratio:4/3;background:linear-gradient(140deg,#1B2129,#2C333D 55%,#3A424E);overflow:hidden}
+.card .media svg.ph{position:absolute;inset:0;margin:auto;width:38%;height:38%;color:rgba(216,183,92,.5)}
+.card .media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:2;
+  filter:grayscale(.2) contrast(1.03);transition:transform .8s cubic-bezier(.2,.7,.25,1),filter .6s}
+.card:hover .media img{transform:scale(1.05);filter:grayscale(0)}
+.card .body{padding:24px 24px 0;flex:1 1 auto}
+.card .tag{font-size:10.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:12px}
+.card h3{font-size:clamp(18px,1.6vw,22px);margin:0 0 10px;font-weight:400}
+.card p{font-size:14.5px;color:var(--muted);margin:0 0 16px;max-width:46ch}
+.card ul{list-style:none;padding:0;margin:0 0 4px;font-size:13.5px;color:#3B4048}
+.card li{position:relative;padding-left:18px;margin-bottom:6px}
+.card li::before{content:"";position:absolute;left:0;top:9px;width:6px;height:1px;background:var(--gold)}
+.card .foot{padding:18px 24px 22px;margin-top:auto}
+.quote{display:inline-flex;align-items:center;gap:9px;font-size:13px;letter-spacing:.1em;color:var(--gold);
+  text-decoration:none;border-bottom:1px solid transparent;padding-bottom:2px;transition:.3s}
+.quote:hover{border-bottom-color:var(--gold)}
+.quote svg{width:14px;height:14px}
+.card.hide{display:none}
+.empty{display:none;padding:50px 0;color:var(--muted)}
+
+/* franja cta */
+.cta{background:var(--ink);color:var(--paper)}
+.cta .inner{max-width:var(--maxw);margin:0 auto;padding:clamp(44px,6vw,80px) var(--pad);
+  display:flex;flex-wrap:wrap;gap:26px;align-items:center;justify-content:space-between}
+.cta h2{color:var(--paper);font-size:clamp(26px,3.3vw,44px);margin:0 0 10px;font-weight:300;max-width:18ch}
+.cta p{color:rgba(242,241,237,.68);margin:0;max-width:46ch;font-size:15.5px}
+.btn{display:inline-flex;align-items:center;gap:12px;padding:15px 30px;border:1px solid var(--gold);color:var(--gold-lt);
+  text-decoration:none;font-size:14px;letter-spacing:.08em;transition:.35s}
+.btn:hover{background:var(--gold);color:var(--ink)}
+.btn.solid{background:var(--gold);color:var(--ink)}
+.btn.solid:hover{background:var(--gold-lt);border-color:var(--gold-lt)}
+
+/* footer */
+footer{background:var(--ink);color:rgba(242,241,237,.66);padding:clamp(52px,7vw,84px) 0 32px;border-top:1px solid var(--line-dk)}
+.foot-grid{display:grid;grid-template-columns:minmax(0,1.4fr) repeat(2,minmax(0,1fr));gap:clamp(28px,5vw,64px)}
+footer .brand{color:var(--paper);margin-bottom:18px}
+footer .brand .logo{height:46px}
+footer p{font-size:14.5px;max-width:48ch;margin:0}
+footer h4{font-size:11.5px;letter-spacing:.26em;text-transform:uppercase;color:var(--gold);margin:0 0 16px;font-weight:500}
+footer ul{list-style:none;padding:0;margin:0}
+footer li{margin-bottom:10px}
+footer a{color:rgba(242,241,237,.66);text-decoration:none;font-size:14.5px}
+footer a:hover{color:var(--gold-lt)}
+.foot-bottom{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;margin-top:clamp(36px,5vw,60px);
+  padding-top:22px;border-top:1px solid var(--line-dk);font-size:12.5px;color:rgba(242,241,237,.42)}
+
+@media (max-width:1000px){
+  .grid{grid-template-columns:repeat(2,1fr)}
+  .foot-grid{grid-template-columns:1fr 1fr}
+  .count{display:none}
+}
+@media (max-width:760px){
+  .burger{display:block}
+  nav.main{position:fixed;inset:84px 0 auto 0;background:rgba(18,22,28,.98);flex-direction:column;align-items:flex-start;
+    gap:0;padding:8px var(--pad) 28px;border-bottom:1px solid var(--line-dk);transform:translateY(-12px);opacity:0;
+    pointer-events:none;transition:.32s ease}
+  nav.main.open{transform:none;opacity:1;pointer-events:auto}
+  nav.main a{width:100%;padding:15px 0;border-bottom:1px solid var(--line-dk);font-size:17px}
+  .grid,.foot-grid{grid-template-columns:1fr}
+  .card .media{aspect-ratio:16/10}
+  .sechead{flex-direction:column;gap:6px}
+  .filters .inner{overflow-x:auto;flex-wrap:nowrap;-webkit-overflow-scrolling:touch}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+</style>
 </head>
-<body class="industrialproducts-body">
+<body>
 
-<!-- Product Categories -->
-<div class="products-section">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+  <symbol id="i-motor" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4">
+    <rect x="9" y="16" width="22" height="16" rx="2"/><path d="M31 21h5v6h-5zM36 24h5M13 16V12h6v4M13 32v4h6v-4M4 20v8"/><circle cx="20" cy="24" r="4"/></symbol>
+  <symbol id="i-pump" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4">
+    <circle cx="21" cy="26" r="10"/><circle cx="21" cy="26" r="3.4"/><path d="M21 16V9h9M31 26h10M31 26l4-4M31 26l4 4M11 36h20"/></symbol>
+  <symbol id="i-blower" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4">
+    <circle cx="20" cy="24" r="11"/><path d="M20 24c0-7 3-9 7-7s2 7-7 7zM20 24c-6 3-9 1-8-3s6-3 8 3zM20 24c6 4 5 8 1 9s-5-4-1-9z"/><path d="M31 24h10v7"/></symbol>
+  <symbol id="i-meter" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4">
+    <rect x="11" y="8" width="26" height="32" rx="3"/><rect x="16" y="14" width="16" height="9" rx="1"/><path d="M17 30h4M27 30h4M17 35h4M27 35h4"/></symbol>
+  <symbol id="i-analyzer" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4">
+    <rect x="7" y="11" width="34" height="24" rx="3"/><path d="M12 27l6-8 5 6 4-9 5 11M18 40h12"/></symbol>
+  <symbol id="i-cable" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4">
+    <path d="M8 34c0-8 10-6 10-13S8 12 8 12M40 14c0 8-10 6-10 13s10 9 10 9"/><circle cx="24" cy="24" r="3"/></symbol>
+  <symbol id="i-clean" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4">
+    <path d="M17 16h14a3 3 0 013 3v18a3 3 0 01-3 3H17a3 3 0 01-3-3V19a3 3 0 013-3z"/><path d="M20 16v-5h8v5M18 24h12"/></symbol>
+  <symbol id="i-bolt" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M26 6L12 27h10l-2 15 16-22H26z"/></symbol>
+  <symbol id="i-cloud" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M15 34a8 8 0 010-16 10 10 0 0119-3 8 8 0 012 19z"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M24 6l14 5v12c0 9-6 15-14 19-8-4-14-10-14-19V11z"/><path d="M18 24l4 4 9-9"/></symbol>
+  <symbol id="i-chart" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M9 39V9M9 39h30"/><rect x="15" y="26" width="6" height="13"/><rect x="25" y="19" width="6" height="20"/><rect x="35" y="12" width="6" height="27"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+</defs></svg>
 
-  <!-- Motores -->
-  <h2 class="category-title" data-en="Specialized Industrial Equipment">Equipamiento Industrial Especializado</h2>
-  <div class="product-cards">
-    <div class="product-card">
-      <img src="image/motor.jpg" alt="Motor" class="product-image">
-      <h3 data-en="Medium and Low Voltage Motors">Motores Media y BajaTensión</h3>
-      <p data-en="TECO-Westinghouse motors are known for robust performance and high efficiency.">Motores TECO-Westinghouse son reconocidos por su rendimiento robusto, alta eficiencia.</p>
-    </div>
-    <div class="product-card">
-      <img src="image/bomba.png" alt="Bombas Industriales" class="product-image">
-      <h3 data-en="Industrial Pumps">Bombas Industriales</h3>
-      <p data-en="Industrial pumps and slurry pumps with high efficiency and durability.">Bombas industriales y bombas para lodos de alta eficiencia y durabilidad.</p>
-    </div>
-    <div class="product-card">
-      <img src="image/Soplador.jpg" alt="Sopladores" class="product-image">
-      <h3 data-en="High Pressure Blowers">Sopladores de alta presión</h3>
-      <p data-en="Industrial blowers with high efficiency and durability.">Sopladores industriales de alta eficiencia y durabilidad.</p>
+<header id="hdr">
+  <div class="bar">
+    <a class="brand" href="index.html" aria-label="MARASE Supply — Inicio">
+      <img class="logo" src="image/logogold.svg" alt="MARASE Supply" onerror="this.closest('.brand').classList.add('nologo');this.remove()">
+      <span class="wordmark"><span class="m">MARASE</span><span class="s">Supply</span></span>
+    </a>
+    <nav class="main" id="nav">
+      <a href="index.html" data-en="Home">Inicio</a>
+      <a href="aboutus.html" data-en="About">Nosotros</a>
+      <a href="industrialproducts.html" class="active" data-en="Catalog">Catálogo</a>
+      <a href="services.html" data-en="Services">Servicios</a>
+      <a href="contacto.html" data-en="Contact">Contacto</a>
+    </nav>
+    <div style="display:flex;align-items:center;gap:14px">
+      <div class="lang" role="group" aria-label="Idioma">
+        <button type="button" data-lang="es" aria-pressed="true">ES</button><span>/</span><button type="button" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+      <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false"><i></i><i></i></button>
     </div>
   </div>
+</header>
 
-  <!-- Instrumentacion y Medición -->
-  <h2 class="category-title" data-en="Instrumentation and Measurement">Instrumentación y Medición</h2>
-  <div class="product-cards">
-    <div class="product-card">
-      <img src="image/ttrmegger.jpg" alt="Multímetro" class="product-image">
-      <h3 data-en="TTR Tester">TTR Tester</h3>
-      <p data-en="Transformer turns ratio meter for three-phase transformers.">Medidor de relación de vueltas de transformadores trifásicos</p>
-    </div>
-    <div class="product-card">
-      <img src="image/pqm.jpg" alt=" PQM Analizadores de calidad eléctrica y energía " class="product-image">
-      <h3 data-en="PQM - Electrical and Energy Quality Analyzers">PQM -Analizadores de calidad eléctrica y energía </h3>
-      <p data-en="The electrical and energy quality analyzer is designed to help minimize downtime, quickly resolve power quality issues, and easily estimate energy loss costs.">El analizador de calidad eléctrica y energía  están diseñados para ayudarle a minimizar el tiempo de inactividad, resolver rápidamente problemas de calidad eléctrica y averiguar fácilmente los costes de la pérdida de energía</p>
-    </div>
+<section class="phero">
+  <svg class="grid-bg" aria-hidden="true" preserveAspectRatio="none">
+    <defs><pattern id="g" width="72" height="72" patternUnits="userSpaceOnUse">
+      <path d="M72 0H0V72" fill="none" stroke="rgba(242,241,237,.055)" stroke-width="1"/></pattern></defs>
+    <rect width="100%" height="100%" fill="url(#g)"/>
+  </svg>
+  <div class="glow" aria-hidden="true"></div>
+  <img class="watermark" src="image/logogold.svg" alt="" aria-hidden="true" onerror="this.remove()">
+  <div class="inner">
+    <div class="crumb"><a href="index.html" data-en="Home">Inicio</a> <span>/</span> <span data-en="Catalog">Catálogo</span></div>
+    <h1 data-en="Equipment, instruments and supplies for the electrical sector">Equipo, instrumentación y suministro para el sector eléctrico</h1>
+    <p data-en="Eleven lines across rotating equipment, electrical measurement, consumables and specialized services. Every item is quoted against the operating conditions of your installation.">Once líneas entre equipo rotatorio, medición eléctrica, consumibles y servicios especializados. Cada artículo se cotiza contra las condiciones de operación de tu instalación.</p>
   </div>
+</section>
 
-  <!-- Consumibles -->
-  <h2 class="category-title" data-en="Consumables and Industrial Spare Parts">Consumibles y Refacciones Industriales </h2>
-  <div class="product-cards">
-    <div class="product-card">
-      <img src="image/Cable.jpg" alt="Cable" class="product-image">
-      <h3 data-en="Cables and Electrical Supplies">Cables y Consumibles del Sector Eléctrico</h3>
-      <p data-en="A variety of cables, connectors, hoses, and supplies for industrial installations.">Variedad de cables, conectores, mangueras y  consumibles para instalaciones industriales.</p>
-    </div>
-    <div class="product-card">
-      <img src="image/Bidon.jpg" alt="Productos de Limpieza Industrial" class="product-image">
-      <h3 data-en="Industrial Cleaning Products">Productos de Limpieza Industrial</h3>
-      <p data-en="A range of cleaning products for industrial applications (e.g. disinfectants, degreasers, etc.).">Variedad de productos de limpieza para aplicaciones industriales (ej. desinfectantes, desengrasantes, etc.).</p>
-    </div>
-  </div>
-
-    <!-- Servicios -->
-  <h2 class="category-title" data-en="Services">Servicios </h2>
-  <div class="product-cards">
-    <div class="product-card">
-      <img src="image/service.jpg" alt="Servicio en Instalaciones electricas" class="product-image">
-      <h3 data-en="Electrical Installation Services">Servicio en Instalaciones Eléctricas</h3>
-      <p data-en="Design, installation, and commissioning of electrical infrastructure for industrial and commercial applications.">Diseño, Instalación y puesta en marcha de infraestructura eléctrica para aplicaciones industriales y comerciales.</p>
-    </div>
-    <div class="product-card">
-      <img src="image/Cloud.jpg" alt="Cloud Services" class="product-image">
-      <h3 data-en="Cloud Services">Servicios en la Nube</h3>
-      <p data-en="Cloud storage services for businesses.">Servicios de almacenamiento en la nube para empresas.</p>
-    </div>
-    <div class="product-card">
-      <img src="image/CyberSecurity.jpg" alt="Servicio Ciberseguridad" class="product-image">
-      <h3 data-en="Cybersecurity">Ciberseguridad</h3>
-      <p data-en="Protection and IT security services for companies.">Protección y seguridad informática para empresas.</p>
-    </div>
-    <div class="product-card">
-      <img src="image/Consultoria.png" alt="Consultoría Administrativa y Financiera" class="product-image">
-      <h3 data-en="Administrative and Financial Consulting">Consultoría Administrativa y Financiera</h3>
-      <p data-en="We provide business consulting services focused on administrative optimization, financial control, tax compliance, and process improvement.">Brindamos servicios de consultoría empresarial enfocados en la optimización administrativa, control financiero, cumplimiento fiscal y mejora de procesos.</p>
-    </div>
-  </div>
-
-</div>
-
-<!-- Menu Button -->
-<!-- Menu -->
-<div class="menu" id="menu">
-  <button class="menu-toggle" onclick="toggleMobileMenu()" aria-expanded="false" aria-controls="menu-links">☰ Menu</button>
-  <ul id="menu-links">
-    <li class="menu-logo-item"><a href="index.html"><img src="image/logogold.svg" alt="MARASE Supply Logo" class="menu-logo"></a></li>
-    <li><a href="index.html" data-en="Home">Inicio</a></li>
-    <li><a href="aboutus.html" data-en="About Us">Acerca de nosotros</a></li>
-    <li><a href="industrialproducts.html" data-en="Industrial Products">Productos Industrial</a></li>
-    <li><a href="services.html" data-en="Services">Servicios</a></li>
-    <li><a href="contacto.html" data-en="Contact">Contacto</a></li>
-    <li>
-      <a href="privacy.html" data-en="Privacy Policy">Aviso de Privacidad</a>
-      <button id="lang-toggle" class="menu-lang-button" onclick="toggleLanguage()">EN</button>
-    </li>
-  </ul>
-  <!-- Mission Statement -->
-  <div class="mission-statement">
-    <p data-en="Our mission is to provide high-quality and safe solutions in electrical supplies, meeting each customer's specific needs. We strive to be market leaders and exceed expectations through excellence in service and customer care.">Nuestra misión es proporcionar soluciones de alta calidad y seguridad en suministros eléctricos , satisfaciendo las necesidades específicas de cada cliente. Nos esforzamos por ser líderes en el mercado y superar las expectativas de nuestros clientes a través de la excelencia en el servicio y la atención al cliente.</p>
+<div class="filters">
+  <div class="inner" id="chips" role="group" aria-label="Filtrar catálogo">
+    <button class="chip" data-filter="all" aria-pressed="true" data-en="All">Todo</button>
+    <button class="chip" data-filter="rot" aria-pressed="false" data-en="Rotating equipment">Equipo rotatorio</button>
+    <button class="chip" data-filter="ins" aria-pressed="false" data-en="Measurement">Instrumentación</button>
+    <button class="chip" data-filter="con" aria-pressed="false" data-en="Consumables">Consumibles</button>
+    <button class="chip" data-filter="svc" aria-pressed="false" data-en="Services">Servicios</button>
+    <span class="count" id="count"></span>
   </div>
 </div>
 
-<!-- Footer -->
-<div class="footer">
-  <p>© Copyright MARASE SUPPLY 2026</p>
-</div>
+<main>
 
-<script src="js/scripts.js"></script>
+<!-- EQUIPO ROTATORIO -->
+<section class="band" id="rot" data-group="rot">
+  <div class="wrap">
+    <div class="sechead">
+      <span class="label" data-en="01 — Rotating equipment">01 — Equipo rotatorio</span>
+      <h2 data-en="Specialized industrial equipment">Equipamiento industrial especializado</h2>
+    </div>
+    <div class="grid">
+
+      <article class="card" data-cat="rot">
+        <div class="media"><svg class="ph"><use href="#i-motor"/></svg><img src="image/motor.jpg" alt="Motor eléctrico de media y baja tensión" loading="lazy" onerror="this.remove()"></div>
+        <div class="body">
+          <span class="tag" data-en="Motors">Motores</span>
+          <h3 data-en="Medium and low voltage motors">Motores de media y baja tensión</h3>
+          <p data-en="TECO-Westinghouse motors, recognized for robust performance and high efficiency in continuous industrial duty.">Motores TECO-Westinghouse, reconocidos por su rendimiento robusto y alta eficiencia en servicio industrial continuo.</p>
+          <ul>
+            <li data-en="Selection by frame, pole count and efficiency class">Selección por carcasa, número de polos y clase de eficiencia</li>
+            <li data-en="Severe duty and standard enclosures">Versiones para servicio severo y envolventes estándar</li>
+            <li data-en="Replacement matched to the existing nameplate">Reemplazo conforme a la placa de datos existente</li>
+          </ul>
+        </div>
+        <div class="foot"><a class="quote" href="mailto:contacto@marasesupply.com?subject=Cotizaci%C3%B3n%20-%20Motores%20de%20media%20y%20baja%20tensi%C3%B3n" data-en="Request a quote">Solicitar cotización <svg><use href="#i-arrow"/></svg></a></div>
+      </article>
+
+      <article class="card" data-cat="rot">
+        <div class="media"><svg class="ph"><use href="#i-pump"/></svg><img src="image/bomba.png" alt="Bomba industrial" loading="lazy" onerror="this.remove()"></div>
+        <div class="body">
+          <span class="tag" data-en="Pumps">Bombas</span>
+          <h3 data-en="Industrial and slurry pumps">Bombas industriales y para lodos</h3>
+          <p data-en="High-efficiency, durable pumping for process water, wastewater and abrasive slurry.">Bombas industriales y bombas para lodos de alta eficiencia y durabilidad, para agua de proceso, aguas residuales y lodos abrasivos.</p>
+          <ul>
+            <li data-en="Specified by head, flow rate and solids content">Especificadas por carga, gasto y contenido de sólidos</li>
+            <li data-en="Wear-resistant materials for abrasive service">Materiales resistentes al desgaste para servicio abrasivo</li>
+            <li data-en="Motor and coupling supplied as a set">Motor y acoplamiento suministrados como conjunto</li>
+          </ul>
+        </div>
+        <div class="foot"><a class="quote" href="mailto:contacto@marasesupply.com?subject=Cotizaci%C3%B3n%20-%20Bombas%20industriales" data-en="Request a quote">Solicitar cotización <svg><use href="#i-arrow"/></svg></a></div>
+      </article>
+
+      <article class="card" data-cat="rot">
+        <div class="media"><svg class="ph"><use href="#i-blower"/></svg><img src="image/Soplador.jpg" alt="Soplador industrial de alta presión" loading="lazy" onerror="this.remove()"></div>
+        <div class="body">
+          <span class="tag" data-en="Blowers">Sopladores</span>
+          <h3 data-en="High-pressure blowers">Sopladores de alta presión</h3>
+          <p data-en="Industrial blowers built for efficiency and durability in continuous duty.">Sopladores industriales de alta eficiencia y durabilidad para operación continua.</p>
+          <ul>
+            <li data-en="Aeration, pneumatic conveying and drying">Aireación, transporte neumático y secado</li>
+            <li data-en="Sized by airflow and discharge pressure">Dimensionados por caudal y presión de descarga</li>
+            <li data-en="Filters, silencers and accessories">Filtros, silenciadores y accesorios</li>
+          </ul>
+        </div>
+        <div class="foot"><a class="quote" href="mailto:contacto@marasesupply.com?subject=Cotizaci%C3%B3n%20-%20Sopladores%20de%20alta%20presi%C3%B3n" data-en="Request a quote">Solicitar cotización <svg><use href="#i-arrow"/></svg></a></div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- INSTRUMENTACIÓN -->
+<section class="band" id="ins" data-group="ins">
+  <div class="wrap">
+    <div class="sechead">
+      <span class="label" data-en="02 — Measurement">02 — Instrumentación</span>
+      <h2 data-en="Instrumentation and measurement">Instrumentación y medición</h2>
+    </div>
+    <div class="grid">
+
+      <article class="card" data-cat="ins">
+        <div class="media"><svg class="ph"><use href="#i-meter"/></svg><img src="image/ttrmegger.jpg" alt="Medidor TTR de relación de transformación" loading="lazy" onerror="this.remove()"></div>
+        <div class="body">
+          <span class="tag" data-en="Transformers">Transformadores</span>
+          <h3 data-en="TTR — Transformer turns-ratio tester">TTR — Medidor de relación de transformación</h3>
+          <p data-en="Turns-ratio measurement on three-phase transformers, for commissioning and preventive maintenance routines.">Medidor de relación de vueltas de transformadores trifásicos, para puesta en marcha y rutinas de mantenimiento preventivo.</p>
+          <ul>
+            <li data-en="Detects shorted turns and tap-changer faults">Detecta espiras en corto y fallas del cambiador de derivaciones</li>
+            <li data-en="Automatic test sequence on three phases">Secuencia de prueba automática en las tres fases</li>
+            <li data-en="Field use with record export">Uso en campo con exportación de registros</li>
+          </ul>
+        </div>
+        <div class="foot"><a class="quote" href="mailto:contacto@marasesupply.com?subject=Cotizaci%C3%B3n%20-%20TTR%20medidor%20de%20relaci%C3%B3n" data-en="Request a quote">Solicitar cotización <svg><use href="#i-arrow"/></svg></a></div>
+      </article>
+
+      <article class="card" data-cat="ins">
+        <div class="media"><svg class="ph"><use href="#i-analyzer"/></svg><img src="image/pqm.jpg" alt="Analizador de calidad eléctrica y energía PQM" loading="lazy" onerror="this.remove()"></div>
+        <div class="body">
+          <span class="tag" data-en="Power quality">Calidad eléctrica</span>
+          <h3 data-en="PQM — Power quality and energy analyzers">PQM — Analizadores de calidad eléctrica y energía</h3>
+          <p data-en="Designed to cut downtime, resolve power quality problems quickly and work out what energy losses are costing.">Diseñados para minimizar el tiempo de inactividad, resolver rápidamente problemas de calidad eléctrica y averiguar los costes de la pérdida de energía.</p>
+          <ul>
+            <li data-en="Harmonics, sags, swells and transient capture">Armónicos, huecos, sobretensiones y captura de transitorios</li>
+            <li data-en="Load and energy-consumption logging">Registro de carga y consumo energético</li>
+            <li data-en="Reports for compliance and billing review">Reportes para cumplimiento y revisión de facturación</li>
+          </ul>
+        </div>
+        <div class="foot"><a class="quote" href="mailto:contacto@marasesupply.com?subject=Cotizaci%C3%B3n%20-%20PQM%20analizador%20de%20calidad%20el%C3%A9ctrica" data-en="Request a quote">Solicitar cotización <svg><use href="#i-arrow"/></svg></a></div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONSUMIBLES -->
+<section class="band" id="con" data-group="con">
+  <div class="wrap">
+    <div class="sechead">
+      <span class="label" data-en="03 — Consumables">03 — Consumibles</span>
+      <h2 data-en="Industrial consumables and spare parts">Consumibles y refacciones industriales</h2>
+    </div>
+    <div class="grid">
+
+      <article class="card" data-cat="con">
+        <div class="media"><svg class="ph"><use href="#i-cable"/></svg><img src="image/Cable.jpg" alt="Cables y conectores eléctricos" loading="lazy" onerror="this.remove()"></div>
+        <div class="body">
+          <span class="tag" data-en="Cable">Cable</span>
+          <h3 data-en="Cable and electrical-sector consumables">Cables y consumibles del sector eléctrico</h3>
+          <p data-en="Cable, connectors, hose and the everyday consumables an industrial installation goes through.">Variedad de cables, conectores, mangueras y consumibles para instalaciones industriales.</p>
+          <ul>
+            <li data-en="Calibers and insulation per application">Calibres y aislamientos según la aplicación</li>
+            <li data-en="Terminals, lugs and connection accessories">Terminales, zapatas y accesorios de conexión</li>
+            <li data-en="Supply by reel or cut to length">Suministro por carrete o corte a medida</li>
+          </ul>
+        </div>
+        <div class="foot"><a class="quote" href="mailto:contacto@marasesupply.com?subject=Cotizaci%C3%B3n%20-%20Cables%20y%20consumibles" data-en="Request a quote">Solicitar cotización <svg><use href="#i-arrow"/></svg></a></div>
+      </article>
+
+      <article class="card" data-cat="con">
+        <div class="media"><svg class="ph"><use href="#i-clean"/></svg><img src="image/Bidon.jpg" alt="Productos de limpieza industrial" loading="lazy" onerror="this.remove()"></div>
+        <div class="body">
+          <span class="tag" data-en="Cleaning">Limpieza</span>
+          <h3 data-en="Industrial cleaning products">Productos de limpieza industrial</h3>
+          <p data-en="Disinfectants, degreasers and specialty cleaners for industrial applications.">Variedad de productos de limpieza para aplicaciones industriales: desinfectantes, desengrasantes y limpiadores especializados.</p>
+          <ul>
+            <li data-en="Presentations from drum to bulk">Presentaciones desde bidón hasta granel</li>
+            <li data-en="Safety data sheets included">Hojas de seguridad incluidas</li>
+            <li data-en="Scheduled resupply programs">Programas de resurtido calendarizado</li>
+          </ul>
+        </div>
+        <div class="foot"><a class="quote" href="mailto:contacto@marasesupply.com?subject=Cotizaci%C3%B3n%20-%20Limpieza%20industrial" data-en="Request a quote">Solicitar cotización <svg><use href="#i-arrow"/></svg></a></div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- SERVICIOS -->
+<section class="band" id="svc" data-group="svc">
+  <div class="wrap">
+    <div class="sechead">
+      <span class="label" data-en="04 — Services">04 — Servicios</span>
+      <h2 data-en="Services around the supply">Servicios alrededor del suministro</h2>
+    </div>
+    <div class="grid">
+
+      <article class="card" data-cat="svc">
+        <div class="media"><svg class="ph"><use href="#i-bolt"/></svg><img src="image/service.jpg" alt="Servicio en instalaciones eléctricas" loading="lazy" onerror="this.remove()"></div>
+        <div class="body">
+          <span class="tag" data-en="Field service">Servicio en campo</span>
+          <h3 data-en="Electrical installations">Servicio en instalaciones eléctricas</h3>
+          <p data-en="Design, installation and commissioning of electrical infrastructure for industrial and commercial applications.">Diseño, instalación y puesta en marcha de infraestructura eléctrica para aplicaciones industriales y comerciales.</p>
+          <ul>
+            <li data-en="Site survey and load study">Levantamiento en sitio y estudio de carga</li>
+            <li data-en="Commissioning with acceptance testing">Puesta en marcha con pruebas de aceptación</li>
+            <li data-en="As-built documentation on delivery">Documentación as-built en la entrega</li>
+          </ul>
+        </div>
+        <div class="foot"><a class="quote" href="mailto:contacto@marasesupply.com?subject=Cotizaci%C3%B3n%20-%20Instalaciones%20el%C3%A9ctricas" data-en="Request a quote">Solicitar cotización <svg><use href="#i-arrow"/></svg></a></div>
+      </article>
+
+      <article class="card" data-cat="svc">
+        <div class="media"><svg class="ph"><use href="#i-cloud"/></svg><img src="image/Cloud.jpg" alt="Servicios en la nube" loading="lazy" onerror="this.remove()"></div>
+        <div class="body">
+          <span class="tag" data-en="Technology">Tecnología</span>
+          <h3 data-en="Cloud services">Servicios en la nube</h3>
+          <p data-en="Cloud storage and infrastructure for companies that need their operating data available and backed up.">Servicios de almacenamiento en la nube para empresas que necesitan su información disponible y respaldada.</p>
+          <ul>
+            <li data-en="Migration without interrupting operations">Migración sin interrumpir la operación</li>
+            <li data-en="Scheduled backup and restore testing">Respaldo programado y pruebas de restauración</li>
+            <li data-en="Cost measured by workload">Costo medido por carga de trabajo</li>
+          </ul>
+        </div>
+        <div class="foot"><a class="quote" href="mailto:contacto@marasesupply.com?subject=Cotizaci%C3%B3n%20-%20Servicios%20en%20la%20nube" data-en="Request a quote">Solicitar cotización <svg><use href="#i-arrow"/></svg></a></div>
+      </article>
+
+      <article class="card" data-cat="svc">
+        <div class="media"><svg class="ph"><use href="#i-shield"/></svg><img src="image/CyberSecurity.jpg" alt="Servicio de ciberseguridad" loading="lazy" onerror="this.remove()"></div>
+        <div class="body">
+          <span class="tag" data-en="Technology">Tecnología</span>
+          <h3 data-en="Cybersecurity">Ciberseguridad</h3>
+          <p data-en="Protection and information security for business environments, from perimeter to endpoint.">Protección y seguridad informática para empresas, del perímetro al equipo final.</p>
+          <ul>
+            <li data-en="Access policy and identity management">Política de accesos y gestión de identidad</li>
+            <li data-en="Monitoring and incident response">Monitoreo y respuesta a incidentes</li>
+            <li data-en="User awareness training">Capacitación de usuarios</li>
+          </ul>
+        </div>
+        <div class="foot"><a class="quote" href="mailto:contacto@marasesupply.com?subject=Cotizaci%C3%B3n%20-%20Ciberseguridad" data-en="Request a quote">Solicitar cotización <svg><use href="#i-arrow"/></svg></a></div>
+      </article>
+
+      <article class="card" data-cat="svc">
+        <div class="media"><svg class="ph"><use href="#i-chart"/></svg><img src="image/Consultoria.png" alt="Consultoría administrativa y financiera" loading="lazy" onerror="this.remove()"></div>
+        <div class="body">
+          <span class="tag" data-en="Consulting">Consultoría</span>
+          <h3 data-en="Administrative and financial consulting">Consultoría administrativa y financiera</h3>
+          <p data-en="Business consulting focused on administrative optimization, financial control, tax compliance and process improvement.">Servicios de consultoría empresarial enfocados en la optimización administrativa, control financiero, cumplimiento fiscal y mejora de procesos.</p>
+          <ul>
+            <li data-en="Diagnosis of the current process">Diagnóstico del proceso actual</li>
+            <li data-en="Indicators and management reporting">Indicadores y reportes de gestión</li>
+            <li data-en="Follow-up until the change sticks">Acompañamiento hasta consolidar el cambio</li>
+          </ul>
+        </div>
+        <div class="foot"><a class="quote" href="mailto:contacto@marasesupply.com?subject=Cotizaci%C3%B3n%20-%20Consultor%C3%ADa%20administrativa%20y%20financiera" data-en="Request a quote">Solicitar cotización <svg><use href="#i-arrow"/></svg></a></div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<p class="wrap empty" id="empty" data-en="No items in this category.">No hay artículos en esta categoría.</p>
+</main>
+
+<section class="cta">
+  <div class="inner">
+    <div>
+      <h2 data-en="Didn't find what you need?">¿No encontraste lo que buscas?</h2>
+      <p data-en="Send us the nameplate, the operating conditions or a photo of the equipment to replace. We reply with options, lead time and price.">Envíanos la placa de datos, las condiciones de operación o una foto del equipo a reemplazar. Respondemos con opciones, tiempo de entrega y precio.</p>
+    </div>
+    <div style="display:flex;flex-wrap:wrap;gap:12px">
+      <a class="btn solid" href="mailto:contacto@marasesupply.com?subject=Solicitud%20de%20cotizaci%C3%B3n" data-en="Email us">Escríbenos</a>
+      <a class="btn" href="tel:+525558405156" data-en="Call now">Llamar ahora</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot-grid">
+    <div>
+      <a class="brand" href="index.html" aria-label="MARASE Supply — Inicio">
+        <img class="logo" src="image/logogold.svg" alt="MARASE Supply" onerror="this.closest('.brand').classList.add('nologo');this.remove()">
+        <span class="wordmark"><span class="m">MARASE</span><span class="s">Supply</span></span>
+      </a>
+      <p data-en="Materials and articles related to the electrical sector. Industrial supply, measurement instruments and technical service across Mexico.">Materiales y artículos relacionados al sector eléctrico. Suministro industrial, instrumentación de medición y servicio técnico en todo México.</p>
+    </div>
+    <div>
+      <h4 data-en="Navigation">Navegación</h4>
+      <ul>
+        <li><a href="index.html" data-en="Home">Inicio</a></li>
+        <li><a href="aboutus.html" data-en="About us">Acerca de nosotros</a></li>
+        <li><a href="industrialproducts.html" data-en="Industrial products">Productos industriales</a></li>
+        <li><a href="services.html" data-en="Services">Servicios</a></li>
+        <li><a href="contacto.html" data-en="Contact">Contacto</a></li>
+        <li><a href="privacy.html" data-en="Privacy notice">Aviso de privacidad</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 data-en="Contact">Contacto</h4>
+      <ul>
+        <li><a href="mailto:contacto@marasesupply.com">contacto@marasesupply.com</a></li>
+        <li><a href="tel:+525558405156">+52 (55) 58 40 51 56</a></li>
+        <li>Tláhuac, CDMX</li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap foot-bottom">
+    <span>© 2026 MARASE Supply</span>
+    <span data-en="Industrial supply for the electrical sector">Suministro industrial para el sector eléctrico</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var hdr=document.getElementById('hdr');
+  function onScroll(){ hdr.classList.toggle('solid', window.scrollY>40); }
+  onScroll(); window.addEventListener('scroll',onScroll,{passive:true});
+
+  var burger=document.getElementById('burger'), nav=document.getElementById('nav');
+  burger.addEventListener('click',function(){
+    var open=nav.classList.toggle('open');
+    burger.classList.toggle('open',open);
+    burger.setAttribute('aria-expanded',open);
+  });
+
+  /* filtro por categoría */
+  var cards=[].slice.call(document.querySelectorAll('.card'));
+  var sections=[].slice.call(document.querySelectorAll('[data-group]'));
+  var countEl=document.getElementById('count'), empty=document.getElementById('empty');
+  var current='all';
+  function labelCount(n){
+    return (document.documentElement.lang==='en')
+      ? (n===1 ? '1 item' : n+' items')
+      : (n===1 ? '1 artículo' : n+' artículos');
+  }
+  function apply(f){
+    current=f;
+    var shown=0;
+    cards.forEach(function(c){
+      var on = (f==='all' || c.dataset.cat===f);
+      c.classList.toggle('hide',!on);
+      if(on) shown++;
+    });
+    var first=true;
+    sections.forEach(function(s){
+      var on = (f==='all' || s.dataset.group===f);
+      s.style.display = on ? '' : 'none';
+      s.classList.toggle('nopad', on && !first);
+      if(on) first=false;
+    });
+    countEl.textContent=labelCount(shown);
+    empty.style.display = shown ? 'none' : 'block';
+    document.querySelectorAll('.chip').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.filter===f); });
+  }
+  document.getElementById('chips').addEventListener('click',function(e){
+    var b=e.target.closest('.chip'); if(b) apply(b.dataset.filter);
+  });
+  apply('all');
+
+  /* ES / EN */
+  var lang='es';
+  var btns=document.querySelectorAll('[data-lang]');
+  btns.forEach(function(b){ b.addEventListener('click',function(){
+    var next=b.dataset.lang; if(next===lang) return;
+    lang=next; document.documentElement.lang=next;
+    document.querySelectorAll('[data-en]').forEach(function(el){
+      if(!el.dataset.esCache) el.dataset.esCache=el.innerHTML;
+      el.innerHTML=(next==='en')?el.dataset.en:el.dataset.esCache;
+    });
+    btns.forEach(function(x){ x.setAttribute('aria-pressed', x.dataset.lang===next); });
+    apply(current);
+  });});
+})();
+</script>
 </body>
 </html>
-
