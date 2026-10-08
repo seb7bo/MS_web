@@ -3,11 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Catálogo industrial | MARASE Supply</title>
-<meta name="description" content="Catálogo MARASE Supply: motores de media y baja tensión, bombas industriales y para lodos, sopladores, instrumentación TTR y PQM, cables, consumibles, limpieza industrial y servicios de instalación, nube, ciberseguridad y consultoría.">
-<meta property="og:title" content="Catálogo industrial | MARASE Supply">
-<meta property="og:description" content="Equipo rotatorio, instrumentación de medición eléctrica, consumibles y servicios para el sector eléctrico.">
+<title>Motores TECO-Westinghouse en stock | Suministro industrial | MARASE Supply</title>
+<meta name="description" content="Motores TECO-Westinghouse en stock en México: 39 modelos de baja tensión 460 V y media tensión 2,300/4,160 V, de 200 a 1,750 HP y de 2 a 8 polos. También bombas, sopladores, instrumentación TTR y PQM, cable y consumibles. Por cotización y con contacto directo.">
+<meta property="og:title" content="Motores TECO-Westinghouse en stock | MARASE Supply">
+<meta property="og:description" content="39 modelos de motores TECO-Westinghouse en stock, de 200 a 1,750 HP, en baja y media tensión. Por cotización y con contacto directo.">
 <meta property="og:type" content="website">
+<meta property="og:url" content="https://marasesupply.com/industrialproducts.html">
+<link rel="canonical" href="https://marasesupply.com/industrialproducts.html">
 <link rel="icon" href="image/logogold.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -68,6 +70,26 @@ nav.main a.active{color:var(--paper)}
 .phero h1{font-size:clamp(36px,5.6vw,72px);margin:0 0 20px;max-width:15ch;font-weight:300}
 .phero p{color:rgba(242,241,237,.72);max-width:58ch;margin:0;font-size:clamp(15.5px,1.2vw,18px)}
 
+.divno{font-size:11.5px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold-lt);margin-bottom:14px}
+
+/* destacado TECO */
+.feature{padding:clamp(56px,8vw,104px) 0 clamp(40px,5vw,64px)}
+.feature-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(28px,5vw,70px);align-items:center}
+.feature .figure{position:relative;aspect-ratio:4/3;background:linear-gradient(140deg,#1B2129,#2C333D 55%,#3A424E);overflow:hidden}
+.feature .figure svg.ph{position:absolute;inset:0;margin:auto;width:30%;height:30%;color:rgba(216,183,92,.5)}
+.feature .figure img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:2;filter:grayscale(.2) contrast(1.03)}
+.feature .label{font-size:11.5px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);margin-bottom:16px}
+.feature h2{font-size:clamp(28px,3.8vw,50px);margin:0 0 20px;font-weight:300;max-width:16ch}
+.feature .lead{font-size:clamp(16px,1.3vw,19px);color:#3B4048;margin:0 0 22px}
+.ticks{list-style:none;padding:0;margin:0 0 30px;font-size:14.5px;color:#3B4048}
+.ticks li{position:relative;padding-left:20px;margin-bottom:9px}
+.ticks li::before{content:"";position:absolute;left:0;top:11px;width:7px;height:1px;background:var(--gold)}
+.notice{display:grid;grid-template-columns:repeat(3,1fr);margin-top:clamp(44px,6vw,72px);background:var(--ink);color:var(--paper)}
+.notice > div{padding:clamp(22px,2.6vw,32px);border-right:1px solid var(--line-dk)}
+.notice > div:last-child{border-right:0}
+.notice b{display:block;font-family:var(--serif);font-weight:300;font-size:clamp(19px,1.8vw,23px);color:var(--gold-lt);margin-bottom:8px}
+.notice span{font-size:14px;color:rgba(242,241,237,.66)}
+
 /* filtros */
 .filters{position:sticky;top:84px;z-index:40;background:rgba(242,241,237,.93);backdrop-filter:blur(10px);
   border-bottom:1px solid var(--line)}
@@ -127,7 +149,7 @@ footer .brand .logo{height:46px}
 footer p{font-size:14.5px;max-width:48ch;margin:0}
 footer h4{font-size:11.5px;letter-spacing:.26em;text-transform:uppercase;color:var(--gold);margin:0 0 16px;font-weight:500}
 footer ul{list-style:none;padding:0;margin:0}
-footer li{margin-bottom:10px}
+footer li{margin-bottom:10px;font-size:14.5px}
 footer a{color:rgba(242,241,237,.66);text-decoration:none;font-size:14.5px}
 footer a:hover{color:var(--gold-lt)}
 .foot-bottom{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;margin-top:clamp(36px,5vw,60px);
@@ -137,6 +159,7 @@ footer a:hover{color:var(--gold-lt)}
   .grid{grid-template-columns:repeat(2,1fr)}
   .foot-grid{grid-template-columns:1fr 1fr}
   .count{display:none}
+  .feature-grid{grid-template-columns:1fr}
 }
 @media (max-width:760px){
   .burger{display:block}
@@ -148,10 +171,2215 @@ footer a:hover{color:var(--gold-lt)}
   .grid,.foot-grid{grid-template-columns:1fr}
   .card .media{aspect-ratio:16/10}
   .sechead{flex-direction:column;gap:6px}
+  .notice{grid-template-columns:1fr}
+  .notice > div{border-right:0;border-bottom:1px solid var(--line-dk)}
+  .notice > div:last-child{border-bottom:0}
   .filters .inner{overflow-x:auto;flex-wrap:nowrap;-webkit-overflow-scrolling:touch}
 }
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+
+/* ================= ESCAPARATE TECO ================= */
+.rv{opacity:0;transform:translateY(24px);transition:opacity 1s cubic-bezier(.2,.7,.25,1),transform 1s cubic-bezier(.2,.7,.25,1)}
+.rv.in{opacity:1;transform:none}
+.rv.d1{transition-delay:.1s}.rv.d2{transition-delay:.2s}.rv.d3{transition-delay:.3s}
+.kick{font-size:11.5px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:16px}
+.teco{position:relative;background:var(--ink);color:var(--paper);padding:clamp(80px,10vw,140px) 0 clamp(50px,6vw,80px);overflow:hidden}
+.teco .grid-bg{position:absolute;inset:0;width:100%;height:100%}
+.teco::before{content:"";position:absolute;width:90vmax;height:90vmax;right:-30vmax;top:-30vmax;border-radius:50%;
+  background:radial-gradient(circle,rgba(184,145,47,.16) 0%,rgba(184,145,47,.04) 42%,transparent 66%);pointer-events:none}
+.teco-ghost{position:absolute;left:-.04em;bottom:-.2em;font-family:var(--serif);font-weight:300;font-size:clamp(200px,34vw,560px);
+  line-height:1;letter-spacing:-.04em;color:transparent;-webkit-text-stroke:1px rgba(216,183,92,.09);pointer-events:none;user-select:none}
+.teco-grid{position:relative;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(36px,5vw,80px);align-items:center}
+.teco .kick{color:var(--gold-lt)}
+.teco h2{font-size:clamp(40px,5.6vw,84px);font-weight:300;line-height:1;letter-spacing:-.025em;margin:0 0 24px;max-width:12ch}
+.teco h2 em{font-style:italic;color:var(--gold-lt)}
+.teco .lead{color:rgba(242,241,237,.7);font-size:clamp(16px,1.25vw,18.5px);margin:0 0 24px}
+.teco .ticks li{color:rgba(242,241,237,.82)}
+.teco-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:8px}
+
+.orbit{position:relative;width:100%;max-width:600px;aspect-ratio:1;margin:0 auto}
+.orbit .rings{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+.orbit .r1,.orbit .r2,.orbit .r3{transform-origin:300px 300px}
+.orbit .r1{animation:spin 80s linear infinite}
+.orbit .r2{animation:spin 120s linear infinite reverse}
+.orbit .r2 line{stroke:rgba(216,183,92,.5);stroke-width:1}
+.orbit .r3{animation:spin 140s linear infinite}
+.orbit text{font-family:var(--sans);font-size:12.5px;letter-spacing:.32em;fill:rgba(216,183,92,.75)}
+@keyframes spin{to{transform:rotate(360deg)}}
+.orbit .sweep{position:absolute;inset:4%;border-radius:50%;
+  background:conic-gradient(from 0deg,transparent 0 76%,rgba(216,183,92,.0) 76%,rgba(216,183,92,.32) 96%,rgba(255,240,200,.55) 99%,transparent 100%);
+  -webkit-mask:radial-gradient(circle,transparent 0 62%,#000 63% 79%,transparent 80%);mask:radial-gradient(circle,transparent 0 62%,#000 63% 79%,transparent 80%);
+  animation:spin 6s linear infinite;mix-blend-mode:screen}
+.orbit .core{position:absolute;inset:19%;border-radius:50%;overflow:hidden;background:linear-gradient(140deg,#1B2129,#2C333D 55%,#3A424E);
+  box-shadow:0 0 0 1px rgba(216,183,92,.6),0 0 0 10px rgba(18,22,28,.9),0 0 0 11px rgba(216,183,92,.25),0 30px 120px -10px rgba(184,145,47,.35);
+  transition:transform .6s cubic-bezier(.2,.7,.25,1)}
+.orbit .core svg.ph{position:absolute;inset:0;margin:auto;width:34%;height:34%;color:rgba(216,183,92,.5)}
+.orbit .core img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:2;filter:grayscale(.15) contrast(1.06) brightness(.95);transform:scale(1.08)}
+.orbit .core::after{content:"";position:absolute;inset:0;z-index:3;border-radius:50%;
+  background:radial-gradient(circle at 35% 30%,rgba(255,255,255,.12),transparent 45%),radial-gradient(circle,transparent 55%,rgba(18,22,28,.55) 100%)}
+
+.tstats{position:relative;display:grid;grid-template-columns:repeat(4,1fr);margin-top:clamp(50px,7vw,90px);border-top:1px solid var(--line-dk)}
+.ts{padding:28px 24px 0 0;border-right:1px solid var(--line-dk)}
+.ts + .ts{padding-left:24px}
+.ts:last-child{border-right:0}
+.ts b{display:block;font-family:var(--serif);font-weight:300;font-size:clamp(34px,4.4vw,60px);line-height:1;color:var(--gold-lt);white-space:nowrap}
+.ts span{display:block;margin-top:12px;font-size:13.5px;color:rgba(242,241,237,.6)}
+
+/* ================= INVENTARIO ================= */
+.inv{padding:clamp(70px,9vw,120px) 0 clamp(60px,8vw,100px);background:var(--paper)}
+.inv-head{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(24px,5vw,70px);align-items:end;margin-bottom:clamp(30px,4vw,48px)}
+.inv-head h2{font-size:clamp(32px,4.4vw,60px);font-weight:300;margin:0;max-width:14ch;line-height:1.02}
+.inv-head h2 em{font-style:italic;color:var(--gold)}
+.inv-head p{margin:0;color:#3B4048;font-size:clamp(15.5px,1.2vw,17.5px)}
+.inv-tools{position:sticky;top:84px;z-index:30;display:flex;flex-wrap:wrap;gap:12px;align-items:center;padding:14px 0;
+  background:rgba(242,241,237,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.srch{flex:1 1 260px;display:flex;align-items:center;gap:10px;border:1px solid var(--line);background:#fff;padding:0 14px;height:44px;transition:border-color .3s}
+.srch:focus-within{border-color:var(--gold)}
+.srch svg{width:18px;height:18px;color:var(--muted);flex:none}
+.srch input{flex:1;border:0;outline:0;background:none;font:inherit;font-size:15px;color:var(--ink);min-width:0}
+.seg{display:inline-flex;border:1px solid var(--line);height:44px}
+.seg button{border:0;background:none;font:inherit;font-size:13px;letter-spacing:.02em;color:var(--muted);padding:0 14px;cursor:pointer;white-space:nowrap;transition:.25s}
+.seg button + button{border-left:1px solid var(--line)}
+.seg button:hover{color:var(--ink)}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.inv-count{margin-left:auto;font-size:13px;color:var(--muted);white-space:nowrap}
+.inv-wrap{margin-top:8px}
+.inv-table{width:100%;border-collapse:collapse;font-size:15px}
+.inv-table thead th{text-align:left;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);font-weight:500;padding:18px 12px;border-bottom:1px solid var(--ink)}
+.inv-table thead button{background:none;border:0;font:inherit;letter-spacing:inherit;text-transform:inherit;color:inherit;cursor:pointer;padding:0;display:inline-flex;gap:6px;align-items:center}
+.inv-table thead button::after{content:"↕";font-size:11px;opacity:.35}
+.inv-table thead button.on{color:var(--ink)}
+.inv-table thead button.on::after{content:"↑";opacity:1;color:var(--gold)}
+.inv-table thead button.on.desc::after{content:"↓"}
+.inv-table tbody tr{border-bottom:1px solid var(--line);transition:background .25s}
+.inv-table tbody tr:hover{background:rgba(184,145,47,.07)}
+.inv-table tbody th,.inv-table td{padding:15px 12px;text-align:left;font-weight:400;vertical-align:middle}
+.inv-table .brand-s{display:block;font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold)}
+.inv-table .mdl{font-family:var(--serif);font-size:21px;letter-spacing:.01em}
+.inv-table td b{font-weight:600}
+.qty{display:inline-flex;align-items:center;gap:12px}
+.qty b{min-width:2ch;text-align:right}
+.qbar{width:64px;height:3px;background:var(--line);position:relative;overflow:hidden}
+.qbar i{position:absolute;left:0;top:0;bottom:0;width:calc(var(--q) * 100%);background:var(--gold);transform-origin:left;transform:scaleX(0);transition:transform 1s cubic-bezier(.2,.7,.25,1)}
+.inv-table.lit .qbar i{transform:scaleX(1)}
+.inv-table td.act{text-align:right}
+.docs{white-space:nowrap}
+.docs a{display:inline-flex;align-items:center;gap:5px;font-size:13px;color:var(--ink);text-decoration:none;border-bottom:1px solid rgba(184,145,47,.55);padding-bottom:1px;transition:color .25s,border-color .25s}
+.docs a + a{margin-left:14px}
+.docs a::before{content:"PDF";font-size:8.5px;font-weight:600;letter-spacing:.08em;line-height:1;color:var(--gold);border:1px solid rgba(184,145,47,.6);padding:2px 3px 1px}
+.docs a:hover{color:var(--gold);border-color:var(--gold)}
+.qt{display:inline-block;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);text-decoration:none;border:1px solid rgba(184,145,47,.45);padding:8px 14px;transition:.3s;white-space:nowrap}
+.qt:hover{background:var(--gold);color:var(--ink);border-color:var(--gold)}
+.inv-table tr.hide{display:none}
+.inv-empty{display:none;padding:40px 0;color:var(--muted)}
+.inv-note{margin:18px 0 0;font-size:12.5px;color:var(--muted);max-width:none}
+.inv .notice{margin-top:clamp(40px,5vw,64px)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+@media (max-width:1000px){
+  .teco-grid{grid-template-columns:1fr}
+  .orbit{max-width:480px}
+  .tstats{grid-template-columns:1fr 1fr}
+  .ts:nth-child(2){border-right:0}
+  .ts:nth-child(3){padding-left:0}
+  .ts:nth-child(-n+2){padding-bottom:26px;border-bottom:1px solid var(--line-dk)}
+  .inv-head{grid-template-columns:1fr}
+  .inv-count{margin-left:0}
+}
+@media (max-width:760px){
+  .inv-tools{top:84px}
+  .seg{overflow-x:auto;max-width:100%}
+  .inv-table thead{display:none}
+  .inv-table,.inv-table tbody{display:block}
+  .inv-table tbody tr{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px 14px;padding:18px 0}
+  .inv-table tbody th{grid-column:1 / -1;padding:0}
+  .inv-table td{padding:0;font-size:14px}
+  .inv-table td[data-l]::before{content:attr(data-c);display:block;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:2px}
+  .inv-table td.act{grid-column:1 / -1;text-align:left}
+  .qbar{width:40px}
+}
+@media (prefers-reduced-motion:reduce){
+  .orbit .r1,.orbit .r2,.orbit .r3,.orbit .sweep{animation:none}
+  .rv{opacity:1;transform:none;transition:none}
+}
 </style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "ItemList",
+ "name": "Motores TECO-Westinghouse en stock — MARASE Supply",
+ "numberOfItems": 39,
+ "itemListElement": [
+  {
+   "@type": "ListItem",
+   "position": 1,
+   "item": {
+    "@type": "Product",
+    "name": "Motor TECO-Westinghouse EP2002 200 HP 2 polos 460 V",
+    "subjectOf": [
+     {
+      "@type": "DigitalDocument",
+      "name": "Datasheet EP2002",
+      "encodingFormat": "application/pdf",
+      "url": "https://buy.tecowestinghouse.com/EcommerceFiles/submittals/SUB_EP2002.pdf"
+     },
+     {
+      "@type": "DigitalDocument",
+      "name": "Manual de instrucciones",
+      "encodingFormat": "application/pdf",
+      "url": "https://buy.tecowestinghouse.com/EcommerceFiles/Manuals/TWMC%20Instruction%20Manual_143%20to%20449%20frame.pdf"
+     }
+    ],
+    "model": "EP2002",
+    "brand": {
+     "@type": "Brand",
+     "name": "TECO-Westinghouse"
+    },
+    "category": "Motores eléctricos de baja tensión",
+    "description": "Motor eléctrico TECO-Westinghouse modelo EP2002, 200 HP, 2 polos (3,600 RPM síncronas a 60 Hz), 460 V. En stock en MARASE Supply, México. Precio y entrega por cotización.",
+    "additionalProperty": [
+     {
+      "@type": "PropertyValue",
+      "name": "Potencia",
+      "value": 200,
+      "unitText": "HP"
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Polos",
+      "value": 2
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Velocidad síncrona",
+      "value": 3600,
+      "unitText": "RPM"
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Tensión",
+      "value": "460 V"
+     }
+    ]
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 2,
+   "item": {
+    "@type": "Product",
+    "name": "Motor TECO-Westinghouse EP2004 200 HP 4 polos 460 V",
+    "subjectOf": [
+     {
+      "@type": "DigitalDocument",
+      "name": "Datasheet EP2004",
+      "encodingFormat": "application/pdf",
+      "url": "https://buy.tecowestinghouse.com/EcommerceFiles/submittals/SUB_EP2004.pdf"
+     },
+     {
+      "@type": "DigitalDocument",
+      "name": "Manual de instrucciones",
+      "encodingFormat": "application/pdf",
+      "url": "https://buy.tecowestinghouse.com/EcommerceFiles/Manuals/TWMC%20Instruction%20Manual_143%20to%20449%20frame.pdf"
+     }
+    ],
+    "model": "EP2004",
+    "brand": {
+     "@type": "Brand",
+     "name": "TECO-Westinghouse"
+    },
+    "category": "Motores eléctricos de baja tensión",
+    "description": "Motor eléctrico TECO-Westinghouse modelo EP2004, 200 HP, 4 polos (1,800 RPM síncronas a 60 Hz), 460 V. En stock en MARASE Supply, México. Precio y entrega por cotización.",
+    "additionalProperty": [
+     {
+      "@type": "PropertyValue",
+      "name": "Potencia",
+      "value": 200,
+      "unitText": "HP"
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Polos",
+      "value": 4
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Velocidad síncrona",
+      "value": 1800,
+      "unitText": "RPM"
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Tensión",
+      "value": "460 V"
+     }
+    ]
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 3,
+   "item": {
+    "@type": "Product",
+    "name": "Motor TECO-Westinghouse EP2006 200 HP 6 polos 460 V",
+    "subjectOf": [
+     {
+      "@type": "DigitalDocument",
+      "name": "Datasheet EP2006",
+      "encodingFormat": "application/pdf",
+      "url": "https://buy.tecowestinghouse.com/EcommerceFiles/submittals/SUB_EP2006.pdf"
+     },
+     {
+      "@type": "DigitalDocument",
+      "name": "Manual de instrucciones",
+      "encodingFormat": "application/pdf",
+      "url": "https://buy.tecowestinghouse.com/EcommerceFiles/Manuals/TWMC%20Instruction%20Manual_143%20to%20449%20frame.pdf"
+     }
+    ],
+    "model": "EP2006",
+    "brand": {
+     "@type": "Brand",
+     "name": "TECO-Westinghouse"
+    },
+    "category": "Motores eléctricos de baja tensión",
+    "description": "Motor eléctrico TECO-Westinghouse modelo EP2006, 200 HP, 6 polos (1,200 RPM síncronas a 60 Hz), 460 V. En stock en MARASE Supply, México. Precio y entrega por cotización.",
+    "additionalProperty": [
+     {
+      "@type": "PropertyValue",
+      "name": "Potencia",
+      "value": 200,
+      "unitText": "HP"
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Polos",
+      "value": 6
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Velocidad síncrona",
+      "value": 1200,
+      "unitText": "RPM"
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Tensión",
+      "value": "460 V"
+     }
+    ]
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 4,
+   "item": {
+    "@type": "Product",
+    "name": "Motor TECO-Westinghouse EP2504 250 HP 4 polos 460 V",
+    "subjectOf": [
+     {
+      "@type": "DigitalDocument",
+      "name": "Datasheet EP2504",
+      "encodingFormat": "application/pdf",
+      "url": "https://buy.tecowestinghouse.com/EcommerceFiles/submittals/SUB_EP2504.pdf"
+     },
+     {
+      "@type": "DigitalDocument",
+      "name": "Manual de instrucciones",
+      "encodingFormat": "application/pdf",
+      "url": "https://buy.tecowestinghouse.com/EcommerceFiles/Manuals/TWMC%20Instruction%20Manual_143%20to%20449%20frame.pdf"
+     }
+    ],
+    "model": "EP2504",
+    "brand": {
+     "@type": "Brand",
+     "name": "TECO-Westinghouse"
+    },
+    "category": "Motores eléctricos de baja tensión",
+    "description": "Motor eléctrico TECO-Westinghouse modelo EP2504, 250 HP, 4 polos (1,800 RPM síncronas a 60 Hz), 460 V. En stock en MARASE Supply, México. Precio y entrega por cotización.",
+    "additionalProperty": [
+     {
+      "@type": "PropertyValue",
+      "name": "Potencia",
+      "value": 250,
+      "unitText": "HP"
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Polos",
+      "value": 4
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Velocidad síncrona",
+      "value": 1800,
+      "unitText": "RPM"
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Tensión",
+      "value": "460 V"
+     }
+    ]
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 5,
+   "item": {
+    "@type": "Product",
+    "name": "Motor TECO-Westinghouse EP2506 250 HP 6 polos 460 V",
+    "subjectOf": [
+     {
+      "@type": "DigitalDocument",
+      "name": "Datasheet EP2506",
+      "encodingFormat": "application/pdf",
+      "url": "https://buy.tecowestinghouse.com/EcommerceFiles/submittals/SUB_EP2506.pdf"
+     },
+     {
+      "@type": "DigitalDocument",
+      "name": "Manual de instrucciones",
+      "encodingFormat": "application/pdf",
+      "url": "https://buy.tecowestinghouse.com/EcommerceFiles/Manuals/TWMC%20Instruction%20Manual_143%20to%20449%20frame.pdf"
+     }
+    ],
+    "model": "EP2506",
+    "brand": {
+     "@type": "Brand",
+     "name": "TECO-Westinghouse"
+    },
+    "category": "Motores eléctricos de baja tensión",
+    "description": "Motor eléctrico TECO-Westinghouse modelo EP2506, 250 HP, 6 polos (1,200 RPM síncronas a 60 Hz), 460 V. En stock en MARASE Supply, México. Precio y entrega por cotización.",
+    "additionalProperty": [
+     {
+      "@type": "PropertyValue",
+      "name": "Potencia",
+      "value": 250,
+      "unitText": "HP"
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Polos",
+      "value": 6
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Velocidad síncrona",
+      "value": 1200,
+      "unitText": "RPM"
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Tensión",
+      "value": "460 V"
+     }
+    ]
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 6,
+   "item": {
+    "@type": "Product",
+    "name": "Motor TECO-Westinghouse EP3002 300 HP 2 polos 460 V",
+    "subjectOf": [
+     {
+      "@type": "DigitalDocument",
+      "name": "Datasheet EP3002",
+      "encodingFormat": "application/pdf",
+      "url": "https://buy.tecowestinghouse.com/EcommerceFiles/submittals/SUB_EP3002.pdf"
+     },
+     {
+      "@type": "DigitalDocument",
+      "name": "Manual de instrucciones",
+      "encodingFormat": "application/pdf",
+      "url": "https://buy.tecowestinghouse.com/EcommerceFiles/Manuals/TWMC%20Instruction%20Manual_143%20to%20449%20frame.pdf"
+     }
+    ],
+    "model": "EP3002",
+    "brand": {
+     "@type": "Brand",
+     "name": "TECO-Westinghouse"
+    },
+    "category": "Motores eléctricos de baja tensión",
+    "description": "Motor eléctrico TECO-Westinghouse modelo EP3002, 300 HP, 2 polos (3,600 RPM síncronas a 60 Hz), 460 V. En stock en MARASE Supply, México. Precio y entrega por cotización.",
+    "additionalProperty": [
+     {
+      "@type": "PropertyValue",
+      "name": "Potencia",
+      "value": 300,
+      "unitText": "HP"
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Polos",
+      "value": 2
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Velocidad síncrona",
+      "value": 3600,
+      "unitText": "RPM"
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Tensión",
+      "value": "460 V"
+     }
+    ]
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 7,
+   "item": {
+    "@type": "Product",
+    "name": "Motor TECO-Westinghouse EP3004 300 HP 4 polos 460 V",
+    "subjectOf": [
+     {
+      "@type": "DigitalDocument",
+      "name": "Datasheet EP3004",
+      "encodingFormat": "application/pdf",
+      "url": "https://buy.tecowestinghouse.com/EcommerceFiles/submittals/SUB_EP3004.pdf"
+     },
+     {
+      "@type": "DigitalDocument",
+      "name": "Manual de instrucciones",
+      "encodingFormat": "application/pdf",
+      "url": "https://buy.tecowestinghouse.com/EcommerceFiles/Manuals/TWMC%20Instruction%20Manual_143%20to%20449%20frame.pdf"
+     }
+    ],
+    "model": "EP3004",
+    "brand": {
+     "@type": "Brand",
+     "name": "TECO-Westinghouse"
+    },
+    "category": "Motores eléctricos de baja tensión",
+    "description": "Motor eléctrico TECO-Westinghouse modelo EP3004, 300 HP, 4 polos (1,800 RPM síncronas a 60 Hz), 460 V. En stock en MARASE Supply, México. Precio y entrega por cotización.",
+    "additionalProperty": [
+     {
+      "@type": "PropertyValue",
+      "name": "Potencia",
+      "value": 300,
+      "unitText": "HP"
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Polos",
+      "value": 4
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Velocidad síncrona",
+      "value": 1800,
+      "unitText": "RPM"
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Tensión",
+      "value": "460 V"
+     }
+    ]
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 8,
+   "item": {
+    "@type": "Product",
+    "name": "Motor TECO-Westinghouse KPF2006 200 HP 6 polos 2,300/4,160 V",
+    "subjectOf": [
+     {
+      "@type": "DigitalDocument",
+      "name": "Datasheet KPF2006",
+      "encodingFormat": "application/pdf",
+      "url": "https://buy.tecowestinghouse.com/EcommerceFiles/submittals/SUB_KPF2006.pdf"
+     },
+     {
+      "@type": "DigitalDocument",
+      "name": "Manual de instrucciones",
+      "encodingFormat": "application/pdf",
+      "url": "https://www.tecowestinghouse.com/PDF/O&M_manual_5000_larger.pdf"
+     }
+    ],
+    "model": "KPF2006",
+    "brand": {
+     "@type": "Brand",
+     "name": "TECO-Westinghouse"
+    },
+    "category": "Motores eléctricos de media tensión",
+    "description": "Motor eléctrico TECO-Westinghouse modelo KPF2006, 200 HP, 6 polos (1,200 RPM síncronas a 60 Hz), 2,300/4,160 V. En stock en MARASE Supply, México. Precio y entrega por cotización.",
+    "additionalProperty": [
+     {
+      "@type": "PropertyValue",
+      "name": "Potencia",
+      "value": 200,
+      "unitText": "HP"
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Polos",
+      "value": 6
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Velocidad síncrona",
+      "value": 1200,
+      "unitText": "RPM"
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Tensión",
+      "value": "2,300/4,160 V"
+     }
+    ]
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 9,
+   "item": {
+    "@type": "Product",
+    "name": "Motor TECO-Westinghouse KPF2506R 250 HP 6 polos 2,300/4,160 V",
+    "subjectOf": [
+     {
+      "@type": "DigitalDocument",
+      "name": "Datasheet KPF2506R",
+      "encodingFormat": "application/pdf",
+      "url": "https://buy.tecowestinghouse.com/EcommerceFiles/submittals/SUB_KPF2506R.pdf"
+     },
+     {
+      "@type": "DigitalDocument",
+      "name": "Manual de instrucciones",
+      "encodingFormat": "application/pdf",
+      "url": "https://www.tecowestinghouse.com/PDF/O&M_manual_5000_larger.pdf"
+     }
+    ],
+    "model": "KPF2506R",
+    "brand": {
+     "@type": "Brand",
+     "name": "TECO-Westinghouse"
+    },
+    "category": "Motores eléctricos de media tensión",
+    "description": "Motor eléctrico TECO-Westinghouse modelo KPF2506R, 250 HP, 6 polos (1,200 RPM síncronas a 60 Hz), 2,300/4,160 V. En stock en MARASE Supply, México. Precio y entrega por cotización.",
+    "additionalProperty": [
+     {
+      "@type": "PropertyValue",
+      "name": "Potencia",
+      "value": 250,
+      "unitText": "HP"
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Polos",
+      "value": 6
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Velocidad síncrona",
+      "value": 1200,
+      "unitText": "RPM"
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Tensión",
+      "value": "2,300/4,160 V"
+     }
+    ]
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 10,
+   "item": {
+    "@type": "Product",
+    "name": "Motor TECO-Westinghouse KPF3002 300 HP 2 polos 2,300/4,160 V",
+    "subjectOf": [
+     {
+      "@type": "DigitalDocument",
+      "name": "Datasheet KPF3002",
+      "encodingFormat": "application/pdf",
+      "url": "https://buy.tecowestinghouse.com/EcommerceFiles/submittals/SUB_KPF3002.pdf"
+     },
+     {
+      "@type": "DigitalDocument",
+      "name": "Manual de instrucciones",
+      "encodingFormat": "application/pdf",
+      "url": "https://www.tecowestinghouse.com/PDF/O&M_manual_5000_larger.pdf"
+     }
+    ],
+    "model": "KPF3002",
+    "brand": {
+     "@type": "Brand",
+     "name": "TECO-Westinghouse"
+    },
+    "category": "Motores eléctricos de media tensión",
+    "description": "Motor eléctrico TECO-Westinghouse modelo KPF3002, 300 HP, 2 polos (3,600 RPM síncronas a 60 Hz), 2,300/4,160 V. En stock en MARASE Supply, México. Precio y entrega por cotización.",
+    "additionalProperty": [
+     {
+      "@type": "PropertyValue",
+      "name": "Potencia",
+      "value": 300,
+      "unitText": "HP"
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Polos",
+      "value": 2
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Velocidad síncrona",
+      "value": 3600,
+      "unitText": "RPM"
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Tensión",
+      "value": "2,300/4,160 V"
+     }
+    ]
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 11,
+   "item": {
+    "@type": "Product",
+    "name": "Motor TECO-Westinghouse KPF3004 300 HP 4 polos 2,300/4,160 V",
+    "subjectOf": [
+     {
+      "@type": "DigitalDocument",
+      "name": "Datasheet KPF3004",
+      "encodingFormat": "application/pdf",
+      "url": "https://buy.tecowestinghouse.com/EcommerceFiles/submittals/SUB_KPF3004.pdf"
+     },
+     {
+      "@type": "DigitalDocument",
+      "name": "Manual de instrucciones",
+      "encodingFormat": "application/pdf",
+      "url": "https://www.tecowestinghouse.com/PDF/O&M_manual_5000_larger.pdf"
+     }
+    ],
+    "model": "KPF3004",
+    "brand": {
+     "@type": "Brand",
+     "name": "TECO-Westinghouse"
+    },
+    "category": "Motores eléctricos de media tensión",
+    "description": "Motor eléctrico TECO-Westinghouse modelo KPF3004, 300 HP, 4 polos (1,800 RPM síncronas a 60 Hz), 2,300/4,160 V. En stock en MARASE Supply, México. Precio y entrega por cotización.",
+    "additionalProperty": [
+     {
+      "@type": "PropertyValue",
+      "name": "Potencia",
+      "value": 300,
+      "unitText": "HP"
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Polos",
+      "value": 4
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Velocidad síncrona",
+      "value": 1800,
+      "unitText": "RPM"
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Tensión",
+      "value": "2,300/4,160 V"
+     }
+    ]
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 12,
+   "item": {
+    "@type": "Product",
+    "name": "Motor TECO-Westinghouse KPF3502 350 HP 2 polos 2,300/4,160 V",
+    "subjectOf": [
+     {
+      "@type": "DigitalDocument",
+      "name": "Datasheet KPF3502",
+      "encodingFormat": "application/pdf",
+      "url": "https://buy.tecowestinghouse.com/EcommerceFiles/submittals/SUB_KPF3502.pdf"
+     },
+     {
+      "@type": "DigitalDocument",
+      "name": "Manual de instrucciones",
+      "encodingFormat": "application/pdf",
+      "url": "https://www.tecowestinghouse.com/PDF/O&M_manual_5000_larger.pdf"
+     }
+    ],
+    "model": "KPF3502",
+    "brand": {
+     "@type": "Brand",
+     "name": "TECO-Westinghouse"
+    },
+    "category": "Motores eléctricos de media tensión",
+    "description": "Motor eléctrico TECO-Westinghouse modelo KPF3502, 350 HP, 2 polos (3,600 RPM síncronas a 60 Hz), 2,300/4,160 V. En stock en MARASE Supply, México. Precio y entrega por cotización.",
+    "additionalProperty": [
+     {
+      "@type": "PropertyValue",
+      "name": "Potencia",
+      "value": 350,
+      "unitText": "HP"
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Polos",
+      "value": 2
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Velocidad síncrona",
+      "value": 3600,
+      "unitText": "RPM"
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Tensión",
+      "value": "2,300/4,160 V"
+     }
+    ]
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 13,
+   "item": {
+    "@type": "Product",
+    "name": "Motor TECO-Westinghouse KPF3504 350 HP 4 polos 2,300/4,160 V",
+    "subjectOf": [
+     {
+      "@type": "DigitalDocument",
+      "name": "Datasheet KPF3504",
+      "encodingFormat": "application/pdf",
+      "url": "https://buy.tecowestinghouse.com/EcommerceFiles/submittals/SUB_KPF3504.pdf"
+     },
+     {
+      "@type": "DigitalDocument",
+      "name": "Manual de instrucciones",
+      "encodingFormat": "application/pdf",
+      "url": "https://www.tecowestinghouse.com/PDF/O&M_manual_5000_larger.pdf"
+     }
+    ],
+    "model": "KPF3504",
+    "brand": {
+     "@type": "Brand",
+     "name": "TECO-Westinghouse"
+    },
+    "category": "Motores eléctricos de media tensión",
+    "description": "Motor eléctrico TECO-Westinghouse modelo KPF3504, 350 HP, 4 polos (1,800 RPM síncronas a 60 Hz), 2,300/4,160 V. En stock en MARASE Supply, México. Precio y entrega por cotización.",
+    "additionalProperty": [
+     {
+      "@type": "PropertyValue",
+      "name": "Potencia",
+      "value": 350,
+      "unitText": "HP"
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Polos",
+      "value": 4
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Velocidad síncrona",
+      "value": 1800,
+      "unitText": "RPM"
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Tensión",
+      "value": "2,300/4,160 V"
+     }
+    ]
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 14,
+   "item": {
+    "@type": "Product",
+    "name": "Motor TECO-Westinghouse KPF3506 350 HP 6 polos 2,300/4,160 V",
+    "subjectOf": [
+     {
+      "@type": "DigitalDocument",
+      "name": "Datasheet KPF3506",
+      "encodingFormat": "application/pdf",
+      "url": "https://buy.tecowestinghouse.com/EcommerceFiles/submittals/SUB_KPF3506.pdf"
+     },
+     {
+      "@type": "DigitalDocument",
+      "name": "Manual de instrucciones",
+      "encodingFormat": "application/pdf",
+      "url": "https://www.tecowestinghouse.com/PDF/O&M_manual_5000_larger.pdf"
+     }
+    ],
+    "model": "KPF3506",
+    "brand": {
+     "@type": "Brand",
+     "name": "TECO-Westinghouse"
+    },
+    "category": "Motores eléctricos de media tensión",
+    "description": "Motor eléctrico TECO-Westinghouse modelo KPF3506, 350 HP, 6 polos (1,200 RPM síncronas a 60 Hz), 2,300/4,160 V. En stock en MARASE Supply, México. Precio y entrega por cotización.",
+    "additionalProperty": [
+     {
+      "@type": "PropertyValue",
+      "name": "Potencia",
+      "value": 350,
+      "unitText": "HP"
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Polos",
+      "value": 6
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Velocidad síncrona",
+      "value": 1200,
+      "unitText": "RPM"
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Tensión",
+      "value": "2,300/4,160 V"
+     }
+    ]
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 15,
+   "item": {
+    "@type": "Product",
+    "name": "Motor TECO-Westinghouse KPF4004 400 HP 4 polos 2,300/4,160 V",
+    "subjectOf": [
+     {
+      "@type": "DigitalDocument",
+      "name": "Datasheet KPF4004",
+      "encodingFormat": "application/pdf",
+      "url": "https://buy.tecowestinghouse.com/EcommerceFiles/submittals/SUB_KPF4004.pdf"
+     },
+     {
+      "@type": "DigitalDocument",
+      "name": "Manual de instrucciones",
+      "encodingFormat": "application/pdf",
+      "url": "https://www.tecowestinghouse.com/PDF/O&M_manual_5000_larger.pdf"
+     }
+    ],
+    "model": "KPF4004",
+    "brand": {
+     "@type": "Brand",
+     "name": "TECO-Westinghouse"
+    },
+    "category": "Motores eléctricos de media tensión",
+    "description": "Motor eléctrico TECO-Westinghouse modelo KPF4004, 400 HP, 4 polos (1,800 RPM síncronas a 60 Hz), 2,300/4,160 V. En stock en MARASE Supply, México. Precio y entrega por cotización.",
+    "additionalProperty": [
+     {
+      "@type": "PropertyValue",
+      "name": "Potencia",
+      "value": 400,
+      "unitText": "HP"
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Polos",
+      "value": 4
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Velocidad síncrona",
+      "value": 1800,
+      "unitText": "RPM"
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Tensión",
+      "value": "2,300/4,160 V"
+     }
+    ]
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 16,
+   "item": {
+    "@type": "Product",
+    "name": "Motor TECO-Westinghouse KPF4006 400 HP 6 polos 2,300/4,160 V",
+    "subjectOf": [
+     {
+      "@type": "DigitalDocument",
+      "name": "Datasheet KPF4006",
+      "encodingFormat": "application/pdf",
+      "url": "https://buy.tecowestinghouse.com/EcommerceFiles/submittals/SUB_KPF4006.pdf"
+     },
+     {
+      "@type": "DigitalDocument",
+      "name": "Manual de instrucciones",
+      "encodingFormat": "application/pdf",
+      "url": "https://www.tecowestinghouse.com/PDF/O&M_manual_5000_larger.pdf"
+     }
+    ],
+    "model": "KPF4006",
+    "brand": {
+     "@type": "Brand",
+     "name": "TECO-Westinghouse"
+    },
+    "category": "Motores eléctricos de media tensión",
+    "description": "Motor eléctrico TECO-Westinghouse modelo KPF4006, 400 HP, 6 polos (1,200 RPM síncronas a 60 Hz), 2,300/4,160 V. En stock en MARASE Supply, México. Precio y entrega por cotización.",
+    "additionalProperty": [
+     {
+      "@type": "PropertyValue",
+      "name": "Potencia",
+      "value": 400,
+      "unitText": "HP"
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Polos",
+      "value": 6
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Velocidad síncrona",
+      "value": 1200,
+      "unitText": "RPM"
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Tensión",
+      "value": "2,300/4,160 V"
+     }
+    ]
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 17,
+   "item": {
+    "@type": "Product",
+    "name": "Motor TECO-Westinghouse KPF4008 400 HP 8 polos 2,300/4,160 V",
+    "subjectOf": [
+     {
+      "@type": "DigitalDocument",
+      "name": "Datasheet KPF4008",
+      "encodingFormat": "application/pdf",
+      "url": "https://buy.tecowestinghouse.com/EcommerceFiles/submittals/SUB_KPF4008.pdf"
+     },
+     {
+      "@type": "DigitalDocument",
+      "name": "Manual de instrucciones",
+      "encodingFormat": "application/pdf",
+      "url": "https://www.tecowestinghouse.com/PDF/O&M_manual_5000_larger.pdf"
+     }
+    ],
+    "model": "KPF4008",
+    "brand": {
+     "@type": "Brand",
+     "name": "TECO-Westinghouse"
+    },
+    "category": "Motores eléctricos de media tensión",
+    "description": "Motor eléctrico TECO-Westinghouse modelo KPF4008, 400 HP, 8 polos (900 RPM síncronas a 60 Hz), 2,300/4,160 V. En stock en MARASE Supply, México. Precio y entrega por cotización.",
+    "additionalProperty": [
+     {
+      "@type": "PropertyValue",
+      "name": "Potencia",
+      "value": 400,
+      "unitText": "HP"
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Polos",
+      "value": 8
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Velocidad síncrona",
+      "value": 900,
+      "unitText": "RPM"
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Tensión",
+      "value": "2,300/4,160 V"
+     }
+    ]
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 18,
+   "item": {
+    "@type": "Product",
+    "name": "Motor TECO-Westinghouse KPF4502 450 HP 2 polos 2,300/4,160 V",
+    "subjectOf": [
+     {
+      "@type": "DigitalDocument",
+      "name": "Datasheet KPF4502",
+      "encodingFormat": "application/pdf",
+      "url": "https://buy.tecowestinghouse.com/EcommerceFiles/submittals/SUB_KPF4502.pdf"
+     },
+     {
+      "@type": "DigitalDocument",
+      "name": "Manual de instrucciones",
+      "encodingFormat": "application/pdf",
+      "url": "https://www.tecowestinghouse.com/PDF/O&M_manual_5000_larger.pdf"
+     }
+    ],
+    "model": "KPF4502",
+    "brand": {
+     "@type": "Brand",
+     "name": "TECO-Westinghouse"
+    },
+    "category": "Motores eléctricos de media tensión",
+    "description": "Motor eléctrico TECO-Westinghouse modelo KPF4502, 450 HP, 2 polos (3,600 RPM síncronas a 60 Hz), 2,300/4,160 V. En stock en MARASE Supply, México. Precio y entrega por cotización.",
+    "additionalProperty": [
+     {
+      "@type": "PropertyValue",
+      "name": "Potencia",
+      "value": 450,
+      "unitText": "HP"
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Polos",
+      "value": 2
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Velocidad síncrona",
+      "value": 3600,
+      "unitText": "RPM"
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Tensión",
+      "value": "2,300/4,160 V"
+     }
+    ]
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 19,
+   "item": {
+    "@type": "Product",
+    "name": "Motor TECO-Westinghouse KPF4504 450 HP 4 polos 2,300/4,160 V",
+    "subjectOf": [
+     {
+      "@type": "DigitalDocument",
+      "name": "Datasheet KPF4504",
+      "encodingFormat": "application/pdf",
+      "url": "https://buy.tecowestinghouse.com/EcommerceFiles/submittals/SUB_KPF4504.pdf"
+     },
+     {
+      "@type": "DigitalDocument",
+      "name": "Manual de instrucciones",
+      "encodingFormat": "application/pdf",
+      "url": "https://www.tecowestinghouse.com/PDF/O&M_manual_5000_larger.pdf"
+     }
+    ],
+    "model": "KPF4504",
+    "brand": {
+     "@type": "Brand",
+     "name": "TECO-Westinghouse"
+    },
+    "category": "Motores eléctricos de media tensión",
+    "description": "Motor eléctrico TECO-Westinghouse modelo KPF4504, 450 HP, 4 polos (1,800 RPM síncronas a 60 Hz), 2,300/4,160 V. En stock en MARASE Supply, México. Precio y entrega por cotización.",
+    "additionalProperty": [
+     {
+      "@type": "PropertyValue",
+      "name": "Potencia",
+      "value": 450,
+      "unitText": "HP"
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Polos",
+      "value": 4
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Velocidad síncrona",
+      "value": 1800,
+      "unitText": "RPM"
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Tensión",
+      "value": "2,300/4,160 V"
+     }
+    ]
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 20,
+   "item": {
+    "@type": "Product",
+    "name": "Motor TECO-Westinghouse KPF4508 450 HP 8 polos 2,300/4,160 V",
+    "subjectOf": [
+     {
+      "@type": "DigitalDocument",
+      "name": "Datasheet KPF4508",
+      "encodingFormat": "application/pdf",
+      "url": "https://buy.tecowestinghouse.com/EcommerceFiles/submittals/SUB_KPF4508.pdf"
+     },
+     {
+      "@type": "DigitalDocument",
+      "name": "Manual de instrucciones",
+      "encodingFormat": "application/pdf",
+      "url": "https://www.tecowestinghouse.com/PDF/O&M_manual_5000_larger.pdf"
+     }
+    ],
+    "model": "KPF4508",
+    "brand": {
+     "@type": "Brand",
+     "name": "TECO-Westinghouse"
+    },
+    "category": "Motores eléctricos de media tensión",
+    "description": "Motor eléctrico TECO-Westinghouse modelo KPF4508, 450 HP, 8 polos (900 RPM síncronas a 60 Hz), 2,300/4,160 V. En stock en MARASE Supply, México. Precio y entrega por cotización.",
+    "additionalProperty": [
+     {
+      "@type": "PropertyValue",
+      "name": "Potencia",
+      "value": 450,
+      "unitText": "HP"
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Polos",
+      "value": 8
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Velocidad síncrona",
+      "value": 900,
+      "unitText": "RPM"
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Tensión",
+      "value": "2,300/4,160 V"
+     }
+    ]
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 21,
+   "item": {
+    "@type": "Product",
+    "name": "Motor TECO-Westinghouse KPF5002 500 HP 2 polos 2,300/4,160 V",
+    "subjectOf": [
+     {
+      "@type": "DigitalDocument",
+      "name": "Datasheet KPF5002",
+      "encodingFormat": "application/pdf",
+      "url": "https://buy.tecowestinghouse.com/EcommerceFiles/submittals/SUB_KPF5002.pdf"
+     },
+     {
+      "@type": "DigitalDocument",
+      "name": "Manual de instrucciones",
+      "encodingFormat": "application/pdf",
+      "url": "https://www.tecowestinghouse.com/PDF/O&M_manual_5000_larger.pdf"
+     }
+    ],
+    "model": "KPF5002",
+    "brand": {
+     "@type": "Brand",
+     "name": "TECO-Westinghouse"
+    },
+    "category": "Motores eléctricos de media tensión",
+    "description": "Motor eléctrico TECO-Westinghouse modelo KPF5002, 500 HP, 2 polos (3,600 RPM síncronas a 60 Hz), 2,300/4,160 V. En stock en MARASE Supply, México. Precio y entrega por cotización.",
+    "additionalProperty": [
+     {
+      "@type": "PropertyValue",
+      "name": "Potencia",
+      "value": 500,
+      "unitText": "HP"
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Polos",
+      "value": 2
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Velocidad síncrona",
+      "value": 3600,
+      "unitText": "RPM"
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Tensión",
+      "value": "2,300/4,160 V"
+     }
+    ]
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 22,
+   "item": {
+    "@type": "Product",
+    "name": "Motor TECO-Westinghouse KPF5004 500 HP 4 polos 2,300/4,160 V",
+    "subjectOf": [
+     {
+      "@type": "DigitalDocument",
+      "name": "Datasheet KPF5004",
+      "encodingFormat": "application/pdf",
+      "url": "https://buy.tecowestinghouse.com/EcommerceFiles/submittals/SUB_KPF5004.pdf"
+     },
+     {
+      "@type": "DigitalDocument",
+      "name": "Manual de instrucciones",
+      "encodingFormat": "application/pdf",
+      "url": "https://www.tecowestinghouse.com/PDF/O&M_manual_5000_larger.pdf"
+     }
+    ],
+    "model": "KPF5004",
+    "brand": {
+     "@type": "Brand",
+     "name": "TECO-Westinghouse"
+    },
+    "category": "Motores eléctricos de media tensión",
+    "description": "Motor eléctrico TECO-Westinghouse modelo KPF5004, 500 HP, 4 polos (1,800 RPM síncronas a 60 Hz), 2,300/4,160 V. En stock en MARASE Supply, México. Precio y entrega por cotización.",
+    "additionalProperty": [
+     {
+      "@type": "PropertyValue",
+      "name": "Potencia",
+      "value": 500,
+      "unitText": "HP"
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Polos",
+      "value": 4
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Velocidad síncrona",
+      "value": 1800,
+      "unitText": "RPM"
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Tensión",
+      "value": "2,300/4,160 V"
+     }
+    ]
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 23,
+   "item": {
+    "@type": "Product",
+    "name": "Motor TECO-Westinghouse KPF5006 500 HP 6 polos 2,300/4,160 V",
+    "subjectOf": [
+     {
+      "@type": "DigitalDocument",
+      "name": "Datasheet KPF5006",
+      "encodingFormat": "application/pdf",
+      "url": "https://buy.tecowestinghouse.com/EcommerceFiles/submittals/SUB_KPF5006.pdf"
+     },
+     {
+      "@type": "DigitalDocument",
+      "name": "Manual de instrucciones",
+      "encodingFormat": "application/pdf",
+      "url": "https://www.tecowestinghouse.com/PDF/O&M_manual_5000_larger.pdf"
+     }
+    ],
+    "model": "KPF5006",
+    "brand": {
+     "@type": "Brand",
+     "name": "TECO-Westinghouse"
+    },
+    "category": "Motores eléctricos de media tensión",
+    "description": "Motor eléctrico TECO-Westinghouse modelo KPF5006, 500 HP, 6 polos (1,200 RPM síncronas a 60 Hz), 2,300/4,160 V. En stock en MARASE Supply, México. Precio y entrega por cotización.",
+    "additionalProperty": [
+     {
+      "@type": "PropertyValue",
+      "name": "Potencia",
+      "value": 500,
+      "unitText": "HP"
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Polos",
+      "value": 6
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Velocidad síncrona",
+      "value": 1200,
+      "unitText": "RPM"
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Tensión",
+      "value": "2,300/4,160 V"
+     }
+    ]
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 24,
+   "item": {
+    "@type": "Product",
+    "name": "Motor TECO-Westinghouse KPF5008 500 HP 8 polos 2,300/4,160 V",
+    "subjectOf": [
+     {
+      "@type": "DigitalDocument",
+      "name": "Datasheet KPF5008",
+      "encodingFormat": "application/pdf",
+      "url": "https://buy.tecowestinghouse.com/EcommerceFiles/submittals/SUB_KPF5008.pdf"
+     },
+     {
+      "@type": "DigitalDocument",
+      "name": "Manual de instrucciones",
+      "encodingFormat": "application/pdf",
+      "url": "https://www.tecowestinghouse.com/PDF/O&M_manual_5000_larger.pdf"
+     }
+    ],
+    "model": "KPF5008",
+    "brand": {
+     "@type": "Brand",
+     "name": "TECO-Westinghouse"
+    },
+    "category": "Motores eléctricos de media tensión",
+    "description": "Motor eléctrico TECO-Westinghouse modelo KPF5008, 500 HP, 8 polos (900 RPM síncronas a 60 Hz), 2,300/4,160 V. En stock en MARASE Supply, México. Precio y entrega por cotización.",
+    "additionalProperty": [
+     {
+      "@type": "PropertyValue",
+      "name": "Potencia",
+      "value": 500,
+      "unitText": "HP"
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Polos",
+      "value": 8
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Velocidad síncrona",
+      "value": 900,
+      "unitText": "RPM"
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Tensión",
+      "value": "2,300/4,160 V"
+     }
+    ]
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 25,
+   "item": {
+    "@type": "Product",
+    "name": "Motor TECO-Westinghouse KPF6002 600 HP 2 polos 2,300/4,160 V",
+    "subjectOf": [
+     {
+      "@type": "DigitalDocument",
+      "name": "Datasheet KPF6002",
+      "encodingFormat": "application/pdf",
+      "url": "https://buy.tecowestinghouse.com/EcommerceFiles/submittals/SUB_KPF6002.pdf"
+     },
+     {
+      "@type": "DigitalDocument",
+      "name": "Manual de instrucciones",
+      "encodingFormat": "application/pdf",
+      "url": "https://www.tecowestinghouse.com/PDF/O&M_manual_5000_larger.pdf"
+     }
+    ],
+    "model": "KPF6002",
+    "brand": {
+     "@type": "Brand",
+     "name": "TECO-Westinghouse"
+    },
+    "category": "Motores eléctricos de media tensión",
+    "description": "Motor eléctrico TECO-Westinghouse modelo KPF6002, 600 HP, 2 polos (3,600 RPM síncronas a 60 Hz), 2,300/4,160 V. En stock en MARASE Supply, México. Precio y entrega por cotización.",
+    "additionalProperty": [
+     {
+      "@type": "PropertyValue",
+      "name": "Potencia",
+      "value": 600,
+      "unitText": "HP"
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Polos",
+      "value": 2
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Velocidad síncrona",
+      "value": 3600,
+      "unitText": "RPM"
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Tensión",
+      "value": "2,300/4,160 V"
+     }
+    ]
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 26,
+   "item": {
+    "@type": "Product",
+    "name": "Motor TECO-Westinghouse KPF6004 600 HP 4 polos 2,300/4,160 V",
+    "subjectOf": [
+     {
+      "@type": "DigitalDocument",
+      "name": "Datasheet KPF6004",
+      "encodingFormat": "application/pdf",
+      "url": "https://buy.tecowestinghouse.com/EcommerceFiles/submittals/SUB_KPF6004.pdf"
+     },
+     {
+      "@type": "DigitalDocument",
+      "name": "Manual de instrucciones",
+      "encodingFormat": "application/pdf",
+      "url": "https://www.tecowestinghouse.com/PDF/O&M_manual_5000_larger.pdf"
+     }
+    ],
+    "model": "KPF6004",
+    "brand": {
+     "@type": "Brand",
+     "name": "TECO-Westinghouse"
+    },
+    "category": "Motores eléctricos de media tensión",
+    "description": "Motor eléctrico TECO-Westinghouse modelo KPF6004, 600 HP, 4 polos (1,800 RPM síncronas a 60 Hz), 2,300/4,160 V. En stock en MARASE Supply, México. Precio y entrega por cotización.",
+    "additionalProperty": [
+     {
+      "@type": "PropertyValue",
+      "name": "Potencia",
+      "value": 600,
+      "unitText": "HP"
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Polos",
+      "value": 4
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Velocidad síncrona",
+      "value": 1800,
+      "unitText": "RPM"
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Tensión",
+      "value": "2,300/4,160 V"
+     }
+    ]
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 27,
+   "item": {
+    "@type": "Product",
+    "name": "Motor TECO-Westinghouse KPF7002 700 HP 2 polos 2,300/4,160 V",
+    "subjectOf": [
+     {
+      "@type": "DigitalDocument",
+      "name": "Datasheet KPF7002",
+      "encodingFormat": "application/pdf",
+      "url": "https://buy.tecowestinghouse.com/EcommerceFiles/submittals/SUB_KPF7002.pdf"
+     },
+     {
+      "@type": "DigitalDocument",
+      "name": "Manual de instrucciones",
+      "encodingFormat": "application/pdf",
+      "url": "https://www.tecowestinghouse.com/PDF/O&M_manual_5000_larger.pdf"
+     }
+    ],
+    "model": "KPF7002",
+    "brand": {
+     "@type": "Brand",
+     "name": "TECO-Westinghouse"
+    },
+    "category": "Motores eléctricos de media tensión",
+    "description": "Motor eléctrico TECO-Westinghouse modelo KPF7002, 700 HP, 2 polos (3,600 RPM síncronas a 60 Hz), 2,300/4,160 V. En stock en MARASE Supply, México. Precio y entrega por cotización.",
+    "additionalProperty": [
+     {
+      "@type": "PropertyValue",
+      "name": "Potencia",
+      "value": 700,
+      "unitText": "HP"
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Polos",
+      "value": 2
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Velocidad síncrona",
+      "value": 3600,
+      "unitText": "RPM"
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Tensión",
+      "value": "2,300/4,160 V"
+     }
+    ]
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 28,
+   "item": {
+    "@type": "Product",
+    "name": "Motor TECO-Westinghouse KPF7004 700 HP 4 polos 2,300/4,160 V",
+    "subjectOf": [
+     {
+      "@type": "DigitalDocument",
+      "name": "Datasheet KPF7004",
+      "encodingFormat": "application/pdf",
+      "url": "https://buy.tecowestinghouse.com/EcommerceFiles/submittals/SUB_KPF7004.pdf"
+     },
+     {
+      "@type": "DigitalDocument",
+      "name": "Manual de instrucciones",
+      "encodingFormat": "application/pdf",
+      "url": "https://www.tecowestinghouse.com/PDF/O&M_manual_5000_larger.pdf"
+     }
+    ],
+    "model": "KPF7004",
+    "brand": {
+     "@type": "Brand",
+     "name": "TECO-Westinghouse"
+    },
+    "category": "Motores eléctricos de media tensión",
+    "description": "Motor eléctrico TECO-Westinghouse modelo KPF7004, 700 HP, 4 polos (1,800 RPM síncronas a 60 Hz), 2,300/4,160 V. En stock en MARASE Supply, México. Precio y entrega por cotización.",
+    "additionalProperty": [
+     {
+      "@type": "PropertyValue",
+      "name": "Potencia",
+      "value": 700,
+      "unitText": "HP"
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Polos",
+      "value": 4
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Velocidad síncrona",
+      "value": 1800,
+      "unitText": "RPM"
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Tensión",
+      "value": "2,300/4,160 V"
+     }
+    ]
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 29,
+   "item": {
+    "@type": "Product",
+    "name": "Motor TECO-Westinghouse KPF7008 700 HP 8 polos 2,300/4,160 V",
+    "subjectOf": [
+     {
+      "@type": "DigitalDocument",
+      "name": "Datasheet KPF7008",
+      "encodingFormat": "application/pdf",
+      "url": "https://buy.tecowestinghouse.com/EcommerceFiles/submittals/SUB_KPF7008.pdf"
+     },
+     {
+      "@type": "DigitalDocument",
+      "name": "Manual de instrucciones",
+      "encodingFormat": "application/pdf",
+      "url": "https://www.tecowestinghouse.com/PDF/O&M_manual_5000_larger.pdf"
+     }
+    ],
+    "model": "KPF7008",
+    "brand": {
+     "@type": "Brand",
+     "name": "TECO-Westinghouse"
+    },
+    "category": "Motores eléctricos de media tensión",
+    "description": "Motor eléctrico TECO-Westinghouse modelo KPF7008, 700 HP, 8 polos (900 RPM síncronas a 60 Hz), 2,300/4,160 V. En stock en MARASE Supply, México. Precio y entrega por cotización.",
+    "additionalProperty": [
+     {
+      "@type": "PropertyValue",
+      "name": "Potencia",
+      "value": 700,
+      "unitText": "HP"
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Polos",
+      "value": 8
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Velocidad síncrona",
+      "value": 900,
+      "unitText": "RPM"
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Tensión",
+      "value": "2,300/4,160 V"
+     }
+    ]
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 30,
+   "item": {
+    "@type": "Product",
+    "name": "Motor TECO-Westinghouse KPF8002 800 HP 2 polos 2,300/4,160 V",
+    "subjectOf": [
+     {
+      "@type": "DigitalDocument",
+      "name": "Datasheet KPF8002",
+      "encodingFormat": "application/pdf",
+      "url": "https://buy.tecowestinghouse.com/EcommerceFiles/submittals/SUB_KPF8002.pdf"
+     },
+     {
+      "@type": "DigitalDocument",
+      "name": "Manual de instrucciones",
+      "encodingFormat": "application/pdf",
+      "url": "https://www.tecowestinghouse.com/PDF/O&M_manual_5000_larger.pdf"
+     }
+    ],
+    "model": "KPF8002",
+    "brand": {
+     "@type": "Brand",
+     "name": "TECO-Westinghouse"
+    },
+    "category": "Motores eléctricos de media tensión",
+    "description": "Motor eléctrico TECO-Westinghouse modelo KPF8002, 800 HP, 2 polos (3,600 RPM síncronas a 60 Hz), 2,300/4,160 V. En stock en MARASE Supply, México. Precio y entrega por cotización.",
+    "additionalProperty": [
+     {
+      "@type": "PropertyValue",
+      "name": "Potencia",
+      "value": 800,
+      "unitText": "HP"
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Polos",
+      "value": 2
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Velocidad síncrona",
+      "value": 3600,
+      "unitText": "RPM"
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Tensión",
+      "value": "2,300/4,160 V"
+     }
+    ]
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 31,
+   "item": {
+    "@type": "Product",
+    "name": "Motor TECO-Westinghouse KPF8004 800 HP 4 polos 2,300/4,160 V",
+    "subjectOf": [
+     {
+      "@type": "DigitalDocument",
+      "name": "Datasheet KPF8004",
+      "encodingFormat": "application/pdf",
+      "url": "https://buy.tecowestinghouse.com/EcommerceFiles/submittals/SUB_KPF8004.pdf"
+     },
+     {
+      "@type": "DigitalDocument",
+      "name": "Manual de instrucciones",
+      "encodingFormat": "application/pdf",
+      "url": "https://www.tecowestinghouse.com/PDF/O&M_manual_5000_larger.pdf"
+     }
+    ],
+    "model": "KPF8004",
+    "brand": {
+     "@type": "Brand",
+     "name": "TECO-Westinghouse"
+    },
+    "category": "Motores eléctricos de media tensión",
+    "description": "Motor eléctrico TECO-Westinghouse modelo KPF8004, 800 HP, 4 polos (1,800 RPM síncronas a 60 Hz), 2,300/4,160 V. En stock en MARASE Supply, México. Precio y entrega por cotización.",
+    "additionalProperty": [
+     {
+      "@type": "PropertyValue",
+      "name": "Potencia",
+      "value": 800,
+      "unitText": "HP"
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Polos",
+      "value": 4
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Velocidad síncrona",
+      "value": 1800,
+      "unitText": "RPM"
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Tensión",
+      "value": "2,300/4,160 V"
+     }
+    ]
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 32,
+   "item": {
+    "@type": "Product",
+    "name": "Motor TECO-Westinghouse KPF8006 800 HP 6 polos 2,300/4,160 V",
+    "subjectOf": [
+     {
+      "@type": "DigitalDocument",
+      "name": "Datasheet KPF8006",
+      "encodingFormat": "application/pdf",
+      "url": "https://buy.tecowestinghouse.com/EcommerceFiles/submittals/SUB_KPF8006.pdf"
+     },
+     {
+      "@type": "DigitalDocument",
+      "name": "Manual de instrucciones",
+      "encodingFormat": "application/pdf",
+      "url": "https://www.tecowestinghouse.com/PDF/O&M_manual_5000_larger.pdf"
+     }
+    ],
+    "model": "KPF8006",
+    "brand": {
+     "@type": "Brand",
+     "name": "TECO-Westinghouse"
+    },
+    "category": "Motores eléctricos de media tensión",
+    "description": "Motor eléctrico TECO-Westinghouse modelo KPF8006, 800 HP, 6 polos (1,200 RPM síncronas a 60 Hz), 2,300/4,160 V. En stock en MARASE Supply, México. Precio y entrega por cotización.",
+    "additionalProperty": [
+     {
+      "@type": "PropertyValue",
+      "name": "Potencia",
+      "value": 800,
+      "unitText": "HP"
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Polos",
+      "value": 6
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Velocidad síncrona",
+      "value": 1200,
+      "unitText": "RPM"
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Tensión",
+      "value": "2,300/4,160 V"
+     }
+    ]
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 33,
+   "item": {
+    "@type": "Product",
+    "name": "Motor TECO-Westinghouse KPF8008 800 HP 8 polos 2,300/4,160 V",
+    "subjectOf": [
+     {
+      "@type": "DigitalDocument",
+      "name": "Datasheet KPF8008",
+      "encodingFormat": "application/pdf",
+      "url": "https://buy.tecowestinghouse.com/EcommerceFiles/submittals/SUB_KPF8008.pdf"
+     },
+     {
+      "@type": "DigitalDocument",
+      "name": "Manual de instrucciones",
+      "encodingFormat": "application/pdf",
+      "url": "https://www.tecowestinghouse.com/PDF/O&M_manual_5000_larger.pdf"
+     }
+    ],
+    "model": "KPF8008",
+    "brand": {
+     "@type": "Brand",
+     "name": "TECO-Westinghouse"
+    },
+    "category": "Motores eléctricos de media tensión",
+    "description": "Motor eléctrico TECO-Westinghouse modelo KPF8008, 800 HP, 8 polos (900 RPM síncronas a 60 Hz), 2,300/4,160 V. En stock en MARASE Supply, México. Precio y entrega por cotización.",
+    "additionalProperty": [
+     {
+      "@type": "PropertyValue",
+      "name": "Potencia",
+      "value": 800,
+      "unitText": "HP"
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Polos",
+      "value": 8
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Velocidad síncrona",
+      "value": 900,
+      "unitText": "RPM"
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Tensión",
+      "value": "2,300/4,160 V"
+     }
+    ]
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 34,
+   "item": {
+    "@type": "Product",
+    "name": "Motor TECO-Westinghouse KPF9002 900 HP 2 polos 2,300/4,160 V",
+    "subjectOf": [
+     {
+      "@type": "DigitalDocument",
+      "name": "Datasheet KPF9002",
+      "encodingFormat": "application/pdf",
+      "url": "https://buy.tecowestinghouse.com/EcommerceFiles/submittals/SUB_KPF9002.pdf"
+     },
+     {
+      "@type": "DigitalDocument",
+      "name": "Manual de instrucciones",
+      "encodingFormat": "application/pdf",
+      "url": "https://www.tecowestinghouse.com/PDF/O&M_manual_5000_larger.pdf"
+     }
+    ],
+    "model": "KPF9002",
+    "brand": {
+     "@type": "Brand",
+     "name": "TECO-Westinghouse"
+    },
+    "category": "Motores eléctricos de media tensión",
+    "description": "Motor eléctrico TECO-Westinghouse modelo KPF9002, 900 HP, 2 polos (3,600 RPM síncronas a 60 Hz), 2,300/4,160 V. En stock en MARASE Supply, México. Precio y entrega por cotización.",
+    "additionalProperty": [
+     {
+      "@type": "PropertyValue",
+      "name": "Potencia",
+      "value": 900,
+      "unitText": "HP"
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Polos",
+      "value": 2
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Velocidad síncrona",
+      "value": 3600,
+      "unitText": "RPM"
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Tensión",
+      "value": "2,300/4,160 V"
+     }
+    ]
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 35,
+   "item": {
+    "@type": "Product",
+    "name": "Motor TECO-Westinghouse KPF9004 900 HP 4 polos 2,300/4,160 V",
+    "subjectOf": [
+     {
+      "@type": "DigitalDocument",
+      "name": "Datasheet KPF9004",
+      "encodingFormat": "application/pdf",
+      "url": "https://buy.tecowestinghouse.com/EcommerceFiles/submittals/SUB_KPF9004.pdf"
+     },
+     {
+      "@type": "DigitalDocument",
+      "name": "Manual de instrucciones",
+      "encodingFormat": "application/pdf",
+      "url": "https://www.tecowestinghouse.com/PDF/O&M_manual_5000_larger.pdf"
+     }
+    ],
+    "model": "KPF9004",
+    "brand": {
+     "@type": "Brand",
+     "name": "TECO-Westinghouse"
+    },
+    "category": "Motores eléctricos de media tensión",
+    "description": "Motor eléctrico TECO-Westinghouse modelo KPF9004, 900 HP, 4 polos (1,800 RPM síncronas a 60 Hz), 2,300/4,160 V. En stock en MARASE Supply, México. Precio y entrega por cotización.",
+    "additionalProperty": [
+     {
+      "@type": "PropertyValue",
+      "name": "Potencia",
+      "value": 900,
+      "unitText": "HP"
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Polos",
+      "value": 4
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Velocidad síncrona",
+      "value": 1800,
+      "unitText": "RPM"
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Tensión",
+      "value": "2,300/4,160 V"
+     }
+    ]
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 36,
+   "item": {
+    "@type": "Product",
+    "name": "Motor TECO-Westinghouse KPF9006 900 HP 6 polos 2,300/4,160 V",
+    "subjectOf": [
+     {
+      "@type": "DigitalDocument",
+      "name": "Datasheet KPF9006",
+      "encodingFormat": "application/pdf",
+      "url": "https://buy.tecowestinghouse.com/EcommerceFiles/submittals/SUB_KPF9006.pdf"
+     },
+     {
+      "@type": "DigitalDocument",
+      "name": "Manual de instrucciones",
+      "encodingFormat": "application/pdf",
+      "url": "https://www.tecowestinghouse.com/PDF/O&M_manual_5000_larger.pdf"
+     }
+    ],
+    "model": "KPF9006",
+    "brand": {
+     "@type": "Brand",
+     "name": "TECO-Westinghouse"
+    },
+    "category": "Motores eléctricos de media tensión",
+    "description": "Motor eléctrico TECO-Westinghouse modelo KPF9006, 900 HP, 6 polos (1,200 RPM síncronas a 60 Hz), 2,300/4,160 V. En stock en MARASE Supply, México. Precio y entrega por cotización.",
+    "additionalProperty": [
+     {
+      "@type": "PropertyValue",
+      "name": "Potencia",
+      "value": 900,
+      "unitText": "HP"
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Polos",
+      "value": 6
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Velocidad síncrona",
+      "value": 1200,
+      "unitText": "RPM"
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Tensión",
+      "value": "2,300/4,160 V"
+     }
+    ]
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 37,
+   "item": {
+    "@type": "Product",
+    "name": "Motor TECO-Westinghouse KPF10006 1000 HP 6 polos 2,300/4,160 V",
+    "subjectOf": [
+     {
+      "@type": "DigitalDocument",
+      "name": "Datasheet KPF10006",
+      "encodingFormat": "application/pdf",
+      "url": "https://buy.tecowestinghouse.com/EcommerceFiles/submittals/SUB_KPF10006.pdf"
+     },
+     {
+      "@type": "DigitalDocument",
+      "name": "Manual de instrucciones",
+      "encodingFormat": "application/pdf",
+      "url": "https://www.tecowestinghouse.com/PDF/O&M_manual_5000_larger.pdf"
+     }
+    ],
+    "model": "KPF10006",
+    "brand": {
+     "@type": "Brand",
+     "name": "TECO-Westinghouse"
+    },
+    "category": "Motores eléctricos de media tensión",
+    "description": "Motor eléctrico TECO-Westinghouse modelo KPF10006, 1000 HP, 6 polos (1,200 RPM síncronas a 60 Hz), 2,300/4,160 V. En stock en MARASE Supply, México. Precio y entrega por cotización.",
+    "additionalProperty": [
+     {
+      "@type": "PropertyValue",
+      "name": "Potencia",
+      "value": 1000,
+      "unitText": "HP"
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Polos",
+      "value": 6
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Velocidad síncrona",
+      "value": 1200,
+      "unitText": "RPM"
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Tensión",
+      "value": "2,300/4,160 V"
+     }
+    ]
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 38,
+   "item": {
+    "@type": "Product",
+    "name": "Motor TECO-Westinghouse KPF17504 1750 HP 4 polos 2,300/4,160 V",
+    "subjectOf": [
+     {
+      "@type": "DigitalDocument",
+      "name": "Datasheet KPF17504",
+      "encodingFormat": "application/pdf",
+      "url": "https://buy.tecowestinghouse.com/EcommerceFiles/submittals/SUB_KPF17504.pdf"
+     },
+     {
+      "@type": "DigitalDocument",
+      "name": "Manual de instrucciones",
+      "encodingFormat": "application/pdf",
+      "url": "https://www.tecowestinghouse.com/PDF/O&M_manual_5000_larger.pdf"
+     }
+    ],
+    "model": "KPF17504",
+    "brand": {
+     "@type": "Brand",
+     "name": "TECO-Westinghouse"
+    },
+    "category": "Motores eléctricos de media tensión",
+    "description": "Motor eléctrico TECO-Westinghouse modelo KPF17504, 1750 HP, 4 polos (1,800 RPM síncronas a 60 Hz), 2,300/4,160 V. En stock en MARASE Supply, México. Precio y entrega por cotización.",
+    "additionalProperty": [
+     {
+      "@type": "PropertyValue",
+      "name": "Potencia",
+      "value": 1750,
+      "unitText": "HP"
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Polos",
+      "value": 4
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Velocidad síncrona",
+      "value": 1800,
+      "unitText": "RPM"
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Tensión",
+      "value": "2,300/4,160 V"
+     }
+    ]
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 39,
+   "item": {
+    "@type": "Product",
+    "name": "Motor TECO-Westinghouse KPF17506 1750 HP 6 polos 2,300/4,160 V",
+    "subjectOf": [
+     {
+      "@type": "DigitalDocument",
+      "name": "Datasheet KPF17506",
+      "encodingFormat": "application/pdf",
+      "url": "https://buy.tecowestinghouse.com/EcommerceFiles/submittals/SUB_KPF17506.pdf"
+     },
+     {
+      "@type": "DigitalDocument",
+      "name": "Manual de instrucciones",
+      "encodingFormat": "application/pdf",
+      "url": "https://www.tecowestinghouse.com/PDF/O&M_manual_5000_larger.pdf"
+     }
+    ],
+    "model": "KPF17506",
+    "brand": {
+     "@type": "Brand",
+     "name": "TECO-Westinghouse"
+    },
+    "category": "Motores eléctricos de media tensión",
+    "description": "Motor eléctrico TECO-Westinghouse modelo KPF17506, 1750 HP, 6 polos (1,200 RPM síncronas a 60 Hz), 2,300/4,160 V. En stock en MARASE Supply, México. Precio y entrega por cotización.",
+    "additionalProperty": [
+     {
+      "@type": "PropertyValue",
+      "name": "Potencia",
+      "value": 1750,
+      "unitText": "HP"
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Polos",
+      "value": 6
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Velocidad síncrona",
+      "value": 1200,
+      "unitText": "RPM"
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "Tensión",
+      "value": "2,300/4,160 V"
+     }
+    ]
+   }
+  }
+ ]
+}
+</script>
 </head>
 <body>
 
@@ -171,9 +2399,6 @@ footer a:hover{color:var(--gold-lt)}
   <symbol id="i-clean" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4">
     <path d="M17 16h14a3 3 0 013 3v18a3 3 0 01-3 3H17a3 3 0 01-3-3V19a3 3 0 013-3z"/><path d="M20 16v-5h8v5M18 24h12"/></symbol>
   <symbol id="i-bolt" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M26 6L12 27h10l-2 15 16-22H26z"/></symbol>
-  <symbol id="i-cloud" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M15 34a8 8 0 010-16 10 10 0 0119-3 8 8 0 012 19z"/></symbol>
-  <symbol id="i-shield" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M24 6l14 5v12c0 9-6 15-14 19-8-4-14-10-14-19V11z"/><path d="M18 24l4 4 9-9"/></symbol>
-  <symbol id="i-chart" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M9 39V9M9 39h30"/><rect x="15" y="26" width="6" height="13"/><rect x="25" y="19" width="6" height="20"/><rect x="35" y="12" width="6" height="27"/></symbol>
   <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
 </defs></svg>
 
@@ -186,8 +2411,8 @@ footer a:hover{color:var(--gold-lt)}
     <nav class="main" id="nav">
       <a href="index.html" data-en="Home">Inicio</a>
       <a href="aboutus.html" data-en="About">Nosotros</a>
-      <a href="industrialproducts.html" class="active" data-en="Catalog">Catálogo</a>
-      <a href="services.html" data-en="Services">Servicios</a>
+      <a href="services.html" data-en="Consulting">Consultoría</a>
+      <a href="industrialproducts.html" class="active" data-en="Industrial supply">Suministro industrial</a>
       <a href="contacto.html" data-en="Contact">Contacto</a>
     </nav>
     <div style="display:flex;align-items:center;gap:14px">
@@ -208,19 +2433,515 @@ footer a:hover{color:var(--gold-lt)}
   <div class="glow" aria-hidden="true"></div>
   <img class="watermark" src="image/logogold.svg" alt="" aria-hidden="true" onerror="this.remove()">
   <div class="inner">
-    <div class="crumb"><a href="index.html" data-en="Home">Inicio</a> <span>/</span> <span data-en="Catalog">Catálogo</span></div>
-    <h1 data-en="Equipment, instruments and supplies for the electrical sector">Equipo, instrumentación y suministro para el sector eléctrico</h1>
-    <p data-en="Eleven lines across rotating equipment, electrical measurement, consumables and specialized services. Every item is quoted against the operating conditions of your installation.">Once líneas entre equipo rotatorio, medición eléctrica, consumibles y servicios especializados. Cada artículo se cotiza contra las condiciones de operación de tu instalación.</p>
+    <div class="crumb"><a href="index.html" data-en="Home">Inicio</a> <span>/</span> <span data-en="Divisions">Divisiones</span> <span>/</span> <span data-en="Industrial supply">Suministro industrial</span></div>
+    <div class="divno" data-en="Division 02">División 02</div>
+    <h1 data-en="Industrial supply">Suministro industrial</h1>
+    <p data-en="Specialized electrical equipment and materials, with a focus on TECO-Westinghouse motors. We do not sell from a price list: every item is quoted against the operating conditions of your installation, with direct contact.">Equipo y material eléctrico especializado, con énfasis en motores TECO-Westinghouse. No vendemos por lista de precios: cada artículo se cotiza contra las condiciones de operación de tu instalación, con contacto directo.</p>
+    <p style="margin-top:26px"><a class="btn solid" href="#inventario" data-en="TECO motors in stock">Motores TECO en stock · 39 modelos</a></p>
+  </div>
+</section>
+
+<!-- ESCAPARATE TECO -->
+<section class="teco" id="teco">
+  <svg class="grid-bg" aria-hidden="true" preserveAspectRatio="none">
+    <defs><pattern id="g2" width="72" height="72" patternUnits="userSpaceOnUse">
+      <path d="M72 0H0V72" fill="none" stroke="rgba(242,241,237,.045)" stroke-width="1"/></pattern></defs>
+    <rect width="100%" height="100%" fill="url(#g2)"/>
+  </svg>
+  <div class="teco-ghost" aria-hidden="true">TECO</div>
+  <div class="wrap teco-grid">
+    <div class="teco-copy">
+      <span class="kick rv" data-en="Main line · In stock">Línea principal · En stock</span>
+      <h2 class="rv d1" data-en="TECO-Westinghouse <em>motors</em>">Motores <em>TECO-Westinghouse</em></h2>
+      <p class="lead rv d2" data-en="Medium and low voltage induction motors recognized for robust performance and high efficiency in continuous industrial duty. We keep inventory ready for delivery and help you select the right model or match the replacement to your existing nameplate.">Motores de inducción de media y baja tensión, reconocidos por su rendimiento robusto y alta eficiencia en servicio industrial continuo. Mantenemos inventario listo para entrega y te ayudamos a seleccionar el modelo adecuado o a igualar el reemplazo con tu placa de datos actual.</p>
+      <ul class="ticks rv d2">
+        <li data-en="Low voltage 460 V and medium voltage 2,300/4,160 V">Baja tensión 460 V y media tensión 2,300/4,160 V</li>
+        <li data-en="From 200 to 1,750 HP, 2 to 8 poles">De 200 a 1,750 HP, de 2 a 8 polos</li>
+        <li data-en="Replacement matched to your nameplate">Reemplazo conforme a tu placa de datos</li>
+      </ul>
+      <div class="teco-cta rv d3">
+        <a class="btn solid" href="#inventario" data-en="View stock">Ver inventario en stock</a>
+        <a class="btn" href="mailto:contacto@marasesupply.com?subject=Cotizaci%C3%B3n%20-%20Motores%20TECO-Westinghouse" data-en="Quote a motor">Cotizar un motor</a>
+      </div>
+    </div>
+    <div class="orbit rv d1" id="orbit" aria-hidden="true">
+      <svg class="rings" viewBox="0 0 600 600">
+        <defs><path id="tp" d="M300,300 m-246,0 a246,246 0 1,1 492,0 a246,246 0 1,1 -492,0"/></defs>
+        <g class="r1"><circle cx="300" cy="300" r="292" fill="none" stroke="rgba(216,183,92,.35)" stroke-width="1" stroke-dasharray="2 9"/></g>
+        <g class="r2"><line x1="300" y1="14" x2="300" y2="34" transform="rotate(0.0 300 300)"/><line x1="300" y1="20" x2="300" y2="34" transform="rotate(7.5 300 300)"/><line x1="300" y1="20" x2="300" y2="34" transform="rotate(15.0 300 300)"/><line x1="300" y1="20" x2="300" y2="34" transform="rotate(22.5 300 300)"/><line x1="300" y1="14" x2="300" y2="34" transform="rotate(30.0 300 300)"/><line x1="300" y1="20" x2="300" y2="34" transform="rotate(37.5 300 300)"/><line x1="300" y1="20" x2="300" y2="34" transform="rotate(45.0 300 300)"/><line x1="300" y1="20" x2="300" y2="34" transform="rotate(52.5 300 300)"/><line x1="300" y1="14" x2="300" y2="34" transform="rotate(60.0 300 300)"/><line x1="300" y1="20" x2="300" y2="34" transform="rotate(67.5 300 300)"/><line x1="300" y1="20" x2="300" y2="34" transform="rotate(75.0 300 300)"/><line x1="300" y1="20" x2="300" y2="34" transform="rotate(82.5 300 300)"/><line x1="300" y1="14" x2="300" y2="34" transform="rotate(90.0 300 300)"/><line x1="300" y1="20" x2="300" y2="34" transform="rotate(97.5 300 300)"/><line x1="300" y1="20" x2="300" y2="34" transform="rotate(105.0 300 300)"/><line x1="300" y1="20" x2="300" y2="34" transform="rotate(112.5 300 300)"/><line x1="300" y1="14" x2="300" y2="34" transform="rotate(120.0 300 300)"/><line x1="300" y1="20" x2="300" y2="34" transform="rotate(127.5 300 300)"/><line x1="300" y1="20" x2="300" y2="34" transform="rotate(135.0 300 300)"/><line x1="300" y1="20" x2="300" y2="34" transform="rotate(142.5 300 300)"/><line x1="300" y1="14" x2="300" y2="34" transform="rotate(150.0 300 300)"/><line x1="300" y1="20" x2="300" y2="34" transform="rotate(157.5 300 300)"/><line x1="300" y1="20" x2="300" y2="34" transform="rotate(165.0 300 300)"/><line x1="300" y1="20" x2="300" y2="34" transform="rotate(172.5 300 300)"/><line x1="300" y1="14" x2="300" y2="34" transform="rotate(180.0 300 300)"/><line x1="300" y1="20" x2="300" y2="34" transform="rotate(187.5 300 300)"/><line x1="300" y1="20" x2="300" y2="34" transform="rotate(195.0 300 300)"/><line x1="300" y1="20" x2="300" y2="34" transform="rotate(202.5 300 300)"/><line x1="300" y1="14" x2="300" y2="34" transform="rotate(210.0 300 300)"/><line x1="300" y1="20" x2="300" y2="34" transform="rotate(217.5 300 300)"/><line x1="300" y1="20" x2="300" y2="34" transform="rotate(225.0 300 300)"/><line x1="300" y1="20" x2="300" y2="34" transform="rotate(232.5 300 300)"/><line x1="300" y1="14" x2="300" y2="34" transform="rotate(240.0 300 300)"/><line x1="300" y1="20" x2="300" y2="34" transform="rotate(247.5 300 300)"/><line x1="300" y1="20" x2="300" y2="34" transform="rotate(255.0 300 300)"/><line x1="300" y1="20" x2="300" y2="34" transform="rotate(262.5 300 300)"/><line x1="300" y1="14" x2="300" y2="34" transform="rotate(270.0 300 300)"/><line x1="300" y1="20" x2="300" y2="34" transform="rotate(277.5 300 300)"/><line x1="300" y1="20" x2="300" y2="34" transform="rotate(285.0 300 300)"/><line x1="300" y1="20" x2="300" y2="34" transform="rotate(292.5 300 300)"/><line x1="300" y1="14" x2="300" y2="34" transform="rotate(300.0 300 300)"/><line x1="300" y1="20" x2="300" y2="34" transform="rotate(307.5 300 300)"/><line x1="300" y1="20" x2="300" y2="34" transform="rotate(315.0 300 300)"/><line x1="300" y1="20" x2="300" y2="34" transform="rotate(322.5 300 300)"/><line x1="300" y1="14" x2="300" y2="34" transform="rotate(330.0 300 300)"/><line x1="300" y1="20" x2="300" y2="34" transform="rotate(337.5 300 300)"/><line x1="300" y1="20" x2="300" y2="34" transform="rotate(345.0 300 300)"/><line x1="300" y1="20" x2="300" y2="34" transform="rotate(352.5 300 300)"/></g>
+        <g class="r3"><text><textPath href="#tp" textLength="1530" lengthAdjust="spacing" data-en="TECO-WESTINGHOUSE · LOW &amp; MEDIUM VOLTAGE · 2 · 4 · 6 · 8 POLES · IN STOCK ·">TECO-WESTINGHOUSE · MEDIA Y BAJA TENSIÓN · 2 · 4 · 6 · 8 POLOS · EN STOCK ·</textPath></text></g>
+        <circle cx="300" cy="300" r="222" fill="none" stroke="rgba(216,183,92,.55)" stroke-width="1"/>
+      </svg>
+      <div class="sweep"></div>
+      <div class="core"><svg class="ph"><use href="#i-motor"/></svg><img src="image/motor.jpg" alt="" onerror="this.remove()"></div>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="tstats">
+      <div class="ts rv"><b data-count="39">39</b><span data-en="Models in stock">Modelos en stock</span></div>
+      <div class="ts rv d1"><b data-count="156">156</b><span data-en="Units available">Unidades disponibles</span></div>
+      <div class="ts rv d2"><b>200–1,750</b><span data-en="Horsepower range (HP)">Rango de potencia (HP)</span></div>
+      <div class="ts rv d3"><b>460 · 4,160</b><span data-en="Volts, low and medium voltage">Volts, baja y media tensión</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- INVENTARIO -->
+<section class="inv" id="inventario">
+  <div class="wrap">
+    <div class="inv-head">
+      <div>
+        <span class="kick" data-en="Inventory">Inventario</span>
+        <h2 data-en="TECO-Westinghouse motors <em>in stock</em>">Motores TECO-Westinghouse <em>en stock</em></h2>
+      </div>
+      <p data-en="39 models and 156 units available for delivery: 7 low voltage (460 V) and 32 medium voltage (2,300/4,160 V). Price and lead time by quotation.">39 modelos y 156 unidades disponibles para entrega: 7 de baja tensión (460 V) y 32 de media tensión (2,300/4,160 V). Precio y tiempo de entrega por cotización.</p>
+    </div>
+
+    <div class="inv-tools" role="search">
+      <label class="srch"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5L21 21"/></svg>
+        <input id="q" type="search" placeholder="Buscar modelo o HP… (ej. KPF8002, 500)" aria-label="Buscar modelo o potencia" autocomplete="off"></label>
+      <div class="seg" id="segT" role="group" aria-label="Tensión">
+        <button type="button" data-t="all" aria-pressed="true" data-en="All">Todas</button>
+        <button type="button" data-t="bt" aria-pressed="false" data-en="Low · 460 V">Baja · 460 V</button>
+        <button type="button" data-t="mt" aria-pressed="false" data-en="Medium · 2,300/4,160 V">Media · 2,300/4,160 V</button>
+      </div>
+      <div class="seg" id="segP" role="group" aria-label="Polos">
+        <button type="button" data-p="all" aria-pressed="true" data-en="Poles">Polos</button>
+        <button type="button" data-p="2" aria-pressed="false">2</button>
+        <button type="button" data-p="4" aria-pressed="false">4</button>
+        <button type="button" data-p="6" aria-pressed="false">6</button>
+        <button type="button" data-p="8" aria-pressed="false">8</button>
+      </div>
+      <span class="inv-count" id="invCount" aria-live="polite"></span>
+    </div>
+
+    <div class="inv-wrap">
+      <table class="inv-table" id="invTable">
+        <caption class="sr" data-en="TECO-Westinghouse motors in stock at MARASE Supply">Motores TECO-Westinghouse en stock en MARASE Supply</caption>
+        <thead>
+          <tr>
+            <th scope="col"><button type="button" data-sort="m" data-en="Model">Modelo</button></th>
+            <th scope="col"><button type="button" data-sort="hp" class="on" data-en="Power">Potencia</button></th>
+            <th scope="col"><button type="button" data-sort="p" data-en="Poles">Polos</button></th>
+            <th scope="col" data-en="Sync. RPM">RPM sínc.</th>
+            <th scope="col" data-en="Voltage">Tensión</th>
+            <th scope="col"><button type="button" data-sort="q" data-en="Available">Disponibles</button></th>
+            <th scope="col" data-en="Documentation">Documentación</th>
+            <th scope="col"><span class="sr" data-en="Quote">Cotizar</span></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr data-m="EP2002" data-hp="200" data-p="2" data-t="bt" data-q="2">
+            <th scope="row" data-l="model"><span class="brand-s">TECO-Westinghouse</span><span class="mdl">EP2002</span></th>
+            <td data-l="hp"><b>200</b> HP</td>
+            <td data-l="poles">2</td>
+            <td data-l="rpm">3,600</td>
+            <td data-l="volt">460 V</td>
+            <td data-l="qty"><span class="qty"><b>2</b><span class="qbar"><i style="--q:0.105"></i></span></span></td>
+            <td data-l="docs" class="docs"><a href="https://buy.tecowestinghouse.com/EcommerceFiles/submittals/SUB_EP2002.pdf" target="_blank" rel="noopener" title="Datasheet TECO-Westinghouse EP2002 (PDF)">Datasheet</a><a href="https://buy.tecowestinghouse.com/EcommerceFiles/Manuals/TWMC%20Instruction%20Manual_143%20to%20449%20frame.pdf" target="_blank" rel="noopener" title="Manual de instrucciones (PDF)" data-en="Manual">Manual</a></td>
+            <td class="act"><a class="qt" href="mailto:contacto@marasesupply.com?subject=Cotizaci%C3%B3n%20motor%20TECO-Westinghouse%20EP2002%20%28200%20HP%2C%202%20polos%2C%20460%20V%29" data-en="Quote">Cotizar</a></td>
+          </tr>
+          <tr data-m="EP2004" data-hp="200" data-p="4" data-t="bt" data-q="4">
+            <th scope="row" data-l="model"><span class="brand-s">TECO-Westinghouse</span><span class="mdl">EP2004</span></th>
+            <td data-l="hp"><b>200</b> HP</td>
+            <td data-l="poles">4</td>
+            <td data-l="rpm">1,800</td>
+            <td data-l="volt">460 V</td>
+            <td data-l="qty"><span class="qty"><b>4</b><span class="qbar"><i style="--q:0.211"></i></span></span></td>
+            <td data-l="docs" class="docs"><a href="https://buy.tecowestinghouse.com/EcommerceFiles/submittals/SUB_EP2004.pdf" target="_blank" rel="noopener" title="Datasheet TECO-Westinghouse EP2004 (PDF)">Datasheet</a><a href="https://buy.tecowestinghouse.com/EcommerceFiles/Manuals/TWMC%20Instruction%20Manual_143%20to%20449%20frame.pdf" target="_blank" rel="noopener" title="Manual de instrucciones (PDF)" data-en="Manual">Manual</a></td>
+            <td class="act"><a class="qt" href="mailto:contacto@marasesupply.com?subject=Cotizaci%C3%B3n%20motor%20TECO-Westinghouse%20EP2004%20%28200%20HP%2C%204%20polos%2C%20460%20V%29" data-en="Quote">Cotizar</a></td>
+          </tr>
+          <tr data-m="EP2006" data-hp="200" data-p="6" data-t="bt" data-q="2">
+            <th scope="row" data-l="model"><span class="brand-s">TECO-Westinghouse</span><span class="mdl">EP2006</span></th>
+            <td data-l="hp"><b>200</b> HP</td>
+            <td data-l="poles">6</td>
+            <td data-l="rpm">1,200</td>
+            <td data-l="volt">460 V</td>
+            <td data-l="qty"><span class="qty"><b>2</b><span class="qbar"><i style="--q:0.105"></i></span></span></td>
+            <td data-l="docs" class="docs"><a href="https://buy.tecowestinghouse.com/EcommerceFiles/submittals/SUB_EP2006.pdf" target="_blank" rel="noopener" title="Datasheet TECO-Westinghouse EP2006 (PDF)">Datasheet</a><a href="https://buy.tecowestinghouse.com/EcommerceFiles/Manuals/TWMC%20Instruction%20Manual_143%20to%20449%20frame.pdf" target="_blank" rel="noopener" title="Manual de instrucciones (PDF)" data-en="Manual">Manual</a></td>
+            <td class="act"><a class="qt" href="mailto:contacto@marasesupply.com?subject=Cotizaci%C3%B3n%20motor%20TECO-Westinghouse%20EP2006%20%28200%20HP%2C%206%20polos%2C%20460%20V%29" data-en="Quote">Cotizar</a></td>
+          </tr>
+          <tr data-m="EP2504" data-hp="250" data-p="4" data-t="bt" data-q="1">
+            <th scope="row" data-l="model"><span class="brand-s">TECO-Westinghouse</span><span class="mdl">EP2504</span></th>
+            <td data-l="hp"><b>250</b> HP</td>
+            <td data-l="poles">4</td>
+            <td data-l="rpm">1,800</td>
+            <td data-l="volt">460 V</td>
+            <td data-l="qty"><span class="qty"><b>1</b><span class="qbar"><i style="--q:0.053"></i></span></span></td>
+            <td data-l="docs" class="docs"><a href="https://buy.tecowestinghouse.com/EcommerceFiles/submittals/SUB_EP2504.pdf" target="_blank" rel="noopener" title="Datasheet TECO-Westinghouse EP2504 (PDF)">Datasheet</a><a href="https://buy.tecowestinghouse.com/EcommerceFiles/Manuals/TWMC%20Instruction%20Manual_143%20to%20449%20frame.pdf" target="_blank" rel="noopener" title="Manual de instrucciones (PDF)" data-en="Manual">Manual</a></td>
+            <td class="act"><a class="qt" href="mailto:contacto@marasesupply.com?subject=Cotizaci%C3%B3n%20motor%20TECO-Westinghouse%20EP2504%20%28250%20HP%2C%204%20polos%2C%20460%20V%29" data-en="Quote">Cotizar</a></td>
+          </tr>
+          <tr data-m="EP2506" data-hp="250" data-p="6" data-t="bt" data-q="2">
+            <th scope="row" data-l="model"><span class="brand-s">TECO-Westinghouse</span><span class="mdl">EP2506</span></th>
+            <td data-l="hp"><b>250</b> HP</td>
+            <td data-l="poles">6</td>
+            <td data-l="rpm">1,200</td>
+            <td data-l="volt">460 V</td>
+            <td data-l="qty"><span class="qty"><b>2</b><span class="qbar"><i style="--q:0.105"></i></span></span></td>
+            <td data-l="docs" class="docs"><a href="https://buy.tecowestinghouse.com/EcommerceFiles/submittals/SUB_EP2506.pdf" target="_blank" rel="noopener" title="Datasheet TECO-Westinghouse EP2506 (PDF)">Datasheet</a><a href="https://buy.tecowestinghouse.com/EcommerceFiles/Manuals/TWMC%20Instruction%20Manual_143%20to%20449%20frame.pdf" target="_blank" rel="noopener" title="Manual de instrucciones (PDF)" data-en="Manual">Manual</a></td>
+            <td class="act"><a class="qt" href="mailto:contacto@marasesupply.com?subject=Cotizaci%C3%B3n%20motor%20TECO-Westinghouse%20EP2506%20%28250%20HP%2C%206%20polos%2C%20460%20V%29" data-en="Quote">Cotizar</a></td>
+          </tr>
+          <tr data-m="EP3002" data-hp="300" data-p="2" data-t="bt" data-q="5">
+            <th scope="row" data-l="model"><span class="brand-s">TECO-Westinghouse</span><span class="mdl">EP3002</span></th>
+            <td data-l="hp"><b>300</b> HP</td>
+            <td data-l="poles">2</td>
+            <td data-l="rpm">3,600</td>
+            <td data-l="volt">460 V</td>
+            <td data-l="qty"><span class="qty"><b>5</b><span class="qbar"><i style="--q:0.263"></i></span></span></td>
+            <td data-l="docs" class="docs"><a href="https://buy.tecowestinghouse.com/EcommerceFiles/submittals/SUB_EP3002.pdf" target="_blank" rel="noopener" title="Datasheet TECO-Westinghouse EP3002 (PDF)">Datasheet</a><a href="https://buy.tecowestinghouse.com/EcommerceFiles/Manuals/TWMC%20Instruction%20Manual_143%20to%20449%20frame.pdf" target="_blank" rel="noopener" title="Manual de instrucciones (PDF)" data-en="Manual">Manual</a></td>
+            <td class="act"><a class="qt" href="mailto:contacto@marasesupply.com?subject=Cotizaci%C3%B3n%20motor%20TECO-Westinghouse%20EP3002%20%28300%20HP%2C%202%20polos%2C%20460%20V%29" data-en="Quote">Cotizar</a></td>
+          </tr>
+          <tr data-m="EP3004" data-hp="300" data-p="4" data-t="bt" data-q="3">
+            <th scope="row" data-l="model"><span class="brand-s">TECO-Westinghouse</span><span class="mdl">EP3004</span></th>
+            <td data-l="hp"><b>300</b> HP</td>
+            <td data-l="poles">4</td>
+            <td data-l="rpm">1,800</td>
+            <td data-l="volt">460 V</td>
+            <td data-l="qty"><span class="qty"><b>3</b><span class="qbar"><i style="--q:0.158"></i></span></span></td>
+            <td data-l="docs" class="docs"><a href="https://buy.tecowestinghouse.com/EcommerceFiles/submittals/SUB_EP3004.pdf" target="_blank" rel="noopener" title="Datasheet TECO-Westinghouse EP3004 (PDF)">Datasheet</a><a href="https://buy.tecowestinghouse.com/EcommerceFiles/Manuals/TWMC%20Instruction%20Manual_143%20to%20449%20frame.pdf" target="_blank" rel="noopener" title="Manual de instrucciones (PDF)" data-en="Manual">Manual</a></td>
+            <td class="act"><a class="qt" href="mailto:contacto@marasesupply.com?subject=Cotizaci%C3%B3n%20motor%20TECO-Westinghouse%20EP3004%20%28300%20HP%2C%204%20polos%2C%20460%20V%29" data-en="Quote">Cotizar</a></td>
+          </tr>
+          <tr data-m="KPF2006" data-hp="200" data-p="6" data-t="mt" data-q="2">
+            <th scope="row" data-l="model"><span class="brand-s">TECO-Westinghouse</span><span class="mdl">KPF2006</span></th>
+            <td data-l="hp"><b>200</b> HP</td>
+            <td data-l="poles">6</td>
+            <td data-l="rpm">1,200</td>
+            <td data-l="volt">2,300/4,160 V</td>
+            <td data-l="qty"><span class="qty"><b>2</b><span class="qbar"><i style="--q:0.105"></i></span></span></td>
+            <td data-l="docs" class="docs"><a href="https://buy.tecowestinghouse.com/EcommerceFiles/submittals/SUB_KPF2006.pdf" target="_blank" rel="noopener" title="Datasheet TECO-Westinghouse KPF2006 (PDF)">Datasheet</a><a href="https://www.tecowestinghouse.com/PDF/O%26M_manual_5000_larger.pdf" target="_blank" rel="noopener" title="Manual de instrucciones (PDF)" data-en="Manual">Manual</a></td>
+            <td class="act"><a class="qt" href="mailto:contacto@marasesupply.com?subject=Cotizaci%C3%B3n%20motor%20TECO-Westinghouse%20KPF2006%20%28200%20HP%2C%206%20polos%2C%202%2C300/4%2C160%20V%29" data-en="Quote">Cotizar</a></td>
+          </tr>
+          <tr data-m="KPF2506R" data-hp="250" data-p="6" data-t="mt" data-q="6">
+            <th scope="row" data-l="model"><span class="brand-s">TECO-Westinghouse</span><span class="mdl">KPF2506R</span></th>
+            <td data-l="hp"><b>250</b> HP</td>
+            <td data-l="poles">6</td>
+            <td data-l="rpm">1,200</td>
+            <td data-l="volt">2,300/4,160 V</td>
+            <td data-l="qty"><span class="qty"><b>6</b><span class="qbar"><i style="--q:0.316"></i></span></span></td>
+            <td data-l="docs" class="docs"><a href="https://buy.tecowestinghouse.com/EcommerceFiles/submittals/SUB_KPF2506R.pdf" target="_blank" rel="noopener" title="Datasheet TECO-Westinghouse KPF2506R (PDF)">Datasheet</a><a href="https://www.tecowestinghouse.com/PDF/O%26M_manual_5000_larger.pdf" target="_blank" rel="noopener" title="Manual de instrucciones (PDF)" data-en="Manual">Manual</a></td>
+            <td class="act"><a class="qt" href="mailto:contacto@marasesupply.com?subject=Cotizaci%C3%B3n%20motor%20TECO-Westinghouse%20KPF2506R%20%28250%20HP%2C%206%20polos%2C%202%2C300/4%2C160%20V%29" data-en="Quote">Cotizar</a></td>
+          </tr>
+          <tr data-m="KPF3002" data-hp="300" data-p="2" data-t="mt" data-q="1">
+            <th scope="row" data-l="model"><span class="brand-s">TECO-Westinghouse</span><span class="mdl">KPF3002</span></th>
+            <td data-l="hp"><b>300</b> HP</td>
+            <td data-l="poles">2</td>
+            <td data-l="rpm">3,600</td>
+            <td data-l="volt">2,300/4,160 V</td>
+            <td data-l="qty"><span class="qty"><b>1</b><span class="qbar"><i style="--q:0.053"></i></span></span></td>
+            <td data-l="docs" class="docs"><a href="https://buy.tecowestinghouse.com/EcommerceFiles/submittals/SUB_KPF3002.pdf" target="_blank" rel="noopener" title="Datasheet TECO-Westinghouse KPF3002 (PDF)">Datasheet</a><a href="https://www.tecowestinghouse.com/PDF/O%26M_manual_5000_larger.pdf" target="_blank" rel="noopener" title="Manual de instrucciones (PDF)" data-en="Manual">Manual</a></td>
+            <td class="act"><a class="qt" href="mailto:contacto@marasesupply.com?subject=Cotizaci%C3%B3n%20motor%20TECO-Westinghouse%20KPF3002%20%28300%20HP%2C%202%20polos%2C%202%2C300/4%2C160%20V%29" data-en="Quote">Cotizar</a></td>
+          </tr>
+          <tr data-m="KPF3004" data-hp="300" data-p="4" data-t="mt" data-q="14">
+            <th scope="row" data-l="model"><span class="brand-s">TECO-Westinghouse</span><span class="mdl">KPF3004</span></th>
+            <td data-l="hp"><b>300</b> HP</td>
+            <td data-l="poles">4</td>
+            <td data-l="rpm">1,800</td>
+            <td data-l="volt">2,300/4,160 V</td>
+            <td data-l="qty"><span class="qty"><b>14</b><span class="qbar"><i style="--q:0.737"></i></span></span></td>
+            <td data-l="docs" class="docs"><a href="https://buy.tecowestinghouse.com/EcommerceFiles/submittals/SUB_KPF3004.pdf" target="_blank" rel="noopener" title="Datasheet TECO-Westinghouse KPF3004 (PDF)">Datasheet</a><a href="https://www.tecowestinghouse.com/PDF/O%26M_manual_5000_larger.pdf" target="_blank" rel="noopener" title="Manual de instrucciones (PDF)" data-en="Manual">Manual</a></td>
+            <td class="act"><a class="qt" href="mailto:contacto@marasesupply.com?subject=Cotizaci%C3%B3n%20motor%20TECO-Westinghouse%20KPF3004%20%28300%20HP%2C%204%20polos%2C%202%2C300/4%2C160%20V%29" data-en="Quote">Cotizar</a></td>
+          </tr>
+          <tr data-m="KPF3502" data-hp="350" data-p="2" data-t="mt" data-q="7">
+            <th scope="row" data-l="model"><span class="brand-s">TECO-Westinghouse</span><span class="mdl">KPF3502</span></th>
+            <td data-l="hp"><b>350</b> HP</td>
+            <td data-l="poles">2</td>
+            <td data-l="rpm">3,600</td>
+            <td data-l="volt">2,300/4,160 V</td>
+            <td data-l="qty"><span class="qty"><b>7</b><span class="qbar"><i style="--q:0.368"></i></span></span></td>
+            <td data-l="docs" class="docs"><a href="https://buy.tecowestinghouse.com/EcommerceFiles/submittals/SUB_KPF3502.pdf" target="_blank" rel="noopener" title="Datasheet TECO-Westinghouse KPF3502 (PDF)">Datasheet</a><a href="https://www.tecowestinghouse.com/PDF/O%26M_manual_5000_larger.pdf" target="_blank" rel="noopener" title="Manual de instrucciones (PDF)" data-en="Manual">Manual</a></td>
+            <td class="act"><a class="qt" href="mailto:contacto@marasesupply.com?subject=Cotizaci%C3%B3n%20motor%20TECO-Westinghouse%20KPF3502%20%28350%20HP%2C%202%20polos%2C%202%2C300/4%2C160%20V%29" data-en="Quote">Cotizar</a></td>
+          </tr>
+          <tr data-m="KPF3504" data-hp="350" data-p="4" data-t="mt" data-q="6">
+            <th scope="row" data-l="model"><span class="brand-s">TECO-Westinghouse</span><span class="mdl">KPF3504</span></th>
+            <td data-l="hp"><b>350</b> HP</td>
+            <td data-l="poles">4</td>
+            <td data-l="rpm">1,800</td>
+            <td data-l="volt">2,300/4,160 V</td>
+            <td data-l="qty"><span class="qty"><b>6</b><span class="qbar"><i style="--q:0.316"></i></span></span></td>
+            <td data-l="docs" class="docs"><a href="https://buy.tecowestinghouse.com/EcommerceFiles/submittals/SUB_KPF3504.pdf" target="_blank" rel="noopener" title="Datasheet TECO-Westinghouse KPF3504 (PDF)">Datasheet</a><a href="https://www.tecowestinghouse.com/PDF/O%26M_manual_5000_larger.pdf" target="_blank" rel="noopener" title="Manual de instrucciones (PDF)" data-en="Manual">Manual</a></td>
+            <td class="act"><a class="qt" href="mailto:contacto@marasesupply.com?subject=Cotizaci%C3%B3n%20motor%20TECO-Westinghouse%20KPF3504%20%28350%20HP%2C%204%20polos%2C%202%2C300/4%2C160%20V%29" data-en="Quote">Cotizar</a></td>
+          </tr>
+          <tr data-m="KPF3506" data-hp="350" data-p="6" data-t="mt" data-q="2">
+            <th scope="row" data-l="model"><span class="brand-s">TECO-Westinghouse</span><span class="mdl">KPF3506</span></th>
+            <td data-l="hp"><b>350</b> HP</td>
+            <td data-l="poles">6</td>
+            <td data-l="rpm">1,200</td>
+            <td data-l="volt">2,300/4,160 V</td>
+            <td data-l="qty"><span class="qty"><b>2</b><span class="qbar"><i style="--q:0.105"></i></span></span></td>
+            <td data-l="docs" class="docs"><a href="https://buy.tecowestinghouse.com/EcommerceFiles/submittals/SUB_KPF3506.pdf" target="_blank" rel="noopener" title="Datasheet TECO-Westinghouse KPF3506 (PDF)">Datasheet</a><a href="https://www.tecowestinghouse.com/PDF/O%26M_manual_5000_larger.pdf" target="_blank" rel="noopener" title="Manual de instrucciones (PDF)" data-en="Manual">Manual</a></td>
+            <td class="act"><a class="qt" href="mailto:contacto@marasesupply.com?subject=Cotizaci%C3%B3n%20motor%20TECO-Westinghouse%20KPF3506%20%28350%20HP%2C%206%20polos%2C%202%2C300/4%2C160%20V%29" data-en="Quote">Cotizar</a></td>
+          </tr>
+          <tr data-m="KPF4004" data-hp="400" data-p="4" data-t="mt" data-q="2">
+            <th scope="row" data-l="model"><span class="brand-s">TECO-Westinghouse</span><span class="mdl">KPF4004</span></th>
+            <td data-l="hp"><b>400</b> HP</td>
+            <td data-l="poles">4</td>
+            <td data-l="rpm">1,800</td>
+            <td data-l="volt">2,300/4,160 V</td>
+            <td data-l="qty"><span class="qty"><b>2</b><span class="qbar"><i style="--q:0.105"></i></span></span></td>
+            <td data-l="docs" class="docs"><a href="https://buy.tecowestinghouse.com/EcommerceFiles/submittals/SUB_KPF4004.pdf" target="_blank" rel="noopener" title="Datasheet TECO-Westinghouse KPF4004 (PDF)">Datasheet</a><a href="https://www.tecowestinghouse.com/PDF/O%26M_manual_5000_larger.pdf" target="_blank" rel="noopener" title="Manual de instrucciones (PDF)" data-en="Manual">Manual</a></td>
+            <td class="act"><a class="qt" href="mailto:contacto@marasesupply.com?subject=Cotizaci%C3%B3n%20motor%20TECO-Westinghouse%20KPF4004%20%28400%20HP%2C%204%20polos%2C%202%2C300/4%2C160%20V%29" data-en="Quote">Cotizar</a></td>
+          </tr>
+          <tr data-m="KPF4006" data-hp="400" data-p="6" data-t="mt" data-q="3">
+            <th scope="row" data-l="model"><span class="brand-s">TECO-Westinghouse</span><span class="mdl">KPF4006</span></th>
+            <td data-l="hp"><b>400</b> HP</td>
+            <td data-l="poles">6</td>
+            <td data-l="rpm">1,200</td>
+            <td data-l="volt">2,300/4,160 V</td>
+            <td data-l="qty"><span class="qty"><b>3</b><span class="qbar"><i style="--q:0.158"></i></span></span></td>
+            <td data-l="docs" class="docs"><a href="https://buy.tecowestinghouse.com/EcommerceFiles/submittals/SUB_KPF4006.pdf" target="_blank" rel="noopener" title="Datasheet TECO-Westinghouse KPF4006 (PDF)">Datasheet</a><a href="https://www.tecowestinghouse.com/PDF/O%26M_manual_5000_larger.pdf" target="_blank" rel="noopener" title="Manual de instrucciones (PDF)" data-en="Manual">Manual</a></td>
+            <td class="act"><a class="qt" href="mailto:contacto@marasesupply.com?subject=Cotizaci%C3%B3n%20motor%20TECO-Westinghouse%20KPF4006%20%28400%20HP%2C%206%20polos%2C%202%2C300/4%2C160%20V%29" data-en="Quote">Cotizar</a></td>
+          </tr>
+          <tr data-m="KPF4008" data-hp="400" data-p="8" data-t="mt" data-q="4">
+            <th scope="row" data-l="model"><span class="brand-s">TECO-Westinghouse</span><span class="mdl">KPF4008</span></th>
+            <td data-l="hp"><b>400</b> HP</td>
+            <td data-l="poles">8</td>
+            <td data-l="rpm">900</td>
+            <td data-l="volt">2,300/4,160 V</td>
+            <td data-l="qty"><span class="qty"><b>4</b><span class="qbar"><i style="--q:0.211"></i></span></span></td>
+            <td data-l="docs" class="docs"><a href="https://buy.tecowestinghouse.com/EcommerceFiles/submittals/SUB_KPF4008.pdf" target="_blank" rel="noopener" title="Datasheet TECO-Westinghouse KPF4008 (PDF)">Datasheet</a><a href="https://www.tecowestinghouse.com/PDF/O%26M_manual_5000_larger.pdf" target="_blank" rel="noopener" title="Manual de instrucciones (PDF)" data-en="Manual">Manual</a></td>
+            <td class="act"><a class="qt" href="mailto:contacto@marasesupply.com?subject=Cotizaci%C3%B3n%20motor%20TECO-Westinghouse%20KPF4008%20%28400%20HP%2C%208%20polos%2C%202%2C300/4%2C160%20V%29" data-en="Quote">Cotizar</a></td>
+          </tr>
+          <tr data-m="KPF4502" data-hp="450" data-p="2" data-t="mt" data-q="9">
+            <th scope="row" data-l="model"><span class="brand-s">TECO-Westinghouse</span><span class="mdl">KPF4502</span></th>
+            <td data-l="hp"><b>450</b> HP</td>
+            <td data-l="poles">2</td>
+            <td data-l="rpm">3,600</td>
+            <td data-l="volt">2,300/4,160 V</td>
+            <td data-l="qty"><span class="qty"><b>9</b><span class="qbar"><i style="--q:0.474"></i></span></span></td>
+            <td data-l="docs" class="docs"><a href="https://buy.tecowestinghouse.com/EcommerceFiles/submittals/SUB_KPF4502.pdf" target="_blank" rel="noopener" title="Datasheet TECO-Westinghouse KPF4502 (PDF)">Datasheet</a><a href="https://www.tecowestinghouse.com/PDF/O%26M_manual_5000_larger.pdf" target="_blank" rel="noopener" title="Manual de instrucciones (PDF)" data-en="Manual">Manual</a></td>
+            <td class="act"><a class="qt" href="mailto:contacto@marasesupply.com?subject=Cotizaci%C3%B3n%20motor%20TECO-Westinghouse%20KPF4502%20%28450%20HP%2C%202%20polos%2C%202%2C300/4%2C160%20V%29" data-en="Quote">Cotizar</a></td>
+          </tr>
+          <tr data-m="KPF4504" data-hp="450" data-p="4" data-t="mt" data-q="3">
+            <th scope="row" data-l="model"><span class="brand-s">TECO-Westinghouse</span><span class="mdl">KPF4504</span></th>
+            <td data-l="hp"><b>450</b> HP</td>
+            <td data-l="poles">4</td>
+            <td data-l="rpm">1,800</td>
+            <td data-l="volt">2,300/4,160 V</td>
+            <td data-l="qty"><span class="qty"><b>3</b><span class="qbar"><i style="--q:0.158"></i></span></span></td>
+            <td data-l="docs" class="docs"><a href="https://buy.tecowestinghouse.com/EcommerceFiles/submittals/SUB_KPF4504.pdf" target="_blank" rel="noopener" title="Datasheet TECO-Westinghouse KPF4504 (PDF)">Datasheet</a><a href="https://www.tecowestinghouse.com/PDF/O%26M_manual_5000_larger.pdf" target="_blank" rel="noopener" title="Manual de instrucciones (PDF)" data-en="Manual">Manual</a></td>
+            <td class="act"><a class="qt" href="mailto:contacto@marasesupply.com?subject=Cotizaci%C3%B3n%20motor%20TECO-Westinghouse%20KPF4504%20%28450%20HP%2C%204%20polos%2C%202%2C300/4%2C160%20V%29" data-en="Quote">Cotizar</a></td>
+          </tr>
+          <tr data-m="KPF4508" data-hp="450" data-p="8" data-t="mt" data-q="3">
+            <th scope="row" data-l="model"><span class="brand-s">TECO-Westinghouse</span><span class="mdl">KPF4508</span></th>
+            <td data-l="hp"><b>450</b> HP</td>
+            <td data-l="poles">8</td>
+            <td data-l="rpm">900</td>
+            <td data-l="volt">2,300/4,160 V</td>
+            <td data-l="qty"><span class="qty"><b>3</b><span class="qbar"><i style="--q:0.158"></i></span></span></td>
+            <td data-l="docs" class="docs"><a href="https://buy.tecowestinghouse.com/EcommerceFiles/submittals/SUB_KPF4508.pdf" target="_blank" rel="noopener" title="Datasheet TECO-Westinghouse KPF4508 (PDF)">Datasheet</a><a href="https://www.tecowestinghouse.com/PDF/O%26M_manual_5000_larger.pdf" target="_blank" rel="noopener" title="Manual de instrucciones (PDF)" data-en="Manual">Manual</a></td>
+            <td class="act"><a class="qt" href="mailto:contacto@marasesupply.com?subject=Cotizaci%C3%B3n%20motor%20TECO-Westinghouse%20KPF4508%20%28450%20HP%2C%208%20polos%2C%202%2C300/4%2C160%20V%29" data-en="Quote">Cotizar</a></td>
+          </tr>
+          <tr data-m="KPF5002" data-hp="500" data-p="2" data-t="mt" data-q="7">
+            <th scope="row" data-l="model"><span class="brand-s">TECO-Westinghouse</span><span class="mdl">KPF5002</span></th>
+            <td data-l="hp"><b>500</b> HP</td>
+            <td data-l="poles">2</td>
+            <td data-l="rpm">3,600</td>
+            <td data-l="volt">2,300/4,160 V</td>
+            <td data-l="qty"><span class="qty"><b>7</b><span class="qbar"><i style="--q:0.368"></i></span></span></td>
+            <td data-l="docs" class="docs"><a href="https://buy.tecowestinghouse.com/EcommerceFiles/submittals/SUB_KPF5002.pdf" target="_blank" rel="noopener" title="Datasheet TECO-Westinghouse KPF5002 (PDF)">Datasheet</a><a href="https://www.tecowestinghouse.com/PDF/O%26M_manual_5000_larger.pdf" target="_blank" rel="noopener" title="Manual de instrucciones (PDF)" data-en="Manual">Manual</a></td>
+            <td class="act"><a class="qt" href="mailto:contacto@marasesupply.com?subject=Cotizaci%C3%B3n%20motor%20TECO-Westinghouse%20KPF5002%20%28500%20HP%2C%202%20polos%2C%202%2C300/4%2C160%20V%29" data-en="Quote">Cotizar</a></td>
+          </tr>
+          <tr data-m="KPF5004" data-hp="500" data-p="4" data-t="mt" data-q="1">
+            <th scope="row" data-l="model"><span class="brand-s">TECO-Westinghouse</span><span class="mdl">KPF5004</span></th>
+            <td data-l="hp"><b>500</b> HP</td>
+            <td data-l="poles">4</td>
+            <td data-l="rpm">1,800</td>
+            <td data-l="volt">2,300/4,160 V</td>
+            <td data-l="qty"><span class="qty"><b>1</b><span class="qbar"><i style="--q:0.053"></i></span></span></td>
+            <td data-l="docs" class="docs"><a href="https://buy.tecowestinghouse.com/EcommerceFiles/submittals/SUB_KPF5004.pdf" target="_blank" rel="noopener" title="Datasheet TECO-Westinghouse KPF5004 (PDF)">Datasheet</a><a href="https://www.tecowestinghouse.com/PDF/O%26M_manual_5000_larger.pdf" target="_blank" rel="noopener" title="Manual de instrucciones (PDF)" data-en="Manual">Manual</a></td>
+            <td class="act"><a class="qt" href="mailto:contacto@marasesupply.com?subject=Cotizaci%C3%B3n%20motor%20TECO-Westinghouse%20KPF5004%20%28500%20HP%2C%204%20polos%2C%202%2C300/4%2C160%20V%29" data-en="Quote">Cotizar</a></td>
+          </tr>
+          <tr data-m="KPF5006" data-hp="500" data-p="6" data-t="mt" data-q="3">
+            <th scope="row" data-l="model"><span class="brand-s">TECO-Westinghouse</span><span class="mdl">KPF5006</span></th>
+            <td data-l="hp"><b>500</b> HP</td>
+            <td data-l="poles">6</td>
+            <td data-l="rpm">1,200</td>
+            <td data-l="volt">2,300/4,160 V</td>
+            <td data-l="qty"><span class="qty"><b>3</b><span class="qbar"><i style="--q:0.158"></i></span></span></td>
+            <td data-l="docs" class="docs"><a href="https://buy.tecowestinghouse.com/EcommerceFiles/submittals/SUB_KPF5006.pdf" target="_blank" rel="noopener" title="Datasheet TECO-Westinghouse KPF5006 (PDF)">Datasheet</a><a href="https://www.tecowestinghouse.com/PDF/O%26M_manual_5000_larger.pdf" target="_blank" rel="noopener" title="Manual de instrucciones (PDF)" data-en="Manual">Manual</a></td>
+            <td class="act"><a class="qt" href="mailto:contacto@marasesupply.com?subject=Cotizaci%C3%B3n%20motor%20TECO-Westinghouse%20KPF5006%20%28500%20HP%2C%206%20polos%2C%202%2C300/4%2C160%20V%29" data-en="Quote">Cotizar</a></td>
+          </tr>
+          <tr data-m="KPF5008" data-hp="500" data-p="8" data-t="mt" data-q="4">
+            <th scope="row" data-l="model"><span class="brand-s">TECO-Westinghouse</span><span class="mdl">KPF5008</span></th>
+            <td data-l="hp"><b>500</b> HP</td>
+            <td data-l="poles">8</td>
+            <td data-l="rpm">900</td>
+            <td data-l="volt">2,300/4,160 V</td>
+            <td data-l="qty"><span class="qty"><b>4</b><span class="qbar"><i style="--q:0.211"></i></span></span></td>
+            <td data-l="docs" class="docs"><a href="https://buy.tecowestinghouse.com/EcommerceFiles/submittals/SUB_KPF5008.pdf" target="_blank" rel="noopener" title="Datasheet TECO-Westinghouse KPF5008 (PDF)">Datasheet</a><a href="https://www.tecowestinghouse.com/PDF/O%26M_manual_5000_larger.pdf" target="_blank" rel="noopener" title="Manual de instrucciones (PDF)" data-en="Manual">Manual</a></td>
+            <td class="act"><a class="qt" href="mailto:contacto@marasesupply.com?subject=Cotizaci%C3%B3n%20motor%20TECO-Westinghouse%20KPF5008%20%28500%20HP%2C%208%20polos%2C%202%2C300/4%2C160%20V%29" data-en="Quote">Cotizar</a></td>
+          </tr>
+          <tr data-m="KPF6002" data-hp="600" data-p="2" data-t="mt" data-q="2">
+            <th scope="row" data-l="model"><span class="brand-s">TECO-Westinghouse</span><span class="mdl">KPF6002</span></th>
+            <td data-l="hp"><b>600</b> HP</td>
+            <td data-l="poles">2</td>
+            <td data-l="rpm">3,600</td>
+            <td data-l="volt">2,300/4,160 V</td>
+            <td data-l="qty"><span class="qty"><b>2</b><span class="qbar"><i style="--q:0.105"></i></span></span></td>
+            <td data-l="docs" class="docs"><a href="https://buy.tecowestinghouse.com/EcommerceFiles/submittals/SUB_KPF6002.pdf" target="_blank" rel="noopener" title="Datasheet TECO-Westinghouse KPF6002 (PDF)">Datasheet</a><a href="https://www.tecowestinghouse.com/PDF/O%26M_manual_5000_larger.pdf" target="_blank" rel="noopener" title="Manual de instrucciones (PDF)" data-en="Manual">Manual</a></td>
+            <td class="act"><a class="qt" href="mailto:contacto@marasesupply.com?subject=Cotizaci%C3%B3n%20motor%20TECO-Westinghouse%20KPF6002%20%28600%20HP%2C%202%20polos%2C%202%2C300/4%2C160%20V%29" data-en="Quote">Cotizar</a></td>
+          </tr>
+          <tr data-m="KPF6004" data-hp="600" data-p="4" data-t="mt" data-q="1">
+            <th scope="row" data-l="model"><span class="brand-s">TECO-Westinghouse</span><span class="mdl">KPF6004</span></th>
+            <td data-l="hp"><b>600</b> HP</td>
+            <td data-l="poles">4</td>
+            <td data-l="rpm">1,800</td>
+            <td data-l="volt">2,300/4,160 V</td>
+            <td data-l="qty"><span class="qty"><b>1</b><span class="qbar"><i style="--q:0.053"></i></span></span></td>
+            <td data-l="docs" class="docs"><a href="https://buy.tecowestinghouse.com/EcommerceFiles/submittals/SUB_KPF6004.pdf" target="_blank" rel="noopener" title="Datasheet TECO-Westinghouse KPF6004 (PDF)">Datasheet</a><a href="https://www.tecowestinghouse.com/PDF/O%26M_manual_5000_larger.pdf" target="_blank" rel="noopener" title="Manual de instrucciones (PDF)" data-en="Manual">Manual</a></td>
+            <td class="act"><a class="qt" href="mailto:contacto@marasesupply.com?subject=Cotizaci%C3%B3n%20motor%20TECO-Westinghouse%20KPF6004%20%28600%20HP%2C%204%20polos%2C%202%2C300/4%2C160%20V%29" data-en="Quote">Cotizar</a></td>
+          </tr>
+          <tr data-m="KPF7002" data-hp="700" data-p="2" data-t="mt" data-q="4">
+            <th scope="row" data-l="model"><span class="brand-s">TECO-Westinghouse</span><span class="mdl">KPF7002</span></th>
+            <td data-l="hp"><b>700</b> HP</td>
+            <td data-l="poles">2</td>
+            <td data-l="rpm">3,600</td>
+            <td data-l="volt">2,300/4,160 V</td>
+            <td data-l="qty"><span class="qty"><b>4</b><span class="qbar"><i style="--q:0.211"></i></span></span></td>
+            <td data-l="docs" class="docs"><a href="https://buy.tecowestinghouse.com/EcommerceFiles/submittals/SUB_KPF7002.pdf" target="_blank" rel="noopener" title="Datasheet TECO-Westinghouse KPF7002 (PDF)">Datasheet</a><a href="https://www.tecowestinghouse.com/PDF/O%26M_manual_5000_larger.pdf" target="_blank" rel="noopener" title="Manual de instrucciones (PDF)" data-en="Manual">Manual</a></td>
+            <td class="act"><a class="qt" href="mailto:contacto@marasesupply.com?subject=Cotizaci%C3%B3n%20motor%20TECO-Westinghouse%20KPF7002%20%28700%20HP%2C%202%20polos%2C%202%2C300/4%2C160%20V%29" data-en="Quote">Cotizar</a></td>
+          </tr>
+          <tr data-m="KPF7004" data-hp="700" data-p="4" data-t="mt" data-q="12">
+            <th scope="row" data-l="model"><span class="brand-s">TECO-Westinghouse</span><span class="mdl">KPF7004</span></th>
+            <td data-l="hp"><b>700</b> HP</td>
+            <td data-l="poles">4</td>
+            <td data-l="rpm">1,800</td>
+            <td data-l="volt">2,300/4,160 V</td>
+            <td data-l="qty"><span class="qty"><b>12</b><span class="qbar"><i style="--q:0.632"></i></span></span></td>
+            <td data-l="docs" class="docs"><a href="https://buy.tecowestinghouse.com/EcommerceFiles/submittals/SUB_KPF7004.pdf" target="_blank" rel="noopener" title="Datasheet TECO-Westinghouse KPF7004 (PDF)">Datasheet</a><a href="https://www.tecowestinghouse.com/PDF/O%26M_manual_5000_larger.pdf" target="_blank" rel="noopener" title="Manual de instrucciones (PDF)" data-en="Manual">Manual</a></td>
+            <td class="act"><a class="qt" href="mailto:contacto@marasesupply.com?subject=Cotizaci%C3%B3n%20motor%20TECO-Westinghouse%20KPF7004%20%28700%20HP%2C%204%20polos%2C%202%2C300/4%2C160%20V%29" data-en="Quote">Cotizar</a></td>
+          </tr>
+          <tr data-m="KPF7008" data-hp="700" data-p="8" data-t="mt" data-q="1">
+            <th scope="row" data-l="model"><span class="brand-s">TECO-Westinghouse</span><span class="mdl">KPF7008</span></th>
+            <td data-l="hp"><b>700</b> HP</td>
+            <td data-l="poles">8</td>
+            <td data-l="rpm">900</td>
+            <td data-l="volt">2,300/4,160 V</td>
+            <td data-l="qty"><span class="qty"><b>1</b><span class="qbar"><i style="--q:0.053"></i></span></span></td>
+            <td data-l="docs" class="docs"><a href="https://buy.tecowestinghouse.com/EcommerceFiles/submittals/SUB_KPF7008.pdf" target="_blank" rel="noopener" title="Datasheet TECO-Westinghouse KPF7008 (PDF)">Datasheet</a><a href="https://www.tecowestinghouse.com/PDF/O%26M_manual_5000_larger.pdf" target="_blank" rel="noopener" title="Manual de instrucciones (PDF)" data-en="Manual">Manual</a></td>
+            <td class="act"><a class="qt" href="mailto:contacto@marasesupply.com?subject=Cotizaci%C3%B3n%20motor%20TECO-Westinghouse%20KPF7008%20%28700%20HP%2C%208%20polos%2C%202%2C300/4%2C160%20V%29" data-en="Quote">Cotizar</a></td>
+          </tr>
+          <tr data-m="KPF8002" data-hp="800" data-p="2" data-t="mt" data-q="19">
+            <th scope="row" data-l="model"><span class="brand-s">TECO-Westinghouse</span><span class="mdl">KPF8002</span></th>
+            <td data-l="hp"><b>800</b> HP</td>
+            <td data-l="poles">2</td>
+            <td data-l="rpm">3,600</td>
+            <td data-l="volt">2,300/4,160 V</td>
+            <td data-l="qty"><span class="qty"><b>19</b><span class="qbar"><i style="--q:1.000"></i></span></span></td>
+            <td data-l="docs" class="docs"><a href="https://buy.tecowestinghouse.com/EcommerceFiles/submittals/SUB_KPF8002.pdf" target="_blank" rel="noopener" title="Datasheet TECO-Westinghouse KPF8002 (PDF)">Datasheet</a><a href="https://www.tecowestinghouse.com/PDF/O%26M_manual_5000_larger.pdf" target="_blank" rel="noopener" title="Manual de instrucciones (PDF)" data-en="Manual">Manual</a></td>
+            <td class="act"><a class="qt" href="mailto:contacto@marasesupply.com?subject=Cotizaci%C3%B3n%20motor%20TECO-Westinghouse%20KPF8002%20%28800%20HP%2C%202%20polos%2C%202%2C300/4%2C160%20V%29" data-en="Quote">Cotizar</a></td>
+          </tr>
+          <tr data-m="KPF8004" data-hp="800" data-p="4" data-t="mt" data-q="2">
+            <th scope="row" data-l="model"><span class="brand-s">TECO-Westinghouse</span><span class="mdl">KPF8004</span></th>
+            <td data-l="hp"><b>800</b> HP</td>
+            <td data-l="poles">4</td>
+            <td data-l="rpm">1,800</td>
+            <td data-l="volt">2,300/4,160 V</td>
+            <td data-l="qty"><span class="qty"><b>2</b><span class="qbar"><i style="--q:0.105"></i></span></span></td>
+            <td data-l="docs" class="docs"><a href="https://buy.tecowestinghouse.com/EcommerceFiles/submittals/SUB_KPF8004.pdf" target="_blank" rel="noopener" title="Datasheet TECO-Westinghouse KPF8004 (PDF)">Datasheet</a><a href="https://www.tecowestinghouse.com/PDF/O%26M_manual_5000_larger.pdf" target="_blank" rel="noopener" title="Manual de instrucciones (PDF)" data-en="Manual">Manual</a></td>
+            <td class="act"><a class="qt" href="mailto:contacto@marasesupply.com?subject=Cotizaci%C3%B3n%20motor%20TECO-Westinghouse%20KPF8004%20%28800%20HP%2C%204%20polos%2C%202%2C300/4%2C160%20V%29" data-en="Quote">Cotizar</a></td>
+          </tr>
+          <tr data-m="KPF8006" data-hp="800" data-p="6" data-t="mt" data-q="3">
+            <th scope="row" data-l="model"><span class="brand-s">TECO-Westinghouse</span><span class="mdl">KPF8006</span></th>
+            <td data-l="hp"><b>800</b> HP</td>
+            <td data-l="poles">6</td>
+            <td data-l="rpm">1,200</td>
+            <td data-l="volt">2,300/4,160 V</td>
+            <td data-l="qty"><span class="qty"><b>3</b><span class="qbar"><i style="--q:0.158"></i></span></span></td>
+            <td data-l="docs" class="docs"><a href="https://buy.tecowestinghouse.com/EcommerceFiles/submittals/SUB_KPF8006.pdf" target="_blank" rel="noopener" title="Datasheet TECO-Westinghouse KPF8006 (PDF)">Datasheet</a><a href="https://www.tecowestinghouse.com/PDF/O%26M_manual_5000_larger.pdf" target="_blank" rel="noopener" title="Manual de instrucciones (PDF)" data-en="Manual">Manual</a></td>
+            <td class="act"><a class="qt" href="mailto:contacto@marasesupply.com?subject=Cotizaci%C3%B3n%20motor%20TECO-Westinghouse%20KPF8006%20%28800%20HP%2C%206%20polos%2C%202%2C300/4%2C160%20V%29" data-en="Quote">Cotizar</a></td>
+          </tr>
+          <tr data-m="KPF8008" data-hp="800" data-p="8" data-t="mt" data-q="4">
+            <th scope="row" data-l="model"><span class="brand-s">TECO-Westinghouse</span><span class="mdl">KPF8008</span></th>
+            <td data-l="hp"><b>800</b> HP</td>
+            <td data-l="poles">8</td>
+            <td data-l="rpm">900</td>
+            <td data-l="volt">2,300/4,160 V</td>
+            <td data-l="qty"><span class="qty"><b>4</b><span class="qbar"><i style="--q:0.211"></i></span></span></td>
+            <td data-l="docs" class="docs"><a href="https://buy.tecowestinghouse.com/EcommerceFiles/submittals/SUB_KPF8008.pdf" target="_blank" rel="noopener" title="Datasheet TECO-Westinghouse KPF8008 (PDF)">Datasheet</a><a href="https://www.tecowestinghouse.com/PDF/O%26M_manual_5000_larger.pdf" target="_blank" rel="noopener" title="Manual de instrucciones (PDF)" data-en="Manual">Manual</a></td>
+            <td class="act"><a class="qt" href="mailto:contacto@marasesupply.com?subject=Cotizaci%C3%B3n%20motor%20TECO-Westinghouse%20KPF8008%20%28800%20HP%2C%208%20polos%2C%202%2C300/4%2C160%20V%29" data-en="Quote">Cotizar</a></td>
+          </tr>
+          <tr data-m="KPF9002" data-hp="900" data-p="2" data-t="mt" data-q="1">
+            <th scope="row" data-l="model"><span class="brand-s">TECO-Westinghouse</span><span class="mdl">KPF9002</span></th>
+            <td data-l="hp"><b>900</b> HP</td>
+            <td data-l="poles">2</td>
+            <td data-l="rpm">3,600</td>
+            <td data-l="volt">2,300/4,160 V</td>
+            <td data-l="qty"><span class="qty"><b>1</b><span class="qbar"><i style="--q:0.053"></i></span></span></td>
+            <td data-l="docs" class="docs"><a href="https://buy.tecowestinghouse.com/EcommerceFiles/submittals/SUB_KPF9002.pdf" target="_blank" rel="noopener" title="Datasheet TECO-Westinghouse KPF9002 (PDF)">Datasheet</a><a href="https://www.tecowestinghouse.com/PDF/O%26M_manual_5000_larger.pdf" target="_blank" rel="noopener" title="Manual de instrucciones (PDF)" data-en="Manual">Manual</a></td>
+            <td class="act"><a class="qt" href="mailto:contacto@marasesupply.com?subject=Cotizaci%C3%B3n%20motor%20TECO-Westinghouse%20KPF9002%20%28900%20HP%2C%202%20polos%2C%202%2C300/4%2C160%20V%29" data-en="Quote">Cotizar</a></td>
+          </tr>
+          <tr data-m="KPF9004" data-hp="900" data-p="4" data-t="mt" data-q="3">
+            <th scope="row" data-l="model"><span class="brand-s">TECO-Westinghouse</span><span class="mdl">KPF9004</span></th>
+            <td data-l="hp"><b>900</b> HP</td>
+            <td data-l="poles">4</td>
+            <td data-l="rpm">1,800</td>
+            <td data-l="volt">2,300/4,160 V</td>
+            <td data-l="qty"><span class="qty"><b>3</b><span class="qbar"><i style="--q:0.158"></i></span></span></td>
+            <td data-l="docs" class="docs"><a href="https://buy.tecowestinghouse.com/EcommerceFiles/submittals/SUB_KPF9004.pdf" target="_blank" rel="noopener" title="Datasheet TECO-Westinghouse KPF9004 (PDF)">Datasheet</a><a href="https://www.tecowestinghouse.com/PDF/O%26M_manual_5000_larger.pdf" target="_blank" rel="noopener" title="Manual de instrucciones (PDF)" data-en="Manual">Manual</a></td>
+            <td class="act"><a class="qt" href="mailto:contacto@marasesupply.com?subject=Cotizaci%C3%B3n%20motor%20TECO-Westinghouse%20KPF9004%20%28900%20HP%2C%204%20polos%2C%202%2C300/4%2C160%20V%29" data-en="Quote">Cotizar</a></td>
+          </tr>
+          <tr data-m="KPF9006" data-hp="900" data-p="6" data-t="mt" data-q="1">
+            <th scope="row" data-l="model"><span class="brand-s">TECO-Westinghouse</span><span class="mdl">KPF9006</span></th>
+            <td data-l="hp"><b>900</b> HP</td>
+            <td data-l="poles">6</td>
+            <td data-l="rpm">1,200</td>
+            <td data-l="volt">2,300/4,160 V</td>
+            <td data-l="qty"><span class="qty"><b>1</b><span class="qbar"><i style="--q:0.053"></i></span></span></td>
+            <td data-l="docs" class="docs"><a href="https://buy.tecowestinghouse.com/EcommerceFiles/submittals/SUB_KPF9006.pdf" target="_blank" rel="noopener" title="Datasheet TECO-Westinghouse KPF9006 (PDF)">Datasheet</a><a href="https://www.tecowestinghouse.com/PDF/O%26M_manual_5000_larger.pdf" target="_blank" rel="noopener" title="Manual de instrucciones (PDF)" data-en="Manual">Manual</a></td>
+            <td class="act"><a class="qt" href="mailto:contacto@marasesupply.com?subject=Cotizaci%C3%B3n%20motor%20TECO-Westinghouse%20KPF9006%20%28900%20HP%2C%206%20polos%2C%202%2C300/4%2C160%20V%29" data-en="Quote">Cotizar</a></td>
+          </tr>
+          <tr data-m="KPF10006" data-hp="1000" data-p="6" data-t="mt" data-q="3">
+            <th scope="row" data-l="model"><span class="brand-s">TECO-Westinghouse</span><span class="mdl">KPF10006</span></th>
+            <td data-l="hp"><b>1,000</b> HP</td>
+            <td data-l="poles">6</td>
+            <td data-l="rpm">1,200</td>
+            <td data-l="volt">2,300/4,160 V</td>
+            <td data-l="qty"><span class="qty"><b>3</b><span class="qbar"><i style="--q:0.158"></i></span></span></td>
+            <td data-l="docs" class="docs"><a href="https://buy.tecowestinghouse.com/EcommerceFiles/submittals/SUB_KPF10006.pdf" target="_blank" rel="noopener" title="Datasheet TECO-Westinghouse KPF10006 (PDF)">Datasheet</a><a href="https://www.tecowestinghouse.com/PDF/O%26M_manual_5000_larger.pdf" target="_blank" rel="noopener" title="Manual de instrucciones (PDF)" data-en="Manual">Manual</a></td>
+            <td class="act"><a class="qt" href="mailto:contacto@marasesupply.com?subject=Cotizaci%C3%B3n%20motor%20TECO-Westinghouse%20KPF10006%20%281000%20HP%2C%206%20polos%2C%202%2C300/4%2C160%20V%29" data-en="Quote">Cotizar</a></td>
+          </tr>
+          <tr data-m="KPF17504" data-hp="1750" data-p="4" data-t="mt" data-q="3">
+            <th scope="row" data-l="model"><span class="brand-s">TECO-Westinghouse</span><span class="mdl">KPF17504</span></th>
+            <td data-l="hp"><b>1,750</b> HP</td>
+            <td data-l="poles">4</td>
+            <td data-l="rpm">1,800</td>
+            <td data-l="volt">2,300/4,160 V</td>
+            <td data-l="qty"><span class="qty"><b>3</b><span class="qbar"><i style="--q:0.158"></i></span></span></td>
+            <td data-l="docs" class="docs"><a href="https://buy.tecowestinghouse.com/EcommerceFiles/submittals/SUB_KPF17504.pdf" target="_blank" rel="noopener" title="Datasheet TECO-Westinghouse KPF17504 (PDF)">Datasheet</a><a href="https://www.tecowestinghouse.com/PDF/O%26M_manual_5000_larger.pdf" target="_blank" rel="noopener" title="Manual de instrucciones (PDF)" data-en="Manual">Manual</a></td>
+            <td class="act"><a class="qt" href="mailto:contacto@marasesupply.com?subject=Cotizaci%C3%B3n%20motor%20TECO-Westinghouse%20KPF17504%20%281750%20HP%2C%204%20polos%2C%202%2C300/4%2C160%20V%29" data-en="Quote">Cotizar</a></td>
+          </tr>
+          <tr data-m="KPF17506" data-hp="1750" data-p="6" data-t="mt" data-q="1">
+            <th scope="row" data-l="model"><span class="brand-s">TECO-Westinghouse</span><span class="mdl">KPF17506</span></th>
+            <td data-l="hp"><b>1,750</b> HP</td>
+            <td data-l="poles">6</td>
+            <td data-l="rpm">1,200</td>
+            <td data-l="volt">2,300/4,160 V</td>
+            <td data-l="qty"><span class="qty"><b>1</b><span class="qbar"><i style="--q:0.053"></i></span></span></td>
+            <td data-l="docs" class="docs"><a href="https://buy.tecowestinghouse.com/EcommerceFiles/submittals/SUB_KPF17506.pdf" target="_blank" rel="noopener" title="Datasheet TECO-Westinghouse KPF17506 (PDF)">Datasheet</a><a href="https://www.tecowestinghouse.com/PDF/O%26M_manual_5000_larger.pdf" target="_blank" rel="noopener" title="Manual de instrucciones (PDF)" data-en="Manual">Manual</a></td>
+            <td class="act"><a class="qt" href="mailto:contacto@marasesupply.com?subject=Cotizaci%C3%B3n%20motor%20TECO-Westinghouse%20KPF17506%20%281750%20HP%2C%206%20polos%2C%202%2C300/4%2C160%20V%29" data-en="Quote">Cotizar</a></td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="inv-empty" id="invEmpty" data-en="No motors match your search. Write to us: we can source it.">Ningún motor coincide con tu búsqueda. Escríbenos: podemos conseguirlo.</p>
+    </div>
+    <p class="inv-note" data-en="Inventory updated October 2026. Stock subject to change without notice; availability is confirmed when quoting. Synchronous speed at 60 Hz. Datasheets and manuals: official TECO-Westinghouse documents (PDF, English).">Inventario actualizado a octubre de 2026. Existencias sujetas a cambio sin previo aviso; la disponibilidad se confirma al cotizar. Velocidad síncrona a 60 Hz. Datasheets y manuales: documentos oficiales de TECO-Westinghouse (PDF, en inglés).</p>
+
+    <div class="notice">
+      <div><b data-en="By quotation">Por cotización</b><span data-en="No price list: each motor is quoted for your application, with lead time and availability.">Sin lista de precios: cada motor se cotiza para tu aplicación, con tiempo de entrega y disponibilidad.</span></div>
+      <div><b data-en="Direct contact">Contacto directo</b><span data-en="You talk to the person who specifies and follows your order, from quote to delivery.">Hablas con quien especifica y da seguimiento a tu pedido, de la cotización a la entrega.</span></div>
+      <div><b data-en="Not on the list?">¿No está en la lista?</b><span data-en="Send us the nameplate or the operating conditions: we source the right motor.">Envíanos la placa de datos o las condiciones de operación: conseguimos el motor adecuado.</span></div>
+    </div>
   </div>
 </section>
 
 <div class="filters">
   <div class="inner" id="chips" role="group" aria-label="Filtrar catálogo">
     <button class="chip" data-filter="all" aria-pressed="true" data-en="All">Todo</button>
-    <button class="chip" data-filter="rot" aria-pressed="false" data-en="Rotating equipment">Equipo rotatorio</button>
+    <button class="chip" data-filter="rot" aria-pressed="false" data-en="Motors &amp; rotating equipment">Motores y equipo rotatorio</button>
     <button class="chip" data-filter="ins" aria-pressed="false" data-en="Measurement">Instrumentación</button>
-    <button class="chip" data-filter="con" aria-pressed="false" data-en="Consumables">Consumibles</button>
-    <button class="chip" data-filter="svc" aria-pressed="false" data-en="Services">Servicios</button>
+    <button class="chip" data-filter="con" aria-pressed="false" data-en="Materials &amp; consumables">Material y consumibles</button>
+    <button class="chip" data-filter="svc" aria-pressed="false" data-en="Field service">Servicio en campo</button>
     <span class="count" id="count"></span>
   </div>
 </div>
@@ -231,7 +2952,7 @@ footer a:hover{color:var(--gold-lt)}
 <section class="band" id="rot" data-group="rot">
   <div class="wrap">
     <div class="sechead">
-      <span class="label" data-en="01 — Rotating equipment">01 — Equipo rotatorio</span>
+      <span class="label" data-en="01 — Motors &amp; rotating equipment">01 — Motores y equipo rotatorio</span>
       <h2 data-en="Specialized industrial equipment">Equipamiento industrial especializado</h2>
     </div>
     <div class="grid">
@@ -332,8 +3053,8 @@ footer a:hover{color:var(--gold-lt)}
 <section class="band" id="con" data-group="con">
   <div class="wrap">
     <div class="sechead">
-      <span class="label" data-en="03 — Consumables">03 — Consumibles</span>
-      <h2 data-en="Industrial consumables and spare parts">Consumibles y refacciones industriales</h2>
+      <span class="label" data-en="03 — Materials &amp; consumables">03 — Material y consumibles</span>
+      <h2 data-en="Electrical materials and consumables">Material eléctrico y consumibles</h2>
     </div>
     <div class="grid">
 
@@ -371,12 +3092,12 @@ footer a:hover{color:var(--gold-lt)}
   </div>
 </section>
 
-<!-- SERVICIOS -->
+<!-- SERVICIO EN CAMPO -->
 <section class="band" id="svc" data-group="svc">
   <div class="wrap">
     <div class="sechead">
-      <span class="label" data-en="04 — Services">04 — Servicios</span>
-      <h2 data-en="Services around the supply">Servicios alrededor del suministro</h2>
+      <span class="label" data-en="04 — Field service">04 — Servicio en campo</span>
+      <h2 data-en="Installation that accompanies the supply">Instalación que acompaña al suministro</h2>
     </div>
     <div class="grid">
 
@@ -384,7 +3105,7 @@ footer a:hover{color:var(--gold-lt)}
         <div class="media"><svg class="ph"><use href="#i-bolt"/></svg><img src="image/service.jpg" alt="Servicio en instalaciones eléctricas" loading="lazy" onerror="this.remove()"></div>
         <div class="body">
           <span class="tag" data-en="Field service">Servicio en campo</span>
-          <h3 data-en="Electrical installations">Servicio en instalaciones eléctricas</h3>
+          <h3 data-en="Electrical installations">Instalaciones eléctricas</h3>
           <p data-en="Design, installation and commissioning of electrical infrastructure for industrial and commercial applications.">Diseño, instalación y puesta en marcha de infraestructura eléctrica para aplicaciones industriales y comerciales.</p>
           <ul>
             <li data-en="Site survey and load study">Levantamiento en sitio y estudio de carga</li>
@@ -393,51 +3114,6 @@ footer a:hover{color:var(--gold-lt)}
           </ul>
         </div>
         <div class="foot"><a class="quote" href="mailto:contacto@marasesupply.com?subject=Cotizaci%C3%B3n%20-%20Instalaciones%20el%C3%A9ctricas" data-en="Request a quote">Solicitar cotización <svg><use href="#i-arrow"/></svg></a></div>
-      </article>
-
-      <article class="card" data-cat="svc">
-        <div class="media"><svg class="ph"><use href="#i-cloud"/></svg><img src="image/Cloud.jpg" alt="Servicios en la nube" loading="lazy" onerror="this.remove()"></div>
-        <div class="body">
-          <span class="tag" data-en="Technology">Tecnología</span>
-          <h3 data-en="Cloud services">Servicios en la nube</h3>
-          <p data-en="Cloud storage and infrastructure for companies that need their operating data available and backed up.">Servicios de almacenamiento en la nube para empresas que necesitan su información disponible y respaldada.</p>
-          <ul>
-            <li data-en="Migration without interrupting operations">Migración sin interrumpir la operación</li>
-            <li data-en="Scheduled backup and restore testing">Respaldo programado y pruebas de restauración</li>
-            <li data-en="Cost measured by workload">Costo medido por carga de trabajo</li>
-          </ul>
-        </div>
-        <div class="foot"><a class="quote" href="mailto:contacto@marasesupply.com?subject=Cotizaci%C3%B3n%20-%20Servicios%20en%20la%20nube" data-en="Request a quote">Solicitar cotización <svg><use href="#i-arrow"/></svg></a></div>
-      </article>
-
-      <article class="card" data-cat="svc">
-        <div class="media"><svg class="ph"><use href="#i-shield"/></svg><img src="image/CyberSecurity.jpg" alt="Servicio de ciberseguridad" loading="lazy" onerror="this.remove()"></div>
-        <div class="body">
-          <span class="tag" data-en="Technology">Tecnología</span>
-          <h3 data-en="Cybersecurity">Ciberseguridad</h3>
-          <p data-en="Protection and information security for business environments, from perimeter to endpoint.">Protección y seguridad informática para empresas, del perímetro al equipo final.</p>
-          <ul>
-            <li data-en="Access policy and identity management">Política de accesos y gestión de identidad</li>
-            <li data-en="Monitoring and incident response">Monitoreo y respuesta a incidentes</li>
-            <li data-en="User awareness training">Capacitación de usuarios</li>
-          </ul>
-        </div>
-        <div class="foot"><a class="quote" href="mailto:contacto@marasesupply.com?subject=Cotizaci%C3%B3n%20-%20Ciberseguridad" data-en="Request a quote">Solicitar cotización <svg><use href="#i-arrow"/></svg></a></div>
-      </article>
-
-      <article class="card" data-cat="svc">
-        <div class="media"><svg class="ph"><use href="#i-chart"/></svg><img src="image/Consultoria.png" alt="Consultoría administrativa y financiera" loading="lazy" onerror="this.remove()"></div>
-        <div class="body">
-          <span class="tag" data-en="Consulting">Consultoría</span>
-          <h3 data-en="Administrative and financial consulting">Consultoría administrativa y financiera</h3>
-          <p data-en="Business consulting focused on administrative optimization, financial control, tax compliance and process improvement.">Servicios de consultoría empresarial enfocados en la optimización administrativa, control financiero, cumplimiento fiscal y mejora de procesos.</p>
-          <ul>
-            <li data-en="Diagnosis of the current process">Diagnóstico del proceso actual</li>
-            <li data-en="Indicators and management reporting">Indicadores y reportes de gestión</li>
-            <li data-en="Follow-up until the change sticks">Acompañamiento hasta consolidar el cambio</li>
-          </ul>
-        </div>
-        <div class="foot"><a class="quote" href="mailto:contacto@marasesupply.com?subject=Cotizaci%C3%B3n%20-%20Consultor%C3%ADa%20administrativa%20y%20financiera" data-en="Request a quote">Solicitar cotización <svg><use href="#i-arrow"/></svg></a></div>
       </article>
 
     </div>
@@ -467,15 +3143,15 @@ footer a:hover{color:var(--gold-lt)}
         <img class="logo" src="image/logogold.svg" alt="MARASE Supply" onerror="this.closest('.brand').classList.add('nologo');this.remove()">
         <span class="wordmark"><span class="m">MARASE</span><span class="s">Supply</span></span>
       </a>
-      <p data-en="Materials and articles related to the electrical sector. Industrial supply, measurement instruments and technical service across Mexico.">Materiales y artículos relacionados al sector eléctrico. Suministro industrial, instrumentación de medición y servicio técnico en todo México.</p>
+      <p data-en="Technology and industrial solutions for industry: software and tax &amp; accounting consulting, and specialized electrical equipment supply. By quotation, with direct contact.">Soluciones tecnológicas e industriales para la industria: consultoría de software y fiscal-contable, y suministro de equipo y material eléctrico especializado. Por cotización y con contacto directo.</p>
     </div>
     <div>
       <h4 data-en="Navigation">Navegación</h4>
       <ul>
         <li><a href="index.html" data-en="Home">Inicio</a></li>
         <li><a href="aboutus.html" data-en="About us">Acerca de nosotros</a></li>
-        <li><a href="industrialproducts.html" data-en="Industrial products">Productos industriales</a></li>
-        <li><a href="services.html" data-en="Services">Servicios</a></li>
+        <li><a href="services.html" data-en="Consulting">Consultoría</a></li>
+        <li><a href="industrialproducts.html" data-en="Industrial supply">Suministro industrial</a></li>
         <li><a href="contacto.html" data-en="Contact">Contacto</a></li>
         <li><a href="privacy.html" data-en="Privacy notice">Aviso de privacidad</a></li>
       </ul>
@@ -491,7 +3167,7 @@ footer a:hover{color:var(--gold-lt)}
   </div>
   <div class="wrap foot-bottom">
     <span>© 2026 MARASE Supply</span>
-    <span data-en="Industrial supply for the electrical sector">Suministro industrial para el sector eléctrico</span>
+    <span data-en="Technology and industrial solutions for industry">Soluciones tecnológicas e industriales para la industria</span>
   </div>
 </footer>
 
@@ -542,6 +3218,92 @@ footer a:hover{color:var(--gold-lt)}
   });
   apply('all');
 
+
+  /* ===== escaparate TECO e inventario ===== */
+  var reduceM=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function onceIn(el,fn,th){
+    if(reduceM || !('IntersectionObserver' in window)){ fn(); return; }
+    var io=new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ fn(); io.disconnect(); } }); },{threshold:th||.2});
+    io.observe(el);
+  }
+  document.querySelectorAll('.rv').forEach(function(el){ onceIn(el,function(){ el.classList.add('in'); },.15); });
+
+  /* contadores */
+  document.querySelectorAll('[data-count]').forEach(function(b){
+    var to=+b.dataset.count;
+    onceIn(b,function(){
+      if(reduceM){ b.textContent=to; return; }
+      var t0=performance.now();
+      (function step(t){ var k=Math.min(1,(t-t0)/1600), e=1-Math.pow(1-k,3); b.textContent=Math.round(to*e); if(k<1) requestAnimationFrame(step); })(t0);
+    },.5);
+  });
+
+  /* paralaje del motor */
+  var teco=document.getElementById('teco'), core=document.querySelector('.orbit .core');
+  if(!reduceM && core){
+    teco.addEventListener('pointermove',function(e){
+      if(e.pointerType!=='mouse') return;
+      var r=teco.getBoundingClientRect(), x=(e.clientX-r.left)/r.width-.5, y=(e.clientY-r.top)/r.height-.5;
+      core.style.transform='translate('+(x*14).toFixed(1)+'px,'+(y*14).toFixed(1)+'px)';
+    });
+    teco.addEventListener('pointerleave',function(){ core.style.transform=''; });
+  }
+
+  /* inventario: búsqueda, filtros y orden */
+  var table=document.getElementById('invTable'), tbody=table.tBodies[0];
+  var invRows=[].slice.call(tbody.rows), q=document.getElementById('q');
+  var fT='all', fP='all', sortKey='hp', sortDir=1;
+  var LBL={es:{hp:'Potencia',poles:'Polos',rpm:'RPM sínc.',volt:'Tensión',qty:'Disponibles',docs:'Documentación',
+                ph:'Buscar modelo o HP… (ej. KPF8002, 500)',one:'1 modelo',many:' modelos',u:' unidades'},
+           en:{hp:'Power',poles:'Poles',rpm:'Sync. RPM',volt:'Voltage',qty:'Available',docs:'Documentation',
+                ph:'Search model or HP… (e.g. KPF8002, 500)',one:'1 model',many:' models',u:' units'}};
+  function L(){ return LBL[document.documentElement.lang==='en'?'en':'es']; }
+  function labels(){
+    var l=L();
+    tbody.querySelectorAll('td[data-l]').forEach(function(td){ td.setAttribute('data-c', l[td.dataset.l]||''); });
+    q.placeholder=l.ph;
+  }
+  function render(){
+    var term=q.value.trim().toLowerCase().replace(/[,\s]/g,''), shown=0, units=0;
+    invRows.forEach(function(tr){
+      var d=tr.dataset;
+      var ok=(fT==='all'||d.t===fT)&&(fP==='all'||d.p===fP)&&(!term||d.m.toLowerCase().indexOf(term)>-1||d.hp===term);
+      tr.classList.toggle('hide',!ok);
+      if(ok){ shown++; units+=+d.q; }
+    });
+    var l=L();
+    document.getElementById('invCount').textContent=(shown===1?l.one:shown+l.many)+' · '+units+l.u;
+    document.getElementById('invEmpty').style.display=shown?'none':'block';
+  }
+  function sortRows(){
+    invRows.sort(function(a,b){
+      var x=a.dataset[sortKey], y=b.dataset[sortKey];
+      var c=(sortKey==='m')?x.localeCompare(y):(+x-+y);
+      if(!c) c=(+a.dataset.hp-+b.dataset.hp)||(+a.dataset.p-+b.dataset.p);
+      return c*sortDir;
+    });
+    invRows.forEach(function(tr){ tbody.appendChild(tr); });
+  }
+  q.addEventListener('input',render);
+  document.getElementById('segT').addEventListener('click',function(e){
+    var b=e.target.closest('button'); if(!b) return; fT=b.dataset.t;
+    this.querySelectorAll('button').forEach(function(x){ x.setAttribute('aria-pressed',x===b); }); render();
+  });
+  document.getElementById('segP').addEventListener('click',function(e){
+    var b=e.target.closest('button'); if(!b) return; fP=b.dataset.p;
+    this.querySelectorAll('button').forEach(function(x){ x.setAttribute('aria-pressed',x===b); }); render();
+  });
+  table.tHead.addEventListener('click',function(e){
+    var b=e.target.closest('button[data-sort]'); if(!b) return;
+    var k=b.dataset.sort;
+    if(k===sortKey) sortDir*=-1; else { sortKey=k; sortDir=(k==='q')?-1:1; }
+    table.tHead.querySelectorAll('button[data-sort]').forEach(function(x){ x.classList.toggle('on',x===b); x.classList.toggle('desc',x===b&&sortDir<0); });
+    sortRows();
+  });
+  document.addEventListener('langchange',function(){ labels(); render(); });
+  labels(); render();
+  onceIn(table,function(){ table.classList.add('lit'); },.1);
+
   /* ES / EN */
   var lang='es';
   var btns=document.querySelectorAll('[data-lang]');
@@ -554,6 +3316,7 @@ footer a:hover{color:var(--gold-lt)}
     });
     btns.forEach(function(x){ x.setAttribute('aria-pressed', x.dataset.lang===next); });
     apply(current);
+    document.dispatchEvent(new CustomEvent('langchange',{detail:next}));
   });});
 })();
 </script>

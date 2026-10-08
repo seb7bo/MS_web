@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>MARASE Supply | Suministro industrial y servicio para el sector eléctrico</title>
-<meta name="description" content="MARASE Supply provee motores, bombas, sopladores, instrumentación de medición eléctrica, cables y consumibles, además de servicios de instalación eléctrica, nube, ciberseguridad y consultoría.">
-<meta property="og:title" content="MARASE Supply | Suministro industrial para el sector eléctrico">
-<meta property="og:description" content="Materiales y artículos relacionados al sector eléctrico. Suministro, instrumentación y servicio técnico en México.">
+<title>MARASE Supply | Soluciones tecnológicas e industriales para la industria</title>
+<meta name="description" content="MARASE Supply: consultoría de software y fiscal-contable, y suministro de equipo y material eléctrico especializado, con énfasis en motores TECO-Westinghouse. Atención por cotización y con contacto directo.">
+<meta property="og:title" content="MARASE Supply | Soluciones tecnológicas e industriales">
+<meta property="og:description" content="Consultoría de software y fiscal-contable, y suministro de equipo eléctrico especializado. Por cotización y con contacto directo.">
 <meta property="og:type" content="website">
 <link rel="icon" href="image/logogold.svg" type="image/svg+xml">
 <meta property="og:image" content="image/logogold.svg">
@@ -30,7 +30,7 @@
   --maxw:1320px;
 }
 *{box-sizing:border-box}
-html{scroll-behavior:smooth}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
 body{
   margin:0;background:var(--paper);color:var(--ink);
   font-family:var(--sans);font-size:17px;line-height:1.65;
@@ -41,7 +41,6 @@ a{color:inherit}
 .wrap{max-width:var(--maxw);margin:0 auto;padding-left:var(--pad);padding-right:var(--pad)}
 h1,h2,h3,.serif{font-family:var(--serif);font-weight:400;letter-spacing:-.015em;line-height:1.08}
 p{max-width:64ch}
-.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
 :focus-visible{outline:2px solid var(--gold);outline-offset:3px}
 
 /* ---------- header ---------- */
@@ -55,14 +54,14 @@ header.solid{background:rgba(18,22,28,.94);backdrop-filter:blur(10px);border-bot
 .brand .m{font-family:var(--serif);font-size:26px;letter-spacing:.02em}
 .brand .s{font-size:11px;letter-spacing:.34em;color:var(--gold-lt);text-transform:uppercase}
 footer .brand .logo{height:46px}
-/* marca de agua: el logo apenas insinuado detrás del hero */
 .hero .watermark{position:absolute;right:calc(var(--pad) * -.25);bottom:-6%;width:min(46vw,620px);height:auto;
   opacity:.05;pointer-events:none;user-select:none}
-@media (max-width:760px){.hero .watermark{width:78vw;bottom:auto;top:14%;right:-14vw;opacity:.045}}
+@media (max-width:760px){.name .mk{font-size:19vw}.name .sub b{font-size:14px}.hero .watermark{width:78vw;bottom:auto;top:14%;right:-14vw;opacity:.045}}
 nav.main{display:flex;align-items:center;gap:30px}
 nav.main a{color:rgba(242,241,237,.82);text-decoration:none;font-size:14.5px;letter-spacing:.01em;padding:6px 0;position:relative}
 nav.main a::after{content:"";position:absolute;left:0;right:100%;bottom:0;height:1px;background:var(--gold-lt);transition:right .35s ease}
-nav.main a:hover::after,nav.main a:focus-visible::after{right:0}
+nav.main a:hover::after,nav.main a:focus-visible::after,nav.main a.active::after{right:0}
+nav.main a.active{color:var(--paper)}
 .lang{display:flex;align-items:center;gap:6px;font-size:12.5px;letter-spacing:.14em;color:rgba(242,241,237,.5)}
 .lang button{background:none;border:0;color:inherit;font:inherit;letter-spacing:inherit;cursor:pointer;padding:4px}
 .lang button[aria-pressed="true"]{color:var(--gold-lt)}
@@ -79,9 +78,35 @@ nav.main a:hover::after,nav.main a:focus-visible::after{right:0}
   background:radial-gradient(circle,rgba(184,145,47,.20) 0%,rgba(184,145,47,.06) 38%,transparent 66%)}
 .hero-inner{position:relative;width:100%;max-width:var(--maxw);margin:0 auto;padding:0 var(--pad) clamp(48px,8vh,96px)}
 .eyebrow{font-size:11.5px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold-lt);margin-bottom:26px;display:block}
-.hero h1{font-size:clamp(42px,7.4vw,104px);margin:0 0 28px;max-width:16ch;font-weight:300}
-.hero h1 em{font-style:italic;font-weight:300}
-.hero p{color:rgba(242,241,237,.72);font-size:clamp(16px,1.25vw,19px);max-width:56ch;margin:0 0 40px}
+/* nombre: decodificación digital → serif */
+.name{display:inline-flex;flex-direction:column;margin:0 0 clamp(22px,3vh,34px);font-weight:300;line-height:1}
+.name .mk{position:relative;display:block;font-family:var(--serif);font-weight:300;font-size:clamp(68px,14.5vw,224px);
+  letter-spacing:-.035em;line-height:.84;padding-bottom:.04em;overflow:hidden}
+.name .ch{position:relative;display:inline-block;transition:color .35s ease}
+/* luz dorada que recorre las letras (sigue al cursor) */
+@supports ((-webkit-background-clip:text) or (background-clip:text)){
+  .name .mk{background:radial-gradient(circle 230px at var(--mx,-400px) var(--my,50%),#FFF4CC 0,#E6C66E 55px,#D8B75C 85px,#F2F1ED 190px);
+    -webkit-background-clip:text;background-clip:text}
+  .name .ch{color:transparent}
+}
+.hero .magic{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.name .ch.scr{color:transparent}
+.name .ch.scr::after{content:attr(data-g);position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+  font-family:var(--sans);font-weight:500;font-size:.5em;letter-spacing:0;color:var(--gold-lt);opacity:.85}
+.name .mk::after{content:"";position:absolute;top:0;bottom:0;left:-12%;width:10%;pointer-events:none;
+  background:linear-gradient(90deg,transparent,rgba(216,183,92,.28),transparent);opacity:0}
+.name.swept .mk::after{animation:sweep 1.4s cubic-bezier(.4,0,.2,1) forwards}
+@keyframes sweep{0%{left:-12%;opacity:1}100%{left:104%;opacity:0}}
+.name .sub{display:flex;align-items:center;gap:clamp(14px,1.6vw,24px);margin-top:clamp(10px,1.4vw,18px)}
+.name .sub i{flex:1;height:1px;background:var(--gold);transform:scaleX(0);transform-origin:left;transition:transform 1.2s cubic-bezier(.2,.7,.25,1)}
+.name .sub b{font-family:var(--sans);font-weight:500;font-size:clamp(13px,1.55vw,24px);letter-spacing:.62em;margin-right:-.62em;
+  color:var(--gold-lt);opacity:0;transform:translateX(-10px);transition:opacity 1s ease .35s,transform 1s cubic-bezier(.2,.7,.25,1) .35s}
+.name.done .sub i{transform:scaleX(1)}
+.name.done .sub b{opacity:1;transform:none}
+.hero .tagline{font-family:var(--serif);font-weight:300;font-size:clamp(24px,2.9vw,42px);line-height:1.15;letter-spacing:-.01em;
+  margin:0 0 20px;max-width:24ch;color:var(--paper)}
+.hero .tagline em{font-style:italic;color:var(--gold-lt)}
+.hero p{color:rgba(242,241,237,.72);font-size:clamp(16px,1.2vw,18.5px);max-width:58ch;margin:0 0 36px}
 .hero-actions{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
 .btn{display:inline-flex;align-items:center;gap:12px;padding:15px 30px;border:1px solid var(--gold);color:var(--gold-lt);
   text-decoration:none;font-size:14px;letter-spacing:.08em;background:none;cursor:pointer;transition:.35s}
@@ -100,62 +125,72 @@ nav.main a:hover::after,nav.main a:focus-visible::after{right:0}
 section{position:relative}
 .band{padding:clamp(72px,11vw,150px) 0}
 .band.tight{padding:clamp(56px,8vw,104px) 0}
-.rule{height:1px;background:var(--line)}
 .split{display:grid;grid-template-columns:minmax(0,340px) minmax(0,1fr);gap:clamp(28px,6vw,90px);align-items:start}
 .label{font-size:11.5px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);padding-top:10px}
 h2{font-size:clamp(30px,4.3vw,58px);margin:0 0 26px;max-width:18ch;font-weight:300}
 .lead{font-size:clamp(17px,1.35vw,20px);color:#3B4048}
 .muted{color:var(--muted)}
 
-/* ---------- stats ---------- */
-.stats{background:var(--ink);color:var(--paper)}
-.stats h2{color:var(--paper);max-width:14ch}
-.stats .lead{color:rgba(242,241,237,.68)}
-.stat-row{display:grid;grid-template-columns:repeat(4,1fr);margin-top:clamp(40px,6vw,76px);border-top:1px solid var(--line-dk)}
-.stat{padding:34px 24px 6px 0;border-right:1px solid var(--line-dk)}
-.stat:last-child{border-right:0}
-.stat b{display:block;font-family:var(--serif);font-size:clamp(38px,5.2vw,68px);font-weight:300;color:var(--gold-lt);line-height:1}
-.stat span{display:block;margin-top:12px;font-size:13.5px;color:rgba(242,241,237,.6);letter-spacing:.02em;max-width:22ch}
+/* ---------- divisiones: pantalla dividida ---------- */
+#divisiones{padding-bottom:0}
+.stage{display:flex;margin-top:clamp(44px,6vw,80px);background:var(--ink);min-height:min(88vh,760px);overflow:hidden}
+.dv{position:relative;flex:1 1 0;display:flex;align-items:flex-end;color:var(--paper);text-decoration:none;overflow:hidden;
+  isolation:isolate;transition:flex-grow .8s cubic-bezier(.2,.7,.25,1)}
+.dv + .dv{border-left:1px solid rgba(216,183,92,.35)}
+.dv .bg{position:absolute;inset:0;z-index:-2;background:linear-gradient(150deg,#1B2129,#2C333D 55%,#3A424E)}
+.dv .bg img{width:100%;height:100%;object-fit:cover;filter:grayscale(.85) contrast(1.08) brightness(.8);
+  transform:scale(1.06);transition:transform 1.2s cubic-bezier(.2,.7,.25,1),filter .8s ease}
+.dv::before{content:"";position:absolute;inset:0;z-index:-1;
+  background:linear-gradient(180deg,rgba(18,22,28,.55) 0%,rgba(18,22,28,.35) 35%,rgba(18,22,28,.92) 78%,var(--ink) 100%);
+  transition:background .8s ease}
+.dv::after{content:"";position:absolute;left:0;right:0;top:0;height:2px;background:var(--gold);transform:scaleX(0);
+  transform-origin:left;transition:transform .8s cubic-bezier(.2,.7,.25,1)}
+.dv .inner{position:relative;width:100%;padding:clamp(30px,4vw,64px);max-width:640px}
+.dv .numeral{position:absolute;top:clamp(20px,3vw,44px);right:clamp(22px,3vw,48px);font-family:var(--serif);font-weight:300;
+  font-size:clamp(110px,14vw,220px);line-height:.8;color:transparent;-webkit-text-stroke:1px rgba(216,183,92,.55);
+  letter-spacing:-.04em;pointer-events:none;transition:-webkit-text-stroke-color .6s,transform .8s cubic-bezier(.2,.7,.25,1)}
+.dv .kicker{font-size:11.5px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold-lt);display:block;margin-bottom:16px}
+.dv h3{font-size:clamp(34px,4vw,60px);margin:0 0 16px;font-weight:300}
+.dv h3 em{font-style:italic}
+.dv p{font-size:clamp(15px,1.15vw,17px);color:rgba(242,241,237,.74);margin:0 0 26px;max-width:46ch}
+.dv .areas{list-style:none;padding:0;margin:0 0 30px;border-top:1px solid var(--line-dk)}
+.dv .areas li{display:flex;justify-content:space-between;gap:20px;padding:13px 0;border-bottom:1px solid var(--line-dk);font-size:14.5px}
+.dv .areas b{font-weight:500;color:var(--paper)}
+.dv .areas span{color:rgba(242,241,237,.55);text-align:right}
+.dv .go{display:inline-flex;align-items:center;gap:12px;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-lt)}
+.dv .go svg{width:16px;height:16px;transition:transform .4s ease}
+.dv:hover .go svg,.dv:focus-visible .go svg{transform:translateX(6px)}
+.dv:focus-visible{outline-offset:-4px}
+@media (hover:hover) and (min-width:1001px){
+  .stage:hover .dv{flex-grow:.8}
+  .stage .dv:hover,.stage .dv:focus-visible{flex-grow:1.25}
+  .stage:hover .dv:not(:hover)::before{background:linear-gradient(180deg,rgba(18,22,28,.78),rgba(18,22,28,.94) 70%,var(--ink))}
+  .dv:hover .bg img,.dv:focus-visible .bg img{transform:scale(1);filter:grayscale(.15) contrast(1.05) brightness(.85)}
+  .dv:hover::after,.dv:focus-visible::after{transform:scaleX(1)}
+  .dv:hover .numeral{-webkit-text-stroke-color:var(--gold-lt);transform:translateY(-6px)}
+}
 
-/* ---------- catálogo index ---------- */
-.index-list{border-top:1px solid var(--line)}
-.index-list a{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:18px;align-items:center;
-  padding:24px 4px;border-bottom:1px solid var(--line);text-decoration:none;transition:padding .35s ease,background .35s ease}
-.index-list a:hover,.index-list a:focus-visible{padding-left:18px;background:rgba(184,145,47,.07)}
-.index-list .t{font-family:var(--serif);font-size:clamp(20px,2.3vw,30px);font-weight:400}
-.index-list .d{font-size:14px;color:var(--muted);margin-top:4px;max-width:70ch}
-.index-list .more{font-size:12.5px;letter-spacing:.16em;color:var(--gold);white-space:nowrap;opacity:.55;transition:opacity .3s}
-.index-list a:hover .more{opacity:1}
+/* ---------- forma de trabajo ---------- */
+.how{background:var(--paper-2)}
+.how h2{max-width:16ch}
+.pillars{display:grid;grid-template-columns:repeat(3,1fr);margin-top:clamp(40px,6vw,76px);border-top:1px solid var(--line)}
+.pillar{padding:34px 28px 6px 0;border-right:1px solid var(--line)}
+.pillar + .pillar{padding-left:28px}
+.pillar:last-child{border-right:0}
+.pillar svg{width:30px;height:30px;color:var(--gold);margin-bottom:18px}
+.pillar h3{font-size:clamp(20px,2vw,26px);margin:0 0 10px;font-weight:300}
+.pillar p{font-size:14.5px;color:var(--muted);margin:0;max-width:34ch}
 
-/* ---------- cards ---------- */
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
-.card{background:var(--paper);padding:0 0 30px;display:flex;flex-direction:column}
-.card .media{position:relative;aspect-ratio:4/3;background:linear-gradient(140deg,#1B2129,#2C333D 55%,#3A424E);overflow:hidden}
-.card .media svg.ph{position:absolute;inset:0;margin:auto;width:40%;height:40%;color:rgba(216,183,92,.5)}
-.card .media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:2;
-  filter:grayscale(.25) contrast(1.03);transition:transform .8s cubic-bezier(.2,.7,.25,1),filter .6s}
-.card:hover .media img{transform:scale(1.045);filter:grayscale(0)}
-.card .body{padding:26px 26px 0}
-.card h3{font-size:clamp(19px,1.7vw,23px);margin:0 0 10px;font-weight:400}
-.card p{font-size:14.5px;color:var(--muted);margin:0;max-width:44ch}
-.card .tag{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:14px}
+/* ---------- misión / visión ---------- */
+.mv{display:grid;grid-template-columns:repeat(2,1fr);gap:clamp(28px,5vw,70px);margin-top:clamp(30px,4vw,48px)}
+.mv .k{font-size:11.5px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);margin-bottom:14px;padding-bottom:12px;border-bottom:1px solid var(--line)}
+.mv blockquote{margin:0;font-family:var(--serif);font-size:clamp(19px,1.9vw,25px);line-height:1.38;font-weight:300}
 
 /* ---------- statement ---------- */
 .statement{background:var(--paper-2)}
 .statement p{font-family:var(--serif);font-size:clamp(26px,4.1vw,54px);line-height:1.18;font-weight:300;max-width:22ch;margin:0}
 .statement .w{display:inline-block;opacity:.16;transition:opacity .5s ease}
 .statement .w.on{opacity:1}
-
-/* ---------- servicios ---------- */
-.svc{background:var(--ink);color:var(--paper)}
-.svc h2{color:var(--paper)}
-.svc .lead{color:rgba(242,241,237,.68)}
-.svc-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line-dk);border:1px solid var(--line-dk);margin-top:clamp(36px,5vw,64px)}
-.svc-item{background:var(--ink);padding:clamp(26px,3vw,44px);display:flex;gap:22px;align-items:flex-start;transition:background .4s}
-.svc-item:hover{background:var(--ink-2)}
-.svc-item svg{width:34px;height:34px;flex:none;color:var(--gold-lt);margin-top:4px}
-.svc-item h3{font-size:22px;margin:0 0 8px;font-weight:400}
-.svc-item p{font-size:14.5px;color:rgba(242,241,237,.6);margin:0;max-width:42ch}
 
 /* ---------- contacto ---------- */
 .contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(24px,4vw,60px);margin-top:clamp(36px,5vw,60px)}
@@ -174,7 +209,7 @@ footer .brand{color:var(--paper);margin-bottom:18px}
 footer p{font-size:14.5px;max-width:48ch;margin:0}
 footer h4{font-size:11.5px;letter-spacing:.26em;text-transform:uppercase;color:var(--gold);margin:0 0 16px;font-weight:500}
 footer ul{list-style:none;padding:0;margin:0}
-footer li{margin-bottom:10px}
+footer li{margin-bottom:10px;font-size:14.5px}
 footer a{color:rgba(242,241,237,.66);text-decoration:none;font-size:14.5px}
 footer a:hover{color:var(--gold-lt)}
 .foot-bottom{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;margin-top:clamp(40px,6vw,68px);
@@ -184,10 +219,10 @@ footer a:hover{color:var(--gold-lt)}
 @media (max-width:1000px){
   .split{grid-template-columns:1fr;gap:14px}
   .label{padding-top:0}
-  .cards{grid-template-columns:repeat(2,1fr)}
-  .stat-row{grid-template-columns:repeat(2,1fr)}
-  .stat:nth-child(2){border-right:0}
-  .stat:nth-child(-n+2){border-bottom:1px solid var(--line-dk)}
+  .stage{flex-direction:column;min-height:0}
+  .dv{min-height:560px}
+  .dv + .dv{border-left:0;border-top:1px solid rgba(216,183,92,.35)}
+  .dv .bg img{filter:grayscale(.4) contrast(1.05) brightness(.8);transform:none}
   .contact-grid{grid-template-columns:1fr 1fr}
   .foot-grid{grid-template-columns:1fr 1fr}
   .hero-meta{display:none}
@@ -199,11 +234,13 @@ footer a:hover{color:var(--gold-lt)}
     pointer-events:none;transition:.32s ease}
   nav.main.open{transform:none;opacity:1;pointer-events:auto}
   nav.main a{width:100%;padding:15px 0;border-bottom:1px solid var(--line-dk);font-size:17px}
-  .cards,.svc-grid,.contact-grid,.foot-grid{grid-template-columns:1fr}
-  .card .media{aspect-ratio:16/10}
-  .index-list a{grid-template-columns:1fr}
-  .index-list .more{display:none}
-  .stat{padding-right:14px}
+  .pillars,.mv,.contact-grid,.foot-grid{grid-template-columns:1fr}
+  .pillar,.pillar + .pillar{padding:28px 0 22px;border-right:0;border-bottom:1px solid var(--line)}
+  .pillar:last-child{border-bottom:0}
+  .dv{min-height:520px}
+  .dv .numeral{font-size:96px}
+  .dv .areas li{flex-direction:column;gap:2px}
+  .dv .areas span{text-align:left}
 }
 @media (prefers-reduced-motion:reduce){
   *{animation:none!important;transition:none!important}
@@ -221,36 +258,19 @@ footer a:hover{color:var(--gold-lt)}
     <symbol id="i-motor" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4">
       <rect x="9" y="16" width="22" height="16" rx="2"/><path d="M31 21h5v6h-5zM36 24h5M13 16V12h6v4M13 32v4h6v-4M4 20v8"/><circle cx="20" cy="24" r="4"/>
     </symbol>
-    <symbol id="i-pump" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4">
-      <circle cx="21" cy="26" r="10"/><circle cx="21" cy="26" r="3.4"/><path d="M21 16V9h9M31 26h10M31 26l4-4M31 26l4 4M11 36h20"/>
+    <symbol id="i-code" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4">
+      <rect x="6" y="9" width="36" height="30" rx="2"/><path d="M6 16h36M19 24l-5 4 5 4M29 24l5 4-5 4M26 22l-4 12"/>
     </symbol>
-    <symbol id="i-blower" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4">
-      <circle cx="20" cy="24" r="11"/><path d="M20 24c0-7 3-9 7-7s2 7-7 7zM20 24c-6 3-9 1-8-3s6-3 8 3zM20 24c6 4 5 8 1 9s-5-4-1-9z"/><path d="M31 24h10v7"/>
+    <symbol id="i-doc" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4">
+      <path d="M14 7h14l8 8v26a2 2 0 01-2 2H14a2 2 0 01-2-2V9a2 2 0 012-2z"/><path d="M28 7v9h8M18 26h12M18 32h12"/>
     </symbol>
-    <symbol id="i-meter" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4">
-      <rect x="11" y="8" width="26" height="32" rx="3"/><rect x="16" y="14" width="16" height="9" rx="1"/><path d="M17 30h4M27 30h4M17 35h4M27 35h4"/>
+    <symbol id="i-user" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4">
+      <circle cx="24" cy="17" r="7"/><path d="M10 40c0-8 6-13 14-13s14 5 14 13"/>
     </symbol>
-    <symbol id="i-analyzer" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4">
-      <rect x="7" y="11" width="34" height="24" rx="3"/><path d="M12 27l6-8 5 6 4-9 5 11M18 40h12"/>
+    <symbol id="i-pin" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4">
+      <path d="M24 42s13-11 13-21a13 13 0 10-26 0c0 10 13 21 13 21z"/><circle cx="24" cy="21" r="5"/>
     </symbol>
-    <symbol id="i-cable" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4">
-      <path d="M8 34c0-8 10-6 10-13S8 12 8 12M40 14c0 8-10 6-10 13s10 9 10 9"/><circle cx="24" cy="24" r="3"/>
-    </symbol>
-    <symbol id="i-clean" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4">
-      <path d="M17 16h14a3 3 0 013 3v18a3 3 0 01-3 3H17a3 3 0 01-3-3V19a3 3 0 013-3z"/><path d="M20 16v-5h8v5M18 24h12"/>
-    </symbol>
-    <symbol id="i-bolt" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4">
-      <path d="M26 6L12 27h10l-2 15 16-22H26z"/>
-    </symbol>
-    <symbol id="i-cloud" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4">
-      <path d="M15 34a8 8 0 010-16 10 10 0 0119-3 8 8 0 012 19z"/>
-    </symbol>
-    <symbol id="i-shield" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4">
-      <path d="M24 6l14 5v12c0 9-6 15-14 19-8-4-14-10-14-19V11z"/><path d="M18 24l4 4 9-9"/>
-    </symbol>
-    <symbol id="i-chart" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4">
-      <path d="M9 39V9M9 39h30"/><rect x="15" y="26" width="6" height="13"/><rect x="25" y="19" width="6" height="20"/><rect x="35" y="12" width="6" height="27"/>
-    </symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
   </defs>
 </svg>
 
@@ -261,11 +281,11 @@ footer a:hover{color:var(--gold-lt)}
       <span class="wordmark"><span class="m">MARASE</span><span class="s">Supply</span></span>
     </a>
     <nav class="main" id="nav">
-      <a href="#nosotros" data-en="About">Nosotros</a>
-      <a href="#catalogo" data-en="Catalog">Catálogo</a>
-      <a href="#productos" data-en="Products">Productos</a>
-      <a href="#servicios" data-en="Services">Servicios</a>
-      <a href="#contacto" data-en="Contact">Contacto</a>
+      <a href="index.html" class="active" data-en="Home">Inicio</a>
+      <a href="aboutus.html" data-en="About">Nosotros</a>
+      <a href="services.html" data-en="Consulting">Consultoría</a>
+      <a href="industrialproducts.html" data-en="Industrial supply">Suministro industrial</a>
+      <a href="contacto.html" data-en="Contact">Contacto</a>
     </nav>
     <div style="display:flex;align-items:center;gap:14px">
       <div class="lang" role="group" aria-label="Idioma">
@@ -288,12 +308,17 @@ footer a:hover{color:var(--gold-lt)}
   </svg>
   <div class="glow" aria-hidden="true"></div>
   <img class="watermark" src="image/logogold.svg" alt="" aria-hidden="true" onerror="this.remove()">
+  <canvas class="magic" id="magic" aria-hidden="true"></canvas>
   <div class="hero-inner">
-    <span class="eyebrow reveal" data-en="Industrial supply">Suministro industrial</span>
-    <h1 class="reveal d1" data-en="Everything the electrical sector runs on, <em>from one supplier</em>.">Todo lo que mueve al sector eléctrico, <em>en un solo proveedor</em>.</h1>
-    <p class="reveal d2" data-en="Materials and equipment for the electrical sector: motors, pumps, blowers, measurement instruments, cable and consumables — backed by installation, technology and consulting services.">Materiales y artículos relacionados al sector eléctrico: motores, bombas, sopladores, instrumentación de medición, cable y consumibles, respaldados por servicio de instalación, tecnología y consultoría.</p>
-    <div class="hero-actions reveal d3">
-      <a class="btn solid" href="#catalogo" data-en="View the catalog">Ver el catálogo</a>
+    <span class="eyebrow reveal" data-en="Consulting · Industrial supply">Consultoría · Suministro industrial</span>
+    <h1 class="name reveal d1" id="name" aria-label="MARASE Supply">
+      <span class="mk" aria-hidden="true"><span class="ch">M</span><span class="ch">A</span><span class="ch">R</span><span class="ch">A</span><span class="ch">S</span><span class="ch">E</span></span>
+      <span class="sub" aria-hidden="true"><i></i><b>SUPPLY</b></span>
+    </h1>
+    <p class="tagline reveal d2" data-en="Technology and industrial solutions <em>for industry</em>.">Soluciones tecnológicas e industriales <em>para la industria</em>.</p>
+    <p class="reveal d3" data-en="Two divisions, one way of working: software and tax &amp; accounting consulting, and the supply of specialized electrical equipment. Every project is quoted individually and handled through direct contact.">Dos divisiones, una misma forma de trabajar: consultoría de software y fiscal-contable, y suministro de equipo y material eléctrico especializado. Cada proyecto se cotiza a la medida y se atiende con contacto directo.</p>
+    <div class="hero-actions reveal d4">
+      <a class="btn solid" href="#divisiones" data-en="Our divisions">Nuestras divisiones</a>
       <a class="btn" href="#contacto" data-en="Request a quote">Solicitar cotización</a>
     </div>
   </div>
@@ -304,185 +329,102 @@ footer a:hover{color:var(--gold-lt)}
   </div>
 </section>
 
+<!-- ============ DIVISIONES ============ -->
+<section class="band" id="divisiones">
+  <div class="wrap split">
+    <div class="label" data-en="Divisions">Divisiones</div>
+    <div>
+      <h2 data-en="Two specialties, one point of contact">Dos especialidades, un mismo interlocutor</h2>
+      <p class="lead" data-en="We serve companies that need technical judgment on two fronts: their administrative and technology management, and the equipment that keeps their operation running.">Atendemos a empresas que necesitan criterio técnico en dos frentes: su gestión administrativa y tecnológica, y el equipo que mantiene su operación en marcha.</p>
+    </div>
+  </div>
+  <div class="stage">
+    <a class="dv" href="services.html">
+      <div class="bg"><img src="image/Consultoria.png" alt="" loading="lazy" onerror="this.remove()"></div>
+      <span class="numeral" aria-hidden="true">01</span>
+      <div class="inner">
+        <span class="kicker" data-en="Division 01 · Technology">División 01 · Tecnología</span>
+        <h3 data-en="Consulting">Consultoría</h3>
+        <p data-en="Software and tax &amp; accounting consulting for companies that want to choose the right tools and keep their obligations in order.">Consultoría de software y fiscal-contable para empresas que quieren elegir bien sus herramientas y tener sus obligaciones en orden.</p>
+        <ul class="areas">
+          <li><b data-en="Software consulting">Consultoría de software</b><span data-en="Selection, integration, custom builds">Selección, integración, a la medida</span></li>
+          <li><b data-en="Tax &amp; accounting">Fiscal y contable</b><span data-en="Compliance and financial reporting">Cumplimiento e información financiera</span></li>
+        </ul>
+        <span class="go"><span data-en="Explore the division">Conocer la división</span> <svg aria-hidden="true"><use href="#i-arrow"/></svg></span>
+      </div>
+    </a>
+    <a class="dv" href="industrialproducts.html">
+      <div class="bg"><img src="image/motor.jpg" alt="" loading="lazy" onerror="this.remove()"></div>
+      <span class="numeral" aria-hidden="true">02</span>
+      <div class="inner">
+        <span class="kicker" data-en="Division 02 · Industry">División 02 · Industria</span>
+        <h3 data-en="Industrial supply">Suministro industrial</h3>
+        <p data-en="Specialized electrical equipment and materials, with a focus on TECO-Westinghouse motors. Supplied by quotation, with direct contact.">Equipo y material eléctrico especializado, con énfasis en motores TECO-Westinghouse. Por cotización y con contacto directo.</p>
+        <ul class="areas">
+          <li><b data-en="TECO-Westinghouse motors">Motores TECO-Westinghouse</b><span data-en="Medium and low voltage">Media y baja tensión</span></li>
+          <li><b data-en="Equipment and materials">Equipo y material</b><span data-en="Pumps, instruments, cable">Bombas, instrumentación, cable</span></li>
+        </ul>
+        <span class="go"><span data-en="Explore the division">Conocer la división</span> <svg aria-hidden="true"><use href="#i-arrow"/></svg></span>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- ============ FORMA DE TRABAJO ============ -->
+<section class="band how">
+  <div class="wrap split">
+    <div class="label" data-en="How we work">Cómo trabajamos</div>
+    <div>
+      <h2 data-en="No price lists. A proposal for your case.">Sin listas de precios. Una propuesta para tu caso.</h2>
+      <p class="lead" data-en="Each engagement — a consulting project or a motor — starts with a conversation and ends with a written quotation.">Cada encargo, sea un proyecto de consultoría o un motor, empieza con una conversación y termina en una cotización por escrito.</p>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="pillars">
+      <div class="pillar">
+        <svg aria-hidden="true"><use href="#i-doc"/></svg>
+        <h3 data-en="By quotation">Por cotización</h3>
+        <p data-en="Scope, lead time and price defined for your specific need, in writing.">Alcance, tiempo de entrega y precio definidos para tu necesidad concreta, por escrito.</p>
+      </div>
+      <div class="pillar">
+        <svg aria-hidden="true"><use href="#i-user"/></svg>
+        <h3 data-en="Direct contact">Contacto directo</h3>
+        <p data-en="You talk to the people who will handle your project, from the first call to delivery.">Hablas con quienes atenderán tu proyecto, desde la primera llamada hasta la entrega.</p>
+      </div>
+      <div class="pillar">
+        <svg aria-hidden="true"><use href="#i-pin"/></svg>
+        <h3 data-en="Nationwide coverage">Cobertura nacional</h3>
+        <p data-en="Based in Mexico City, serving clients across the country.">Con base en la Ciudad de México, atendemos clientes en todo el país.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ============ NOSOTROS ============ -->
 <section class="band" id="nosotros">
   <div class="wrap split">
     <div class="label" data-en="About us">Nosotros</div>
     <div>
-      <h2 data-en="A technical supplier, not just a parts desk">Un proveedor técnico, no un mostrador de refacciones</h2>
-      <p class="lead" data-en="Our mission is to provide high-quality, safe solutions in electrical supply, meeting the specific needs of every client. We aim to lead the market and exceed expectations through service excellence and customer care.">Nuestra misión es proporcionar soluciones de alta calidad y seguridad en suministros eléctricos, satisfaciendo las necesidades específicas de cada cliente. Nos esforzamos por ser líderes en el mercado y superar las expectativas de nuestros clientes a través de la excelencia en el servicio y la atención al cliente.</p>
-      <p class="muted" data-en="We work with plants, contractors and maintenance teams that need the right equipment specified correctly and delivered on time. Each request is reviewed by our technical team before quoting, so what arrives matches the application — voltage, capacity, duty cycle and installation conditions included.">Trabajamos con plantas, contratistas y equipos de mantenimiento que necesitan el equipo correcto, bien especificado y entregado a tiempo. Cada solicitud la revisa nuestro equipo técnico antes de cotizar, para que lo que llega corresponda a la aplicación: tensión, capacidad, régimen de trabajo y condiciones de instalación incluidos.</p>
-      <p style="margin-top:28px"><a class="btn dark" href="aboutus.html" data-en="More about MARASE">Conoce más sobre MARASE</a></p>
-    </div>
-  </div>
-</section>
-
-<!-- ============ CIFRAS ============ -->
-<section class="band stats">
-  <div class="wrap split">
-    <div class="label" data-en="At a glance">En cifras</div>
-    <div>
-      <h2 data-en="Supply and service under one roof">Suministro y servicio bajo un mismo techo</h2>
-      <p class="lead" data-en="Two divisions — industrial equipment and business technology — so a single supplier can cover the plant floor and the back office.">Dos divisiones, equipo industrial y tecnología empresarial, para que un solo proveedor cubra tanto el piso de planta como la operación administrativa.</p>
-    </div>
-  </div>
-  <div class="wrap">
-    <div class="stat-row">
-      <div class="stat"><b>7</b><span data-en="Product lines in catalog">Líneas de producto en catálogo</span></div>
-      <div class="stat"><b>4</b><span data-en="Specialized service areas">Áreas de servicio especializado</span></div>
-      <div class="stat"><b>6</b><span data-en="Days of attention per week">Días de atención a la semana</span></div>
-      <div class="stat"><b>MX</b><span data-en="Nationwide coverage from Mexico City">Cobertura nacional desde CDMX</span></div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ CATÁLOGO (índice) ============ -->
-<section class="band" id="catalogo">
-  <div class="wrap split">
-    <div class="label" data-en="Catalog">Catálogo</div>
-    <div>
-      <h2 data-en="Focused on the application. Driven by the specification.">Enfocados en la aplicación. Guiados por la especificación.</h2>
-      <p class="lead" data-en="Our catalog covers rotating equipment, electrical measurement and the consumables that keep an installation running. Every line is quoted against the operating conditions of your plant, never against a generic model number.">Nuestro catálogo cubre equipo rotatorio, medición eléctrica y los consumibles que mantienen operando una instalación. Cada línea se cotiza contra las condiciones de operación de tu planta, no contra un número de modelo genérico.</p>
-    </div>
-  </div>
-  <div class="wrap" style="margin-top:clamp(36px,5vw,64px)">
-    <div class="index-list">
-      <a href="industrialproducts.html">
-        <div><div class="t" data-en="Medium and low voltage motors">Motores de media y baja tensión</div><div class="d" data-en="TECO-Westinghouse motors, recognized for robust performance and high efficiency.">Motores TECO-Westinghouse, reconocidos por su rendimiento robusto y alta eficiencia.</div></div>
-        <div class="more" data-en="View more">Ver más</div>
-      </a>
-      <a href="industrialproducts.html">
-        <div><div class="t" data-en="Industrial and slurry pumps">Bombas industriales y para lodos</div><div class="d" data-en="High-efficiency, durable pumping for industrial process and slurry handling.">Bombas industriales y bombas para lodos de alta eficiencia y durabilidad.</div></div>
-        <div class="more" data-en="View more">Ver más</div>
-      </a>
-      <a href="industrialproducts.html">
-        <div><div class="t" data-en="High-pressure blowers">Sopladores de alta presión</div><div class="d" data-en="Industrial blowers built for efficiency and continuous duty.">Sopladores industriales de alta eficiencia y durabilidad.</div></div>
-        <div class="more" data-en="View more">Ver más</div>
-      </a>
-      <a href="industrialproducts.html">
-        <div><div class="t" data-en="TTR transformer turns-ratio testers">TTR — Medidores de relación de transformación</div><div class="d" data-en="Turns-ratio measurement for three-phase transformers.">Medidor de relación de vueltas de transformadores trifásicos.</div></div>
-        <div class="more" data-en="View more">Ver más</div>
-      </a>
-      <a href="industrialproducts.html">
-        <div><div class="t" data-en="PQM power quality and energy analyzers">PQM — Analizadores de calidad eléctrica y energía</div><div class="d" data-en="Cut downtime, resolve power quality issues quickly and quantify the cost of energy losses.">Minimiza el tiempo de inactividad, resuelve rápidamente problemas de calidad eléctrica y calcula los costes de la pérdida de energía.</div></div>
-        <div class="more" data-en="View more">Ver más</div>
-      </a>
-      <a href="industrialproducts.html">
-        <div><div class="t" data-en="Cable and electrical consumables">Cables y consumibles del sector eléctrico</div><div class="d" data-en="Cable, connectors, hose and consumables for industrial installations.">Variedad de cables, conectores, mangueras y consumibles para instalaciones industriales.</div></div>
-        <div class="more" data-en="View more">Ver más</div>
-      </a>
-      <a href="industrialproducts.html">
-        <div><div class="t" data-en="Industrial cleaning products">Productos de limpieza industrial</div><div class="d" data-en="Disinfectants, degreasers and specialty cleaners for industrial use.">Desinfectantes, desengrasantes y limpiadores especializados para aplicaciones industriales.</div></div>
-        <div class="more" data-en="View more">Ver más</div>
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- ============ PRODUCTOS DESTACADOS ============ -->
-<section class="band tight" id="productos" style="padding-top:0">
-  <div class="wrap">
-    <div class="cards">
-      <article class="card">
-        <div class="media"><svg class="ph"><use href="#i-motor"/></svg><img src="image/motor.jpg" alt="Motor eléctrico industrial" loading="lazy" onerror="this.remove()"></div>
-        <div class="body">
-          <span class="tag" data-en="Rotating equipment">Equipo rotatorio</span>
-          <h3 data-en="Medium and low voltage motors">Motores de media y baja tensión</h3>
-          <p data-en="TECO-Westinghouse motors for continuous industrial duty, selected by frame, efficiency class and starting conditions.">Motores TECO-Westinghouse para servicio industrial continuo, seleccionados por carcasa, clase de eficiencia y condiciones de arranque.</p>
+      <h2 data-en="Mission and vision">Misión y visión</h2>
+      <div class="mv">
+        <div>
+          <div class="k" data-en="Mission">Misión</div>
+          <blockquote data-en="To provide industry with reliable technology and industrial solutions — specialized consulting and electrical equipment supply — with direct attention, clear quotations and technical judgment in every project.">Ofrecer a la industria soluciones tecnológicas e industriales confiables, consultoría especializada y suministro de equipo eléctrico, con atención directa, cotizaciones claras y criterio técnico en cada proyecto.</blockquote>
         </div>
-      </article>
-      <article class="card">
-        <div class="media"><svg class="ph"><use href="#i-pump"/></svg><img src="image/bomba.png" alt="Bomba industrial" loading="lazy" onerror="this.remove()"></div>
-        <div class="body">
-          <span class="tag" data-en="Rotating equipment">Equipo rotatorio</span>
-          <h3 data-en="Industrial and slurry pumps">Bombas industriales y para lodos</h3>
-          <p data-en="Pumping for process water, wastewater and abrasive slurry, specified by head, flow and solids content.">Bombeo para agua de proceso, aguas residuales y lodos abrasivos, especificado por carga, gasto y contenido de sólidos.</p>
+        <div>
+          <div class="k" data-en="Vision">Visión</div>
+          <blockquote data-en="To be the partner companies turn to when they need, in a single supplier, technical support for both their industrial operation and their technology, tax and accounting management — known for seriousness, reliability and close attention.">Ser el aliado al que recurren las empresas cuando necesitan, en un solo proveedor, respaldo técnico para su operación industrial y para su gestión tecnológica, fiscal y contable, reconocido por su seriedad, cumplimiento y trato cercano.</blockquote>
         </div>
-      </article>
-      <article class="card">
-        <div class="media"><svg class="ph"><use href="#i-blower"/></svg><img src="image/Soplador.jpg" alt="Soplador industrial de alta presión" loading="lazy" onerror="this.remove()"></div>
-        <div class="body">
-          <span class="tag" data-en="Rotating equipment">Equipo rotatorio</span>
-          <h3 data-en="High-pressure blowers">Sopladores de alta presión</h3>
-          <p data-en="Air handling for aeration, pneumatic conveying and drying, with efficiency and durability as the selection criteria.">Manejo de aire para aireación, transporte neumático y secado, con la eficiencia y la durabilidad como criterio de selección.</p>
-        </div>
-      </article>
-      <article class="card">
-        <div class="media"><svg class="ph"><use href="#i-meter"/></svg><img src="image/ttrmegger.jpg" alt="Medidor TTR de relación de transformación" loading="lazy" onerror="this.remove()"></div>
-        <div class="body">
-          <span class="tag" data-en="Measurement">Instrumentación</span>
-          <h3 data-en="TTR transformer testers">TTR — Relación de transformación</h3>
-          <p data-en="Turns-ratio measurement on three-phase transformers, for commissioning and preventive maintenance routines.">Medición de relación de vueltas en transformadores trifásicos, para puesta en marcha y rutinas de mantenimiento preventivo.</p>
-        </div>
-      </article>
-      <article class="card">
-        <div class="media"><svg class="ph"><use href="#i-analyzer"/></svg><img src="image/pqm.jpg" alt="Analizador de calidad de energía PQM" loading="lazy" onerror="this.remove()"></div>
-        <div class="body">
-          <span class="tag" data-en="Measurement">Instrumentación</span>
-          <h3 data-en="PQM power quality analyzers">PQM — Calidad eléctrica y energía</h3>
-          <p data-en="Find the source of disturbances, document compliance and put a number on what poor power quality is costing.">Localiza el origen de las perturbaciones, documenta cumplimiento y pone cifras a lo que cuesta una mala calidad de energía.</p>
-        </div>
-      </article>
-      <article class="card">
-        <div class="media"><svg class="ph"><use href="#i-cable"/></svg><img src="image/Cable.jpg" alt="Cables y conectores eléctricos" loading="lazy" onerror="this.remove()"></div>
-        <div class="body">
-          <span class="tag" data-en="Consumables">Consumibles</span>
-          <h3 data-en="Cable, connectors and consumables">Cables, conectores y consumibles</h3>
-          <p data-en="Cable, connectors, hose and the everyday consumables an industrial installation goes through.">Cable, conectores, mangueras y los consumibles de uso diario que requiere una instalación industrial.</p>
-        </div>
-      </article>
+      </div>
+      <p style="margin-top:40px"><a class="btn dark" href="aboutus.html" data-en="More about MARASE">Conoce más sobre MARASE</a></p>
     </div>
-    <p style="margin-top:34px"><a class="btn dark" href="industrialproducts.html" data-en="See the full catalog">Ver catálogo completo</a></p>
   </div>
 </section>
 
 <!-- ============ STATEMENT ============ -->
 <section class="band statement" id="statement">
   <div class="wrap">
-    <p id="stmt" data-en="At MARASE Supply we combine industrial supply and technical service to keep every installation safe, efficient and running.">En MARASE Supply combinamos suministro industrial y servicio técnico para mantener cada instalación segura, eficiente y en operación.</p>
-  </div>
-</section>
-
-<!-- ============ SERVICIOS ============ -->
-<section class="band svc" id="servicios">
-  <div class="wrap split">
-    <div class="label" data-en="Services">Servicios</div>
-    <div>
-      <h2 data-en="Beyond the purchase order">Más allá de la orden de compra</h2>
-      <p class="lead" data-en="Alongside supply, we handle the work around it: electrical installation, cloud infrastructure, information security and administrative and financial consulting.">Junto al suministro atendemos el trabajo que lo rodea: instalación eléctrica, infraestructura en la nube, seguridad de la información y consultoría administrativa y financiera.</p>
-    </div>
-  </div>
-  <div class="wrap">
-    <div class="svc-grid">
-      <div class="svc-item">
-        <svg aria-hidden="true"><use href="#i-bolt"/></svg>
-        <div>
-          <h3 data-en="Electrical installations">Instalaciones eléctricas</h3>
-          <p data-en="Design, installation and commissioning of electrical infrastructure for industrial and commercial applications.">Diseño, instalación y puesta en marcha de infraestructura eléctrica para aplicaciones industriales y comerciales.</p>
-        </div>
-      </div>
-      <div class="svc-item">
-        <svg aria-hidden="true"><use href="#i-cloud"/></svg>
-        <div>
-          <h3 data-en="Cloud services">Servicios en la nube</h3>
-          <p data-en="Cloud storage and infrastructure for companies that need their operating data available and backed up.">Almacenamiento e infraestructura en la nube para empresas que necesitan su información disponible y respaldada.</p>
-        </div>
-      </div>
-      <div class="svc-item">
-        <svg aria-hidden="true"><use href="#i-shield"/></svg>
-        <div>
-          <h3 data-en="Cybersecurity">Ciberseguridad</h3>
-          <p data-en="Protection and information security for business environments, from perimeter to endpoint.">Protección y seguridad informática para entornos empresariales, del perímetro al equipo final.</p>
-        </div>
-      </div>
-      <div class="svc-item">
-        <svg aria-hidden="true"><use href="#i-chart"/></svg>
-        <div>
-          <h3 data-en="Administrative and financial consulting">Consultoría administrativa y financiera</h3>
-          <p data-en="Administrative optimization, financial control, tax compliance and process improvement.">Optimización administrativa, control financiero, cumplimiento fiscal y mejora de procesos.</p>
-        </div>
-      </div>
-    </div>
+    <p id="stmt" data-en="At MARASE Supply we combine consulting and industrial supply so that every client deals with one serious, accessible and technically sound supplier.">En MARASE Supply combinamos consultoría y suministro industrial para que cada cliente trate con un solo proveedor serio, accesible y técnicamente sólido.</p>
   </div>
 </section>
 
@@ -491,8 +433,8 @@ footer a:hover{color:var(--gold-lt)}
   <div class="wrap split">
     <div class="label" data-en="Contact">Contacto</div>
     <div>
-      <h2 data-en="Tell us the application, we'll handle the specification">Dinos la aplicación, nosotros resolvemos la especificación</h2>
-      <p class="lead" data-en="Send the operating conditions, the nameplate or simply a photo of the equipment you need to replace. We reply with options, lead time and price.">Envíanos las condiciones de operación, la placa de datos o simplemente una foto del equipo que necesitas reemplazar. Respondemos con opciones, tiempo de entrega y precio.</p>
+      <h2 data-en="Tell us what you need, we'll prepare the proposal">Cuéntanos qué necesitas, nosotros preparamos la propuesta</h2>
+      <p class="lead" data-en="For consulting, describe the process or obligation to address. For equipment, send the nameplate, the operating conditions or a photo. We reply with a written quotation.">Para consultoría, describe el proceso u obligación a atender. Para equipo, envíanos la placa de datos, las condiciones de operación o una foto. Respondemos con una cotización por escrito.</p>
     </div>
   </div>
   <div class="wrap">
@@ -516,7 +458,7 @@ footer a:hover{color:var(--gold-lt)}
       </div>
     </div>
     <div class="cta-strip">
-      <p data-en="Need a quote today?">¿Necesitas una cotización hoy?</p>
+      <p data-en="Need a quotation?">¿Necesitas una cotización?</p>
       <div style="display:flex;flex-wrap:wrap;gap:12px">
         <a class="btn solid" href="mailto:contacto@marasesupply.com?subject=Solicitud%20de%20cotizaci%C3%B3n" data-en="Email us">Escríbenos</a>
         <a class="btn" href="tel:+525558405156" data-en="Call now">Llamar ahora</a>
@@ -532,15 +474,15 @@ footer a:hover{color:var(--gold-lt)}
         <img class="logo" src="image/logogold.svg" alt="MARASE Supply" onerror="this.closest('.brand').classList.add('nologo');this.remove()">
         <span class="wordmark"><span class="m">MARASE</span><span class="s">Supply</span></span>
       </a>
-      <p data-en="Materials and articles related to the electrical sector. Industrial supply, measurement instruments and technical service across Mexico.">Materiales y artículos relacionados al sector eléctrico. Suministro industrial, instrumentación de medición y servicio técnico en todo México.</p>
+      <p data-en="Technology and industrial solutions for industry: software and tax &amp; accounting consulting, and specialized electrical equipment supply. By quotation, with direct contact.">Soluciones tecnológicas e industriales para la industria: consultoría de software y fiscal-contable, y suministro de equipo y material eléctrico especializado. Por cotización y con contacto directo.</p>
     </div>
     <div>
       <h4 data-en="Navigation">Navegación</h4>
       <ul>
         <li><a href="index.html" data-en="Home">Inicio</a></li>
         <li><a href="aboutus.html" data-en="About us">Acerca de nosotros</a></li>
-        <li><a href="industrialproducts.html" data-en="Industrial products">Productos industriales</a></li>
-        <li><a href="services.html" data-en="Services">Servicios</a></li>
+        <li><a href="services.html" data-en="Consulting">Consultoría</a></li>
+        <li><a href="industrialproducts.html" data-en="Industrial supply">Suministro industrial</a></li>
         <li><a href="contacto.html" data-en="Contact">Contacto</a></li>
         <li><a href="privacy.html" data-en="Privacy notice">Aviso de privacidad</a></li>
       </ul>
@@ -556,7 +498,7 @@ footer a:hover{color:var(--gold-lt)}
   </div>
   <div class="wrap foot-bottom">
     <span>© 2026 MARASE Supply</span>
-    <span data-en="Industrial supply for the electrical sector">Suministro industrial para el sector eléctrico</span>
+    <span data-en="Technology and industrial solutions for industry">Soluciones tecnológicas e industriales para la industria</span>
   </div>
 </footer>
 
@@ -567,6 +509,132 @@ footer a:hover{color:var(--gold-lt)}
   function onScroll(){ hdr.classList.toggle('solid', window.scrollY>40); }
   onScroll(); window.addEventListener('scroll',onScroll,{passive:true});
 
+  /* nombre: decodificación digital + polvo de oro + luz que sigue al cursor */
+  (function(){
+    var hero=document.querySelector('.hero');
+    var name=document.getElementById('name');
+    var mk=name.querySelector('.mk');
+    var chs=[].slice.call(name.querySelectorAll('.ch'));
+    var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if(reduce){ name.classList.add('done'); return; }
+
+    /* ---- lienzo de partículas ---- */
+    var cv=document.getElementById('magic'), cx=cv.getContext('2d');
+    var dpr=Math.min(window.devicePixelRatio||1,2), W=0, H=0, parts=[], running=false, visible=true;
+    function size(){ W=hero.clientWidth; H=hero.clientHeight; cv.width=W*dpr; cv.height=H*dpr; cx.setTransform(dpr,0,0,dpr,0,0); }
+    size(); window.addEventListener('resize',size);
+
+    /* destello pre-renderizado: núcleo claro con halo dorado */
+    var spr=document.createElement('canvas'); spr.width=spr.height=64;
+    var sg=spr.getContext('2d'), gr=sg.createRadialGradient(32,32,0,32,32,32);
+    gr.addColorStop(0,'rgba(255,246,214,1)'); gr.addColorStop(.18,'rgba(236,206,124,.85)');
+    gr.addColorStop(.45,'rgba(216,183,92,.25)'); gr.addColorStop(1,'rgba(216,183,92,0)');
+    sg.fillStyle=gr; sg.fillRect(0,0,64,64);
+
+    function heroRect(el){ var r=el.getBoundingClientRect(), h=hero.getBoundingClientRect(); return {x:r.left-h.left,y:r.top-h.top,w:r.width,h:r.height}; }
+    function spawn(x,y,o){
+      o=o||{};
+      parts.push({x:x,y:y,vx:o.vx||0,vy:o.vy||0,life:0,max:o.max||1.6,s:o.s||(6+Math.random()*10),
+        tw:Math.random()*6.28,g:o.g==null?-4:o.g,amb:!!o.amb});
+    }
+    function burst(el){
+      var r=heroRect(el);
+      for(var i=0;i<14;i++){
+        var a=Math.random()*6.28, v=15+Math.random()*50;
+        spawn(r.x+r.w*(.2+Math.random()*.6), r.y+r.h*(.15+Math.random()*.7),
+          {vx:Math.cos(a)*v, vy:Math.sin(a)*v-12, max:.7+Math.random()*.8, s:5+Math.random()*10, g:22});
+      }
+      start();
+    }
+    function ambient(){
+      var r=heroRect(mk);
+      if(parts.filter(function(p){return p.amb;}).length>26) return;
+      spawn(r.x-20+Math.random()*(r.w+40), r.y+r.h*(.45+Math.random()*.75),
+        {vx:(Math.random()-.5)*5, vy:-4-Math.random()*8, max:2.5+Math.random()*2.5, s:3+Math.random()*6, g:0, amb:true});
+    }
+    var last=0;
+    function frame(t){
+      if(!running) return;
+      var dt=Math.min((t-(last||t))/1000,.05); last=t;
+      cx.clearRect(0,0,W,H);
+      cx.globalCompositeOperation='lighter';
+      if(name.classList.contains('done') && Math.random()<.12) ambient();
+      for(var i=parts.length-1;i>=0;i--){
+        var p=parts[i]; p.life+=dt;
+        if(p.life>=p.max){ parts.splice(i,1); continue; }
+        p.vy+=p.g*dt; p.vx*=.985; p.vy*=.985; p.x+=p.vx*dt; p.y+=p.vy*dt;
+        var k=p.life/p.max, fade=k<.15?k/.15:1-(k-.15)/.85;
+        var twinkle=p.amb?(.55+.45*Math.sin(p.tw+p.life*5)):1;
+        cx.globalAlpha=Math.max(0,fade*twinkle*(p.amb?.45:.9));
+        var s=p.s*(p.amb?1:(1-k*.5));
+        cx.drawImage(spr,p.x-s/2,p.y-s/2,s,s);
+      }
+      cx.globalAlpha=1;
+      glow(dt);
+      requestAnimationFrame(frame);
+    }
+    function start(){ if(!running && visible && !document.hidden){ running=true; last=0; requestAnimationFrame(frame); } }
+    function stop(){ running=false; }
+    if('IntersectionObserver' in window){
+      new IntersectionObserver(function(es){ visible=es[0].isIntersecting; visible?start():stop(); }).observe(hero);
+    }
+    document.addEventListener('visibilitychange',function(){ document.hidden?stop():start(); });
+
+    /* ---- luz dorada sobre las letras ---- */
+    var gx=-400, gy=0, tx=-400, ty=0, pointer=false, idleT=-2.4, lastCyc=-1;
+    function glow(dt){
+      var r=mk.getBoundingClientRect();
+      if(!pointer){
+        idleT+=dt;
+        ty=r.height*.45;
+        if(idleT<0){ tx=gx=-400; }
+        else{
+          var n=Math.floor(idleT/7), cyc=idleT-n*7;   /* cada 7 s un destello cruza el nombre */
+          if(n!==lastCyc){ lastCyc=n; gx=-200; }
+          tx=cyc<2.4 ? -200+(r.width+400)*(cyc/2.4) : r.width+400;
+        }
+      }
+      gx+=(tx-gx)*Math.min(1,dt*7); gy+=(ty-gy)*Math.min(1,dt*7);
+      mk.style.setProperty('--mx',gx.toFixed(1)+'px');
+      mk.style.setProperty('--my',gy.toFixed(1)+'px');
+    }
+    var lastTrail=0;
+    function move(x,y){
+      var r=mk.getBoundingClientRect(), h=hero.getBoundingClientRect();
+      pointer=true; tx=x-r.left; ty=y-r.top;
+      var now=performance.now();
+      if(now-lastTrail>28){
+        lastTrail=now;
+        spawn(x-h.left+(Math.random()-.5)*8, y-h.top+(Math.random()-.5)*8,
+          {vx:(Math.random()-.5)*30, vy:-10-Math.random()*25, max:.7+Math.random()*.6, s:4+Math.random()*9, g:30});
+      }
+      start();
+    }
+    hero.addEventListener('pointermove',function(e){ if(e.pointerType==='mouse') move(e.clientX,e.clientY); });
+    hero.addEventListener('pointerleave',function(){ pointer=false; idleT=2.5; });
+    hero.addEventListener('touchmove',function(e){ var t=e.touches[0]; if(t){ move(t.clientX,t.clientY); pointer=false; } },{passive:true});
+
+    /* ---- decodificación ---- */
+    var pool='ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789#/<>';
+    function rnd(){ return pool.charAt(Math.floor(Math.random()*pool.length)); }
+    chs.forEach(function(c){ c.classList.add('scr'); c.setAttribute('data-g',rnd()); });
+    var t0=performance.now(), left=chs.length;
+    start();
+    var timer=setInterval(function(){
+      var t=performance.now()-t0;
+      chs.forEach(function(c,i){
+        if(!c.classList.contains('scr')) return;
+        if(t>520+i*150){ c.classList.remove('scr'); left--; burst(c); }
+        else c.setAttribute('data-g',rnd());
+      });
+      if(!left){
+        clearInterval(timer);
+        name.classList.add('swept');
+        setTimeout(function(){ name.classList.add('done'); },250);
+      }
+    },60);
+  })();
+
   /* mobile nav */
   var burger=document.getElementById('burger'), nav=document.getElementById('nav');
   burger.addEventListener('click',function(){
@@ -576,7 +644,7 @@ footer a:hover{color:var(--gold-lt)}
   });
   nav.addEventListener('click',function(e){ if(e.target.tagName==='A'){ nav.classList.remove('open'); burger.classList.remove('open'); burger.setAttribute('aria-expanded','false'); }});
 
-  /* statement word reveal — the single orchestrated motion moment */
+  /* statement word reveal */
   var stmt=document.getElementById('stmt');
   function buildWords(){
     var txt=stmt.textContent.trim();

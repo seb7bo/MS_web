@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Servicios | MARASE Supply</title>
-<meta name="description" content="Servicios MARASE Supply: instalaciones eléctricas, servicios en la nube, ciberseguridad y consultoría administrativa y financiera.">
-<meta property="og:title" content="Servicios | MARASE Supply">
-<meta property="og:description" content="Instalación eléctrica, nube, ciberseguridad y consultoría: el trabajo alrededor del suministro.">
+<title>Consultoría | MARASE Supply</title>
+<meta name="description" content="División de consultoría de MARASE Supply: consultoría de software, para evaluar, integrar o desarrollar a la medida, y consultoría fiscal y contable para empresas. Por cotización y con contacto directo.">
+<meta property="og:title" content="Consultoría | MARASE Supply">
+<meta property="og:description" content="Consultoría de software y fiscal-contable, por cotización y con contacto directo.">
 <meta property="og:type" content="website">
 <link rel="icon" href="image/logogold.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,15 +20,16 @@
   --serif:'Fraunces',Georgia,'Times New Roman',serif;
   --sans:'Archivo','Helvetica Neue',Arial,sans-serif;
   --pad:clamp(20px,5vw,80px);--maxw:1320px;
+  --ease:cubic-bezier(.2,.7,.25,1);
 }
 *{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:110px}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
 body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.65;
   -webkit-font-smoothing:antialiased;overflow-x:hidden}
 img{max-width:100%;display:block}
 a{color:inherit}
 .wrap{max-width:var(--maxw);margin:0 auto;padding-left:var(--pad);padding-right:var(--pad)}
-h1,h2,h3,.serif{font-family:var(--serif);font-weight:400;letter-spacing:-.015em;line-height:1.1}
+h1,h2,h3,.serif{font-family:var(--serif);font-weight:400;letter-spacing:-.015em;line-height:1.08}
 p{max-width:64ch}
 :focus-visible{outline:2px solid var(--gold);outline-offset:3px}
 
@@ -56,69 +57,213 @@ nav.main a.active{color:var(--paper)}
 .burger.open i:nth-child(1){top:19px;transform:rotate(45deg)}
 .burger.open i:nth-child(2){bottom:19px;transform:rotate(-45deg)}
 
-/* hero */
-.phero{position:relative;background:var(--ink);color:var(--paper);padding:clamp(130px,17vh,180px) 0 clamp(44px,6vw,76px);overflow:hidden}
-.phero .grid-bg{position:absolute;inset:0;opacity:.5}
-.phero .glow{position:absolute;width:90vmax;height:90vmax;right:-38vmax;top:-48vmax;border-radius:50%;
-  background:radial-gradient(circle,rgba(184,145,47,.18) 0%,rgba(184,145,47,.05) 40%,transparent 68%)}
-.phero .watermark{position:absolute;right:-4%;bottom:-40%;width:min(34vw,440px);opacity:.05;pointer-events:none}
-.phero .inner{position:relative;max-width:var(--maxw);margin:0 auto;padding:0 var(--pad)}
-.crumb{font-size:12.5px;letter-spacing:.16em;color:rgba(242,241,237,.45);margin-bottom:22px}
-.crumb a{text-decoration:none}.crumb a:hover{color:var(--gold-lt)}
-.phero h1{font-size:clamp(36px,5.6vw,72px);margin:0 0 20px;max-width:15ch;font-weight:300}
-.phero p{color:rgba(242,241,237,.72);max-width:58ch;margin:0;font-size:clamp(15.5px,1.2vw,18px)}
-
-/* estructura */
-.band{padding:clamp(66px,9vw,120px) 0}
-.band.tight{padding:clamp(50px,7vw,88px) 0}
-.split{display:grid;grid-template-columns:minmax(0,340px) minmax(0,1fr);gap:clamp(28px,6vw,90px);align-items:start}
-.label{font-size:11.5px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);padding-top:10px}
-h2{font-size:clamp(28px,4vw,54px);margin:0 0 26px;max-width:18ch;font-weight:300}
-.lead{font-size:clamp(17px,1.35vw,20px);color:#3B4048}
-.muted{color:var(--muted)}
-
-/* servicios: filas con imagen */
-.rows{border-top:1px solid var(--line);margin-top:clamp(30px,4vw,52px)}
-.row{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(26px,5vw,70px);align-items:center;
-  padding:clamp(34px,4.5vw,60px) 0;border-bottom:1px solid var(--line)}
-.row:nth-child(even) .figure{order:2}
-.row .figure{position:relative;aspect-ratio:4/3;background:linear-gradient(140deg,#1B2129,#2C333D 55%,#3A424E);overflow:hidden}
-.row .figure svg.ph{position:absolute;inset:0;margin:auto;width:30%;height:30%;color:rgba(216,183,92,.5)}
-.row .figure img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:2;
-  filter:grayscale(.2) contrast(1.03);transition:transform .8s cubic-bezier(.2,.7,.25,1),filter .6s}
-.row:hover .figure img{transform:scale(1.04);filter:grayscale(0)}
-.row .n{font-family:var(--serif);font-size:clamp(20px,2vw,26px);color:var(--gold);display:block;margin-bottom:10px}
-.row .tag{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:14px}
-.row h3{font-size:clamp(24px,2.7vw,36px);margin:0 0 14px;font-weight:300}
-.row p{font-size:15.5px;color:var(--muted);margin:0 0 20px}
-.row ul{list-style:none;padding:0;margin:0 0 24px;font-size:14.5px;color:#3B4048}
-.row li{position:relative;padding-left:20px;margin-bottom:9px}
-.row li::before{content:"";position:absolute;left:0;top:11px;width:7px;height:1px;background:var(--gold)}
-.link{display:inline-flex;align-items:center;gap:9px;font-size:13px;letter-spacing:.1em;color:var(--gold);text-decoration:none;
-  border-bottom:1px solid transparent;padding-bottom:2px;transition:.3s}
-.link:hover{border-bottom-color:var(--gold)}
-.link svg{width:14px;height:14px}
-
-/* proceso */
-.vals{background:var(--paper-2)}
-.steps{border-top:1px solid var(--line);margin-top:clamp(30px,4vw,52px)}
-.step{display:grid;grid-template-columns:auto minmax(0,250px) minmax(0,1fr);gap:clamp(16px,3vw,44px);align-items:baseline;
-  padding:26px 0;border-bottom:1px solid var(--line)}
-.step .n{font-family:var(--serif);font-size:clamp(22px,2.4vw,30px);color:var(--gold);min-width:2.2ch}
-.step h3{font-size:clamp(18px,1.8vw,23px);margin:0;font-weight:400}
-.step p{font-size:14.5px;color:var(--muted);margin:0}
-
-/* cta + footer */
-.cta{background:var(--ink);color:var(--paper)}
-.cta .inner{max-width:var(--maxw);margin:0 auto;padding:clamp(44px,6vw,80px) var(--pad);
-  display:flex;flex-wrap:wrap;gap:26px;align-items:center;justify-content:space-between}
-.cta h2{color:var(--paper);font-size:clamp(26px,3.3vw,44px);margin:0 0 10px;font-weight:300;max-width:18ch}
-.cta p{color:rgba(242,241,237,.68);margin:0;max-width:46ch;font-size:15.5px}
+/* utilidades */
+.kicker{font-size:11.5px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);display:block}
+.on-dark .kicker{color:var(--gold-lt)}
 .btn{display:inline-flex;align-items:center;gap:12px;padding:15px 30px;border:1px solid var(--gold);color:var(--gold-lt);
   text-decoration:none;font-size:14px;letter-spacing:.08em;transition:.35s}
 .btn:hover{background:var(--gold);color:var(--ink)}
 .btn.solid{background:var(--gold);color:var(--ink)}
 .btn.solid:hover{background:var(--gold-lt);border-color:var(--gold-lt)}
+.btn.dark{border-color:var(--ink);color:var(--ink)}
+.btn.dark:hover{background:var(--ink);color:var(--paper)}
+.btn svg{width:16px;height:16px;transition:transform .35s ease}
+.btn:hover svg{transform:translateX(4px)}
+.rv{opacity:0;transform:translateY(26px);transition:opacity 1s var(--ease),transform 1s var(--ease)}
+.rv.in{opacity:1;transform:none}
+.rv.d1{transition-delay:.1s}.rv.d2{transition-delay:.2s}.rv.d3{transition-delay:.3s}.rv.d4{transition-delay:.4s}
+
+/* ================= HERO ================= */
+.hero{position:relative;min-height:100svh;background:var(--ink);color:var(--paper);overflow:hidden;display:flex;flex-direction:column;justify-content:flex-end}
+.hero .grid-bg{position:absolute;inset:0;opacity:.5}
+.hero .glow{position:absolute;width:110vmax;height:110vmax;left:-40vmax;top:-60vmax;border-radius:50%;
+  background:radial-gradient(circle,rgba(184,145,47,.17) 0%,rgba(184,145,47,.05) 40%,transparent 66%)}
+.hero .ghost{position:absolute;right:-.06em;top:50%;transform:translateY(-58%);font-family:var(--serif);font-weight:300;
+  font-size:clamp(260px,42vw,640px);line-height:.8;color:transparent;-webkit-text-stroke:1px rgba(216,183,92,.16);
+  letter-spacing:-.06em;pointer-events:none;user-select:none}
+.hero-inner{position:relative;width:100%;max-width:var(--maxw);margin:0 auto;padding:150px var(--pad) 0}
+.crumb{font-size:12.5px;letter-spacing:.16em;color:rgba(242,241,237,.45);margin-bottom:30px}
+.crumb a{text-decoration:none}.crumb a:hover{color:var(--gold-lt)}
+.hero h1{font-size:clamp(56px,10.5vw,168px);margin:18px 0 0;font-weight:300;letter-spacing:-.035em;line-height:.92}
+.hero h1 em{font-style:italic;color:var(--gold-lt)}
+.rotline{font-family:var(--serif);font-weight:300;font-size:clamp(22px,2.7vw,38px);margin:28px 0 22px;color:rgba(242,241,237,.86);
+  display:flex;flex-wrap:wrap;gap:.32em;align-items:baseline}
+.rotbox{position:relative;display:inline-block;min-width:8.5em;height:1.25em;overflow:hidden;vertical-align:bottom}
+.rotbox span{position:absolute;left:0;top:0;font-style:italic;color:var(--gold-lt);white-space:nowrap;
+  transform:translateY(105%);opacity:0;transition:transform .9s var(--ease),opacity .9s var(--ease)}
+.rotbox span.cur{transform:none;opacity:1}
+.rotbox span.out{transform:translateY(-105%);opacity:0}
+.rotbox::after{content:"";position:absolute;left:0;right:0;bottom:2px;height:1px;background:rgba(216,183,92,.45)}
+.hero .intro{color:rgba(242,241,237,.66);max-width:56ch;margin:0;font-size:clamp(15.5px,1.15vw,17.5px)}
+.chapters{position:relative;max-width:var(--maxw);width:100%;margin:clamp(48px,8vh,90px) auto 0;padding:0 var(--pad)}
+.chapters .row{display:grid;grid-template-columns:repeat(2,1fr);border-top:1px solid var(--line-dk)}
+.chap{display:flex;align-items:center;gap:22px;padding:28px 0 34px;text-decoration:none;color:var(--paper);position:relative}
+.chap + .chap{padding-left:clamp(20px,3vw,44px);border-left:1px solid var(--line-dk)}
+.chap::before{content:"";position:absolute;top:-1px;left:0;height:1px;width:0;background:var(--gold-lt);transition:width .7s var(--ease)}
+.chap:hover::before{width:100%}
+.chap .n{font-family:var(--serif);font-size:15px;color:var(--gold-lt)}
+.chap .t{font-family:var(--serif);font-weight:300;font-size:clamp(20px,2vw,28px);flex:1}
+.chap svg{width:18px;height:18px;color:var(--gold-lt);transform:rotate(90deg);transition:transform .4s ease}
+.chap:hover svg{transform:rotate(90deg) translateX(5px)}
+
+/* ================= LO QUE RESOLVEMOS ================= */
+.problems{padding:clamp(80px,12vw,160px) 0}
+.problems .head{display:grid;grid-template-columns:minmax(0,340px) minmax(0,1fr);gap:clamp(28px,6vw,90px)}
+.plist{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.plist li{display:flex;gap:clamp(16px,2.4vw,34px);align-items:baseline;padding:clamp(18px,2.2vw,26px) 0;border-bottom:1px solid var(--line)}
+.plist .i{font-family:var(--serif);font-size:14px;color:var(--gold);min-width:2.2ch}
+.plist .p{font-family:var(--serif);font-weight:300;font-size:clamp(22px,3vw,42px);line-height:1.15;color:var(--ink);transition:color 1s ease .3s}
+.plist .p .t{background:linear-gradient(var(--gold),var(--gold)) no-repeat 0 60%/0 1.5px;
+  -webkit-box-decoration-break:clone;box-decoration-break:clone;transition:background-size 1.2s var(--ease) .2s}
+.plist li.x .p{color:rgba(18,22,28,.34)}
+.plist li.x .p .t{background-size:100% 1.5px}
+.answer{margin-top:clamp(36px,5vw,60px);font-family:var(--serif);font-weight:300;font-size:clamp(24px,3vw,40px);line-height:1.2;max-width:24ch}
+.answer em{font-style:italic;color:var(--gold)}
+
+/* ================= CAPÍTULOS ================= */
+.chapter{position:relative;padding:clamp(80px,11vw,150px) 0}
+.chapter.dark{background:var(--ink);color:var(--paper)}
+.chapter.light{background:var(--paper-2)}
+.ch-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:clamp(36px,6vw,100px);align-items:start}
+.chapter.light .ch-grid{grid-template-columns:minmax(0,1.05fr) minmax(0,1fr)}
+.ch-text{position:sticky;top:120px}
+.ch-num{font-family:var(--serif);font-weight:300;font-size:clamp(120px,15vw,230px);line-height:.78;letter-spacing:-.05em;
+  color:transparent;-webkit-text-stroke:1px rgba(216,183,92,.6);margin-bottom:clamp(18px,2.5vw,30px)}
+.chapter.light .ch-num{-webkit-text-stroke-color:rgba(184,145,47,.7)}
+.ch-text h2{font-size:clamp(34px,4.4vw,62px);margin:14px 0 22px;font-weight:300;max-width:13ch}
+.ch-text h2 em{font-style:italic}
+.chapter.dark .ch-text h2 em{color:var(--gold-lt)}
+.chapter.light .ch-text h2 em{color:var(--gold)}
+.ch-text .lead{font-size:clamp(16px,1.3vw,19px);margin:0 0 30px}
+.chapter.dark .lead{color:rgba(242,241,237,.7)}
+.chapter.light .lead{color:#3B4048}
+.deliver{list-style:none;padding:0;margin:clamp(30px,4vw,48px) 0 0;display:grid;grid-template-columns:repeat(2,1fr);gap:1px}
+.chapter.dark .deliver{background:var(--line-dk);border:1px solid var(--line-dk)}
+.chapter.light .deliver{background:var(--line);border:1px solid var(--line)}
+.deliver li{padding:clamp(20px,2.2vw,28px)}
+.chapter.dark .deliver li{background:var(--ink)}
+.chapter.light .deliver li{background:var(--paper-2)}
+.deliver svg{width:26px;height:26px;margin-bottom:14px}
+.chapter.dark .deliver svg{color:var(--gold-lt)}
+.chapter.light .deliver svg{color:var(--gold)}
+.deliver b{display:block;font-family:var(--serif);font-weight:400;font-size:clamp(17px,1.5vw,20px);margin-bottom:6px;line-height:1.2}
+.deliver span{font-size:14px;display:block}
+.chapter.dark .deliver span{color:rgba(242,241,237,.58)}
+.chapter.light .deliver span{color:var(--muted)}
+
+/* matriz de evaluación */
+.matrix{background:#0D1015;border:1px solid rgba(216,183,92,.22);box-shadow:0 40px 80px -30px rgba(0,0,0,.7);padding:clamp(22px,2.8vw,36px)}
+.mx-hd{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding-bottom:16px;border-bottom:1px solid rgba(216,183,92,.45)}
+.mx-hd b{font-family:var(--serif);font-weight:400;font-size:clamp(19px,1.9vw,25px)}
+.mx-hd span{font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:rgba(242,241,237,.4)}
+.matrix table{width:100%;border-collapse:collapse;font-size:14px}
+.matrix th,.matrix td{padding:14px 10px;border-bottom:1px solid rgba(242,241,237,.08);text-align:center;font-weight:400}
+.matrix th:first-child{text-align:left;padding-left:0;color:rgba(242,241,237,.72)}
+.matrix thead th{font-size:10.5px;letter-spacing:.14em;white-space:nowrap;text-transform:uppercase;color:rgba(242,241,237,.5);padding-top:18px}
+.matrix .pick{position:relative;background:rgba(184,145,47,0);transition:background .9s ease}
+.matrix thead .pick{color:var(--gold-lt)}
+.matrix.done .pick{background:rgba(184,145,47,.1)}
+.matrix thead .pick::before{content:"";position:absolute;left:0;right:0;top:0;height:2px;background:var(--gold);transform:scaleX(0);transition:transform .8s var(--ease)}
+.matrix.done thead .pick::before{transform:scaleX(1)}
+.dots{display:inline-flex;gap:5px}
+.dots i{width:8px;height:8px;border-radius:50%;border:1px solid rgba(216,183,92,.4);background:transparent;transition:background .35s ease,border-color .35s ease}
+.matrix.play .dots[data-v="1"] i:nth-child(-n+1),.matrix.play .dots[data-v="2"] i:nth-child(-n+2),
+.matrix.play .dots[data-v="3"] i:nth-child(-n+3),.matrix.play .dots[data-v="4"] i:nth-child(-n+4),
+.matrix.play .dots[data-v="5"] i{background:var(--gold-lt);border-color:var(--gold-lt)}
+.matrix tfoot th,.matrix tfoot td{border-bottom:0;padding-top:18px}
+.matrix tfoot th{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:rgba(242,241,237,.5)}
+.badge{display:inline-block;font-family:var(--serif);font-style:italic;font-size:15px;color:var(--gold-lt);opacity:0;transform:translateY(6px);transition:opacity .8s ease .3s,transform .8s var(--ease) .3s}
+.matrix.done .badge{opacity:1;transform:none}
+.mx-cap{margin-top:14px;font-size:12px;letter-spacing:.06em;color:rgba(242,241,237,.42);max-width:56ch}
+
+/* hoja de cumplimiento */
+.sheet-wrap{position:relative;isolation:isolate}
+.sheet-wrap::before{content:"";position:absolute;inset:12px -8px -12px 14px;background:#EAE7DF;border:1px solid var(--line);z-index:-1;transform:rotate(1.6deg)}
+.sheet{position:relative;background:#FBFAF7;border:1px solid var(--line);box-shadow:0 40px 80px -40px rgba(18,22,28,.35);
+  padding:clamp(26px,3.4vw,46px);transform:rotate(-1.2deg)}
+.sheet .hd{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding-bottom:16px;border-bottom:2px solid var(--ink)}
+.sheet .hd b{font-family:var(--serif);font-weight:400;font-size:clamp(20px,2vw,27px)}
+.sheet .hd span{font-size:11.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted)}
+.sheet ul{list-style:none;margin:0;padding:0}
+.sheet li{display:grid;grid-template-columns:28px minmax(0,1fr) auto;gap:16px;align-items:center;padding:15px 0;border-bottom:1px solid var(--line);font-size:15px}
+.sheet .box{width:20px;height:20px;border:1px solid rgba(18,22,28,.35);position:relative}
+.sheet .box svg{position:absolute;inset:-4px;width:28px;height:28px;color:var(--gold)}
+.sheet .box path{stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset .6s var(--ease)}
+.sheet li.ok .box path{stroke-dashoffset:0}
+.sheet .st{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);opacity:.35;transition:opacity .6s,color .6s}
+.sheet li.ok .st{opacity:1;color:var(--gold)}
+.sheet .ft{display:flex;justify-content:space-between;align-items:center;margin-top:22px;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.seal{width:74px;height:74px;border-radius:50%;border:1px solid var(--gold);display:grid;place-items:center;text-align:center;
+  font-family:var(--serif);font-size:11px;line-height:1.2;letter-spacing:.1em;color:var(--gold);transform:rotate(-12deg) scale(.6);opacity:0;
+  transition:transform .8s var(--ease),opacity .8s ease;box-shadow:0 0 0 4px #FBFAF7,0 0 0 5px rgba(184,145,47,.4)}
+.sheet.done .seal{transform:rotate(-12deg) scale(1);opacity:1}
+
+/* ================= INTERSECCIÓN ================= */
+.cross{background:var(--ink);color:var(--paper);padding:clamp(80px,11vw,150px) 0;overflow:hidden}
+.cross .head{text-align:center;max-width:760px;margin:0 auto}
+.cross h2{font-size:clamp(32px,4.4vw,60px);margin:16px auto 20px;font-weight:300;max-width:16ch}
+.cross h2 em{font-style:italic;color:var(--gold-lt)}
+.cross .lead{color:rgba(242,241,237,.66);margin:0 auto;font-size:clamp(16px,1.25vw,18.5px)}
+.venn{position:relative;max-width:980px;margin:clamp(40px,6vw,80px) auto 0;aspect-ratio:980/460}
+.venn svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+.venn circle{fill:none;stroke-width:1}
+.venn .c1,.venn .c2{stroke:rgba(216,183,92,.75);stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset 2.2s var(--ease)}
+.venn .c2{transition-delay:.35s}
+.venn .lens{fill:rgba(184,145,47,0);transition:fill 1.2s ease 1.6s}
+.venn.in .c1,.venn.in .c2{stroke-dashoffset:0}
+.venn.in .lens{fill:rgba(184,145,47,.13)}
+.venn .lbl{position:absolute;top:50%;transform:translate(-50%,-50%);text-align:center;width:26%;opacity:0;transition:opacity 1s ease}
+.venn .lbl.l{left:27.5%;width:21%}.venn .lbl.r{left:72.5%;width:21%}.venn .lbl.m{left:50%;width:15%}
+.venn .lbl b{display:block;font-family:var(--serif);font-weight:300;font-size:clamp(18px,2.1vw,28px);line-height:1.15;margin-bottom:8px}
+.venn .lbl span{font-size:clamp(11.5px,1vw,13.5px);color:rgba(242,241,237,.55);display:block}
+.venn .lbl.m b{font-size:clamp(14px,1.4vw,18px);color:var(--gold-lt);font-style:italic}
+.venn .lbl.m span{color:rgba(242,241,237,.8);line-height:1.55;font-size:clamp(10.5px,.9vw,12.5px)}
+.venn.in .lbl.l,.venn.in .lbl.r{opacity:1;transition-delay:1s}
+.venn.in .lbl.m{opacity:1;transition-delay:2s}
+.cross-list{display:none}
+
+/* ================= MÉTODO ================= */
+.method{padding:clamp(80px,11vw,150px) 0}
+.method .head{display:grid;grid-template-columns:minmax(0,340px) minmax(0,1fr);gap:clamp(28px,6vw,90px)}
+.method h2{font-size:clamp(30px,4.2vw,56px);margin:0 0 20px;font-weight:300;max-width:18ch}
+.method .lead{color:#3B4048;font-size:clamp(16px,1.3vw,19px)}
+.track{position:relative;display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(18px,2.5vw,40px);margin-top:clamp(50px,7vw,90px);padding-top:44px}
+.track::before,.track .fill{content:"";position:absolute;top:8px;left:0;right:0;height:1px;background:var(--line)}
+.track .fill{background:var(--gold);right:auto;width:0;transition:width 2.4s var(--ease)}
+.track.in .fill{width:100%}
+.stp{position:relative}
+.stp::before{content:"";position:absolute;top:-44px;left:0;width:17px;height:17px;border-radius:50%;background:var(--paper);border:1px solid var(--line);
+  transition:border-color .5s,background .5s}
+.track.in .stp::before{border-color:var(--gold);background:var(--gold)}
+.track.in .stp:nth-child(2)::before{transition-delay:.15s}
+.track.in .stp:nth-child(3)::before{transition-delay:.8s}
+.track.in .stp:nth-child(4)::before{transition-delay:1.4s}
+.track.in .stp:nth-child(5)::before{transition-delay:2s}
+.stp .n{font-family:var(--serif);font-size:clamp(30px,3vw,44px);font-weight:300;color:var(--gold);line-height:1;display:block;margin-bottom:14px}
+.stp h3{font-size:clamp(19px,1.7vw,23px);margin:0 0 10px;font-weight:400}
+.stp p{font-size:14.5px;color:var(--muted);margin:0}
+
+/* ================= COMPROMISOS ================= */
+.pledges{background:var(--paper-2);padding:clamp(64px,8vw,110px) 0}
+.pl-grid{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line)}
+.pl{padding:clamp(26px,3vw,40px) clamp(20px,2.4vw,34px) 6px 0;border-right:1px solid var(--line)}
+.pl + .pl{padding-left:clamp(20px,2.4vw,34px)}
+.pl:last-child{border-right:0}
+.pl b{display:block;font-family:var(--serif);font-weight:300;font-size:clamp(24px,2.5vw,34px);margin-bottom:10px}
+.pl b em{font-style:italic;color:var(--gold)}
+.pl span{font-size:14.5px;color:var(--muted);display:block;max-width:34ch}
+
+/* ================= CIERRE ================= */
+.finale{position:relative;background:var(--ink);color:var(--paper);padding:clamp(90px,13vw,180px) 0;overflow:hidden;text-align:center}
+.finale .glow{position:absolute;width:80vmax;height:80vmax;left:50%;top:50%;transform:translate(-50%,-50%);border-radius:50%;
+  background:radial-gradient(circle,rgba(184,145,47,.16) 0%,rgba(184,145,47,.04) 42%,transparent 66%)}
+.finale .inner{position:relative}
+.finale h2{font-size:clamp(38px,6vw,88px);font-weight:300;margin:18px auto 26px;max-width:15ch;line-height:1.02}
+.finale h2 em{font-style:italic;color:var(--gold-lt)}
+.finale p{color:rgba(242,241,237,.66);margin:0 auto 40px;max-width:52ch}
+.finale .actions{display:flex;flex-wrap:wrap;gap:14px;justify-content:center}
+
+/* footer */
 footer{background:var(--ink);color:rgba(242,241,237,.66);padding:clamp(52px,7vw,84px) 0 32px;border-top:1px solid var(--line-dk)}
 .foot-grid{display:grid;grid-template-columns:minmax(0,1.4fr) repeat(2,minmax(0,1fr));gap:clamp(28px,5vw,64px)}
 footer .brand{color:var(--paper);margin-bottom:18px}
@@ -126,14 +271,21 @@ footer .brand .logo{height:46px}
 footer p{font-size:14.5px;max-width:48ch;margin:0}
 footer h4{font-size:11.5px;letter-spacing:.26em;text-transform:uppercase;color:var(--gold);margin:0 0 16px;font-weight:500}
 footer ul{list-style:none;padding:0;margin:0}
-footer li{margin-bottom:10px}
+footer li{margin-bottom:10px;font-size:14.5px}
 footer a{color:rgba(242,241,237,.66);text-decoration:none;font-size:14.5px}
 footer a:hover{color:var(--gold-lt)}
 .foot-bottom{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;margin-top:clamp(36px,5vw,60px);
   padding-top:22px;border-top:1px solid var(--line-dk);font-size:12.5px;color:rgba(242,241,237,.42)}
 
+/* ================= RESPONSIVE ================= */
 @media (max-width:1000px){
-  .split{grid-template-columns:1fr;gap:14px}.label{padding-top:0}
+  .problems .head,.method .head{grid-template-columns:1fr;gap:18px}
+  .ch-grid,.chapter.light .ch-grid{grid-template-columns:1fr}
+  .chapter.light .ch-visual{order:2}
+  .ch-text{position:static}
+  .track{grid-template-columns:1fr 1fr;row-gap:56px}
+  .track::before,.track .fill{display:none}
+  .stp::before{top:-30px}
   .foot-grid{grid-template-columns:1fr 1fr}
 }
 @media (max-width:760px){
@@ -143,23 +295,47 @@ footer a:hover{color:var(--gold-lt)}
     pointer-events:none;transition:.32s ease}
   nav.main.open{transform:none;opacity:1;pointer-events:auto}
   nav.main a{width:100%;padding:15px 0;border-bottom:1px solid var(--line-dk);font-size:17px}
-  .row,.foot-grid{grid-template-columns:1fr}
-  .row:nth-child(even) .figure{order:0}
-  .row .figure{aspect-ratio:16/10}
-  .step{grid-template-columns:auto minmax(0,1fr)}
-  .step p{grid-column:2}
+  .hero .ghost{font-size:80vw;top:32%}
+  .chapters .row{grid-template-columns:1fr}
+  .chap + .chap{padding-left:0;border-left:0;border-top:1px solid var(--line-dk)}
+  .deliver{grid-template-columns:1fr}
+  .sheet{transform:none}
+  .sheet-wrap::before{display:none}
+  .sheet li{grid-template-columns:24px minmax(0,1fr);gap:12px}
+  .sheet .st{display:none}
+  .matrix{padding:20px 16px}
+  .matrix th,.matrix td{padding:12px 4px}
+  .matrix table{font-size:12.5px}
+  .dots{gap:3px}
+  .dots i{width:6px;height:6px}
+  .venn{display:none}
+  .cross-list{display:block;list-style:none;padding:0;margin:40px 0 0;border-top:1px solid var(--line-dk)}
+  .cross-list li{padding:20px 0;border-bottom:1px solid var(--line-dk)}
+  .cross-list b{display:block;font-family:var(--serif);font-weight:300;font-size:22px;margin-bottom:4px}
+  .cross-list li.m b{color:var(--gold-lt);font-style:italic}
+  .cross-list span{font-size:14.5px;color:rgba(242,241,237,.6)}
+  .track{grid-template-columns:1fr}
+  .pl-grid,.foot-grid{grid-template-columns:1fr}
+  .pl,.pl + .pl{padding:26px 0;border-right:0;border-bottom:1px solid var(--line)}
 }
-@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important}
+  html{scroll-behavior:auto}
+  .rv{opacity:1;transform:none}
+}
 </style>
 </head>
 <body>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
-  <symbol id="i-bolt" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M26 6L12 27h10l-2 15 16-22H26z"/></symbol>
-  <symbol id="i-cloud" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M15 34a8 8 0 010-16 10 10 0 0119-3 8 8 0 012 19z"/></symbol>
-  <symbol id="i-shield" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M24 6l14 5v12c0 9-6 15-14 19-8-4-14-10-14-19V11z"/><path d="M18 24l4 4 9-9"/></symbol>
-  <symbol id="i-chart" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M9 39V9M9 39h30"/><rect x="15" y="26" width="6" height="13"/><rect x="25" y="19" width="6" height="20"/><rect x="35" y="12" width="6" height="27"/></symbol>
-  <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-window" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="6" y="9" width="36" height="30" rx="2"/><path d="M6 16h36M19 24l-5 4 5 4M29 24l5 4-5 4"/></symbol>
+  <symbol id="i-link" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="14" cy="24" r="7"/><circle cx="34" cy="24" r="7"/><path d="M21 24h6"/></symbol>
+  <symbol id="i-scale" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M24 8v32M14 40h20M10 14h28M24 10v4"/><path d="M10 14l-6 13h12zM38 14l-6 13h12z"/></symbol>
+  <symbol id="i-book" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M8 10h13a3 3 0 013 3v26a3 3 0 00-3-3H8zM40 10H27a3 3 0 00-3 3v26a3 3 0 013-3h13z"/></symbol>
+  <symbol id="i-cal" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="8" y="11" width="32" height="29" rx="2"/><path d="M8 19h32M16 7v8M32 7v8M17 28l5 5 9-9"/></symbol>
+  <symbol id="i-search" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="21" cy="21" r="12"/><path d="M30 30l10 10"/></symbol>
+  <symbol id="i-chart" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M9 39V9M9 39h30"/><path d="M14 31l7-8 6 5 10-12"/></symbol>
 </defs></svg>
 
 <header id="hdr">
@@ -171,8 +347,8 @@ footer a:hover{color:var(--gold-lt)}
     <nav class="main" id="nav">
       <a href="index.html" data-en="Home">Inicio</a>
       <a href="aboutus.html" data-en="About">Nosotros</a>
-      <a href="industrialproducts.html" data-en="Catalog">Catálogo</a>
-      <a href="services.html" class="active" data-en="Services">Servicios</a>
+      <a href="services.html" class="active" data-en="Consulting">Consultoría</a>
+      <a href="industrialproducts.html" data-en="Industrial supply">Suministro industrial</a>
       <a href="contacto.html" data-en="Contact">Contacto</a>
     </nav>
     <div style="display:flex;align-items:center;gap:14px">
@@ -184,149 +360,193 @@ footer a:hover{color:var(--gold-lt)}
   </div>
 </header>
 
-<section class="phero">
+<!-- ================= HERO ================= -->
+<section class="hero on-dark">
   <svg class="grid-bg" aria-hidden="true" preserveAspectRatio="none">
     <defs><pattern id="g" width="72" height="72" patternUnits="userSpaceOnUse">
-      <path d="M72 0H0V72" fill="none" stroke="rgba(242,241,237,.055)" stroke-width="1"/></pattern></defs>
+      <path d="M72 0H0V72" fill="none" stroke="rgba(242,241,237,.05)" stroke-width="1"/></pattern></defs>
     <rect width="100%" height="100%" fill="url(#g)"/>
   </svg>
   <div class="glow" aria-hidden="true"></div>
-  <img class="watermark" src="image/logogold.svg" alt="" aria-hidden="true" onerror="this.remove()">
-  <div class="inner">
-    <div class="crumb"><a href="index.html" data-en="Home">Inicio</a> <span>/</span> <span data-en="Services">Servicios</span></div>
-    <h1 data-en="Beyond the purchase order">Más allá de la orden de compra</h1>
-    <p data-en="Alongside supply, we handle the work around it: electrical installation, cloud infrastructure, information security and administrative and financial consulting.">Junto al suministro atendemos el trabajo que lo rodea: instalación eléctrica, infraestructura en la nube, seguridad de la información y consultoría administrativa y financiera.</p>
+  <div class="ghost" aria-hidden="true">01</div>
+
+  <div class="hero-inner">
+    <div class="crumb rv"><a href="index.html" data-en="Home">Inicio</a> <span>/</span> <span data-en="Divisions">Divisiones</span> <span>/</span> <span data-en="Consulting">Consultoría</span></div>
+    <span class="kicker rv d1" data-en="Division 01 · Technology &amp; tax">División 01 · Tecnología y fiscal</span>
+    <h1 class="rv d1" data-en="Consult<em>ing</em>">Consulto<em>ría</em></h1>
+    <div class="rotline rv d2">
+      <span data-en="We put your">Ponemos en orden tus</span>
+      <span class="rotbox" id="rot"></span>
+    </div>
+    <p class="intro rv d3" data-en="Software and tax &amp; accounting consulting for companies that want to operate with clarity: choose the right tools and meet their obligations on time. Every engagement is scoped, quoted and followed through direct contact.">Consultoría de software y fiscal-contable para empresas que quieren operar con claridad: elegir bien sus herramientas y cumplir a tiempo con sus obligaciones. Cada proyecto se define, se cotiza y se atiende con contacto directo.</p>
   </div>
+
+  <nav class="chapters rv d4" aria-label="Prácticas">
+    <div class="row">
+      <a class="chap" href="#software"><span class="n">01</span><span class="t" data-en="Software consulting">Consultoría de software</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      <a class="chap" href="#fiscal"><span class="n">02</span><span class="t" data-en="Tax &amp; accounting">Fiscal y contable</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+    </div>
+  </nav>
 </section>
 
 <main>
 
-<!-- SERVICIOS -->
-<section class="band">
-  <div class="wrap split">
-    <div class="label" data-en="Service areas">Áreas de servicio</div>
+<!-- ================= LO QUE RESOLVEMOS ================= -->
+<section class="problems">
+  <div class="wrap head">
+    <div><span class="kicker rv" data-en="What we solve">Lo que resolvemos</span></div>
     <div>
-      <h2 data-en="Four areas, one technical team">Cuatro áreas, un mismo equipo técnico</h2>
-      <p class="lead" data-en="From the field to the back office: each service is scoped in writing, with deliverables and lead times agreed before work begins.">Del campo a la oficina: cada servicio se define por escrito, con entregables y tiempos acordados antes de empezar.</p>
-    </div>
-  </div>
-  <div class="wrap">
-    <div class="rows">
-
-      <article class="row" id="instalaciones">
-        <div class="figure"><svg class="ph"><use href="#i-bolt"/></svg><img src="image/service.jpg" alt="Servicio en instalaciones eléctricas" loading="lazy" onerror="this.remove()"></div>
-        <div>
-          <span class="n">01</span>
-          <span class="tag" data-en="Field service">Servicio en campo</span>
-          <h3 data-en="Electrical installations">Instalaciones eléctricas</h3>
-          <p data-en="Design, installation and commissioning of electrical infrastructure for industrial and commercial applications.">Diseño, instalación y puesta en marcha de infraestructura eléctrica para aplicaciones industriales y comerciales.</p>
-          <ul>
-            <li data-en="Site survey and load study">Levantamiento en sitio y estudio de carga</li>
-            <li data-en="Commissioning with acceptance testing">Puesta en marcha con pruebas de aceptación</li>
-            <li data-en="As-built documentation on delivery">Documentación as-built en la entrega</li>
-          </ul>
-          <a class="link" href="mailto:contacto@marasesupply.com?subject=Cotizaci%C3%B3n%20-%20Instalaciones%20el%C3%A9ctricas" data-en="Request a quote">Solicitar cotización <svg><use href="#i-arrow"/></svg></a>
-        </div>
-      </article>
-
-      <article class="row" id="nube">
-        <div class="figure"><svg class="ph"><use href="#i-cloud"/></svg><img src="image/Cloud.jpg" alt="Servicios en la nube" loading="lazy" onerror="this.remove()"></div>
-        <div>
-          <span class="n">02</span>
-          <span class="tag" data-en="Technology">Tecnología</span>
-          <h3 data-en="Cloud services">Servicios en la nube</h3>
-          <p data-en="Cloud storage and infrastructure for companies that need their operating data available and backed up.">Almacenamiento e infraestructura en la nube para empresas que necesitan su información disponible y respaldada.</p>
-          <ul>
-            <li data-en="Migration without interrupting operations">Migración sin interrumpir la operación</li>
-            <li data-en="Scheduled backup and restore testing">Respaldo programado y pruebas de restauración</li>
-            <li data-en="Cost measured by workload">Costo medido por carga de trabajo</li>
-          </ul>
-          <a class="link" href="mailto:contacto@marasesupply.com?subject=Cotizaci%C3%B3n%20-%20Servicios%20en%20la%20nube" data-en="Request a quote">Solicitar cotización <svg><use href="#i-arrow"/></svg></a>
-        </div>
-      </article>
-
-      <article class="row" id="ciberseguridad">
-        <div class="figure"><svg class="ph"><use href="#i-shield"/></svg><img src="image/CyberSecurity.jpg" alt="Servicio de ciberseguridad" loading="lazy" onerror="this.remove()"></div>
-        <div>
-          <span class="n">03</span>
-          <span class="tag" data-en="Technology">Tecnología</span>
-          <h3 data-en="Cybersecurity">Ciberseguridad</h3>
-          <p data-en="Protection and information security for business environments, from perimeter to endpoint.">Protección y seguridad informática para entornos empresariales, del perímetro al equipo final.</p>
-          <ul>
-            <li data-en="Access policy and identity management">Política de accesos y gestión de identidad</li>
-            <li data-en="Monitoring and incident response">Monitoreo y respuesta a incidentes</li>
-            <li data-en="User awareness training">Capacitación de usuarios</li>
-          </ul>
-          <a class="link" href="mailto:contacto@marasesupply.com?subject=Cotizaci%C3%B3n%20-%20Ciberseguridad" data-en="Request a quote">Solicitar cotización <svg><use href="#i-arrow"/></svg></a>
-        </div>
-      </article>
-
-      <article class="row" id="consultoria">
-        <div class="figure"><svg class="ph"><use href="#i-chart"/></svg><img src="image/Consultoria.png" alt="Consultoría administrativa y financiera" loading="lazy" onerror="this.remove()"></div>
-        <div>
-          <span class="n">04</span>
-          <span class="tag" data-en="Consulting">Consultoría</span>
-          <h3 data-en="Administrative and financial consulting">Consultoría administrativa y financiera</h3>
-          <p data-en="Business consulting focused on administrative optimization, financial control, tax compliance and process improvement.">Consultoría empresarial enfocada en la optimización administrativa, control financiero, cumplimiento fiscal y mejora de procesos.</p>
-          <ul>
-            <li data-en="Diagnosis of the current process">Diagnóstico del proceso actual</li>
-            <li data-en="Indicators and management reporting">Indicadores y reportes de gestión</li>
-            <li data-en="Follow-up until the change sticks">Acompañamiento hasta consolidar el cambio</li>
-          </ul>
-          <a class="link" href="mailto:contacto@marasesupply.com?subject=Cotizaci%C3%B3n%20-%20Consultor%C3%ADa%20administrativa%20y%20financiera" data-en="Request a quote">Solicitar cotización <svg><use href="#i-arrow"/></svg></a>
-        </div>
-      </article>
-
+      <ul class="plist">
+        <li class="rv"><span class="i">i.</span><span class="p"><span class="t" data-en="Software bought that nobody ends up using.">Software comprado que nadie termina de usar.</span></span></li>
+        <li class="rv"><span class="i">ii.</span><span class="p"><span class="t" data-en="Processes that live in spreadsheets.">Procesos que viven en hojas de cálculo.</span></span></li>
+        <li class="rv"><span class="i">iii.</span><span class="p"><span class="t" data-en="Tax obligations handled at the last minute.">Obligaciones fiscales resueltas a última hora.</span></span></li>
+        <li class="rv"><span class="i">iv.</span><span class="p"><span class="t" data-en="Figures nobody fully trusts.">Cifras en las que nadie confía del todo.</span></span></li>
+      </ul>
+      <p class="answer rv" data-en="Two practices, <em>one way of working</em>: understand first, propose in writing, follow through in person.">Dos prácticas, <em>una sola forma de trabajar</em>: entender primero, proponer por escrito y acompañar en persona.</p>
     </div>
   </div>
 </section>
 
-<!-- CÓMO TRABAJAMOS -->
-<section class="band tight vals">
-  <div class="wrap split">
-    <div class="label" data-en="How we work">Cómo trabajamos</div>
+<!-- ================= CAPÍTULO 01 · SOFTWARE ================= -->
+<section class="chapter dark on-dark" id="software">
+  <div class="wrap ch-grid">
+    <div class="ch-text">
+      <div class="ch-num rv" aria-hidden="true">01</div>
+      <span class="kicker rv" data-en="Practice · Technology">Práctica · Tecnología</span>
+      <h2 class="rv d1" data-en="Software <em>consulting</em>">Consultoría de <em>software</em></h2>
+      <p class="lead rv d2" data-en="Is your company evaluating a commercial software purchase? We help you choose the best option and support you through its integration. And if buying is not the best fit, we develop one tailored to your needs.">¿Tu empresa está evaluando comprar un software comercial? Te ayudamos a elegir la mejor opción y te acompañamos en su integración. Y si comprar no es lo más conveniente, desarrollamos uno a la medida de tus necesidades.</p>
+      <a class="btn rv d3" href="mailto:contacto@marasesupply.com?subject=Cotizaci%C3%B3n%20-%20Consultor%C3%ADa%20de%20software"><span data-en="Request an assessment">Solicitar una evaluación</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+    </div>
+    <div class="ch-visual">
+      <div class="matrix rv" id="matrix" aria-hidden="true">
+        <div class="mx-hd"><b data-en="Options assessment">Evaluación de opciones</b><span data-en="Illustrative">Ilustrativo</span></div>
+        <table>
+          <thead><tr><th></th><th data-en="Option A">Opción A</th><th class="pick" data-en="Option B">Opción B</th><th data-en="Custom">A la medida</th></tr></thead>
+          <tbody>
+            <tr><th data-en="Fit to your processes">Ajuste a tus procesos</th><td><span class="dots" data-v="3"><i></i><i></i><i></i><i></i><i></i></span></td><td class="pick"><span class="dots" data-v="4"><i></i><i></i><i></i><i></i><i></i></span></td><td><span class="dots" data-v="5"><i></i><i></i><i></i><i></i><i></i></span></td></tr>
+            <tr><th data-en="Total cost">Costo total</th><td><span class="dots" data-v="4"><i></i><i></i><i></i><i></i><i></i></span></td><td class="pick"><span class="dots" data-v="4"><i></i><i></i><i></i><i></i><i></i></span></td><td><span class="dots" data-v="2"><i></i><i></i><i></i><i></i><i></i></span></td></tr>
+            <tr><th data-en="Implementation time">Tiempo de implementación</th><td><span class="dots" data-v="3"><i></i><i></i><i></i><i></i><i></i></span></td><td class="pick"><span class="dots" data-v="4"><i></i><i></i><i></i><i></i><i></i></span></td><td><span class="dots" data-v="2"><i></i><i></i><i></i><i></i><i></i></span></td></tr>
+            <tr><th data-en="Integration with what you use">Integración con lo que ya usas</th><td><span class="dots" data-v="2"><i></i><i></i><i></i><i></i><i></i></span></td><td class="pick"><span class="dots" data-v="4"><i></i><i></i><i></i><i></i><i></i></span></td><td><span class="dots" data-v="5"><i></i><i></i><i></i><i></i><i></i></span></td></tr>
+            <tr><th data-en="Support and updates">Soporte y actualizaciones</th><td><span class="dots" data-v="4"><i></i><i></i><i></i><i></i><i></i></span></td><td class="pick"><span class="dots" data-v="5"><i></i><i></i><i></i><i></i><i></i></span></td><td><span class="dots" data-v="3"><i></i><i></i><i></i><i></i><i></i></span></td></tr>
+          </tbody>
+          <tfoot><tr><th data-en="Recommendation">Recomendación</th><td></td><td class="pick"><span class="badge" data-en="Buy &amp; integrate">Comprar e integrar</span></td><td></td></tr></tfoot>
+        </table>
+      </div>
+      <div class="mx-cap rv" data-en="Illustrative example: sometimes buying is best, sometimes building. We decide it with you, based on data.">Ejemplo ilustrativo: a veces conviene comprar y a veces construir. Lo decidimos contigo, con datos.</div>
+      <ul class="deliver">
+        <li class="rv"><svg aria-hidden="true"><use href="#i-search"/></svg><b data-en="Needs assessment">Diagnóstico de necesidades</b><span data-en="Your processes and requirements, before looking at any product.">Tus procesos y requerimientos, antes de ver cualquier producto.</span></li>
+        <li class="rv d1"><svg aria-hidden="true"><use href="#i-scale"/></svg><b data-en="Evaluation &amp; selection">Evaluación y selección</b><span data-en="Commercial options compared on fit, total cost and support.">Opciones comerciales comparadas por ajuste, costo total y soporte.</span></li>
+        <li class="rv d2"><svg aria-hidden="true"><use href="#i-link"/></svg><b data-en="Integration support">Acompañamiento en la integración</b><span data-en="Implementation, data migration and training for your team.">Implementación, migración de datos y capacitación de tu equipo.</span></li>
+        <li class="rv d3"><svg aria-hidden="true"><use href="#i-window"/></svg><b data-en="Custom development">Desarrollo a la medida</b><span data-en="If buying does not fit, we build the software you need.">Si comprar no conviene, construimos el software que necesitas.</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CAPÍTULO 02 · FISCAL ================= -->
+<section class="chapter light" id="fiscal">
+  <div class="wrap ch-grid">
+    <div class="ch-visual">
+      <div class="sheet-wrap rv">
+        <div class="sheet" id="sheet" aria-hidden="true">
+          <div class="hd"><b data-en="Compliance file">Expediente de cumplimiento</b><span data-en="Fiscal year">Ejercicio</span></div>
+          <ul>
+            <li><span class="box"><svg viewBox="0 0 28 28" fill="none"><path pathLength="1" d="M7 14.5l5 5 10-11" stroke="currentColor" stroke-width="2"/></svg></span><span data-en="Electronic accounting">Contabilidad electrónica</span><span class="st" data-en="Up to date">Al día</span></li>
+            <li><span class="box"><svg viewBox="0 0 28 28" fill="none"><path pathLength="1" d="M7 14.5l5 5 10-11" stroke="currentColor" stroke-width="2"/></svg></span><span data-en="Provisional tax payments">Pagos provisionales</span><span class="st" data-en="Filed">Presentado</span></li>
+            <li><span class="box"><svg viewBox="0 0 28 28" fill="none"><path pathLength="1" d="M7 14.5l5 5 10-11" stroke="currentColor" stroke-width="2"/></svg></span><span data-en="Informative returns (DIOT)">Declaraciones informativas (DIOT)</span><span class="st" data-en="Filed">Presentado</span></li>
+            <li><span class="box"><svg viewBox="0 0 28 28" fill="none"><path pathLength="1" d="M7 14.5l5 5 10-11" stroke="currentColor" stroke-width="2"/></svg></span><span data-en="Financial statements">Estados financieros</span><span class="st" data-en="Delivered">Entregado</span></li>
+            <li><span class="box"><svg viewBox="0 0 28 28" fill="none"><path pathLength="1" d="M7 14.5l5 5 10-11" stroke="currentColor" stroke-width="2"/></svg></span><span data-en="Annual return">Declaración anual</span><span class="st" data-en="Scheduled">Programada</span></li>
+          </ul>
+          <div class="ft"><span data-en="Reviewed">Revisado</span><span class="seal" data-en="IN<br>ORDER">EN<br>ORDEN</span></div>
+        </div>
+      </div>
+      <ul class="deliver">
+        <li class="rv"><svg aria-hidden="true"><use href="#i-book"/></svg><b data-en="Accounting">Contabilidad</b><span data-en="Bookkeeping and financial statements you can rely on.">Registro contable y estados financieros confiables.</span></li>
+        <li class="rv d1"><svg aria-hidden="true"><use href="#i-cal"/></svg><b data-en="Tax compliance">Cumplimiento fiscal</b><span data-en="Filings on time, every period.">Declaraciones a tiempo, cada periodo.</span></li>
+        <li class="rv d2"><svg aria-hidden="true"><use href="#i-search"/></svg><b data-en="Review &amp; regularization">Revisión y regularización</b><span data-en="A clear picture of your tax position.">Una imagen clara de tu situación fiscal.</span></li>
+        <li class="rv d3"><svg aria-hidden="true"><use href="#i-chart"/></svg><b data-en="Financial advice">Asesoría financiera</b><span data-en="Indicators and reports to decide with data.">Indicadores y reportes para decidir con datos.</span></li>
+      </ul>
+    </div>
+    <div class="ch-text">
+      <div class="ch-num rv" aria-hidden="true">02</div>
+      <span class="kicker rv" data-en="Practice · Tax &amp; accounting">Práctica · Fiscal y contable</span>
+      <h2 class="rv d1" data-en="Tax and <em>accounting</em> consulting">Consultoría <em>fiscal y contable</em></h2>
+      <p class="lead rv d2" data-en="Support so your company meets its obligations on time and has reliable financial information to make decisions — with the confidentiality that information requires.">Acompañamiento para que tu empresa cumpla a tiempo con sus obligaciones y cuente con información financiera confiable para tomar decisiones, con la confidencialidad que esa información requiere.</p>
+      <a class="btn dark rv d3" href="mailto:contacto@marasesupply.com?subject=Cotizaci%C3%B3n%20-%20Consultor%C3%ADa%20fiscal%20y%20contable"><span data-en="Request a review">Solicitar una revisión</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= INTERSECCIÓN ================= -->
+<section class="cross on-dark">
+  <div class="wrap">
+    <div class="head">
+      <span class="kicker rv" data-en="Where they meet">Donde se cruzan</span>
+      <h2 class="rv d1" data-en="Two practices that <em>reinforce each other</em>">Dos prácticas que <em>se potencian</em></h2>
+      <p class="lead rv d2" data-en="Having tax and software judgment under one roof means your accounting and administrative systems are chosen and integrated by people who understand both the tool and the obligation.">Tener criterio fiscal y de software bajo un mismo techo permite elegir e integrar tus sistemas contables y administrativos con quien entiende tanto la herramienta como la obligación.</p>
+    </div>
+    <div class="venn" id="venn" aria-hidden="true">
+      <svg viewBox="0 0 980 460">
+        <defs><clipPath id="cl"><circle cx="355" cy="230" r="215"/></clipPath></defs>
+        <circle class="lens" cx="625" cy="230" r="215" clip-path="url(#cl)"/>
+        <circle class="c1" pathLength="1" cx="355" cy="230" r="215" transform="rotate(-90 355 230)"/>
+        <circle class="c2" pathLength="1" cx="625" cy="230" r="215" transform="rotate(90 625 230)"/>
+      </svg>
+      <div class="lbl l"><b data-en="Software">Software</b><span data-en="Selection, integration, custom builds">Selección, integración, desarrollo a la medida</span></div>
+      <div class="lbl m"><b data-en="Together">En conjunto</b><span data-en="Choosing accounting software<br>E-invoicing integration<br>Management reports">Elección de sistema contable<br>Integración con facturación<br>Reportes de gestión</span></div>
+      <div class="lbl r"><b data-en="Tax &amp; accounting">Fiscal y contable</b><span data-en="Compliance, accounting, finance">Cumplimiento, contabilidad, finanzas</span></div>
+    </div>
+    <ul class="cross-list">
+      <li><b data-en="Software">Software</b><span data-en="Selection, integration, custom builds">Selección, integración, desarrollo a la medida</span></li>
+      <li><b data-en="Tax &amp; accounting">Fiscal y contable</b><span data-en="Compliance, accounting, finance">Cumplimiento, contabilidad, finanzas</span></li>
+      <li class="m"><b data-en="Together">En conjunto</b><span data-en="Choosing accounting software, e-invoicing integration and management reports.">Elección de sistema contable, integración con facturación y reportes de gestión.</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ================= MÉTODO ================= -->
+<section class="method">
+  <div class="wrap head">
+    <div><span class="kicker rv" data-en="Method">Método</span></div>
     <div>
-      <h2 data-en="From the first call to the delivered service">De la primera llamada al servicio entregado</h2>
-      <p class="lead" data-en="Four steps. Nothing moves to the next one until the previous is closed.">Cuatro pasos. Nada avanza al siguiente hasta cerrar el anterior.</p>
+      <h2 class="rv d1" data-en="From the first conversation to the delivered result">De la primera conversación al resultado entregado</h2>
+      <p class="lead rv d2" data-en="Four steps. Nothing moves forward until the previous one is closed.">Cuatro pasos. Nada avanza hasta cerrar el anterior.</p>
     </div>
   </div>
   <div class="wrap">
-    <div class="steps">
-      <div class="step">
-        <span class="n">01</span>
-        <h3 data-en="Diagnosis">Diagnóstico</h3>
-        <p data-en="We review the current installation, system or process and the result you expect.">Revisamos la instalación, el sistema o el proceso actual y el resultado que esperas.</p>
-      </div>
-      <div class="step">
-        <span class="n">02</span>
-        <h3 data-en="Written scope">Alcance por escrito</h3>
-        <p data-en="Deliverables, lead time and price in a single proposal, with no open items.">Entregables, tiempos y precio en una sola propuesta, sin puntos abiertos.</p>
-      </div>
-      <div class="step">
-        <span class="n">03</span>
-        <h3 data-en="Execution">Ejecución</h3>
-        <p data-en="One contact follows the work and reports progress against the agreed scope.">Un solo contacto sigue el trabajo y reporta avance contra el alcance acordado.</p>
-      </div>
-      <div class="step">
-        <span class="n">04</span>
-        <h3 data-en="Delivery and follow-up">Entrega y seguimiento</h3>
-        <p data-en="Acceptance testing, documentation and support after delivery.">Pruebas de aceptación, documentación y soporte después de la entrega.</p>
-      </div>
+    <div class="track" id="track">
+      <span class="fill" aria-hidden="true"></span>
+      <div class="stp"><span class="n">01</span><h3 data-en="Diagnosis">Diagnóstico</h3><p data-en="We review your process, system or tax position and the result you expect.">Revisamos tu proceso, sistema o situación fiscal y el resultado que esperas.</p></div>
+      <div class="stp"><span class="n">02</span><h3 data-en="Written proposal">Propuesta por escrito</h3><p data-en="Scope, deliverables, lead time and price in one quotation.">Alcance, entregables, tiempos y precio en una sola cotización.</p></div>
+      <div class="stp"><span class="n">03</span><h3 data-en="Execution">Ejecución</h3><p data-en="One direct contact reports progress against the agreed scope.">Un contacto directo reporta avance contra el alcance acordado.</p></div>
+      <div class="stp"><span class="n">04</span><h3 data-en="Delivery &amp; follow-up">Entrega y seguimiento</h3><p data-en="Documented delivery and ongoing support.">Entrega documentada y soporte posterior.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= COMPROMISOS ================= -->
+<section class="pledges">
+  <div class="wrap">
+    <div class="pl-grid">
+      <div class="pl rv"><b data-en="By <em>quotation</em>">Por <em>cotización</em></b><span data-en="No generic packages: each engagement is scoped and priced for your case.">Sin paquetes genéricos: cada proyecto se define y se cotiza para tu caso.</span></div>
+      <div class="pl rv d1"><b data-en="Direct <em>contact</em>">Contacto <em>directo</em></b><span data-en="You talk to the people doing the work, not to an intermediary.">Hablas con quienes hacen el trabajo, no con un intermediario.</span></div>
+      <div class="pl rv d2"><b data-en="Strict <em>confidentiality</em>">Confidencialidad <em>estricta</em></b><span data-en="Your financial and operating information is used only for the agreed service.">Tu información financiera y operativa se usa solo para el servicio acordado.</span></div>
     </div>
   </div>
 </section>
 
 </main>
 
-<section class="cta">
-  <div class="inner">
-    <div>
-      <h2 data-en="Tell us what you need to solve">Cuéntanos qué necesitas resolver</h2>
-      <p data-en="We reply with a written scope, lead time and price.">Respondemos con un alcance por escrito, tiempo de entrega y precio.</p>
-    </div>
-    <div style="display:flex;flex-wrap:wrap;gap:12px">
-      <a class="btn solid" href="mailto:contacto@marasesupply.com?subject=Solicitud%20de%20servicio" data-en="Email us">Escríbenos</a>
-      <a class="btn" href="contacto.html" data-en="Contact details">Datos de contacto</a>
+<!-- ================= CIERRE ================= -->
+<section class="finale on-dark">
+  <div class="glow" aria-hidden="true"></div>
+  <div class="wrap inner">
+    <span class="kicker rv" data-en="Let's talk">Hablemos</span>
+    <h2 class="rv d1" data-en="Tell us what needs <em>order</em>.">Cuéntanos qué necesita <em>orden</em>.</h2>
+    <p class="rv d2" data-en="Describe the process, system or obligation. We reply with a written proposal: scope, lead time and price.">Describe el proceso, sistema u obligación. Respondemos con una propuesta por escrito: alcance, tiempos y precio.</p>
+    <div class="actions rv d3">
+      <a class="btn solid" href="mailto:contacto@marasesupply.com?subject=Solicitud%20de%20consultor%C3%ADa" data-en="Email us">Escríbenos</a>
+      <a class="btn" href="tel:+525558405156" data-en="Call now">Llamar ahora</a>
     </div>
   </div>
 </section>
@@ -338,15 +558,15 @@ footer a:hover{color:var(--gold-lt)}
         <img class="logo" src="image/logogold.svg" alt="MARASE Supply" onerror="this.closest('.brand').classList.add('nologo');this.remove()">
         <span class="wordmark"><span class="m">MARASE</span><span class="s">Supply</span></span>
       </a>
-      <p data-en="Materials and articles related to the electrical sector. Industrial supply, measurement instruments and technical service across Mexico.">Materiales y artículos relacionados al sector eléctrico. Suministro industrial, instrumentación de medición y servicio técnico en todo México.</p>
+      <p data-en="Technology and industrial solutions for industry: software and tax &amp; accounting consulting, and specialized electrical equipment supply. By quotation, with direct contact.">Soluciones tecnológicas e industriales para la industria: consultoría de software y fiscal-contable, y suministro de equipo y material eléctrico especializado. Por cotización y con contacto directo.</p>
     </div>
     <div>
       <h4 data-en="Navigation">Navegación</h4>
       <ul>
         <li><a href="index.html" data-en="Home">Inicio</a></li>
         <li><a href="aboutus.html" data-en="About us">Acerca de nosotros</a></li>
-        <li><a href="industrialproducts.html" data-en="Industrial products">Productos industriales</a></li>
-        <li><a href="services.html" data-en="Services">Servicios</a></li>
+        <li><a href="services.html" data-en="Consulting">Consultoría</a></li>
+        <li><a href="industrialproducts.html" data-en="Industrial supply">Suministro industrial</a></li>
         <li><a href="contacto.html" data-en="Contact">Contacto</a></li>
         <li><a href="privacy.html" data-en="Privacy notice">Aviso de privacidad</a></li>
       </ul>
@@ -362,16 +582,20 @@ footer a:hover{color:var(--gold-lt)}
   </div>
   <div class="wrap foot-bottom">
     <span>© 2026 MARASE Supply</span>
-    <span data-en="Industrial supply for the electrical sector">Suministro industrial para el sector eléctrico</span>
+    <span data-en="Technology and industrial solutions for industry">Soluciones tecnológicas e industriales para la industria</span>
   </div>
 </footer>
 
 <script>
 (function(){
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* header */
   var hdr=document.getElementById('hdr');
   function onScroll(){ hdr.classList.toggle('solid', window.scrollY>40); }
   onScroll(); window.addEventListener('scroll',onScroll,{passive:true});
 
+  /* menú móvil */
   var burger=document.getElementById('burger'), nav=document.getElementById('nav');
   burger.addEventListener('click',function(){
     var open=nav.classList.toggle('open');
@@ -379,7 +603,64 @@ footer a:hover{color:var(--gold-lt)}
     burger.setAttribute('aria-expanded',open);
   });
 
-  var lang='es';
+  /* palabra rotativa */
+  var words={
+    es:['sistemas','procesos','obligaciones','cifras'],
+    en:['systems in order','processes in order','obligations in order','figures in order']
+  };
+  var lang='es', idx=0, rot=document.getElementById('rot');
+  function fillRot(){
+    rot.innerHTML=words[lang].map(function(w,i){ return '<span'+(i===idx?' class="cur"':'')+'>'+w+'</span>'; }).join('');
+  }
+  fillRot();
+  if(!reduce){
+    setInterval(function(){
+      var spans=rot.children, prev=spans[idx];
+      idx=(idx+1)%spans.length;
+      prev.className='out';
+      spans[idx].className='cur';
+      setTimeout(function(){ if(prev.className==='out') prev.className=''; },900);
+    },2600);
+  }
+
+  /* apariciones al hacer scroll */
+  function once(el,fn,th){
+    if(!('IntersectionObserver' in window) || reduce){ fn(); return; }
+    var io=new IntersectionObserver(function(es){
+      es.forEach(function(e){ if(e.isIntersecting){ fn(); io.disconnect(); } });
+    },{threshold:th||.25});
+    io.observe(el);
+  }
+  document.querySelectorAll('.rv').forEach(function(el){ once(el,function(){ el.classList.add('in'); },.15); });
+
+  /* problemas: tachado progresivo */
+  document.querySelectorAll('.plist li').forEach(function(li,i){
+    once(li,function(){ setTimeout(function(){ li.classList.add('x'); }, reduce?0:500+i*140); },.7);
+  });
+
+  /* matriz: puntos fila por fila y recomendación */
+  var mx=document.getElementById('matrix');
+  once(mx,function(){
+    mx.querySelectorAll('tbody tr').forEach(function(tr,r){
+      tr.querySelectorAll('.dots i').forEach(function(d,k){ d.style.transitionDelay=(reduce?0:300+r*260+(k%5)*60)+'ms'; });
+    });
+    mx.classList.add('play');
+    setTimeout(function(){ mx.classList.add('done'); }, reduce?0:300+5*260+500);
+  },.4);
+
+  /* hoja: casillas y sello */
+  var sheet=document.getElementById('sheet');
+  once(sheet,function(){
+    var lis=sheet.querySelectorAll('li');
+    lis.forEach(function(li,i){ if(i<lis.length-1) setTimeout(function(){ li.classList.add('ok'); }, reduce?0:500+i*380); });
+    setTimeout(function(){ sheet.classList.add('done'); }, reduce?0:500+lis.length*380);
+  },.4);
+
+  /* venn y línea de tiempo */
+  var venn=document.getElementById('venn'); once(venn,function(){ venn.classList.add('in'); },.35);
+  var track=document.getElementById('track'); once(track,function(){ track.classList.add('in'); },.4);
+
+  /* ES / EN */
   var btns=document.querySelectorAll('[data-lang]');
   btns.forEach(function(b){ b.addEventListener('click',function(){
     var next=b.dataset.lang; if(next===lang) return;
@@ -389,6 +670,7 @@ footer a:hover{color:var(--gold-lt)}
       el.innerHTML=(next==='en')?el.dataset.en:el.dataset.esCache;
     });
     btns.forEach(function(x){ x.setAttribute('aria-pressed', x.dataset.lang===next); });
+    fillRot();
   });});
 })();
 </script>

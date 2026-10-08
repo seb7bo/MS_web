@@ -36,6 +36,36 @@
 - **Datos de contacto**: busca `id="contacto"` y el `<footer>`.
   Teléfono, correo y dirección aparecen en ambos lugares.
 
+## Actualizar el inventario de motores TECO
+
+Las existencias de `industrialproducts.html` se generan desde `data/inventario_teco.csv`.
+No edites la tabla a mano.
+
+1. Abre `data/inventario_teco.csv` (en Excel o cualquier editor) y cambia la columna
+   `disponibles`. Con `0` el modelo deja de mostrarse. Para agregar un modelo, añade una fila:
+
+   | columna | valores |
+   |---|---|
+   | `modelo` | catálogo TECO, p. ej. `KPF8002` (también arma el enlace al datasheet) |
+   | `hp` | potencia en HP |
+   | `polos` | `2`, `4`, `6` u `8` |
+   | `tension` | `460` o `2300/4160` |
+   | `disponibles` | unidades en stock |
+   | `manual` | `143-449` (carcasas 143T a 449T) o `5000` (carcasa 5000 y mayores) |
+
+   Si guardas desde Excel, usa el formato **CSV UTF-8**.
+2. Desde la carpeta del sitio ejecuta:
+
+   ```
+   python tools/actualizar_inventario.py
+   ```
+
+   El script regenera la tabla y recalcula los totales del escaparate TECO, el párrafo del
+   inventario, la descripción para Google, los datos estructurados, la fecha de
+   "Inventario actualizado" y el `lastmod` del `sitemap.xml`. Si algo del CSV está mal
+   (polos, tensión, modelo repetido), se detiene y te dice en qué línea.
+3. Revisa la página, haz commit y publica.
+
 ## Sobre el logo
 
 Se usa `image/logogold.svg` en cuatro lugares, de forma discreta:
