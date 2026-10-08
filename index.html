@@ -56,7 +56,7 @@ header.solid{background:rgba(18,22,28,.94);backdrop-filter:blur(10px);border-bot
 footer .brand .logo{height:46px}
 .hero .watermark{position:absolute;right:calc(var(--pad) * -.25);bottom:-6%;width:min(46vw,620px);height:auto;
   opacity:.05;pointer-events:none;user-select:none}
-@media (max-width:760px){.name .mk{font-size:19vw}.name .sub b{font-size:14px}.hero .watermark{width:78vw;bottom:auto;top:14%;right:-14vw;opacity:.045}}
+@media (max-width:760px){.hero .name .mk{font-size:19vw}.hero .name .sub b{font-size:14px}.hero .watermark{width:78vw;bottom:auto;top:14%;right:-14vw;opacity:.045}}
 nav.main{display:flex;align-items:center;gap:30px}
 nav.main a{color:rgba(242,241,237,.82);text-decoration:none;font-size:14.5px;letter-spacing:.01em;padding:6px 0;position:relative}
 nav.main a::after{content:"";position:absolute;left:0;right:100%;bottom:0;height:1px;background:var(--gold-lt);transition:right .35s ease}
@@ -83,11 +83,13 @@ nav.main a.active{color:var(--paper)}
 .name .mk{position:relative;display:block;font-family:var(--serif);font-weight:300;font-size:clamp(68px,14.5vw,224px);
   letter-spacing:-.035em;line-height:.84;padding-bottom:.04em;overflow:hidden}
 .name .ch{position:relative;display:inline-block;transition:color .35s ease}
-/* luz dorada que recorre las letras (sigue al cursor) */
+/* luz dorada que recorre las letras (sigue al cursor).
+   Solo con la clase .glowtext, que el script pone en escritorio con mouse y fuera de Safari:
+   WebKit no recorta el fondo al texto de letras en inline-block y las dejaría invisibles. */
 @supports ((-webkit-background-clip:text) or (background-clip:text)){
-  .name .mk{background:radial-gradient(circle 230px at var(--mx,-400px) var(--my,50%),#FFF4CC 0,#E6C66E 55px,#D8B75C 85px,#F2F1ED 190px);
+  .name.glowtext .mk{background:radial-gradient(circle 230px at var(--mx,-400px) var(--my,50%),#FFF4CC 0,#E6C66E 55px,#D8B75C 85px,#F2F1ED 190px);
     -webkit-background-clip:text;background-clip:text}
-  .name .ch{color:transparent}
+  .name.glowtext .ch{color:transparent}
 }
 .hero .magic{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
 .name .ch.scr{color:transparent}
@@ -518,11 +520,17 @@ footer a:hover{color:var(--gold-lt)}
     var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     if(reduce){ name.classList.add('done'); return; }
 
+    /* efectos solo en escritorio con mouse; en celulares y tabletas queda la decodificación */
+    var fx=window.matchMedia('(hover: hover) and (pointer: fine)').matches && window.innerWidth>760;
+    var safari=/^((?!chrome|chromium|crios|fxios|edg|android).)*safari/i.test(navigator.userAgent);
+    var clipOk=!!(window.CSS && CSS.supports && (CSS.supports('-webkit-background-clip','text') || CSS.supports('background-clip','text')));
+    if(fx && !safari && clipOk) name.classList.add('glowtext');
+
     /* ---- lienzo de partículas ---- */
-    var cv=document.getElementById('magic'), cx=cv.getContext('2d');
+    var cv=document.getElementById('magic'), cx=fx ? cv.getContext('2d') : null;
     var dpr=Math.min(window.devicePixelRatio||1,2), W=0, H=0, parts=[], running=false, visible=true;
     function size(){ W=hero.clientWidth; H=hero.clientHeight; cv.width=W*dpr; cv.height=H*dpr; cx.setTransform(dpr,0,0,dpr,0,0); }
-    size(); window.addEventListener('resize',size);
+    if(fx){ size(); window.addEventListener('resize',size); } else cv.remove();
 
     /* destello pre-renderizado: núcleo claro con halo dorado */
     var spr=document.createElement('canvas'); spr.width=spr.height=64;
@@ -538,6 +546,7 @@ footer a:hover{color:var(--gold-lt)}
         tw:Math.random()*6.28,g:o.g==null?-4:o.g,amb:!!o.amb});
     }
     function burst(el){
+      if(!fx) return;
       var r=heroRect(el);
       for(var i=0;i<14;i++){
         var a=Math.random()*6.28, v=15+Math.random()*50;
@@ -573,7 +582,7 @@ footer a:hover{color:var(--gold-lt)}
       glow(dt);
       requestAnimationFrame(frame);
     }
-    function start(){ if(!running && visible && !document.hidden){ running=true; last=0; requestAnimationFrame(frame); } }
+    function start(){ if(fx && !running && visible && !document.hidden){ running=true; last=0; requestAnimationFrame(frame); } }
     function stop(){ running=false; }
     if('IntersectionObserver' in window){
       new IntersectionObserver(function(es){ visible=es[0].isIntersecting; visible?start():stop(); }).observe(hero);
@@ -610,9 +619,10 @@ footer a:hover{color:var(--gold-lt)}
       }
       start();
     }
-    hero.addEventListener('pointermove',function(e){ if(e.pointerType==='mouse') move(e.clientX,e.clientY); });
-    hero.addEventListener('pointerleave',function(){ pointer=false; idleT=2.5; });
-    hero.addEventListener('touchmove',function(e){ var t=e.touches[0]; if(t){ move(t.clientX,t.clientY); pointer=false; } },{passive:true});
+    if(fx){
+      hero.addEventListener('pointermove',function(e){ if(e.pointerType==='mouse') move(e.clientX,e.clientY); });
+      hero.addEventListener('pointerleave',function(){ pointer=false; idleT=2.5; });
+    }
 
     /* ---- decodificación ---- */
     var pool='ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789#/<>';
