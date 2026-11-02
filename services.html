@@ -374,17 +374,7 @@ footer a:hover{color:var(--gold-lt)}
 @keyframes led{50%{opacity:.25}}
 .cx-art .pk{fill:var(--gold-lt)}
 .cx-art text{font-family:var(--sans);font-size:11px;letter-spacing:.24em;fill:rgba(242,241,237,.5);text-transform:uppercase}
-.cx-brands{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line-dk);border:1px solid var(--line-dk);margin-top:clamp(40px,5vw,70px)}
-.cx-b{background:var(--ink);padding:clamp(26px,3vw,42px);display:flex;flex-direction:column}
-.cx-b .wm{font-family:var(--sans);font-weight:600;font-size:clamp(26px,2.6vw,34px);letter-spacing:-.02em;color:var(--paper);line-height:1}
-.cx-b .wm small{display:block;margin-top:8px;font-size:11px;font-weight:500;letter-spacing:.26em;text-transform:uppercase;color:var(--gold-lt)}
-.cx-b p{font-size:15px;color:rgba(242,241,237,.66);margin:18px 0 18px}
-.cx-b ul{list-style:none;margin:0 0 22px;padding:0;border-top:1px solid var(--line-dk)}
-.cx-b li{display:grid;grid-template-columns:minmax(0,170px) minmax(0,1fr);gap:14px;padding:11px 0;border-bottom:1px solid var(--line-dk);font-size:13.5px}
-.cx-b li b{font-weight:500;color:var(--paper)}
-.cx-b li span{color:rgba(242,241,237,.58)}
-.cx-b .fit{margin-top:auto;font-family:var(--serif);font-style:italic;font-size:17px;color:var(--gold-lt)}
-.cx-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line-dk);border:1px solid var(--line-dk);border-top:0}
+.cx-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line-dk);border:1px solid var(--line-dk);margin-top:clamp(40px,5vw,70px)}
 .cx-steps div{background:var(--ink-2);padding:22px 24px}
 .cx-steps b{display:block;font-family:var(--serif);font-weight:400;font-size:17px;margin-bottom:6px}
 .cx-steps b i{font-style:normal;color:var(--gold-lt);margin-right:8px}
@@ -396,8 +386,7 @@ footer a:hover{color:var(--gold-lt)}
   .cx-steps{grid-template-columns:1fr 1fr}
 }
 @media (max-width:760px){
-  .cx-perks,.cx-brands,.cx-steps{grid-template-columns:1fr}
-  .cx-b li{grid-template-columns:1fr;gap:2px}
+  .cx-perks,.cx-steps{grid-template-columns:1fr}
 }
 @media (prefers-reduced-motion:reduce){.cx-art .led{animation:none}}
 </style>
@@ -585,35 +574,13 @@ footer a:hover{color:var(--gold-lt)}
       </div>
     </div>
 
-    <div class="cx-brands">
-      <div class="cx-b rv">
-        <div class="wm">Synology<small data-en="Mature business ecosystem">Ecosistema empresarial maduro</small></div>
-        <p data-en="NAS with the DSM operating system and a broad suite of business applications, from desktop units to rack servers (DiskStation and RackStation lines).">NAS con el sistema operativo DSM y un amplio conjunto de aplicaciones empresariales, desde equipos de escritorio hasta servidores de rack (líneas DiskStation y RackStation).</p>
-        <ul>
-          <li><b>Synology Drive</b><span data-en="Your cloud: sync and share files across computers and phones">Tu nube: sincroniza y comparte archivos entre computadoras y celulares</span></li>
-          <li><b>Active Backup for Business</b><span data-en="Centralized backup of PCs, servers and virtual machines">Respaldo centralizado de PCs, servidores y máquinas virtuales</span></li>
-          <li><b>Hyper Backup</b><span data-en="Versioned copies of the NAS to another NAS, a USB drive or a public cloud">Copias con versiones del NAS a otro NAS, a USB o a una nube pública</span></li>
-        </ul>
-        <div class="fit" data-en="Ideal when backup and continuity are critical.">Ideal cuando el respaldo y la continuidad son críticos.</div>
-      </div>
-      <div class="cx-b rv d1">
-        <div class="wm">UGREEN <span style="font-weight:400">NASync</span><small data-en="Performance for the investment">Desempeño por inversión</small></div>
-        <p data-en="NAS with the UGOS Pro operating system and modern hardware: Intel processors and, on several models, 10 GbE networking.">NAS con el sistema operativo UGOS Pro y hardware moderno: procesadores Intel y, en varios modelos, red de 10 GbE.</p>
-        <ul>
-          <li><b data-en="Shared folders">Carpetas compartidas</b><span data-en="Network drives with per-user permissions">Unidades de red con permisos por usuario</span></li>
-          <li><b data-en="Remote access">Acceso remoto</b><span data-en="Encrypted access to your files from outside the office">Acceso cifrado a tus archivos fuera de la oficina</span></li>
-          <li><b data-en="Snapshots &amp; apps">Snapshots y apps</b><span data-en="Point-in-time recovery, Docker and virtual machines">Recuperación por puntos en el tiempo, Docker y máquinas virtuales</span></li>
-        </ul>
-        <div class="fit" data-en="Ideal for offices and SMBs looking for capacity and speed.">Ideal para oficinas y pymes que buscan capacidad y velocidad.</div>
-      </div>
-    </div>
     <div class="cx-steps">
       <div class="rv"><b><i>01</i><span data-en="Sizing">Dimensionamiento</span></b><span data-en="Capacity, disks and RAID level for your data and growth.">Capacidad, discos y nivel de RAID según tu información y crecimiento.</span></div>
       <div class="rv d1"><b><i>02</i><span data-en="Installation">Instalación</span></b><span data-en="Users, shared folders and permissions by area.">Usuarios, carpetas compartidas y permisos por área.</span></div>
       <div class="rv d2"><b><i>03</i><span data-en="Backup &amp; remote access">Respaldo y acceso remoto</span></b><span data-en="3-2-1 backup policy and secure access from anywhere.">Política de respaldo 3-2-1 y acceso seguro desde cualquier lugar.</span></div>
       <div class="rv d3"><b><i>04</i><span data-en="Training">Capacitación</span></b><span data-en="Your team learns to use it from day one.">Tu equipo aprende a usarla desde el primer día.</span></div>
     </div>
-    <p class="cx-note" data-en="Synology, DSM, DiskStation, RackStation, Synology Drive, Active Backup for Business and Hyper Backup are trademarks of Synology Inc. UGREEN, NASync and UGOS are trademarks of UGREEN. Models and features vary by equipment.">Synology, DSM, DiskStation, RackStation, Synology Drive, Active Backup for Business y Hyper Backup son marcas de Synology Inc. UGREEN, NASync y UGOS son marcas de UGREEN. Modelos y funciones varían según el equipo.</p>
+    <p class="cx-note" data-en="Synology and UGREEN are trademarks of their respective owners. Models and features vary by equipment.">Synology y UGREEN son marcas de sus respectivos titulares. Modelos y funciones varían según el equipo.</p>
   </div>
 </section>
 
