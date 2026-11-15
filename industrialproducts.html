@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Motores TECO-Westinghouse en stock | Industrial | MARASE Supply</title>
-<meta name="description" content="Motores TECO-Westinghouse en stock en México: 39 modelos de baja tensión 460 V y media tensión 2,300/4,160 V, de 200 a 1,750 HP y de 2 a 8 polos. También bombas, sopladores, instrumentación TTR y PQM, cable y consumibles. Por cotización y con contacto directo.">
+<title>Motores TECO en stock, sistemas contra incendio y bombas | MARASE Supply</title>
+<meta name="description" content="Motores TECO-Westinghouse en stock en México: 39 modelos de 460 V y 2,300/4,160 V, de 200 a 1,750 HP. Sistemas contra incendio SIEX y bombas HRZL. Por cotización.">
 <meta property="og:title" content="Motores TECO-Westinghouse en stock | MARASE Supply">
 <meta property="og:description" content="39 modelos de motores TECO-Westinghouse en stock, de 200 a 1,750 HP, en baja y media tensión. Por cotización y con contacto directo.">
 <meta property="og:type" content="website">
@@ -90,19 +90,8 @@ nav.main a.active{color:var(--paper)}
 .notice b{display:block;font-family:var(--serif);font-weight:300;font-size:clamp(19px,1.8vw,23px);color:var(--gold-lt);margin-bottom:8px}
 .notice span{font-size:14px;color:rgba(242,241,237,.66)}
 
-/* filtros */
-.filters{position:sticky;top:84px;z-index:40;background:rgba(242,241,237,.93);backdrop-filter:blur(10px);
-  border-bottom:1px solid var(--line)}
-.filters .inner{max-width:var(--maxw);margin:0 auto;padding:14px var(--pad);display:flex;flex-wrap:wrap;gap:10px;align-items:center}
-.chip{border:1px solid var(--line);background:none;font:inherit;font-size:13.5px;letter-spacing:.02em;color:var(--muted);
-  padding:9px 18px;border-radius:999px;cursor:pointer;transition:.3s;white-space:nowrap}
-.chip:hover{border-color:var(--gold);color:var(--ink)}
-.chip[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--paper)}
-.count{margin-left:auto;font-size:13px;color:var(--muted);letter-spacing:.02em}
-
 /* secciones y rejilla */
 .band{padding:clamp(52px,7vw,88px) 0}
-.band.nopad{padding-top:0}
 .sechead{display:flex;align-items:baseline;gap:18px;margin-bottom:clamp(26px,3.5vw,40px);padding-bottom:16px;border-bottom:1px solid var(--line)}
 .sechead .label{font-size:11.5px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);white-space:nowrap}
 .sechead h2{font-size:clamp(24px,3.1vw,38px);margin:0;font-weight:300}
@@ -126,8 +115,18 @@ nav.main a.active{color:var(--paper)}
   text-decoration:none;border-bottom:1px solid transparent;padding-bottom:2px;transition:.3s}
 .quote:hover{border-bottom-color:var(--gold)}
 .quote svg{width:14px;height:14px}
-.card.hide{display:none}
-.empty{display:none;padding:50px 0;color:var(--muted)}
+.sec-lead{margin:0 0 clamp(26px,3.5vw,40px);color:#3B4048;font-size:clamp(15.5px,1.2vw,17.5px)}
+.brands{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(10px,1.6vw,22px);margin:0 0 clamp(26px,3.5vw,40px)}
+.brands figure{margin:0;background:#fff;border:1px solid var(--line);padding:clamp(12px,2vw,26px);display:flex;align-items:center;justify-content:center;transition:border-color .35s}
+.brands figure:hover{border-color:var(--gold)}
+.brands img{width:100%;max-width:210px;height:auto}
+.sec-logo{margin-left:auto;align-self:center;height:44px;width:auto;background:#fff;border:1px solid var(--line);padding:4px 10px}
+.others{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.others li{display:grid;grid-template-columns:minmax(0,340px) minmax(0,1fr);gap:4px 30px;align-items:baseline;padding:18px 0;border-bottom:1px solid var(--line)}
+.others b{font-family:var(--serif);font-weight:400;font-size:clamp(18px,1.6vw,22px)}
+.others span{font-size:14.5px;color:var(--muted)}
+.others-cta{margin:26px 0 0}
+@media (max-width:760px){.others li{grid-template-columns:1fr}.sec-logo{margin-left:0;height:38px}}
 
 /* franja cta */
 .cta{background:var(--ink);color:var(--paper)}
@@ -158,7 +157,6 @@ footer a:hover{color:var(--gold-lt)}
 @media (max-width:1000px){
   .grid{grid-template-columns:repeat(2,1fr)}
   .foot-grid{grid-template-columns:1fr 1fr}
-  .count{display:none}
   .feature-grid{grid-template-columns:1fr}
 }
 @media (max-width:760px){
@@ -174,7 +172,6 @@ footer a:hover{color:var(--gold-lt)}
   .notice{grid-template-columns:1fr}
   .notice > div{border-right:0;border-bottom:1px solid var(--line-dk)}
   .notice > div:last-child{border-bottom:0}
-  .filters .inner{overflow-x:auto;flex-wrap:nowrap;-webkit-overflow-scrolling:touch}
 }
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
 
@@ -303,7 +300,7 @@ footer a:hover{color:var(--gold-lt)}
   .rv{opacity:1;transform:none;transition:none}
 }
 </style>
-<script type="application/ld+json">
+<script type="application/ld+json" id="ld-inventario">
 {
  "@context": "https://schema.org",
  "@type": "ItemList",
@@ -2380,6 +2377,264 @@ footer a:hover{color:var(--gold-lt)}
  ]
 }
 </script>
+<script type="application/ld+json" id="ld-catalogo">
+{
+ "@context": "https://schema.org",
+ "@type": "Organization",
+ "@id": "https://marasesupply.com/#org",
+ "name": "MARASE Supply",
+ "legalName": "MARASE SUPPLY, S.A. de C.V.",
+ "url": "https://marasesupply.com/",
+ "logo": "https://marasesupply.com/image/logogold.svg",
+ "email": "contacto@marasesupply.com",
+ "telephone": "+52 55 5840 5156",
+ "address": {
+  "@type": "PostalAddress",
+  "streetAddress": "Océano Mz 77 Lt 2, Col. Del Mar",
+  "addressLocality": "Tláhuac",
+  "addressRegion": "Ciudad de México",
+  "postalCode": "13270",
+  "addressCountry": "MX"
+ },
+ "areaServed": {
+  "@type": "Country",
+  "name": "México"
+ },
+ "hasOfferCatalog": {
+  "@type": "OfferCatalog",
+  "name": "Industrial",
+  "itemListElement": [
+   {
+    "@type": "OfferCatalog",
+    "name": "Sistemas contra incendio SIEX",
+    "itemListElement": [
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Sistemas de extinción por gas inerte INERT-SIEX",
+       "serviceType": "Suministro de sistemas contra incendio",
+       "brand": {
+        "@type": "Brand",
+        "name": "SIEX"
+       },
+       "description": "Sistemas de extinción por gas inerte para centros de datos, archivos, telecomunicaciones y cuartos eléctricos.",
+       "provider": {
+        "@id": "https://marasesupply.com/#org"
+       },
+       "areaServed": {
+        "@type": "Country",
+        "name": "México"
+       },
+       "image": "https://marasesupply.com/image/siex/sala-gas-inerte.jpg"
+      }
+     },
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Sistemas de extinción por agentes limpios SIEX-HC 227, SIEX-HC 125 y SIEX-NC 1230",
+       "serviceType": "Suministro de sistemas contra incendio",
+       "brand": {
+        "@type": "Brand",
+        "name": "SIEX"
+       },
+       "description": "Sistemas de supresión por agente limpio para cuartos eléctricos, cuartos de control y tableros.",
+       "provider": {
+        "@id": "https://marasesupply.com/#org"
+       },
+       "areaServed": {
+        "@type": "Country",
+        "name": "México"
+       },
+       "image": "https://marasesupply.com/image/siex/cilindros-hc.jpg"
+      }
+     },
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Sistemas de extinción por CO2",
+       "serviceType": "Suministro de sistemas contra incendio",
+       "brand": {
+        "@type": "Brand",
+        "name": "SIEX"
+       },
+       "description": "Sistemas de CO2 para turbinas, generadores, transformadores, cabinas de pintura y máquinas-herramienta.",
+       "provider": {
+        "@id": "https://marasesupply.com/#org"
+       },
+       "areaServed": {
+        "@type": "Country",
+        "name": "México"
+       },
+       "image": "https://marasesupply.com/image/siex/instalacion-co2.jpg"
+      }
+     }
+    ]
+   },
+   {
+    "@type": "OfferCatalog",
+    "name": "Bombas HRZL",
+    "itemListElement": [
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Bombas contra incendio HRZL",
+       "serviceType": "Suministro de bombas contra incendio",
+       "brand": {
+        "@type": "Brand",
+        "name": "HRZL"
+       },
+       "description": "Equipos de bombeo contra incendio eléctricos (XBD) y diésel (XBC) para redes de hidrantes y rociadores.",
+       "image": "https://marasesupply.com/image/hrzl/bomba-incendio.jpg",
+       "provider": {
+        "@id": "https://marasesupply.com/#org"
+       },
+       "areaServed": {
+        "@type": "Country",
+        "name": "México"
+       }
+      }
+     },
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Bombas de doble succión de carcasa partida HRZL",
+       "serviceType": "Suministro de bombas industriales",
+       "brand": {
+        "@type": "Brand",
+        "name": "HRZL"
+       },
+       "description": "Bombas de gran caudal para abastecimiento de agua, enfriamiento, riego y plantas de proceso.",
+       "image": "https://marasesupply.com/image/hrzl/bomba-doble-succion.jpg",
+       "provider": {
+        "@id": "https://marasesupply.com/#org"
+       },
+       "areaServed": {
+        "@type": "Country",
+        "name": "México"
+       }
+      }
+     },
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Bombas multietapa HRZL",
+       "serviceType": "Suministro de bombas industriales",
+       "brand": {
+        "@type": "Brand",
+        "name": "HRZL"
+       },
+       "description": "Bombas de alta presión para alimentación de calderas, edificios altos y minería.",
+       "image": "https://marasesupply.com/image/hrzl/bomba-multietapa.jpg",
+       "provider": {
+        "@id": "https://marasesupply.com/#org"
+       },
+       "areaServed": {
+        "@type": "Country",
+        "name": "México"
+       }
+      }
+     },
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Bombas sumergibles HRZL",
+       "serviceType": "Suministro de bombas industriales",
+       "brand": {
+        "@type": "Brand",
+        "name": "HRZL"
+       },
+       "description": "Bombas sumergibles para aguas residuales, cárcamos, pozos y lodos.",
+       "image": "https://marasesupply.com/image/hrzl/bomba-sumergible.jpg",
+       "provider": {
+        "@id": "https://marasesupply.com/#org"
+       },
+       "areaServed": {
+        "@type": "Country",
+        "name": "México"
+       }
+      }
+     },
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Bombas con motor diésel HRZL",
+       "serviceType": "Suministro de bombas industriales",
+       "brand": {
+        "@type": "Brand",
+        "name": "HRZL"
+       },
+       "description": "Equipos de bombeo autónomos con motor diésel para drenaje, emergencias y riego.",
+       "image": "https://marasesupply.com/image/hrzl/bomba-diesel.jpg",
+       "provider": {
+        "@id": "https://marasesupply.com/#org"
+       },
+       "areaServed": {
+        "@type": "Country",
+        "name": "México"
+       }
+      }
+     },
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Bombas para lodos HRZL",
+       "serviceType": "Suministro de bombas industriales",
+       "brand": {
+        "@type": "Brand",
+        "name": "HRZL"
+       },
+       "description": "Bombas para lodos abrasivos en minería, dragado y procesos industriales.",
+       "image": "https://marasesupply.com/image/hrzl/bomba-lodos.jpg",
+       "provider": {
+        "@id": "https://marasesupply.com/#org"
+       },
+       "areaServed": {
+        "@type": "Country",
+        "name": "México"
+       }
+      }
+     }
+    ]
+   },
+   {
+    "@type": "OfferCatalog",
+    "name": "Motores eléctricos",
+    "itemListElement": [
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Motores TECO-Westinghouse de baja y media tensión",
+       "serviceType": "Suministro de motores eléctricos",
+       "brand": {
+        "@type": "Brand",
+        "name": "TECO-Westinghouse"
+       },
+       "description": "Motores de inducción de 460 V y 2,300/4,160 V, de 200 a 1,750 HP, en stock.",
+       "provider": {
+        "@id": "https://marasesupply.com/#org"
+       },
+       "areaServed": {
+        "@type": "Country",
+        "name": "México"
+       }
+      }
+     }
+    ]
+   }
+  ]
+ }
+}
+</script>
 </head>
 <body>
 
@@ -2388,17 +2643,10 @@ footer a:hover{color:var(--gold-lt)}
     <rect x="9" y="16" width="22" height="16" rx="2"/><path d="M31 21h5v6h-5zM36 24h5M13 16V12h6v4M13 32v4h6v-4M4 20v8"/><circle cx="20" cy="24" r="4"/></symbol>
   <symbol id="i-pump" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4">
     <circle cx="21" cy="26" r="10"/><circle cx="21" cy="26" r="3.4"/><path d="M21 16V9h9M31 26h10M31 26l4-4M31 26l4 4M11 36h20"/></symbol>
-  <symbol id="i-blower" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4">
-    <circle cx="20" cy="24" r="11"/><path d="M20 24c0-7 3-9 7-7s2 7-7 7zM20 24c-6 3-9 1-8-3s6-3 8 3zM20 24c6 4 5 8 1 9s-5-4-1-9z"/><path d="M31 24h10v7"/></symbol>
-  <symbol id="i-meter" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4">
-    <rect x="11" y="8" width="26" height="32" rx="3"/><rect x="16" y="14" width="16" height="9" rx="1"/><path d="M17 30h4M27 30h4M17 35h4M27 35h4"/></symbol>
-  <symbol id="i-analyzer" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4">
-    <rect x="7" y="11" width="34" height="24" rx="3"/><path d="M12 27l6-8 5 6 4-9 5 11M18 40h12"/></symbol>
-  <symbol id="i-cable" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4">
-    <path d="M8 34c0-8 10-6 10-13S8 12 8 12M40 14c0 8-10 6-10 13s10 9 10 9"/><circle cx="24" cy="24" r="3"/></symbol>
-  <symbol id="i-clean" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4">
-    <path d="M17 16h14a3 3 0 013 3v18a3 3 0 01-3 3H17a3 3 0 01-3-3V19a3 3 0 013-3z"/><path d="M20 16v-5h8v5M18 24h12"/></symbol>
-  <symbol id="i-bolt" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M26 6L12 27h10l-2 15 16-22H26z"/></symbol>
+  <symbol id="i-flame" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4">
+    <path d="M24 6c1 7 11 11 11 22a11 11 0 01-22 0c0-6 3-9 6-12 0 5 2 7 5 7-2-6 0-11 0-17z"/><path d="M24 42a5 5 0 01-5-5c0-3 3-5 5-8 2 3 5 5 5 8a5 5 0 01-5 5z"/></symbol>
+  <symbol id="i-cylinder" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4">
+    <path d="M19 15h10a4 4 0 014 4v20a3 3 0 01-3 3H18a3 3 0 01-3-3V19a4 4 0 014-4z"/><path d="M21 15v-4h6v4M27 11h6M15 25h18"/></symbol>
   <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
 </defs></svg>
 
@@ -2436,8 +2684,8 @@ footer a:hover{color:var(--gold-lt)}
     <div class="crumb"><a href="index.html" data-en="Home">Inicio</a> <span>/</span> <span data-en="Divisions">Divisiones</span> <span>/</span> <span data-en="Industrial">Industrial</span></div>
     <div class="divno" data-en="Division 02">División 02</div>
     <h1 data-en="Industrial">Industrial</h1>
-    <p data-en="Specialized electrical equipment and materials, with a focus on TECO-Westinghouse motors. We do not sell from a price list: every item is quoted against the operating conditions of your installation, with direct contact.">Equipo y material eléctrico especializado, con énfasis en motores TECO-Westinghouse. No vendemos por lista de precios: cada artículo se cotiza contra las condiciones de operación de tu instalación, con contacto directo.</p>
-    <p style="margin-top:26px"><a class="btn solid" href="#inventario" data-en="TECO motors in stock">Motores TECO en stock · 39 modelos</a></p>
+    <p data-en="TECO-Westinghouse motors, SIEX fire suppression systems and HRZL industrial and fire pumps. We do not sell from a price list: every item is quoted against the operating conditions of your installation, with direct contact.">Motores TECO-Westinghouse, sistemas contra incendio SIEX y bombas industriales y contra incendio HRZL. No vendemos por lista de precios: cada artículo se cotiza contra las condiciones de operación de tu instalación, con contacto directo.</p>
+    <p style="margin-top:26px;display:flex;flex-wrap:wrap;gap:12px"><a class="btn solid" href="#inventario" data-en="TECO motors in stock">Motores TECO en stock · 39 modelos</a><a class="btn" href="#incendio" data-en="SIEX fire protection">Sistemas contra incendio SIEX</a><a class="btn" href="#bombas" data-en="HRZL pumps">Bombas HRZL</a></p>
   </div>
 </section>
 
@@ -2935,192 +3183,190 @@ footer a:hover{color:var(--gold-lt)}
   </div>
 </section>
 
-<div class="filters">
-  <div class="inner" id="chips" role="group" aria-label="Filtrar catálogo">
-    <button class="chip" data-filter="all" aria-pressed="true" data-en="All">Todo</button>
-    <button class="chip" data-filter="rot" aria-pressed="false" data-en="Motors &amp; rotating equipment">Motores y equipo rotatorio</button>
-    <button class="chip" data-filter="ins" aria-pressed="false" data-en="Measurement">Instrumentación</button>
-    <button class="chip" data-filter="con" aria-pressed="false" data-en="Materials &amp; consumables">Material y consumibles</button>
-    <button class="chip" data-filter="svc" aria-pressed="false" data-en="Field service">Servicio en campo</button>
-    <span class="count" id="count"></span>
-  </div>
-</div>
-
 <main>
 
-<!-- EQUIPO ROTATORIO -->
-<section class="band" id="rot" data-group="rot">
+<!-- SISTEMAS CONTRA INCENDIO SIEX -->
+<section class="band" id="incendio">
   <div class="wrap">
     <div class="sechead">
-      <span class="label" data-en="01 — Motors &amp; rotating equipment">01 — Motores y equipo rotatorio</span>
-      <h2 data-en="Specialized industrial equipment">Equipamiento industrial especializado</h2>
+      <span class="label" data-en="Fire protection · SIEX">Contra incendios · SIEX</span>
+      <h2 data-en="SIEX fire suppression systems">Sistemas contra incendio SIEX</h2>
+    </div>
+    <p class="sec-lead" data-en="We supply SIEX extinguishing systems — inert gas, clean agents and CO₂ — to protect electrical rooms, data centers, turbines and industrial plants. SIEX systems carry UL, FM and VdS approvals, depending on the system and model. We help you choose the agent according to the hazard, the room and whether people are present.">Suministramos sistemas de extinción SIEX por gas inerte, agentes limpios y CO₂ para proteger cuartos eléctricos, centros de datos, turbinas y naves industriales. Los sistemas SIEX cuentan con aprobaciones UL, FM y VdS, según el sistema y el modelo. Te ayudamos a elegir el agente según el riesgo, el recinto y si hay personas presentes.</p>
+    <div class="brands">
+      <figure><img src="image/siex/siex-inert.webp" width="501" height="407" alt="SIEX INERT: sistemas de extinción por gas inerte con aprobaciones UL, FM y VdS" loading="lazy"></figure>
+      <figure><img src="image/siex/siex-hc.webp" width="499" height="386" alt="SIEX HC: sistemas de extinción por agente limpio con aprobaciones UL, FM y VdS" loading="lazy"></figure>
+      <figure><img src="image/siex/siex-co2.webp" width="499" height="387" alt="SIEX CO2: sistemas de extinción por dióxido de carbono con aprobaciones UL, FM y VdS" loading="lazy"></figure>
     </div>
     <div class="grid">
 
-      <article class="card" data-cat="rot">
-        <div class="media"><svg class="ph"><use href="#i-motor"/></svg><img src="image/motor.jpg" alt="Motor eléctrico de media y baja tensión" loading="lazy" onerror="this.remove()"></div>
+      <article class="card">
+        <div class="media"><svg class="ph" aria-hidden="true"><use href="#i-cylinder"/></svg><img src="image/siex/sala-gas-inerte.jpg" alt="Sistema de extinción por gas inerte SIEX en un centro de datos" loading="lazy" onerror="this.remove()"></div>
         <div class="body">
-          <span class="tag" data-en="Motors">Motores</span>
-          <h3 data-en="Medium and low voltage motors">Motores de media y baja tensión</h3>
-          <p data-en="TECO-Westinghouse motors, recognized for robust performance and high efficiency in continuous industrial duty.">Motores TECO-Westinghouse, reconocidos por su rendimiento robusto y alta eficiencia en servicio industrial continuo.</p>
+          <span class="tag" data-en="Inert gas">Gas inerte</span>
+          <h3 data-en="INERT-SIEX™ inert gas extinguishing systems">Sistemas de extinción por gas inerte INERT-SIEX™</h3>
+          <p data-en="They extinguish with gases found in the atmosphere, without damaging equipment or leaving residue. For data centers, archives, telecom rooms and electrical rooms.">Extinguen con gases presentes en la atmósfera, sin dañar equipos ni dejar residuos. Para centros de datos, archivos, telecomunicaciones y cuartos eléctricos.</p>
           <ul>
-            <li data-en="Selection by frame, pole count and efficiency class">Selección por carcasa, número de polos y clase de eficiencia</li>
-            <li data-en="Severe duty and standard enclosures">Versiones para servicio severo y envolventes estándar</li>
-            <li data-en="Replacement matched to the existing nameplate">Reemplazo conforme a la placa de datos existente</li>
+            <li data-en="No residue, no damage to electronics">Sin residuos ni daño a equipo electrónico</li>
+            <li data-en="Constant flow technology">Tecnología de flujo constante</li>
+            <li data-en="Sized to the volume and hazard of the room">Dimensionado según el volumen y el riesgo del recinto</li>
           </ul>
         </div>
-        <div class="foot"><a class="quote" href="mailto:contacto@marasesupply.com?subject=Cotizaci%C3%B3n%20-%20Motores%20de%20media%20y%20baja%20tensi%C3%B3n" data-en="Request a quote">Solicitar cotización <svg><use href="#i-arrow"/></svg></a></div>
+        <div class="foot"><a class="quote" href="mailto:contacto@marasesupply.com?subject=Cotizaci%C3%B3n%20-%20Sistema%20de%20extinci%C3%B3n%20por%20gas%20inerte%20INERT-SIEX"><span data-en="Request a quote">Solicitar cotización</span> <svg aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
       </article>
 
-      <article class="card" data-cat="rot">
-        <div class="media"><svg class="ph"><use href="#i-pump"/></svg><img src="image/bomba.webp" alt="Bomba industrial" loading="lazy" onerror="this.remove()"></div>
+      <article class="card">
+        <div class="media"><svg class="ph" aria-hidden="true"><use href="#i-flame"/></svg><img src="image/siex/cilindros-hc.jpg" alt="Cilindros de agente limpio SIEX-HC" loading="lazy" onerror="this.remove()"></div>
         <div class="body">
-          <span class="tag" data-en="Pumps">Bombas</span>
-          <h3 data-en="Industrial and slurry pumps">Bombas industriales y para lodos</h3>
-          <p data-en="High-efficiency, durable pumping for process water, wastewater and abrasive slurry.">Bombas industriales y bombas para lodos de alta eficiencia y durabilidad, para agua de proceso, aguas residuales y lodos abrasivos.</p>
+          <span class="tag" data-en="Clean agent">Agente limpio</span>
+          <h3 data-en="SIEX-HC™ and SIEX-NC™ clean agents">Agentes limpios SIEX-HC™ y SIEX-NC™</h3>
+          <p data-en="Fast-discharge suppression for electrical rooms, control rooms, telecom rooms and archives, with no residue and no damage to equipment.">Supresión de descarga rápida para cuartos eléctricos, cuartos de control, telecomunicaciones y archivos, sin residuos ni daño a los equipos.</p>
           <ul>
-            <li data-en="Specified by head, flow rate and solids content">Especificadas por carga, gasto y contenido de sólidos</li>
-            <li data-en="Wear-resistant materials for abrasive service">Materiales resistentes al desgaste para servicio abrasivo</li>
-            <li data-en="Motor and coupling supplied as a set">Motor y acoplamiento suministrados como conjunto</li>
+            <li data-en="SIEX-HC™ 227, SIEX-HC™ 125 and SIEX-NC™ 1230">SIEX-HC™ 227, SIEX-HC™ 125 y SIEX-NC™ 1230</li>
+            <li data-en="Small enclosures: panels, racks and vehicles (SIEX SMS)">Espacios pequeños: tableros, racks y vehículos (SIEX SMS)</li>
+            <li data-en="Flexible tube detection">Detección por tubo flexible</li>
           </ul>
         </div>
-        <div class="foot"><a class="quote" href="mailto:contacto@marasesupply.com?subject=Cotizaci%C3%B3n%20-%20Bombas%20industriales" data-en="Request a quote">Solicitar cotización <svg><use href="#i-arrow"/></svg></a></div>
+        <div class="foot"><a class="quote" href="mailto:contacto@marasesupply.com?subject=Cotizaci%C3%B3n%20-%20Sistema%20de%20extinci%C3%B3n%20por%20agente%20limpio%20SIEX-HC%20%2F%20SIEX-NC"><span data-en="Request a quote">Solicitar cotización</span> <svg aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
       </article>
 
-      <article class="card" data-cat="rot">
-        <div class="media"><svg class="ph"><use href="#i-blower"/></svg><img src="image/Soplador.jpg" alt="Soplador industrial de alta presión" loading="lazy" onerror="this.remove()"></div>
+      <article class="card">
+        <div class="media"><svg class="ph" aria-hidden="true"><use href="#i-cylinder"/></svg><img src="image/siex/instalacion-co2.jpg" alt="Sistema de extinción por CO2 SIEX protegiendo tableros eléctricos" loading="lazy" onerror="this.remove()"></div>
         <div class="body">
-          <span class="tag" data-en="Blowers">Sopladores</span>
-          <h3 data-en="High-pressure blowers">Sopladores de alta presión</h3>
-          <p data-en="Industrial blowers built for efficiency and durability in continuous duty.">Sopladores industriales de alta eficiencia y durabilidad para operación continua.</p>
+          <span class="tag" data-en="CO₂">CO₂</span>
+          <h3 data-en="SIEX CO₂ extinguishing systems">Sistemas de extinción por CO₂ SIEX</h3>
+          <p data-en="For unoccupied industrial hazards: turbines, generators, transformers, paint booths, machine tools and printing presses.">Para riesgos industriales sin personal presente: turbinas, generadores, transformadores, cabinas de pintura, máquinas-herramienta e imprentas.</p>
           <ul>
-            <li data-en="Aeration, pneumatic conveying and drying">Aireación, transporte neumático y secado</li>
-            <li data-en="Sized by airflow and discharge pressure">Dimensionados por caudal y presión de descarga</li>
-            <li data-en="Filters, silencers and accessories">Filtros, silenciadores y accesorios</li>
+            <li data-en="High and low pressure versions">Versiones de alta y baja presión</li>
+            <li data-en="For unoccupied industrial hazards">Para riesgos industriales sin personal presente</li>
+            <li data-en="Sized to the volume and hazard of the room">Dimensionado según el volumen y el riesgo del recinto</li>
           </ul>
         </div>
-        <div class="foot"><a class="quote" href="mailto:contacto@marasesupply.com?subject=Cotizaci%C3%B3n%20-%20Sopladores%20de%20alta%20presi%C3%B3n" data-en="Request a quote">Solicitar cotización <svg><use href="#i-arrow"/></svg></a></div>
+        <div class="foot"><a class="quote" href="mailto:contacto@marasesupply.com?subject=Cotizaci%C3%B3n%20-%20Sistema%20de%20extinci%C3%B3n%20por%20CO2%20SIEX"><span data-en="Request a quote">Solicitar cotización</span> <svg aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
       </article>
 
     </div>
+    <p class="inv-note" data-en="SIEX, INERT-SIEX, SIEX-HC, SIEX-NC and SIEX SMS are trademarks of Siex 2001 S.L. Models, certifications and scope of supply are confirmed when quoting.">SIEX, INERT-SIEX, SIEX-HC, SIEX-NC y SIEX SMS son marcas de Siex 2001 S.L. Modelos, certificaciones y alcance del suministro se confirman al cotizar.</p>
   </div>
 </section>
 
-<!-- INSTRUMENTACIÓN -->
-<section class="band" id="ins" data-group="ins">
+<!-- BOMBAS HRZL -->
+<section class="band" id="bombas">
   <div class="wrap">
     <div class="sechead">
-      <span class="label" data-en="02 — Measurement">02 — Instrumentación</span>
-      <h2 data-en="Instrumentation and measurement">Instrumentación y medición</h2>
+      <span class="label" data-en="Pumps · HRZL">Bombas · HRZL</span>
+      <h2 data-en="HRZL industrial and fire pumps">Bombas industriales y contra incendio HRZL</h2>
+      <img class="sec-logo" src="image/hrzl/hrzl-logo.jpg" width="134" height="67" alt="HRZL Pumps" loading="lazy">
     </div>
+    <p class="sec-lead" data-en="We supply HRZL pumps for industry, high-rise buildings, oil &amp; gas and water treatment plants: fire pumps, double suction, multistage, submersible, diesel-driven and slurry pumps. We help you select them by flow, head and type of fluid.">Suministramos bombas HRZL para industria, edificios altos, petróleo y gas, y plantas de tratamiento de agua: contra incendio, de doble succión, multietapa, sumergibles, con motor diésel y para lodos. Te ayudamos a seleccionarlas por gasto, carga y tipo de fluido.</p>
     <div class="grid">
 
-      <article class="card" data-cat="ins">
-        <div class="media"><svg class="ph"><use href="#i-meter"/></svg><img src="image/ttrmegger.jpg" alt="Medidor TTR de relación de transformación" loading="lazy" onerror="this.remove()"></div>
+      <article class="card">
+        <div class="media"><svg class="ph" aria-hidden="true"><use href="#i-pump"/></svg><img src="image/hrzl/bomba-incendio.jpg" alt="Equipo de bombeo contra incendio HRZL de carcasa partida con motor eléctrico" loading="lazy" onerror="this.remove()"></div>
         <div class="body">
-          <span class="tag" data-en="Transformers">Transformadores</span>
-          <h3 data-en="TTR — Transformer turns-ratio tester">TTR — Medidor de relación de transformación</h3>
-          <p data-en="Turns-ratio measurement on three-phase transformers, for commissioning and preventive maintenance routines.">Medidor de relación de vueltas de transformadores trifásicos, para puesta en marcha y rutinas de mantenimiento preventivo.</p>
+          <span class="tag" data-en="Fire pumps">Contra incendio</span>
+          <h3 data-en="Fire pump sets">Equipos de bombeo contra incendio</h3>
+          <p data-en="Sets for hydrant and sprinkler networks: split case, multistage, vertical and deep well.">Conjuntos para redes de hidrantes y rociadores: de carcasa partida, multietapa, verticales y de pozo profundo.</p>
           <ul>
-            <li data-en="Detects shorted turns and tap-changer faults">Detecta espiras en corto y fallas del cambiador de derivaciones</li>
-            <li data-en="Automatic test sequence on three phases">Secuencia de prueba automática en las tres fases</li>
-            <li data-en="Field use with record export">Uso en campo con exportación de registros</li>
+            <li data-en="Electric (XBD series) or diesel (XBC series) drive">Accionamiento eléctrico (serie XBD) o diésel (serie XBC)</li>
+            <li data-en="For hydrants, sprinklers and constant pressure">Para hidrantes, rociadores y presión constante</li>
           </ul>
         </div>
-        <div class="foot"><a class="quote" href="mailto:contacto@marasesupply.com?subject=Cotizaci%C3%B3n%20-%20TTR%20medidor%20de%20relaci%C3%B3n" data-en="Request a quote">Solicitar cotización <svg><use href="#i-arrow"/></svg></a></div>
+        <div class="foot"><a class="quote" href="mailto:contacto@marasesupply.com?subject=Cotizaci%C3%B3n%20-%20Bomba%20contra%20incendio%20HRZL"><span data-en="Request a quote">Solicitar cotización</span> <svg aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
       </article>
 
-      <article class="card" data-cat="ins">
-        <div class="media"><svg class="ph"><use href="#i-analyzer"/></svg><img src="image/pqm.jpg" alt="Analizador de calidad eléctrica y energía PQM" loading="lazy" onerror="this.remove()"></div>
+      <article class="card">
+        <div class="media"><svg class="ph" aria-hidden="true"><use href="#i-pump"/></svg><img src="image/hrzl/bomba-doble-succion.jpg" alt="Bomba HRZL de doble succión de carcasa partida" loading="lazy" onerror="this.remove()"></div>
         <div class="body">
-          <span class="tag" data-en="Power quality">Calidad eléctrica</span>
-          <h3 data-en="PQM — Power quality and energy analyzers">PQM — Analizadores de calidad eléctrica y energía</h3>
-          <p data-en="Designed to cut downtime, resolve power quality problems quickly and work out what energy losses are costing.">Diseñados para minimizar el tiempo de inactividad, resolver rápidamente problemas de calidad eléctrica y averiguar los costes de la pérdida de energía.</p>
+          <span class="tag" data-en="Double suction">Doble succión</span>
+          <h3 data-en="Double suction split case pumps">Bombas de doble succión de carcasa partida</h3>
+          <p data-en="High flow for water supply, cooling systems, irrigation and process plants.">Gran caudal para abastecimiento de agua, sistemas de enfriamiento, riego y plantas de proceso.</p>
           <ul>
-            <li data-en="Harmonics, sags, swells and transient capture">Armónicos, huecos, sobretensiones y captura de transitorios</li>
-            <li data-en="Load and energy-consumption logging">Registro de carga y consumo energético</li>
-            <li data-en="Reports for compliance and billing review">Reportes para cumplimiento y revisión de facturación</li>
+            <li data-en="HRZL-OS, HRZL-SN and HRZL-C/S series">Series HRZL-OS, HRZL-SN y HRZL-C/S</li>
+            <li data-en="Electric or diesel drive">Con motor eléctrico o diésel</li>
           </ul>
         </div>
-        <div class="foot"><a class="quote" href="mailto:contacto@marasesupply.com?subject=Cotizaci%C3%B3n%20-%20PQM%20analizador%20de%20calidad%20el%C3%A9ctrica" data-en="Request a quote">Solicitar cotización <svg><use href="#i-arrow"/></svg></a></div>
+        <div class="foot"><a class="quote" href="mailto:contacto@marasesupply.com?subject=Cotizaci%C3%B3n%20-%20Bomba%20de%20doble%20succi%C3%B3n%20HRZL"><span data-en="Request a quote">Solicitar cotización</span> <svg aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
+      </article>
+
+      <article class="card">
+        <div class="media"><svg class="ph" aria-hidden="true"><use href="#i-pump"/></svg><img src="image/hrzl/bomba-multietapa.jpg" alt="Bomba centrífuga multietapa horizontal HRZL" loading="lazy" onerror="this.remove()"></div>
+        <div class="body">
+          <span class="tag" data-en="Multistage">Multietapa</span>
+          <h3 data-en="Multistage pumps">Bombas multietapa</h3>
+          <p data-en="High pressure for boiler feed, water supply to high-rise buildings and mining.">Alta presión para alimentación de calderas, suministro de agua a edificios altos y minería.</p>
+          <ul>
+            <li data-en="HRZL-DA1, HRZL-DG and HRZL-LG series">Series HRZL-DA1, HRZL-DG y HRZL-LG</li>
+            <li data-en="Stainless steel and abrasion-resistant versions">Versiones en acero inoxidable y resistentes a la abrasión</li>
+          </ul>
+        </div>
+        <div class="foot"><a class="quote" href="mailto:contacto@marasesupply.com?subject=Cotizaci%C3%B3n%20-%20Bomba%20multietapa%20HRZL"><span data-en="Request a quote">Solicitar cotización</span> <svg aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
+      </article>
+
+      <article class="card">
+        <div class="media"><svg class="ph" aria-hidden="true"><use href="#i-pump"/></svg><img src="image/hrzl/bomba-sumergible.jpg" alt="Bomba sumergible HRZL para aguas residuales" loading="lazy" onerror="this.remove()"></div>
+        <div class="body">
+          <span class="tag" data-en="Submersible">Sumergibles</span>
+          <h3 data-en="Submersible pumps">Bombas sumergibles</h3>
+          <p data-en="For wastewater, sumps, deep wells and slurry.">Para aguas residuales, cárcamos, pozos profundos y lodos.</p>
+          <ul>
+            <li data-en="Sewage, including stainless steel (HRZL-QW, HRZL-QWB)">Aguas negras, incluso en acero inoxidable (HRZL-QW, HRZL-QWB)</li>
+            <li data-en="Well (HRZL-QJ) and slurry (HRZL-ZJQ)">De pozo (HRZL-QJ) y para lodos (HRZL-ZJQ)</li>
+          </ul>
+        </div>
+        <div class="foot"><a class="quote" href="mailto:contacto@marasesupply.com?subject=Cotizaci%C3%B3n%20-%20Bomba%20sumergible%20HRZL"><span data-en="Request a quote">Solicitar cotización</span> <svg aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
+      </article>
+
+      <article class="card">
+        <div class="media"><svg class="ph" aria-hidden="true"><use href="#i-pump"/></svg><img src="image/hrzl/bomba-diesel.jpg" alt="Bomba centrífuga HRZL con motor diésel sobre patín" loading="lazy" onerror="this.remove()"></div>
+        <div class="body">
+          <span class="tag" data-en="Diesel drive">Motor diésel</span>
+          <h3 data-en="Diesel engine pumps">Bombas con motor diésel</h3>
+          <p data-en="Self-contained units for sites without power, drainage, emergencies and irrigation.">Equipos autónomos para sitios sin energía eléctrica, drenaje, emergencias y riego.</p>
+          <ul>
+            <li data-en="Self-priming, mixed flow and deep well">Autocebantes, de flujo mixto y de pozo profundo</li>
+            <li data-en="Skid mounted">Montadas sobre patín</li>
+          </ul>
+        </div>
+        <div class="foot"><a class="quote" href="mailto:contacto@marasesupply.com?subject=Cotizaci%C3%B3n%20-%20Bomba%20con%20motor%20di%C3%A9sel%20HRZL"><span data-en="Request a quote">Solicitar cotización</span> <svg aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
+      </article>
+
+      <article class="card">
+        <div class="media"><svg class="ph" aria-hidden="true"><use href="#i-pump"/></svg><img src="image/hrzl/bomba-lodos.jpg" alt="Bomba horizontal para lodos HRZL" loading="lazy" onerror="this.remove()"></div>
+        <div class="body">
+          <span class="tag" data-en="Slurry">Lodos</span>
+          <h3 data-en="Slurry pumps">Bombas para lodos</h3>
+          <p data-en="For abrasive slurry in mining, dredging, mineral processing and industrial processes.">Para lodos abrasivos en minería, dragado, plantas de beneficio y procesos industriales.</p>
+          <ul>
+            <li data-en="Horizontal (HRZL-ZJW) and submersible">Horizontales (HRZL-ZJW) y sumergibles</li>
+            <li data-en="Wear-resistant materials">Materiales resistentes al desgaste</li>
+          </ul>
+        </div>
+        <div class="foot"><a class="quote" href="mailto:contacto@marasesupply.com?subject=Cotizaci%C3%B3n%20-%20Bomba%20para%20lodos%20HRZL"><span data-en="Request a quote">Solicitar cotización</span> <svg aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
       </article>
 
     </div>
+    <p class="inv-note" data-en="HRZL is a trademark of Shandong Hairui Zhonglian Fluid Technology Co., Ltd. Models, certifications and scope of supply are confirmed when quoting.">HRZL es marca de Shandong Hairui Zhonglian Fluid Technology Co., Ltd. Modelos, certificaciones y alcance del suministro se confirman al cotizar.</p>
   </div>
 </section>
 
-<!-- CONSUMIBLES -->
-<section class="band" id="con" data-group="con">
+<!-- OTROS PRODUCTOS -->
+<section class="band" id="otros">
   <div class="wrap">
     <div class="sechead">
-      <span class="label" data-en="03 — Materials &amp; consumables">03 — Material y consumibles</span>
-      <h2 data-en="Electrical materials and consumables">Material eléctrico y consumibles</h2>
+      <span class="label" data-en="Other products">Otros productos</span>
+      <h2 data-en="We also supply">También suministramos</h2>
     </div>
-    <div class="grid">
-
-      <article class="card" data-cat="con">
-        <div class="media"><svg class="ph"><use href="#i-cable"/></svg><img src="image/Cable.jpg" alt="Cables y conectores eléctricos" loading="lazy" onerror="this.remove()"></div>
-        <div class="body">
-          <span class="tag" data-en="Cable">Cable</span>
-          <h3 data-en="Cable and electrical-sector consumables">Cables y consumibles del sector eléctrico</h3>
-          <p data-en="Cable, connectors, hose and the everyday consumables an industrial installation goes through.">Variedad de cables, conectores, mangueras y consumibles para instalaciones industriales.</p>
-          <ul>
-            <li data-en="Calibers and insulation per application">Calibres y aislamientos según la aplicación</li>
-            <li data-en="Terminals, lugs and connection accessories">Terminales, zapatas y accesorios de conexión</li>
-            <li data-en="Supply by reel or cut to length">Suministro por carrete o corte a medida</li>
-          </ul>
-        </div>
-        <div class="foot"><a class="quote" href="mailto:contacto@marasesupply.com?subject=Cotizaci%C3%B3n%20-%20Cables%20y%20consumibles" data-en="Request a quote">Solicitar cotización <svg><use href="#i-arrow"/></svg></a></div>
-      </article>
-
-      <article class="card" data-cat="con">
-        <div class="media"><svg class="ph"><use href="#i-clean"/></svg><img src="image/Bidon.jpg" alt="Productos de limpieza industrial" loading="lazy" onerror="this.remove()"></div>
-        <div class="body">
-          <span class="tag" data-en="Cleaning">Limpieza</span>
-          <h3 data-en="Industrial cleaning products">Productos de limpieza industrial</h3>
-          <p data-en="Disinfectants, degreasers and specialty cleaners for industrial applications.">Variedad de productos de limpieza para aplicaciones industriales: desinfectantes, desengrasantes y limpiadores especializados.</p>
-          <ul>
-            <li data-en="Presentations from drum to bulk">Presentaciones desde bidón hasta granel</li>
-            <li data-en="Safety data sheets included">Hojas de seguridad incluidas</li>
-            <li data-en="Scheduled resupply programs">Programas de resurtido calendarizado</li>
-          </ul>
-        </div>
-        <div class="foot"><a class="quote" href="mailto:contacto@marasesupply.com?subject=Cotizaci%C3%B3n%20-%20Limpieza%20industrial" data-en="Request a quote">Solicitar cotización <svg><use href="#i-arrow"/></svg></a></div>
-      </article>
-
-    </div>
+    <ul class="others">
+      <li><b data-en="High-pressure blowers">Sopladores de alta presión</b><span data-en="Aeration, pneumatic conveying and drying.">Aireación, transporte neumático y secado.</span></li>
+      <li><b data-en="TTR and PQM instruments">Instrumentación TTR y PQM</b><span data-en="Transformer turns-ratio testers and power quality analyzers.">Medidores de relación de transformación y analizadores de calidad de la energía.</span></li>
+      <li><b data-en="Cable and electrical materials">Cable y material eléctrico</b><span data-en="Cable, connectors, terminals and consumables.">Cable, conectores, terminales y consumibles.</span></li>
+      <li><b data-en="Industrial cleaning">Limpieza industrial</b><span data-en="Degreasers, disinfectants and specialty cleaners.">Desengrasantes, desinfectantes y limpiadores especializados.</span></li>
+      <li><b data-en="Electrical installations">Instalaciones eléctricas</b><span data-en="Design, installation and commissioning.">Diseño, instalación y puesta en marcha.</span></li>
+    </ul>
+    <p class="others-cta"><a class="quote" href="mailto:contacto@marasesupply.com?subject=Cotizaci%C3%B3n%20-%20Otros%20productos%20industriales"><span data-en="Quote another product">Cotizar otro producto</span> <svg aria-hidden="true"><use href="#i-arrow"/></svg></a></p>
   </div>
 </section>
-
-<!-- SERVICIO EN CAMPO -->
-<section class="band" id="svc" data-group="svc">
-  <div class="wrap">
-    <div class="sechead">
-      <span class="label" data-en="04 — Field service">04 — Servicio en campo</span>
-      <h2 data-en="Installation that accompanies the supply">Instalación que acompaña al suministro</h2>
-    </div>
-    <div class="grid">
-
-      <article class="card" data-cat="svc">
-        <div class="media"><svg class="ph"><use href="#i-bolt"/></svg><img src="image/service.jpg" alt="Servicio en instalaciones eléctricas" loading="lazy" onerror="this.remove()"></div>
-        <div class="body">
-          <span class="tag" data-en="Field service">Servicio en campo</span>
-          <h3 data-en="Electrical installations">Instalaciones eléctricas</h3>
-          <p data-en="Design, installation and commissioning of electrical infrastructure for industrial and commercial applications.">Diseño, instalación y puesta en marcha de infraestructura eléctrica para aplicaciones industriales y comerciales.</p>
-          <ul>
-            <li data-en="Site survey and load study">Levantamiento en sitio y estudio de carga</li>
-            <li data-en="Commissioning with acceptance testing">Puesta en marcha con pruebas de aceptación</li>
-            <li data-en="As-built documentation on delivery">Documentación as-built en la entrega</li>
-          </ul>
-        </div>
-        <div class="foot"><a class="quote" href="mailto:contacto@marasesupply.com?subject=Cotizaci%C3%B3n%20-%20Instalaciones%20el%C3%A9ctricas" data-en="Request a quote">Solicitar cotización <svg><use href="#i-arrow"/></svg></a></div>
-      </article>
-
-    </div>
-  </div>
-</section>
-
-<p class="wrap empty" id="empty" data-en="No items in this category.">No hay artículos en esta categoría.</p>
 </main>
 
 <section class="cta">
@@ -3183,41 +3429,6 @@ footer a:hover{color:var(--gold-lt)}
     burger.classList.toggle('open',open);
     burger.setAttribute('aria-expanded',open);
   });
-
-  /* filtro por categoría */
-  var cards=[].slice.call(document.querySelectorAll('.card'));
-  var sections=[].slice.call(document.querySelectorAll('[data-group]'));
-  var countEl=document.getElementById('count'), empty=document.getElementById('empty');
-  var current='all';
-  function labelCount(n){
-    return (document.documentElement.lang==='en')
-      ? (n===1 ? '1 item' : n+' items')
-      : (n===1 ? '1 artículo' : n+' artículos');
-  }
-  function apply(f){
-    current=f;
-    var shown=0;
-    cards.forEach(function(c){
-      var on = (f==='all' || c.dataset.cat===f);
-      c.classList.toggle('hide',!on);
-      if(on) shown++;
-    });
-    var first=true;
-    sections.forEach(function(s){
-      var on = (f==='all' || s.dataset.group===f);
-      s.style.display = on ? '' : 'none';
-      s.classList.toggle('nopad', on && !first);
-      if(on) first=false;
-    });
-    countEl.textContent=labelCount(shown);
-    empty.style.display = shown ? 'none' : 'block';
-    document.querySelectorAll('.chip').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.filter===f); });
-  }
-  document.getElementById('chips').addEventListener('click',function(e){
-    var b=e.target.closest('.chip'); if(b) apply(b.dataset.filter);
-  });
-  apply('all');
-
 
   /* ===== escaparate TECO e inventario ===== */
   var reduceM=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -3315,7 +3526,6 @@ footer a:hover{color:var(--gold-lt)}
       el.innerHTML=(next==='en')?el.dataset.en:el.dataset.esCache;
     });
     btns.forEach(function(x){ x.setAttribute('aria-pressed', x.dataset.lang===next); });
-    apply(current);
     document.dispatchEvent(new CustomEvent('langchange',{detail:next}));
   });});
 })();

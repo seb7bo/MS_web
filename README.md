@@ -13,11 +13,8 @@
    que ya tienes publicadas:
 
    - `image/motor.jpg`
-   - `image/bomba.webp`
-   - `image/Soplador.jpg`
-   - `image/ttrmegger.jpg`
-   - `image/pqm.jpg`
-   - `image/Cable.jpg`
+   - `image/siex/` (logos y fotos de sistemas contra incendio SIEX)
+   - `image/hrzl/` (logo y fotos de bombas HRZL)
    - `image/logogold.svg` (tu logo, usado en el header, el footer, el favicon y
      como marca de agua al 5% de opacidad detrás del hero)
 

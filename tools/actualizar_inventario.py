@@ -124,7 +124,7 @@ def json_ld(filas):
     ld = {"@context": "https://schema.org", "@type": "ItemList",
           "name": "Motores TECO-Westinghouse en stock — MARASE Supply",
           "numberOfItems": len(filas), "itemListElement": items}
-    return '<script type="application/ld+json">\n' + json.dumps(ld, ensure_ascii=False, indent=1) + '\n</script>'
+    return '<script type="application/ld+json" id="ld-inventario">\n' + json.dumps(ld, ensure_ascii=False, indent=1) + '\n</script>'
 
 
 def reemplazar(s, patron, nuevo, nombre):
@@ -154,7 +154,7 @@ def main():
     tbody = '\n'.join(fila_html(r, QMAX) for r in filas)
     s = reemplazar(s, r'(<table class="inv-table" id="invTable">.*?<tbody>\n).*?(\n\s*</tbody>)',
                    lambda m: m.group(1) + tbody + m.group(2), 'tabla de inventario')
-    s = reemplazar(s, r'<script type="application/ld\+json">.*?</script>', lambda m: json_ld(filas), 'datos estructurados')
+    s = reemplazar(s, r'<script type="application/ld\+json" id="ld-inventario">.*?</script>', lambda m: json_ld(filas), 'datos estructurados')
     s = reemplazar(s, r'(<b data-count=")\d+(">)\d+(</b><span data-en="Models in stock">)',
                    lambda m: f'{m.group(1)}{N}{m.group(2)}{N}{m.group(3)}', 'contador de modelos')
     s = reemplazar(s, r'(<b data-count=")\d+(">)\d+(</b><span data-en="Units available">)',
@@ -176,9 +176,8 @@ def main():
     s = reemplazar(s, r'Inventario actualizado a [a-z]+ de \d{4}\.', f'Inventario actualizado a {mes_es}.', 'fecha (español)')
     s = reemplazar(s, r'<meta name="description" content="Motores TECO-Westinghouse en stock[^"]*">',
                    (f'<meta name="description" content="Motores TECO-Westinghouse en stock en México: {N} modelos de '
-                    f'baja tensión 460 V y media tensión 2,300/4,160 V, de {HPMIN} a {fmt(HPMAX)} HP y de 2 a 8 polos. '
-                    f'También bombas, sopladores, instrumentación TTR y PQM, cable y consumibles. Por cotización y con '
-                    f'contacto directo.">'), 'meta description')
+                    f'460 V y 2,300/4,160 V, de {HPMIN} a {fmt(HPMAX)} HP. Sistemas contra incendio SIEX y bombas HRZL. '
+                    f'Por cotización.">'), 'meta description')
     s = reemplazar(s, r'<meta property="og:description" content="[^"]*">',
                    (f'<meta property="og:description" content="{N} modelos de motores TECO-Westinghouse en stock, de '
                     f'{HPMIN} a {fmt(HPMAX)} HP, en baja y media tensión. Por cotización y con contacto directo.">'),
