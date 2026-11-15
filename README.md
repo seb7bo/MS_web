@@ -13,7 +13,7 @@
    que ya tienes publicadas:
 
    - `image/motor.jpg`
-   - `image/bomba.png`
+   - `image/bomba.webp`
    - `image/Soplador.jpg`
    - `image/ttrmegger.jpg`
    - `image/pqm.jpg`

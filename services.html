@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Consultoría | MARASE Supply</title>
-<meta name="description" content="División de consultoría de MARASE Supply: consultoría en tecnologías, como distribuidores de Lenovo (equipo de cómputo, nube privada con NAS Synology y UGREEN, selección e integración de software y desarrollo a la medida), y consultoría fiscal y contable para empresas. Por cotización y con contacto directo.">
-<meta property="og:title" content="Consultoría | MARASE Supply">
-<meta property="og:description" content="Consultoría en tecnologías, powered by Lenovo, y fiscal-contable, por cotización y con contacto directo.">
+<title>Tecnologías | MARASE Supply</title>
+<meta name="description" content="División de tecnologías de MARASE Supply: suministro tecnológico como distribuidores de Lenovo (equipo de cómputo, workstations y servidores), nube privada con NAS Synology y UGREEN, selección e integración de software y desarrollo a la medida. Por cotización y con contacto directo.">
+<meta property="og:title" content="Tecnologías | MARASE Supply">
+<meta property="og:description" content="Suministro tecnológico, powered by Lenovo: equipo de cómputo, nube privada y software, por cotización y con contacto directo.">
 <meta property="og:type" content="website">
 <link rel="icon" href="image/logogold.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -123,33 +123,24 @@ nav.main a.active{color:var(--paper)}
 /* ================= CAPÍTULOS ================= */
 .chapter{position:relative;padding:clamp(80px,11vw,150px) 0}
 .chapter.dark{background:var(--ink);color:var(--paper)}
-.chapter.light{background:var(--paper-2)}
 .ch-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:clamp(36px,6vw,100px);align-items:start}
-.chapter.light .ch-grid{grid-template-columns:minmax(0,1.05fr) minmax(0,1fr)}
 .ch-text{position:sticky;top:120px}
 .ch-num{font-family:var(--serif);font-weight:300;font-size:clamp(120px,15vw,230px);line-height:.78;letter-spacing:-.05em;
   color:transparent;-webkit-text-stroke:1px rgba(216,183,92,.6);margin-bottom:clamp(18px,2.5vw,30px)}
-.chapter.light .ch-num{-webkit-text-stroke-color:rgba(184,145,47,.7)}
 .ch-text h2{font-size:clamp(34px,4.4vw,62px);margin:14px 0 22px;font-weight:300;max-width:13ch}
 .ch-text h2 em{font-style:italic}
 .chapter.dark .ch-text h2 em{color:var(--gold-lt)}
-.chapter.light .ch-text h2 em{color:var(--gold)}
 .ch-text .lead{font-size:clamp(16px,1.3vw,19px);margin:0 0 30px}
 .chapter.dark .lead{color:rgba(242,241,237,.7)}
-.chapter.light .lead{color:#3B4048}
 .deliver{list-style:none;padding:0;margin:clamp(30px,4vw,48px) 0 0;display:grid;grid-template-columns:repeat(2,1fr);gap:1px}
 .chapter.dark .deliver{background:var(--line-dk);border:1px solid var(--line-dk)}
-.chapter.light .deliver{background:var(--line);border:1px solid var(--line)}
 .deliver li{padding:clamp(20px,2.2vw,28px)}
 .chapter.dark .deliver li{background:var(--ink)}
-.chapter.light .deliver li{background:var(--paper-2)}
 .deliver svg{width:26px;height:26px;margin-bottom:14px}
 .chapter.dark .deliver svg{color:var(--gold-lt)}
-.chapter.light .deliver svg{color:var(--gold)}
 .deliver b{display:block;font-family:var(--serif);font-weight:400;font-size:clamp(17px,1.5vw,20px);margin-bottom:6px;line-height:1.2}
 .deliver span{font-size:14px;display:block}
 .chapter.dark .deliver span{color:rgba(242,241,237,.58)}
-.chapter.light .deliver span{color:var(--muted)}
 
 /* matriz de evaluación */
 .matrix{background:#0D1015;border:1px solid rgba(216,183,92,.22);box-shadow:0 40px 80px -30px rgba(0,0,0,.7);padding:clamp(22px,2.8vw,36px)}
@@ -175,52 +166,6 @@ nav.main a.active{color:var(--paper)}
 .badge{display:inline-block;font-family:var(--serif);font-style:italic;font-size:15px;color:var(--gold-lt);opacity:0;transform:translateY(6px);transition:opacity .8s ease .3s,transform .8s var(--ease) .3s}
 .matrix.done .badge{opacity:1;transform:none}
 .mx-cap{margin-top:14px;font-size:12px;letter-spacing:.06em;color:rgba(242,241,237,.42);max-width:56ch}
-
-/* hoja de cumplimiento */
-.sheet-wrap{position:relative;isolation:isolate}
-.sheet-wrap::before{content:"";position:absolute;inset:12px -8px -12px 14px;background:#EAE7DF;border:1px solid var(--line);z-index:-1;transform:rotate(1.6deg)}
-.sheet{position:relative;background:#FBFAF7;border:1px solid var(--line);box-shadow:0 40px 80px -40px rgba(18,22,28,.35);
-  padding:clamp(26px,3.4vw,46px);transform:rotate(-1.2deg)}
-.sheet .hd{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding-bottom:16px;border-bottom:2px solid var(--ink)}
-.sheet .hd b{font-family:var(--serif);font-weight:400;font-size:clamp(20px,2vw,27px)}
-.sheet .hd span{font-size:11.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted)}
-.sheet ul{list-style:none;margin:0;padding:0}
-.sheet li{display:grid;grid-template-columns:28px minmax(0,1fr) auto;gap:16px;align-items:center;padding:15px 0;border-bottom:1px solid var(--line);font-size:15px}
-.sheet .box{width:20px;height:20px;border:1px solid rgba(18,22,28,.35);position:relative}
-.sheet .box svg{position:absolute;inset:-4px;width:28px;height:28px;color:var(--gold)}
-.sheet .box path{stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset .6s var(--ease)}
-.sheet li.ok .box path{stroke-dashoffset:0}
-.sheet .st{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);opacity:.35;transition:opacity .6s,color .6s}
-.sheet li.ok .st{opacity:1;color:var(--gold)}
-.sheet .ft{display:flex;justify-content:space-between;align-items:center;margin-top:22px;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
-.seal{width:74px;height:74px;border-radius:50%;border:1px solid var(--gold);display:grid;place-items:center;text-align:center;
-  font-family:var(--serif);font-size:11px;line-height:1.2;letter-spacing:.1em;color:var(--gold);transform:rotate(-12deg) scale(.6);opacity:0;
-  transition:transform .8s var(--ease),opacity .8s ease;box-shadow:0 0 0 4px #FBFAF7,0 0 0 5px rgba(184,145,47,.4)}
-.sheet.done .seal{transform:rotate(-12deg) scale(1);opacity:1}
-
-/* ================= INTERSECCIÓN ================= */
-.cross{background:var(--ink);color:var(--paper);padding:clamp(80px,11vw,150px) 0;overflow:hidden}
-.cross .head{text-align:center;max-width:760px;margin:0 auto}
-.cross h2{font-size:clamp(32px,4.4vw,60px);margin:16px auto 20px;font-weight:300;max-width:16ch}
-.cross h2 em{font-style:italic;color:var(--gold-lt)}
-.cross .lead{color:rgba(242,241,237,.66);margin:0 auto;font-size:clamp(16px,1.25vw,18.5px)}
-.venn{position:relative;max-width:980px;margin:clamp(40px,6vw,80px) auto 0;aspect-ratio:980/460}
-.venn svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
-.venn circle{fill:none;stroke-width:1}
-.venn .c1,.venn .c2{stroke:rgba(216,183,92,.75);stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset 2.2s var(--ease)}
-.venn .c2{transition-delay:.35s}
-.venn .lens{fill:rgba(184,145,47,0);transition:fill 1.2s ease 1.6s}
-.venn.in .c1,.venn.in .c2{stroke-dashoffset:0}
-.venn.in .lens{fill:rgba(184,145,47,.13)}
-.venn .lbl{position:absolute;top:50%;transform:translate(-50%,-50%);text-align:center;width:26%;opacity:0;transition:opacity 1s ease}
-.venn .lbl.l{left:27.5%;width:21%}.venn .lbl.r{left:72.5%;width:21%}.venn .lbl.m{left:50%;width:15%}
-.venn .lbl b{display:block;font-family:var(--serif);font-weight:300;font-size:clamp(18px,2.1vw,28px);line-height:1.15;margin-bottom:8px}
-.venn .lbl span{font-size:clamp(11.5px,1vw,13.5px);color:rgba(242,241,237,.55);display:block}
-.venn .lbl.m b{font-size:clamp(14px,1.4vw,18px);color:var(--gold-lt);font-style:italic}
-.venn .lbl.m span{color:rgba(242,241,237,.8);line-height:1.55;font-size:clamp(10.5px,.9vw,12.5px)}
-.venn.in .lbl.l,.venn.in .lbl.r{opacity:1;transition-delay:1s}
-.venn.in .lbl.m{opacity:1;transition-delay:2s}
-.cross-list{display:none}
 
 /* ================= MÉTODO ================= */
 .method{padding:clamp(80px,11vw,150px) 0}
@@ -280,8 +225,7 @@ footer a:hover{color:var(--gold-lt)}
 /* ================= RESPONSIVE ================= */
 @media (max-width:1000px){
   .problems .head,.method .head{grid-template-columns:1fr;gap:18px}
-  .ch-grid,.chapter.light .ch-grid{grid-template-columns:1fr}
-  .chapter.light .ch-visual{order:2}
+  .ch-grid{grid-template-columns:1fr}
   .ch-text{position:static}
   .track{grid-template-columns:1fr 1fr;row-gap:56px}
   .track::before,.track .fill{display:none}
@@ -299,21 +243,11 @@ footer a:hover{color:var(--gold-lt)}
   .chapters .row{grid-template-columns:1fr}
   .chap + .chap{padding-left:0;border-left:0;border-top:1px solid var(--line-dk)}
   .deliver{grid-template-columns:1fr}
-  .sheet{transform:none}
-  .sheet-wrap::before{display:none}
-  .sheet li{grid-template-columns:24px minmax(0,1fr);gap:12px}
-  .sheet .st{display:none}
   .matrix{padding:20px 16px}
   .matrix th,.matrix td{padding:12px 4px}
   .matrix table{font-size:12.5px}
   .dots{gap:3px}
   .dots i{width:6px;height:6px}
-  .venn{display:none}
-  .cross-list{display:block;list-style:none;padding:0;margin:40px 0 0;border-top:1px solid var(--line-dk)}
-  .cross-list li{padding:20px 0;border-bottom:1px solid var(--line-dk)}
-  .cross-list b{display:block;font-family:var(--serif);font-weight:300;font-size:22px;margin-bottom:4px}
-  .cross-list li.m b{color:var(--gold-lt);font-style:italic}
-  .cross-list span{font-size:14.5px;color:rgba(242,241,237,.6)}
   .track{grid-template-columns:1fr}
   .pl-grid,.foot-grid{grid-template-columns:1fr}
   .pl,.pl + .pl{padding:26px 0;border-right:0;border-bottom:1px solid var(--line)}
@@ -414,7 +348,7 @@ footer a:hover{color:var(--gold-lt)}
     <nav class="main" id="nav">
       <a href="index.html" data-en="Home">Inicio</a>
       <a href="aboutus.html" data-en="About">Nosotros</a>
-      <a href="services.html" class="active" data-en="Consulting">Consultoría</a>
+      <a href="services.html" class="active" data-en="Technology">Tecnologías</a>
       <a href="industrialproducts.html" data-en="Industrial supply">Suministro industrial</a>
       <a href="contacto.html" data-en="Contact">Contacto</a>
     </nav>
@@ -438,21 +372,21 @@ footer a:hover{color:var(--gold-lt)}
   <div class="ghost" aria-hidden="true">01</div>
 
   <div class="hero-inner">
-    <div class="crumb rv"><a href="index.html" data-en="Home">Inicio</a> <span>/</span> <span data-en="Divisions">Divisiones</span> <span>/</span> <span data-en="Consulting">Consultoría</span></div>
-    <span class="kicker rv d1" data-en="Division 01 · Technology &amp; tax">División 01 · Tecnología y fiscal</span>
-    <h1 class="rv d1" data-en="Consult<em>ing</em>">Consulto<em>ría</em></h1>
+    <div class="crumb rv"><a href="index.html" data-en="Home">Inicio</a> <span>/</span> <span data-en="Divisions">Divisiones</span> <span>/</span> <span data-en="Technology">Tecnologías</span></div>
+    <span class="kicker rv d1" data-en="Division 01 · Technology">División 01 · Tecnología</span>
+    <h1 class="rv d1" data-en="Techno<em>logy</em>">Tecnolo<em>gías</em></h1>
     <div class="rotline rv d2">
       <span data-en="We put your">Ponemos en orden tus</span>
       <span class="rotbox" id="rot"></span>
     </div>
-    <p class="intro rv d3" data-en="Technology and tax &amp; accounting consulting for companies that want to operate with clarity: choose the right technology and meet their obligations on time. Every engagement is scoped, quoted and followed through direct contact.">Consultoría en tecnologías y fiscal-contable para empresas que quieren operar con claridad: elegir bien su tecnología y cumplir a tiempo con sus obligaciones. Cada proyecto se define, se cotiza y se atiende con contacto directo.</p>
+    <p class="intro rv d3" data-en="Technology supply for companies that want to operate with clarity: Lenovo computing equipment, a private cloud of their own and the software their business runs on. Every engagement is scoped, quoted and followed through direct contact.">Suministro tecnológico para empresas que quieren operar con claridad: equipo de cómputo Lenovo, una nube privada propia y el software con el que opera su negocio. Cada proyecto se define, se cotiza y se atiende con contacto directo.</p>
     <div class="rv d4"><span class="lenovo"><small>Powered by</small><i></i><img src="image/lenovo-logo.svg" alt="Lenovo" width="66" height="22"></span></div>
   </div>
 
-  <nav class="chapters rv d4" aria-label="Prácticas">
+  <nav class="chapters rv d4" aria-label="Secciones">
     <div class="row">
-      <a class="chap" href="#tecnologia"><span class="n">01</span><span class="t" data-en="Technology consulting">Consultoría en tecnologías</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
-      <a class="chap" href="#fiscal"><span class="n">02</span><span class="t" data-en="Tax &amp; accounting">Fiscal y contable</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      <a class="chap" href="#tecnologia"><span class="n">01</span><span class="t" data-en="Equipment &amp; software">Equipo y software</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      <a class="chap" href="#nube"><span class="n">02</span><span class="t" data-en="Private cloud">Nube privada</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
     </div>
   </nav>
 </section>
@@ -467,10 +401,10 @@ footer a:hover{color:var(--gold-lt)}
       <ul class="plist">
         <li class="rv"><span class="i">i.</span><span class="p"><span class="t" data-en="Technology bought that nobody fully uses.">Tecnología comprada que nadie termina de aprovechar.</span></span></li>
         <li class="rv"><span class="i">ii.</span><span class="p"><span class="t" data-en="Files scattered across emails, USB drives and laptops.">Archivos dispersos en correos, USBs y computadoras.</span></span></li>
-        <li class="rv"><span class="i">iii.</span><span class="p"><span class="t" data-en="Tax obligations handled at the last minute.">Obligaciones fiscales resueltas a última hora.</span></span></li>
-        <li class="rv"><span class="i">iv.</span><span class="p"><span class="t" data-en="Figures nobody fully trusts.">Cifras en las que nadie confía del todo.</span></span></li>
+        <li class="rv"><span class="i">iii.</span><span class="p"><span class="t" data-en="Equipment that fails with no backup and no valid warranty.">Equipos que fallan sin respaldo ni garantía vigente.</span></span></li>
+        <li class="rv"><span class="i">iv.</span><span class="p"><span class="t" data-en="Systems that don't talk to each other.">Sistemas que no se comunican entre sí.</span></span></li>
       </ul>
-      <p class="answer rv" data-en="Two practices, <em>one way of working</em>: understand first, propose in writing, follow through in person.">Dos prácticas, <em>una sola forma de trabajar</em>: entender primero, proponer por escrito y acompañar en persona.</p>
+      <p class="answer rv" data-en="<em>One way of working</em>: understand first, propose in writing, follow through in person."><em>Una sola forma de trabajar</em>: entender primero, proponer por escrito y acompañar en persona.</p>
     </div>
   </div>
 </section>
@@ -480,11 +414,11 @@ footer a:hover{color:var(--gold-lt)}
   <div class="wrap ch-grid">
     <div class="ch-text">
       <div class="ch-num rv" aria-hidden="true">01</div>
-      <span class="kicker rv" data-en="Practice · Technology">Práctica · Tecnología</span>
-      <h2 class="rv d1" data-en="Technology <em>consulting</em>">Consultoría en <em>tecnologías</em></h2>
+      <span class="kicker rv" data-en="Equipment &amp; software">Equipo y software</span>
+      <h2 class="rv d1" data-en="Technology <em>supply</em>">Suministro <em>tecnológico</em></h2>
       <div class="rv d1"><span class="lenovo"><small>Powered by</small><i></i><img src="image/lenovo-logo.svg" alt="Lenovo" width="66" height="22"></span></div>
       <p class="lead rv d2" data-en="We help you choose, equip and integrate your company's technology: from computers and servers, as Lenovo distributors, to your own private cloud with Synology and UGREEN NAS, and the software your business runs on. And if nothing on the market fits, we develop a tailored solution.">Te ayudamos a elegir, equipar e integrar la tecnología de tu empresa: desde equipo de cómputo y servidores, como distribuidores de Lenovo, hasta tu propia nube privada con NAS Synology y UGREEN, y el software con el que opera tu negocio. Y si ninguna opción del mercado se ajusta, desarrollamos una solución a la medida.</p>
-      <a class="btn rv d3" href="mailto:contacto@marasesupply.com?subject=Cotizaci%C3%B3n%20-%20Consultor%C3%ADa%20en%20tecnolog%C3%ADas"><span data-en="Request an assessment">Solicitar una evaluación</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      <a class="btn rv d3" href="mailto:contacto@marasesupply.com?subject=Cotizaci%C3%B3n%20-%20Suministro%20tecnol%C3%B3gico"><span data-en="Request an assessment">Solicitar una evaluación</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
     </div>
     <div class="ch-visual">
       <div class="matrix rv" id="matrix" aria-hidden="true">
@@ -584,67 +518,6 @@ footer a:hover{color:var(--gold-lt)}
   </div>
 </section>
 
-<!-- ================= CAPÍTULO 02 · FISCAL ================= -->
-<section class="chapter light" id="fiscal">
-  <div class="wrap ch-grid">
-    <div class="ch-visual">
-      <div class="sheet-wrap rv">
-        <div class="sheet" id="sheet" aria-hidden="true">
-          <div class="hd"><b data-en="Compliance file">Expediente de cumplimiento</b><span data-en="Fiscal year">Ejercicio</span></div>
-          <ul>
-            <li><span class="box"><svg viewBox="0 0 28 28" fill="none"><path pathLength="1" d="M7 14.5l5 5 10-11" stroke="currentColor" stroke-width="2"/></svg></span><span data-en="Electronic accounting">Contabilidad electrónica</span><span class="st" data-en="Up to date">Al día</span></li>
-            <li><span class="box"><svg viewBox="0 0 28 28" fill="none"><path pathLength="1" d="M7 14.5l5 5 10-11" stroke="currentColor" stroke-width="2"/></svg></span><span data-en="Provisional tax payments">Pagos provisionales</span><span class="st" data-en="Filed">Presentado</span></li>
-            <li><span class="box"><svg viewBox="0 0 28 28" fill="none"><path pathLength="1" d="M7 14.5l5 5 10-11" stroke="currentColor" stroke-width="2"/></svg></span><span data-en="Informative returns (DIOT)">Declaraciones informativas (DIOT)</span><span class="st" data-en="Filed">Presentado</span></li>
-            <li><span class="box"><svg viewBox="0 0 28 28" fill="none"><path pathLength="1" d="M7 14.5l5 5 10-11" stroke="currentColor" stroke-width="2"/></svg></span><span data-en="Financial statements">Estados financieros</span><span class="st" data-en="Delivered">Entregado</span></li>
-            <li><span class="box"><svg viewBox="0 0 28 28" fill="none"><path pathLength="1" d="M7 14.5l5 5 10-11" stroke="currentColor" stroke-width="2"/></svg></span><span data-en="Annual return">Declaración anual</span><span class="st" data-en="Scheduled">Programada</span></li>
-          </ul>
-          <div class="ft"><span data-en="Reviewed">Revisado</span><span class="seal" data-en="IN<br>ORDER">EN<br>ORDEN</span></div>
-        </div>
-      </div>
-      <ul class="deliver">
-        <li class="rv"><svg aria-hidden="true"><use href="#i-book"/></svg><b data-en="Accounting">Contabilidad</b><span data-en="Bookkeeping and financial statements you can rely on.">Registro contable y estados financieros confiables.</span></li>
-        <li class="rv d1"><svg aria-hidden="true"><use href="#i-cal"/></svg><b data-en="Tax compliance">Cumplimiento fiscal</b><span data-en="Filings on time, every period.">Declaraciones a tiempo, cada periodo.</span></li>
-        <li class="rv d2"><svg aria-hidden="true"><use href="#i-search"/></svg><b data-en="Review &amp; regularization">Revisión y regularización</b><span data-en="A clear picture of your tax position.">Una imagen clara de tu situación fiscal.</span></li>
-        <li class="rv d3"><svg aria-hidden="true"><use href="#i-chart"/></svg><b data-en="Financial advice">Asesoría financiera</b><span data-en="Indicators and reports to decide with data.">Indicadores y reportes para decidir con datos.</span></li>
-      </ul>
-    </div>
-    <div class="ch-text">
-      <div class="ch-num rv" aria-hidden="true">02</div>
-      <span class="kicker rv" data-en="Practice · Tax &amp; accounting">Práctica · Fiscal y contable</span>
-      <h2 class="rv d1" data-en="Tax and <em>accounting</em> consulting">Consultoría <em>fiscal y contable</em></h2>
-      <p class="lead rv d2" data-en="Support so your company meets its obligations on time and has reliable financial information to make decisions — with the confidentiality that information requires.">Acompañamiento para que tu empresa cumpla a tiempo con sus obligaciones y cuente con información financiera confiable para tomar decisiones, con la confidencialidad que esa información requiere.</p>
-      <a class="btn dark rv d3" href="mailto:contacto@marasesupply.com?subject=Cotizaci%C3%B3n%20-%20Consultor%C3%ADa%20fiscal%20y%20contable"><span data-en="Request a review">Solicitar una revisión</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
-    </div>
-  </div>
-</section>
-
-<!-- ================= INTERSECCIÓN ================= -->
-<section class="cross on-dark">
-  <div class="wrap">
-    <div class="head">
-      <span class="kicker rv" data-en="Where they meet">Donde se cruzan</span>
-      <h2 class="rv d1" data-en="Two practices that <em>reinforce each other</em>">Dos prácticas que <em>se potencian</em></h2>
-      <p class="lead rv d2" data-en="Having tax and technology judgment under one roof means your accounting and administrative systems are chosen and integrated by people who understand both the tool and the obligation.">Tener criterio fiscal y tecnológico bajo un mismo techo permite elegir e integrar tus sistemas contables y administrativos con quien entiende tanto la herramienta como la obligación.</p>
-    </div>
-    <div class="venn" id="venn" aria-hidden="true">
-      <svg viewBox="0 0 980 460">
-        <defs><clipPath id="cl"><circle cx="355" cy="230" r="215"/></clipPath></defs>
-        <circle class="lens" cx="625" cy="230" r="215" clip-path="url(#cl)"/>
-        <circle class="c1" pathLength="1" cx="355" cy="230" r="215" transform="rotate(-90 355 230)"/>
-        <circle class="c2" pathLength="1" cx="625" cy="230" r="215" transform="rotate(90 625 230)"/>
-      </svg>
-      <div class="lbl l"><b data-en="Technology">Tecnología</b><span data-en="Lenovo equipment, private cloud, software">Equipo Lenovo, nube privada, software</span></div>
-      <div class="lbl m"><b data-en="Together">En conjunto</b><span data-en="Choosing accounting software<br>E-invoicing integration<br>Management reports">Elección de sistema contable<br>Integración con facturación<br>Reportes de gestión</span></div>
-      <div class="lbl r"><b data-en="Tax &amp; accounting">Fiscal y contable</b><span data-en="Compliance, accounting, finance">Cumplimiento, contabilidad, finanzas</span></div>
-    </div>
-    <ul class="cross-list">
-      <li><b data-en="Technology">Tecnología</b><span data-en="Lenovo equipment, private cloud, software">Equipo Lenovo, nube privada, software</span></li>
-      <li><b data-en="Tax &amp; accounting">Fiscal y contable</b><span data-en="Compliance, accounting, finance">Cumplimiento, contabilidad, finanzas</span></li>
-      <li class="m"><b data-en="Together">En conjunto</b><span data-en="Choosing accounting software, e-invoicing integration and management reports.">Elección de sistema contable, integración con facturación y reportes de gestión.</span></li>
-    </ul>
-  </div>
-</section>
-
 <!-- ================= MÉTODO ================= -->
 <section class="method">
   <div class="wrap head">
@@ -657,7 +530,7 @@ footer a:hover{color:var(--gold-lt)}
   <div class="wrap">
     <div class="track" id="track">
       <span class="fill" aria-hidden="true"></span>
-      <div class="stp"><span class="n">01</span><h3 data-en="Diagnosis">Diagnóstico</h3><p data-en="We review your process, system or tax position and the result you expect.">Revisamos tu proceso, sistema o situación fiscal y el resultado que esperas.</p></div>
+      <div class="stp"><span class="n">01</span><h3 data-en="Diagnosis">Diagnóstico</h3><p data-en="We review your process, equipment and systems, and the result you expect.">Revisamos tu proceso, tus equipos y sistemas, y el resultado que esperas.</p></div>
       <div class="stp"><span class="n">02</span><h3 data-en="Written proposal">Propuesta por escrito</h3><p data-en="Scope, deliverables, lead time and price in one quotation.">Alcance, entregables, tiempos y precio en una sola cotización.</p></div>
       <div class="stp"><span class="n">03</span><h3 data-en="Execution">Ejecución</h3><p data-en="One direct contact reports progress against the agreed scope.">Un contacto directo reporta avance contra el alcance acordado.</p></div>
       <div class="stp"><span class="n">04</span><h3 data-en="Delivery &amp; follow-up">Entrega y seguimiento</h3><p data-en="Documented delivery and ongoing support.">Entrega documentada y soporte posterior.</p></div>
@@ -671,7 +544,7 @@ footer a:hover{color:var(--gold-lt)}
     <div class="pl-grid">
       <div class="pl rv"><b data-en="By <em>quotation</em>">Por <em>cotización</em></b><span data-en="No generic packages: each engagement is scoped and priced for your case.">Sin paquetes genéricos: cada proyecto se define y se cotiza para tu caso.</span></div>
       <div class="pl rv d1"><b data-en="Direct <em>contact</em>">Contacto <em>directo</em></b><span data-en="You talk to the people doing the work, not to an intermediary.">Hablas con quienes hacen el trabajo, no con un intermediario.</span></div>
-      <div class="pl rv d2"><b data-en="Strict <em>confidentiality</em>">Confidencialidad <em>estricta</em></b><span data-en="Your financial and operating information is used only for the agreed service.">Tu información financiera y operativa se usa solo para el servicio acordado.</span></div>
+      <div class="pl rv d2"><b data-en="Strict <em>confidentiality</em>">Confidencialidad <em>estricta</em></b><span data-en="Your information and files are used only for the agreed service.">Tu información y tus archivos se usan solo para el servicio acordado.</span></div>
     </div>
   </div>
 </section>
@@ -684,9 +557,9 @@ footer a:hover{color:var(--gold-lt)}
   <div class="wrap inner">
     <span class="kicker rv" data-en="Let's talk">Hablemos</span>
     <h2 class="rv d1" data-en="Tell us what needs <em>order</em>.">Cuéntanos qué necesita <em>orden</em>.</h2>
-    <p class="rv d2" data-en="Describe the process, system or obligation. We reply with a written proposal: scope, lead time and price.">Describe el proceso, sistema u obligación. Respondemos con una propuesta por escrito: alcance, tiempos y precio.</p>
+    <p class="rv d2" data-en="Describe the process, equipment or system. We reply with a written proposal: scope, lead time and price.">Describe el proceso, equipo o sistema. Respondemos con una propuesta por escrito: alcance, tiempos y precio.</p>
     <div class="actions rv d3">
-      <a class="btn solid" href="mailto:contacto@marasesupply.com?subject=Solicitud%20de%20consultor%C3%ADa" data-en="Email us">Escríbenos</a>
+      <a class="btn solid" href="mailto:contacto@marasesupply.com?subject=Solicitud%20-%20Tecnolog%C3%ADas" data-en="Email us">Escríbenos</a>
       <a class="btn" href="tel:+525558405156" data-en="Call now">Llamar ahora</a>
     </div>
   </div>
@@ -699,14 +572,14 @@ footer a:hover{color:var(--gold-lt)}
         <img class="logo" src="image/logogold.svg" alt="MARASE Supply" onerror="this.closest('.brand').classList.add('nologo');this.remove()">
         <span class="wordmark"><span class="m">MARASE</span><span class="s">Supply</span></span>
       </a>
-      <p data-en="Technology and industrial solutions for industry: technology and tax &amp; accounting consulting, and specialized electrical equipment supply. By quotation, with direct contact.">Soluciones tecnológicas e industriales para la industria: consultoría en tecnologías y fiscal-contable, y suministro de equipo y material eléctrico especializado. Por cotización y con contacto directo.</p>
+      <p data-en="Technology and industrial solutions for industry: computing equipment, private cloud and software, and specialized electrical equipment supply. By quotation, with direct contact.">Soluciones tecnológicas e industriales para la industria: equipo de cómputo, nube privada y software, y suministro de equipo y material eléctrico especializado. Por cotización y con contacto directo.</p>
     </div>
     <div>
       <h4 data-en="Navigation">Navegación</h4>
       <ul>
         <li><a href="index.html" data-en="Home">Inicio</a></li>
         <li><a href="aboutus.html" data-en="About us">Acerca de nosotros</a></li>
-        <li><a href="services.html" data-en="Consulting">Consultoría</a></li>
+        <li><a href="services.html" data-en="Technology">Tecnologías</a></li>
         <li><a href="industrialproducts.html" data-en="Industrial supply">Suministro industrial</a></li>
         <li><a href="contacto.html" data-en="Contact">Contacto</a></li>
         <li><a href="privacy.html" data-en="Privacy notice">Aviso de privacidad</a></li>
@@ -748,8 +621,8 @@ footer a:hover{color:var(--gold-lt)}
 
   /* palabra rotativa */
   var words={
-    es:['sistemas','procesos','obligaciones','cifras'],
-    en:['systems in order','processes in order','obligations in order','figures in order']
+    es:['sistemas','archivos','equipos','respaldos'],
+    en:['systems in order','files in order','equipment in order','backups in order']
   };
   var lang='es', idx=0, rot=document.getElementById('rot');
   function fillRot(){
@@ -791,16 +664,7 @@ footer a:hover{color:var(--gold-lt)}
     setTimeout(function(){ mx.classList.add('done'); }, reduce?0:300+5*260+500);
   },.4);
 
-  /* hoja: casillas y sello */
-  var sheet=document.getElementById('sheet');
-  once(sheet,function(){
-    var lis=sheet.querySelectorAll('li');
-    lis.forEach(function(li,i){ if(i<lis.length-1) setTimeout(function(){ li.classList.add('ok'); }, reduce?0:500+i*380); });
-    setTimeout(function(){ sheet.classList.add('done'); }, reduce?0:500+lis.length*380);
-  },.4);
-
-  /* venn y línea de tiempo */
-  var venn=document.getElementById('venn'); once(venn,function(){ venn.classList.add('in'); },.35);
+  /* línea de tiempo */
   var track=document.getElementById('track'); once(track,function(){ track.classList.add('in'); },.4);
 
   /* ES / EN */
